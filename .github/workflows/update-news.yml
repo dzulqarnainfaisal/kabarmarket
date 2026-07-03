@@ -24,9 +24,7 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Ambil berita terbaru
-        env:
-          NEWSDATA_KEY: ${{ secrets.NEWSDATA_KEY }}
+      - name: Ambil berita terbaru (RSS media Indonesia, tanpa API key)
         run: node automation/fetch-news.js
 
       - name: Ambil harga pasar terbaru
