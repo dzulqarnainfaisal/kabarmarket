@@ -1,107 +1,122 @@
 {
-  "updated": "2026-07-03T22:50:52.793Z",
+  "updated": "2026-07-03T23:54:18.346Z",
   "articles": [
+    {
+      "cat": "Ekonomi",
+      "title": "Top 3: 240 BUMN Sudah Dipangkas, Pengelolaan Aset Makin Besar",
+      "desc": "Berikut tiga artikel terpopuler di Kanal Bisnis Liputan6.com yang dirangkum pada Sabtu, (4/7/2026). Salah satunya soal BUMN.",
+      "time": "24 menit lalu",
+      "date": "3 Jul 2026",
+      "source": "Liputan6",
+      "url": "https://www.liputan6.com/bisnis/read/8206587/top-3-240-bumn-sudah-dipangkas-pengelolaan-aset-makin-besar",
+      "image": "https://cdn0-production-images-kly.akamaized.net/LNZLSoGuIMHrnBDjG0_otMOkzRU=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/6469874/original/030292000_1779331456-Kepala_BP_BUMN__Dony_Oskaria-21_Mei_2026b.jpg",
+      "source_icon": null,
+      "highlight": true,
+      "body": [
+        "Berikut tiga artikel terpopuler di Kanal Bisnis Liputan6.com yang dirangkum pada Sabtu, (4/7/2026). Salah satunya soal BUMN."
+      ]
+    },
+    {
+      "cat": "Ekonomi",
+      "title": "Badai PHK di Tokopedia Usai Dicaplok TikTok",
+      "desc": "Deretan badai PHK terjadi di Tokopedia sejak perusahaan dicaplok TikTok pada akhir 2023.",
+      "time": "29 menit lalu",
+      "date": "3 Jul 2026",
+      "source": "Detik Finance",
+      "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8558750/badai-phk-di-tokopedia-usai-dicaplok-tiktok",
+      "image": "https://akcdn.detik.net.id/community/media/visual/2023/05/04/biaya-layanan-tokopedia-naik-jadi-berapa-sekarang-1_169.jpeg?w=360&amp;q=90",
+      "source_icon": null,
+      "highlight": false,
+      "body": [
+        "Deretan badai PHK terjadi di Tokopedia sejak perusahaan dicaplok TikTok pada akhir 2023."
+      ]
+    },
+    {
+      "cat": "Ekonomi",
+      "title": "Pelatihan Melukis Jadi Bekal Wirausaha Penyandang Disabilitas",
+      "desc": "Penyandang disabilitas mengikuti pelatihan melukis untuk mengasah keterampilan. Program ini mendorong lahirnya karya kreatif sekaligus peluang usaha.",
+      "time": "54 menit lalu",
+      "date": "3 Jul 2026",
+      "source": "Detik Finance",
+      "url": "https://finance.detik.com/foto-bisnis/d-8558736/pelatihan-melukis-jadi-bekal-wirausaha-penyandang-disabilitas",
+      "image": "https://akcdn.detik.net.id/community/media/visual/2026/07/03/pelatihan-melukis-jadi-bekal-wirausaha-penyandang-disabilitas-1783076159185_169.jpeg?w=360&amp;q=90",
+      "source_icon": null,
+      "highlight": false,
+      "body": [
+        "Penyandang disabilitas mengikuti pelatihan melukis untuk mengasah keterampilan. Program ini mendorong lahirnya karya kreatif sekaligus peluang usaha."
+      ]
+    },
+    {
+      "cat": "Ekonomi",
+      "title": "Ada yang Capai Rp 600 Miliar, Simak Deretan Cincin Tunangan Selebriti Dunia",
+      "desc": "Menampilkan keindahan batu mulia kolosal dengan harga selangit, simak rangkuman cincin lamaran para wanita papan atas dunia yang sukses menjadi ikon.",
+      "time": "54 menit lalu",
+      "date": "3 Jul 2026",
+      "source": "Liputan6",
+      "url": "https://www.liputan6.com/bisnis/read/8131192/ada-yang-capai-rp-600-miliar-simak-deretan-cincin-tunangan-selebriti-dunia",
+      "image": "https://cdn1-production-images-kly.akamaized.net/T-0uB6fJ5_wVHwFXBn58J5TDQcA=/0x67:4654x2690/673x379/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4923789/original/047772100_1724208954-Jennifer_Lopez_Resmi_Gugat_Cerai_Ben_Affleck-AFP__6_.jpg",
+      "source_icon": null,
+      "highlight": false,
+      "body": [
+        "Menampilkan keindahan batu mulia kolosal dengan harga selangit, simak rangkuman cincin lamaran para wanita papan atas dunia yang sukses menjadi ikon."
+      ]
+    },
+    {
+      "cat": "Ekonomi",
+      "title": "Danantara Bersih-bersih PT Pos Usai Ungkap Rekayasa Keuangan",
+      "desc": "BPI Danantara melakukan bersih-bersih pada tubuh PT Pos Indonesia usai ditemukan dugaan rekayasa keuangan.",
+      "time": "59 menit lalu",
+      "date": "3 Jul 2026",
+      "source": "Detik Finance",
+      "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8558775/danantara-bersih-bersih-pt-pos-usai-ungkap-rekayasa-keuangan",
+      "image": "https://akcdn.detik.net.id/community/media/visual/2023/04/13/potret-kurir-kebanjiran-paket-jelang-lebaran-2_169.jpeg?w=360&amp;q=90",
+      "source_icon": null,
+      "highlight": false,
+      "body": [
+        "BPI Danantara melakukan bersih-bersih pada tubuh PT Pos Indonesia usai ditemukan dugaan rekayasa keuangan."
+      ]
+    },
     {
       "cat": "Ekonomi",
       "title": "KB Bank Pangkas 662 Pegawai dan 21 Kantor Cabang, Ini Alasannya",
       "desc": "PT Bank KB Indonesia Tbk (KB Bank) tengah efisiensi operasional dengan memangkas jumlah pegawai dan jaringan kantor cabangnya.",
-      "time": "7 jam lalu",
+      "time": "8 jam lalu",
       "date": "3 Jul 2026",
       "source": "Detik Finance",
       "url": "https://finance.detik.com/moneter/d-8559102/kb-bank-pangkas-662-pegawai-dan-21-kantor-cabang-ini-alasannya",
       "image": "https://akcdn.detik.net.id/community/media/visual/2025/07/29/kb-bank-1753778388205_169.jpeg?w=360&amp;q=90",
       "source_icon": null,
-      "highlight": true,
+      "highlight": false,
       "body": [
         "PT Bank KB Indonesia Tbk (KB Bank) tengah efisiensi operasional dengan memangkas jumlah pegawai dan jaringan kantor cabangnya."
       ]
     },
     {
-      "cat": "Ekonomi",
-      "title": "Prudential Buka Suara soal Nasabah Keluhkan Masalah Klaim Rp 123 Juta",
-      "desc": "Prudential Syariah menyelesaikan klaim Rp 123 juta yang viral. Nasabah mengonfirmasi klaim telah dibayarkan setelah proses yang sesuai ketentuan polis.",
-      "time": "7 jam lalu",
+      "cat": "Saham",
+      "title": "Strategi Investasi Saham Ketika IHSG Bergejolak",
+      "desc": "Laju Indeks Harga Saham Gabungan (IHSG) masih fluktuatif. Berikut tiga strategi investasi saham.",
+      "time": "54 menit lalu",
       "date": "3 Jul 2026",
-      "source": "Detik Finance",
-      "url": "https://finance.detik.com/moneter/d-8559099/prudential-buka-suara-soal-nasabah-keluhkan-masalah-klaim-rp-123-juta",
-      "image": "https://akcdn.detik.net.id/community/media/visual/2018/04/23/d5fc6258-0fd7-49c2-975d-abc162883273_169.jpeg?w=360&amp;q=90",
+      "source": "Liputan6",
+      "url": "https://www.liputan6.com/saham/read/8208368/strategi-investasi-saham-ketika-ihsg-bergejolak",
+      "image": "https://cdn0-production-images-kly.akamaized.net/2Rr78_11uGIDlqK-_w-cDTMS9og=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/5497597/original/013342400_1770638549-3.jpg",
       "source_icon": null,
-      "highlight": false,
+      "highlight": true,
       "body": [
-        "Prudential Syariah menyelesaikan klaim Rp 123 juta yang viral. Nasabah mengonfirmasi klaim telah dibayarkan setelah proses yang sesuai ketentuan polis."
-      ]
-    },
-    {
-      "cat": "Ekonomi",
-      "title": "Alasan Pemerintah Bikin Pusat Finansial Internasional Indonesia (PFII)",
-      "desc": "Pemerintah bersama Dewan Perwakilan Rakyat (DPR) resmi memulai pembahasan Rancangan Undang-Undang (RUU) tentang Pusat Finansial Internasional Indonesia (PFII).",
-      "time": "7 jam lalu",
-      "date": "3 Jul 2026",
-      "source": "Detik Finance",
-      "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8559091/alasan-pemerintah-bikin-pusat-finansial-internasional-indonesia-pfii",
-      "image": "https://akcdn.detik.net.id/community/media/visual/2026/07/02/purbaya-1782981987365_169.jpeg?w=360&amp;q=90",
-      "source_icon": null,
-      "highlight": false,
-      "body": [
-        "Pemerintah bersama Dewan Perwakilan Rakyat (DPR) resmi memulai pembahasan Rancangan Undang-Undang (RUU) tentang Pusat Finansial Internasional Indonesia (PFII)."
-      ]
-    },
-    {
-      "cat": "Ekonomi",
-      "title": "Stimulus Industri Kreatif, Pajak Royalti Penulis Jadi 1,5 Persen",
-      "desc": "Pemerintah menyiapkan tarif PPh Final royalti penulis sebesar 1,5 persen sebagai stimulus ekonomi untuk mendorong produktivitas industri kreatif.",
-      "time": "8 jam lalu",
-      "date": "3 Jul 2026",
-      "source": "Detik Finance",
-      "url": "https://finance.detik.com/foto-bisnis/d-8558453/stimulus-industri-kreatif-pajak-royalti-penulis-jadi-1-5-persen",
-      "image": "https://akcdn.detik.net.id/community/media/visual/2026/07/03/pajak-royalti-penulis-15-persen-tinggal-menunggu-aturan-terbit-1783065509392_169.jpeg?w=360&amp;q=90",
-      "source_icon": null,
-      "highlight": false,
-      "body": [
-        "Pemerintah menyiapkan tarif PPh Final royalti penulis sebesar 1,5 persen sebagai stimulus ekonomi untuk mendorong produktivitas industri kreatif."
-      ]
-    },
-    {
-      "cat": "Ekonomi",
-      "title": "Purbaya: Memang Ada Tantangan, Namun Indonesia Tidak Menuju Krisis",
-      "desc": "Menteri Keuangan (Menkeu) Purbaya Yudhi Sadewa menegaskan kondisi fundamental perekonomian Indonesia tetap kuat dan tidak sedang menuju krisis.",
-      "time": "8 jam lalu",
-      "date": "3 Jul 2026",
-      "source": "Detik Finance",
-      "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8559070/purbaya-memang-ada-tantangan-namun-indonesia-tidak-menuju-krisis",
-      "image": "https://akcdn.detik.net.id/community/media/visual/2026/06/05/tawa-purbaya-pastikan-ekonomi-hingga-mei-2026-masih-solid-1780655487362_169.jpeg?w=360&amp;q=90",
-      "source_icon": null,
-      "highlight": false,
-      "body": [
-        "Menteri Keuangan (Menkeu) Purbaya Yudhi Sadewa menegaskan kondisi fundamental perekonomian Indonesia tetap kuat dan tidak sedang menuju krisis."
-      ]
-    },
-    {
-      "cat": "Ekonomi",
-      "title": "Purbaya Cek MBG di Jateng, Diklaim Ciptakan 193 Ribu Lapangan Kerja",
-      "desc": "Menkeu Purbaya meninjau realisasi APBN di Jawa Tengah (Jateng) serta pelaksanaan program prioritas pemerintah antara lain Program Makan Bergizi Gratis (MBG).",
-      "time": "8 jam lalu",
-      "date": "3 Jul 2026",
-      "source": "Detik Finance",
-      "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8559056/purbaya-cek-mbg-di-jateng-diklaim-ciptakan-193-ribu-lapangan-kerja",
-      "image": "https://akcdn.detik.net.id/community/media/visual/2026/07/03/menkeu-purbaya-1783087505782_169.jpeg?w=360&amp;q=90",
-      "source_icon": null,
-      "highlight": false,
-      "body": [
-        "Menkeu Purbaya meninjau realisasi APBN di Jawa Tengah (Jateng) serta pelaksanaan program prioritas pemerintah antara lain Program Makan Bergizi Gratis (MBG)."
+        "Laju Indeks Harga Saham Gabungan (IHSG) masih fluktuatif. Berikut tiga strategi investasi saham."
       ]
     },
     {
       "cat": "Saham",
       "title": "Direktur Amman Mineral International Borong 1,4 Juta Saham",
       "desc": "Direktur Amman Mineral International (AMMN) Anthony Robert Mathias memborong 1,41 juta saham perseroan untuk investasi pribadi.",
-      "time": "10 jam lalu",
+      "time": "11 jam lalu",
       "date": "3 Jul 2026",
       "source": "Liputan6",
       "url": "https://www.liputan6.com/saham/read/8196295/direktur-amman-mineral-international-borong-14-juta-saham",
       "image": "https://cdn1-production-images-kly.akamaized.net/wvmJDYkqYe1_yAPTtgZNRnfdJp0=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4735140/original/004670900_1707118278-Foto_1.JPG",
       "source_icon": null,
-      "highlight": true,
+      "highlight": false,
       "body": [
         "Direktur Amman Mineral International (AMMN) Anthony Robert Mathias memborong 1,41 juta saham perseroan untuk investasi pribadi."
       ]
@@ -110,7 +125,7 @@
       "cat": "Saham",
       "title": "Free Float Mitratel Melonjak ke 18,9%",
       "desc": "PT Dayamitra Telekomunikasi Tbk (MTEL) atau Mitratel mendapatkan restu dari BEI kalau kepemilikan saham GIC dikategorikan sebagai free float.",
-      "time": "12 jam lalu",
+      "time": "13 jam lalu",
       "date": "3 Jul 2026",
       "source": "Liputan6",
       "url": "https://www.liputan6.com/saham/read/8203202/free-float-mitratel-melonjak-ke-189",
@@ -125,7 +140,7 @@
       "cat": "Saham",
       "title": "BEI Bakal Lelang 11 Saham Bursa 3 Agustus 2026",
       "desc": "BEI menyebutkan, 11 saham bursa yang dilelang atau telah dibeli kembali oleh bursa, hanya dapat dilakukan lewat lelang saham bursa.",
-      "time": "13 jam lalu",
+      "time": "14 jam lalu",
       "date": "3 Jul 2026",
       "source": "Liputan6",
       "url": "https://www.liputan6.com/saham/read/8196275/bei-bakal-lelang-11-saham-bursa-3-agustus-2026",
@@ -140,7 +155,7 @@
       "cat": "Saham",
       "title": "IHSG Ditutup Menguat 2%, Melesat ke Level 5.875",
       "desc": "IHSG ditutup menguat hingga 2% lebih setelah konsisten berada di zona hijau seharian.",
-      "time": "13 jam lalu",
+      "time": "14 jam lalu",
       "date": "3 Jul 2026",
       "source": "Detik Finance",
       "url": "https://finance.detik.com/bursa-dan-valas/d-8558597/ihsg-ditutup-menguat-2-melesat-ke-level-5-875",
@@ -155,7 +170,7 @@
       "cat": "Saham",
       "title": "IHSG Melesat ke 5.875, Sektor Industri Pimpin Kenaikan",
       "desc": "Laju Indeks Harga Saham Gabungan (IHSG) bertahan di zona hijau pada penutupan perdagangan saham Jumat, (3/7/2026).",
-      "time": "13 jam lalu",
+      "time": "14 jam lalu",
       "date": "3 Jul 2026",
       "source": "Liputan6",
       "url": "https://www.liputan6.com/saham/read/8200069/ihsg-melesat-ke-5875-sektor-industri-pimpin-kenaikan",
@@ -167,25 +182,10 @@
       ]
     },
     {
-      "cat": "Saham",
-      "title": "Bos Danantara Bertemu Petinggi OJK & BEI, Bahas Apa?",
-      "desc": "CEO Danantara Rosan Roeslani, bertemu Ketua Dewan Komisioner OJK Friderica Widyasari, beserta jajarannya dan Direktur Utama BEI Jeffrey Hendrik.",
-      "time": "13 jam lalu",
-      "date": "3 Jul 2026",
-      "source": "Detik Finance",
-      "url": "https://finance.detik.com/bursa-dan-valas/d-8558549/bos-danantara-bertemu-petinggi-ojk-bei-bahas-apa",
-      "image": "https://akcdn.detik.net.id/community/media/visual/2026/04/13/raker-komisi-xii-dpr-dengan-menteri-investasi-dan-hilirisasi-1776070429780_169.jpeg?w=360&amp;q=90",
-      "source_icon": null,
-      "highlight": false,
-      "body": [
-        "CEO Danantara Rosan Roeslani, bertemu Ketua Dewan Komisioner OJK Friderica Widyasari, beserta jajarannya dan Direktur Utama BEI Jeffrey Hendrik."
-      ]
-    },
-    {
       "cat": "Crypto",
       "title": "Bursa Kripto Mulai Bidik Tokenisasi Karya Kreatif",
       "desc": "Bursa aset kripto, PT Central Finansial X (CFX), mulai memperluas pemanfaatan aset digital di luar aktivitas jual beli kripto.",
-      "time": "12 jam lalu",
+      "time": "13 jam lalu",
       "date": "3 Jul 2026",
       "source": "Detik Finance",
       "url": "https://finance.detik.com/fintech/d-8558700/bursa-kripto-mulai-bidik-tokenisasi-karya-kreatif",
