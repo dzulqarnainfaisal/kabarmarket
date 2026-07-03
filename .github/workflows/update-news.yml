@@ -1,0 +1,44 @@
+# Otomatisasi berita Kabar Market
+# Menjalankan skrip pengambil berita secara terjadwal, lalu commit news.json.
+# Jika repo ini terhubung ke Cloudflare Pages, setiap commit otomatis men-deploy versi baru.
+
+name: Update Berita Otomatis
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'   # setiap 15 menit (waktu UTC)
+  workflow_dispatch:      # bisa juga dijalankan manual dari tab Actions
+
+permissions:
+  contents: write
+
+jobs:
+  update-news:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ambil kode
+        uses: actions/checkout@v4
+
+      - name: Siapkan Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Ambil berita terbaru
+        env:
+          NEWSDATA_KEY: ${{ secrets.NEWSDATA_KEY }}
+        run: node automation/fetch-news.js
+
+      - name: Ambil harga pasar terbaru
+        run: node automation/fetch-prices.js
+
+      - name: Buat RSS feed newsletter
+        run: node automation/generate-feed.js
+
+      - name: Commit perubahan
+        run: |
+          git config user.name "kabar-market-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add news.json prices.json feed.xml sitemap.xml
+          git diff --staged --quiet || git commit -m "chore: perbarui berita & harga otomatis"
+          git push
