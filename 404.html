@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Halaman Tidak Ditemukan (404) - Kabar Market</title>
+<meta name="robots" content="noindex, follow">
+<meta name="theme-color" content="#0B1420">
+<link rel="icon" type="image/png" href="/favicon_km.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0B1420; --ink-2:#121D2E; --ink-3:#1A2740;
+    --paper:#EDEFF3; --muted:#7C8A9C; --gold:#E7A33E;
+    --gain:#22B27D; --line:rgba(237,239,243,0.08);
+  }
+  *{ margin:0; padding:0; box-sizing:border-box; }
+  body{
+    background:var(--ink); color:var(--paper);
+    font-family:'Inter', sans-serif;
+    min-height:100vh; display:flex; align-items:center; justify-content:center;
+    padding:24px; text-align:center;
+    background-image:radial-gradient(circle at 50% 0%, rgba(231,163,62,0.10), transparent 55%);
+  }
+  .wrap{ max-width:520px; }
+  .brand{ display:inline-flex; align-items:center; gap:12px; margin-bottom:40px; }
+  .km{
+    width:44px; height:44px; border-radius:11px;
+    background:linear-gradient(135deg,#9c6416,#e7a33e);
+    display:inline-flex; align-items:center; justify-content:center;
+    font-family:'Space Grotesk', sans-serif; font-weight:700; font-size:18px; color:#0B1420;
+  }
+  .brand span{ font-family:'Space Grotesk', sans-serif; font-weight:600; font-size:20px; }
+  .code{
+    font-family:'Space Grotesk', sans-serif; font-weight:700;
+    font-size:clamp(90px,22vw,150px); line-height:1;
+    background:linear-gradient(135deg,#e7a33e,#f2c877);
+    -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
+  }
+  h1{ font-family:'Space Grotesk', sans-serif; font-size:24px; font-weight:600; margin:18px 0 12px; }
+  p{ color:var(--muted); font-size:15.5px; line-height:1.6; margin-bottom:32px; }
+  .actions{ display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
+  .btn{
+    text-decoration:none; font-weight:600; font-size:15px;
+    padding:13px 24px; border-radius:12px; transition:transform .15s ease, border-color .15s ease;
+  }
+  .btn-primary{ background:var(--gold); color:#0B1420; }
+  .btn-primary:hover{ transform:translateY(-2px); }
+  .btn-ghost{ background:var(--ink-2); color:var(--paper); border:1px solid var(--line); }
+  .btn-ghost:hover{ border-color:rgba(231,163,62,0.4); transform:translateY(-2px); }
+  .links{ margin-top:36px; padding-top:24px; border-top:1px solid var(--line); }
+  .links-title{ font-size:12px; color:var(--muted); text-transform:uppercase; letter-spacing:1px; margin-bottom:14px; font-family:'JetBrains Mono', monospace; }
+  .links a{ color:var(--paper); text-decoration:none; font-size:14.5px; margin:0 10px; transition:color .15s ease; }
+  .links a:hover{ color:var(--gold); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand">
+      <span class="km">KM</span>
+      <span>Kabar Market</span>
+    </div>
+    <div class="code">404</div>
+    <h1>Halaman tidak ditemukan</h1>
+    <p>Maaf, halaman yang kamu cari tidak ada, sudah dipindahkan, atau tautannya salah ketik. Yuk kembali membaca berita dan materi edukasi terbaru.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="/">Kembali ke Beranda</a>
+      <a class="btn btn-ghost" href="/#edukasi">Buka Edukasi</a>
+    </div>
+    <div class="links">
+      <div class="links-title">Jelajahi Kategori</div>
+      <a href="/#ekonomi">Ekonomi</a>
+      <a href="/#saham">Saham</a>
+      <a href="/#crypto">Crypto</a>
+      <a href="/#tentang">Tentang Kami</a>
+    </div>
+  </div>
+</body>
+</html>
