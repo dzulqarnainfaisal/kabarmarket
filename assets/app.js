@@ -191,7 +191,7 @@
     grid.innerHTML = list.map(a => `
       <button class="card news-card-btn${a.highlight ? ' is-popular' : ''}" data-idx="${articles.indexOf(a)}">
         ${a.highlight ? '<span class="popular-badge">🔥 Populer</span>' : ''}
-        ${a.image ? `<img class="card-img" src="${a.image}" alt="" loading="lazy" onerror="this.remove()">` : ''}
+        <img class="card-img" src="${a.image || phImg(a.cat)}" alt="" loading="lazy" onerror="this.onerror=null;this.src=window.KMph('${a.cat||''}')">
         <span class="pill ${pillClass[a.cat]}">${a.cat}</span>
         <h3>${a.title}</h3>
         <p>${a.desc}</p>
@@ -225,7 +225,7 @@
       mp.className = 'pill ' + (pillClass[m.cat] || '');
       mp.textContent = m.cat;
       var __hImg = document.getElementById('heroMainImg');
-      if(__hImg){ if(m.image){ __hImg.src = m.image; __hImg.style.display = ''; __hImg.onerror = function(){ __hImg.style.display = 'none'; }; } else { __hImg.removeAttribute('src'); __hImg.style.display = 'none'; } }
+      if(__hImg){ __hImg.style.display = ''; __hImg.src = m.image || phImg(m.cat); __hImg.onerror = function(){ __hImg.onerror = null; __hImg.src = phImg(m.cat); }; }
       document.getElementById('heroMainTitle').textContent = m.title;
       document.getElementById('heroMainDesc').textContent = m.desc;
       document.getElementById('heroMainMeta').textContent = (m.source || '') + (m.time ? ' · ' + m.time : '');
@@ -239,7 +239,7 @@
       const a = articles[idx];
       card.style.display = '';
       var __sImg = document.getElementById('heroSide' + k + 'Img');
-      if(__sImg){ if(a.image){ __sImg.src = a.image; __sImg.style.display=''; __sImg.onerror=function(){ __sImg.style.display='none'; }; } else { __sImg.removeAttribute('src'); __sImg.style.display='none'; } }
+      if(__sImg){ __sImg.style.display=''; __sImg.src = a.image || phImg(a.cat); __sImg.onerror=function(){ __sImg.onerror=null; __sImg.src=phImg(a.cat); }; }
       const eb = document.getElementById('heroSide' + k + 'Eyebrow');
       eb.textContent = a.cat;
       eb.style.color = a.cat === 'Saham' ? 'var(--gain)' : (a.cat === 'Crypto' ? 'var(--gold)' : (a.cat === 'Investasi' ? '#9db4f0' : 'var(--muted)'));
@@ -525,8 +525,7 @@
     document.getElementById('newsModalTitle').textContent = a.title;
     document.getElementById('newsModalMeta').textContent = a.source + ' · ' + a.date + ' · ' + a.time;
     const nImg = document.getElementById('newsModalImg');
-    if (a.image) { nImg.src = a.image; nImg.style.display = ''; nImg.onerror = () => { nImg.style.display = 'none'; }; }
-    else { nImg.removeAttribute('src'); nImg.style.display = 'none'; }
+    nImg.src = a.image || phImg(a.cat); nImg.style.display = ''; nImg.onerror = () => { nImg.onerror = null; nImg.src = phImg(a.cat); };
     const summary = a.desc || (a.body && a.body.length ? a.body[0] : '');
     let bodyHtml = `<p>${summary}</p>`;
     var __click = a.url ? ' href="' + a.url + '" target="_blank" rel="noopener nofollow"' : ' href="#" onclick="return false;"';
@@ -582,10 +581,29 @@
 
 
   /* ===== Multi-halaman: preview, paginasi, helper ===== */
+  function phImg(cat){
+    var c = cat || '';
+    var col = c==='Saham' ? '#22B27D' : (c==='Crypto' ? '#E7A33E' : (c==='Ekonomi' ? '#5B8DEF' : (c==='Investasi' ? '#9db4f0' : '#7C8A9C')));
+    var label = (c || 'Kabar Market').toUpperCase();
+    var svg = '<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">'
+      + '<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#16233A"/><stop offset="1" stop-color="#0B1420"/></linearGradient></defs>'
+      + '<rect width="800" height="450" fill="url(#bg)"/>'
+      + '<g stroke="'+col+'" stroke-opacity="0.18" stroke-width="2" fill="none">'
+      + '<path d="M0 340 L120 300 L240 320 L360 250 L480 280 L600 200 L720 230 L800 180"/>'
+      + '<path d="M0 385 L120 365 L240 375 L360 335 L480 355 L600 305 L720 325 L800 295"/>'
+      + '</g>'
+      + '<rect x="330" y="120" width="140" height="140" rx="30" fill="'+col+'"/>'
+      + '<text x="400" y="216" font-family="Arial,Helvetica,sans-serif" font-size="72" font-weight="700" fill="#0B1420" text-anchor="middle">KM</text>'
+      + '<text x="400" y="312" font-family="Arial,Helvetica,sans-serif" font-size="30" font-weight="700" fill="#EDEFF3" text-anchor="middle" letter-spacing="2">'+label+'</text>'
+      + '<text x="400" y="350" font-family="Arial,Helvetica,sans-serif" font-size="17" fill="#7C8A9C" text-anchor="middle" letter-spacing="3">KABAR MARKET</text>'
+      + '</svg>';
+    return 'data:image/svg+xml,' + encodeURIComponent(svg);
+  }
+  window.KMph = phImg;
   function newsCardHTML(a){
     return '<button class="card news-card-btn'+(a.highlight?' is-popular':'')+'" data-idx="'+articles.indexOf(a)+'">'
       + (a.highlight?'<span class="popular-badge">🔥 Populer</span>':'')
-      + (a.image?'<img class="card-img" src="'+a.image+'" alt="" loading="lazy" onerror="this.remove()">':'')
+      + '<img class="card-img" src="'+(a.image||phImg(a.cat))+'" alt="" loading="lazy" onerror="this.onerror=null;this.src=window.KMph(\''+(a.cat||'')+'\')">'
       + '<span class="pill '+(pillClass[a.cat]||'')+'">'+a.cat+'</span>'
       + '<h3>'+a.title+'</h3><p>'+a.desc+'</p>'
       + '<div class="meta-row card-meta"><span class="card-source">'+a.source+'</span><span>·</span><span>'+a.date+'</span><span>·</span><span>'+a.time+'</span></div>'
