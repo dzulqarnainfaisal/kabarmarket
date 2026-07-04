@@ -38,7 +38,7 @@ const html = '<!doctype html><html><body style="margin:0;background:#eef1f5;padd
   + '<table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr><td align="center">'
   + '<table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background:#fff;border-radius:14px;overflow:hidden;">'
   + '<tr><td style="background:#0B1420;padding:22px 28px;">'
-  + '<img src="'+SITE+'/logo-km.png" width="40" height="40" alt="Kabar Market" style="vertical-align:middle;border-radius:8px;">'
+  + '<img src="'+SITE+'/assets/logo-header.png?v=2" width="40" height="40" alt="Kabar Market" style="vertical-align:middle;border-radius:8px;">'
   + '<span style="font:700 20px Arial,sans-serif;color:#fff;vertical-align:middle;margin-left:10px;">Kabar Market</span>'
   + '</td></tr>'
   + '<tr><td style="padding:24px 28px 6px;">'
