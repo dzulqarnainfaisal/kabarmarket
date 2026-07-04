@@ -1,18 +1,66 @@
 {
-  "updated": "2026-07-04T14:21:41.712Z",
+  "updated": "2026-07-04T15:37:34.423Z",
   "articles": [
+    {
+      "cat": "Ekonomi",
+      "title": "Cuma di Transmart Full Day Sale Rak Besi Rp 800 Ribuan",
+      "desc": "Transmart kembali menggelar program Full Day Sale pada Minggu (5/7/2026). D",
+      "time": "8 menit lalu",
+      "date": "4 Jul 2026",
+      "source": "Detik Finance",
+      "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8560102/cuma-di-transmart-full-day-sale-rak-besi-rp-800-ribuan",
+      "region": "Indonesia",
+      "image": "https://akcdn.detik.net.id/community/media/visual/2026/07/04/transmart-full-day-sale-rak-besi-1783178899734_169.png?w=360&amp;q=90",
+      "source_icon": null,
+      "highlight": true,
+      "body": [
+        "Transmart kembali menggelar program Full Day Sale pada Minggu (5/7/2026). D"
+      ]
+    },
+    {
+      "cat": "Ekonomi",
+      "title": "WNA Nekat Beli BBM Subsidi Dihukum Denda Rp 88 Juta!",
+      "desc": "WNA asal Singapura dijatuhi denda Rp 88 juta gara-gara isi BBM bersubsidi di Malaysia.",
+      "time": "55 menit lalu",
+      "date": "4 Jul 2026",
+      "source": "Detik Finance",
+      "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8560065/wna-nekat-beli-bbm-subsidi-dihukum-denda-rp-88-juta",
+      "region": "Indonesia",
+      "image": "https://akcdn.detik.net.id/community/media/visual/2026/04/14/ancaman-krisis-bbm-malaysia-siaga-hadapi-gangguan-energi-1776138658946_169.jpeg?w=360&amp;q=90",
+      "source_icon": null,
+      "highlight": false,
+      "body": [
+        "WNA asal Singapura dijatuhi denda Rp 88 juta gara-gara isi BBM bersubsidi di Malaysia."
+      ]
+    },
+    {
+      "cat": "Ekonomi",
+      "title": "Cari Sepeda buat Anak? Di Transmart Full Day Sale, Mulai Rp 1 Jutaan",
+      "desc": "Transmart Full Day Sale kembali digelar pada Minggu (5/7/2026).",
+      "time": "1 jam lalu",
+      "date": "4 Jul 2026",
+      "source": "Detik Finance",
+      "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8560044/cari-sepeda-buat-anak-di-transmart-full-day-sale-mulai-rp-1-jutaan",
+      "region": "Indonesia",
+      "image": "https://akcdn.detik.net.id/community/media/visual/2026/07/04/transmart-full-day-sale-sepeda-1783174981128_169.png?w=360&amp;q=90",
+      "source_icon": null,
+      "highlight": false,
+      "body": [
+        "Transmart Full Day Sale kembali digelar pada Minggu (5/7/2026)."
+      ]
+    },
     {
       "cat": "Ekonomi",
       "title": "Ekonom Bandingkan RI dan Vietnam yang Kini Negara Menengah Atas",
       "desc": "Didik J Rachbini, Ekonom INDEF yang juga Rektor Universitas Paramadina membandingkan kondisi ekonomi Indonesia dan Vietnam yang kini negara menengah atas",
-      "time": "16 menit lalu",
+      "time": "2 jam lalu",
       "date": "4 Jul 2026",
       "source": "Detik Finance",
       "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8560033/ekonom-bandingkan-ri-dan-vietnam-yang-kini-negara-menengah-atas",
       "region": "Indonesia",
       "image": "https://akcdn.detik.net.id/community/media/visual/2025/12/02/purbaya-targetkan-pertumbuhan-ekonomi-57-di-kuartal-iv-1764670000397_169.jpeg?w=360&amp;q=90",
       "source_icon": null,
-      "highlight": true,
+      "highlight": false,
       "body": [
         "Didik J Rachbini, Ekonom INDEF yang juga Rektor Universitas Paramadina membandingkan kondisi ekonomi Indonesia dan Vietnam yang kini negara menengah atas"
       ]
@@ -21,7 +69,7 @@
       "cat": "Ekonomi",
       "title": "Proyek Sampah Jadi Listrik Bakal Serap 130 Ribu Tenaga Kerja",
       "desc": "Danantara memperkirakan pembangunan 33 fasilitas pengolahan sampah menjadi energi akan menyerap hingga 130 ribu tenaga kerja.",
-      "time": "21 menit lalu",
+      "time": "2 jam lalu",
       "date": "4 Jul 2026",
       "source": "Liputan6",
       "url": "https://www.liputan6.com/bisnis/read/8234884/proyek-sampah-jadi-listrik-bakal-serap-130-ribu-tenaga-kerja",
@@ -37,7 +85,7 @@
       "cat": "Ekonomi",
       "title": "Tadinya Mau PHK Karyawan Diganti AI, Perusahaan Ini Akhirnya Batalkan",
       "desc": "Sejumlah perusahaan mulai mengubah pandangannya tentang kecerdasan buatan (AI) yang diklaim dapat menggantikan semua pekerjaan.",
-      "time": "41 menit lalu",
+      "time": "2 jam lalu",
       "date": "4 Jul 2026",
       "source": "Detik Finance",
       "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8560024/tadinya-mau-phk-karyawan-diganti-ai-perusahaan-ini-akhirnya-batalkan",
@@ -50,161 +98,129 @@
       ]
     },
     {
-      "cat": "Ekonomi",
-      "title": "Bulog Dukung Gerakan Tanam Padi Serentak di Kawasan Cetak Sawah Merauke",
-      "desc": "Perum Bulog dukung swasembada pangan melalui Gerakan Tanam Padi Serentak di Papua Selatan. Fokus pada peningkatan produksi dan penyerapan hasil panen petani.",
-      "time": "53 menit lalu",
-      "date": "4 Jul 2026",
-      "source": "Detik Finance",
-      "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8560014/bulog-dukung-gerakan-tanam-padi-serentak-di-kawasan-cetak-sawah-merauke",
-      "region": "Indonesia",
-      "image": "https://akcdn.detik.net.id/community/media/visual/2026/07/04/bulog-1783171702039_169.jpeg?w=360&amp;q=90",
-      "source_icon": null,
-      "highlight": false,
-      "body": [
-        "Perum Bulog dukung swasembada pangan melalui Gerakan Tanam Padi Serentak di Papua Selatan. Fokus pada peningkatan produksi dan penyerapan hasil panen petani."
-      ]
-    },
-    {
-      "cat": "Ekonomi",
-      "title": "Cuaca Panas, Cari AC Baru di Transmart Full Day Sale, Bisa Diskon Rp 1,7 Juta",
-      "desc": "Transmart kembali menggelar program belanja hemat Full Day Sale Minggu, 5 Juli 2026.",
-      "time": "1 jam lalu",
-      "date": "4 Jul 2026",
-      "source": "Detik Finance",
-      "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8559974/cuaca-panas-cari-ac-baru-di-transmart-full-day-sale-bisa-diskon-rp-1-7-juta",
-      "region": "Indonesia",
-      "image": "https://akcdn.detik.net.id/community/media/visual/2026/07/04/ac-transmart-full-day-sale-1783170421343_169.jpeg?w=360&amp;q=90",
-      "source_icon": null,
-      "highlight": false,
-      "body": [
-        "Transmart kembali menggelar program belanja hemat Full Day Sale Minggu, 5 Juli 2026."
-      ]
-    },
-    {
-      "cat": "Ekonomi",
-      "title": "Daftar 95 Pinjol Legal OJK Juli 2026, Cek Sebelum Ajukan Pinjaman",
-      "desc": "OJK mencatat utang pinjol mencapai Rp 101,03 triliun per Maret 2026. Sebelum meminjam, cek daftar 95 pinjol legal yang telah berizin OJK.",
-      "time": "1 jam lalu",
-      "date": "4 Jul 2026",
-      "source": "Liputan6",
-      "url": "https://www.liputan6.com/bisnis/read/8234637/daftar-95-pinjol-legal-ojk-juli-2026-cek-sebelum-ajukan-pinjaman",
-      "region": "Indonesia",
-      "image": "https://cdn1-production-images-kly.akamaized.net/w8EXGl1ZCC0k1l0ZZO0GuhLxYKM=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4035208/original/006769000_1653635186-pinjol_1.jpg",
-      "source_icon": null,
-      "highlight": false,
-      "body": [
-        "OJK mencatat utang pinjol mencapai Rp 101,03 triliun per Maret 2026. Sebelum meminjam, cek daftar 95 pinjol legal yang telah berizin OJK."
-      ]
-    },
-    {
       "cat": "Saham",
-      "title": "Saya Menyebutnya: Ini Saham AI Terbaik untuk Dibeli di Paruh Kedua Tahun 2026",
-      "desc": "Saya Menyebutnya: Ini Saham AI Terbaik untuk Dibeli di Paruh Kedua Tahun 2026",
-      "time": "16 menit lalu",
-      "date": "4 Jul 2026",
-      "source": "Yahoo Finance",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/im-calling-best-ai-stock-140500236.html",
-      "region": "Internasional",
-      "image": "https://media.zenfs.com/en/motleyfool.com/7623307367121d77023072d1bf1936a1",
-      "source_icon": null,
-      "highlight": true,
-      "body": [
-        "Saya Menyebutnya: Ini Saham AI Terbaik untuk Dibeli di Paruh Kedua Tahun 2026"
-      ]
-    },
-    {
-      "cat": "Saham",
-      "title": "Heartflow vs. Iovance Biotherapeutics: Saham Layanan Kesehatan Mana yang Lebih Baik Dibeli di Tahun 2026?",
-      "desc": "Heartflow vs. Iovance Biotherapeutics: Saham Layanan Kesehatan Mana yang Lebih Baik Dibeli di Tahun 2026?",
-      "time": "16 menit lalu",
-      "date": "4 Jul 2026",
-      "source": "Yahoo Finance",
-      "url": "https://finance.yahoo.com/healthcare/articles/heartflow-vs-iovance-biotherapeutics-healthcare-140459182.html",
-      "region": "Internasional",
-      "image": "https://media.zenfs.com/en/motleyfool.com/c8a12b310311b5cefb46ed67e02c2172",
-      "source_icon": null,
-      "highlight": false,
-      "body": [
-        "Heartflow vs. Iovance Biotherapeutics: Saham Layanan Kesehatan Mana yang Lebih Baik Dibeli di Tahun 2026?"
-      ]
-    },
-    {
-      "cat": "Saham",
-      "title": "Kemerosotan Pasar Memiliki Keuntungan Tersembunyi bagi Orang Berusia 74 Tahun: RMD Tahun Depan Menyusut, Begitu pula Pajak Jaminan Sosial.",
-      "desc": "Kemerosotan Pasar Memiliki Keuntungan Tersembunyi bagi Orang Berusia 74 Tahun: RMD Tahun Depan Menyusut, Begitu pula Pajak Jaminan Sosial.",
-      "time": "17 menit lalu",
-      "date": "4 Jul 2026",
-      "source": "Yahoo Finance",
-      "url": "https://finance.yahoo.com/markets/articles/market-slump-hidden-upside-74-140429207.html",
-      "region": "Internasional",
-      "image": "https://media.zenfs.com/en/24_7_wall_st__718/bc5ddbba9e451072d1a3f831ad818c4a",
-      "source_icon": null,
-      "highlight": false,
-      "body": [
-        "Kemerosotan Pasar Memiliki Keuntungan Tersembunyi bagi Orang Berusia 74 Tahun: RMD Tahun Depan Menyusut, Begitu pula Pajak Jaminan Sosial."
-      ]
-    },
-    {
-      "cat": "Saham",
-      "title": "CEO Custom Health membahas ekspansi AS setelah debut TSX - ICYMI",
-      "desc": "CEO Custom Health membahas ekspansi AS setelah debut TSX - ICYMI",
+      "title": "Pertanyaan $246.500: Apakah 401(k) Anda pada usia 60 Cukup untuk Pensiun",
+      "desc": "Pertanyaan $246.500: Apakah 401(k) Anda pada usia 60 Cukup untuk Pensiun",
       "time": "22 menit lalu",
       "date": "4 Jul 2026",
       "source": "Yahoo Finance",
-      "url": "https://finance.yahoo.com/healthcare/articles/custom-health-ceo-discusses-us-140000517.html",
+      "url": "https://finance.yahoo.com/markets/articles/246-500-401-k-60-151525247.html",
       "region": "Internasional",
-      "image": "https://media.zenfs.com/en/proactive_us_504/09ac4a9d4da748758a16bdc6dc0bea8f",
+      "image": "https://media.zenfs.com/en/24_7_wall_st__718/4d5876885d5509ebb07758cefd0c60fe",
       "source_icon": null,
-      "highlight": false,
+      "highlight": true,
       "body": [
-        "CEO Custom Health membahas ekspansi AS setelah debut TSX - ICYMI"
+        "Pertanyaan $246.500: Apakah 401(k) Anda pada usia 60 Cukup untuk Pensiun"
       ]
     },
     {
       "cat": "Saham",
-      "title": "Permintaan Platform SoC yang Kuat Menegaskan Ambarella, Inc. (AMBA) sebagai Saham Robotika Teratas untuk Dibeli Menurut Penjual Pendek",
-      "desc": "Permintaan Platform SoC yang Kuat Menegaskan Ambarella, Inc. (AMBA) sebagai Saham Robotika Teratas untuk Dibeli Menurut Penjual Pendek",
-      "time": "28 menit lalu",
+      "title": "Stablecoin Baru Membidik USDC Circle. Inilah Yang Perlu Diketahui Investor.",
+      "desc": "Stablecoin Baru Membidik USDC Circle. Inilah Yang Perlu Diketahui Investor.",
+      "time": "26 menit lalu",
       "date": "4 Jul 2026",
       "source": "Yahoo Finance",
-      "url": "https://finance.yahoo.com/technology/ai/articles/strong-soc-platforms-demand-assert-135303563.html",
+      "url": "https://finance.yahoo.com/markets/crypto/articles/stablecoin-taking-aim-circles-usdc-151100931.html",
       "region": "Internasional",
-      "image": "https://media.zenfs.com/en/insidermonkey.com/e56cd585b77e034cbf5f71a40e81307d",
+      "image": "https://media.zenfs.com/en/motleyfool.com/0167f5e989db906921ab55a3e6795efe",
       "source_icon": null,
       "highlight": false,
       "body": [
-        "Permintaan Platform SoC yang Kuat Menegaskan Ambarella, Inc. (AMBA) sebagai Saham Robotika Teratas untuk Dibeli Menurut Penjual Pendek"
+        "Stablecoin Baru Membidik USDC Circle. Inilah Yang Perlu Diketahui Investor."
       ]
     },
     {
       "cat": "Saham",
-      "title": "Zebra Technologies Meluncurkan Kamera CV70 CXP untuk Aplikasi Penglihatan Mesin Berkecepatan Tinggi",
-      "desc": "Zebra Technologies Meluncurkan Kamera CV70 CXP untuk Aplikasi Penglihatan Mesin Berkecepatan Tinggi",
+      "title": "Kepala Manajemen Aset Ladder Capital Menjual 35.000 Saham — Apa yang Sebenarnya Dipertaruhkan?",
+      "desc": "Kepala Manajemen Aset Ladder Capital Menjual 35.000 Saham — Apa yang Sebenarnya Dipertaruhkan?",
       "time": "29 menit lalu",
       "date": "4 Jul 2026",
       "source": "Yahoo Finance",
-      "url": "https://finance.yahoo.com/technology/articles/zebra-technologies-unveils-cv70-cxp-135250379.html",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/ladder-capitals-asset-management-head-150801394.html",
       "region": "Internasional",
-      "image": "https://media.zenfs.com/en/insidermonkey.com/bdf067fb3c847a85a4921908a7fc4e22",
+      "image": "https://media.zenfs.com/en/motleyfool.com/32b2b775ed06cba8de27aabcf8574343",
       "source_icon": null,
       "highlight": false,
       "body": [
-        "Zebra Technologies Meluncurkan Kamera CV70 CXP untuk Aplikasi Penglihatan Mesin Berkecepatan Tinggi"
+        "Kepala Manajemen Aset Ladder Capital Menjual 35.000 Saham — Apa yang Sebenarnya Dipertaruhkan?"
+      ]
+    },
+    {
+      "cat": "Saham",
+      "title": "3 Saham untuk Dibeli pada Penjualan Infrastruktur AI",
+      "desc": "3 Saham untuk Dibeli pada Penjualan Infrastruktur AI",
+      "time": "32 menit lalu",
+      "date": "4 Jul 2026",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/3-stocks-buy-ai-infrastructure-150500852.html",
+      "region": "Internasional",
+      "image": "https://media.zenfs.com/en/motleyfool.com/f07a90e201a46020c4d3867fa66eaac9",
+      "source_icon": null,
+      "highlight": false,
+      "body": [
+        "3 Saham untuk Dibeli pada Penjualan Infrastruktur AI"
+      ]
+    },
+    {
+      "cat": "Saham",
+      "title": "Vanguard VCIT vs iShares MUB: ETF Obligasi Mana yang Harus Anda Pilih?",
+      "desc": "Vanguard VCIT vs iShares MUB: ETF Obligasi Mana yang Harus Anda Pilih?",
+      "time": "36 menit lalu",
+      "date": "4 Jul 2026",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/options/articles/vanguard-vcit-vs-ishares-mub-150146975.html",
+      "region": "Internasional",
+      "image": "https://media.zenfs.com/en/motleyfool.com/5419adddb59219a2b0ebacb6b916c55b",
+      "source_icon": null,
+      "highlight": false,
+      "body": [
+        "Vanguard VCIT vs iShares MUB: ETF Obligasi Mana yang Harus Anda Pilih?"
+      ]
+    },
+    {
+      "cat": "Saham",
+      "title": "Citi Melihat Gelombang Panas Eropa Mendorong Pertumbuhan Jangka Panjang bagi Perusahaan HVAC AS",
+      "desc": "Citi Melihat Gelombang Panas Eropa Mendorong Pertumbuhan Jangka Panjang bagi Perusahaan HVAC AS",
+      "time": "38 menit lalu",
+      "date": "4 Jul 2026",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/energy/articles/citi-sees-european-heatwaves-driving-150000662.html",
+      "region": "Internasional",
+      "image": "https://media.zenfs.com/en/investorshub_458/0ca87aa0ecb9172a1394280ebb8273d4",
+      "source_icon": null,
+      "highlight": false,
+      "body": [
+        "Citi Melihat Gelombang Panas Eropa Mendorong Pertumbuhan Jangka Panjang bagi Perusahaan HVAC AS"
       ]
     },
     {
       "cat": "Crypto",
-      "title": "Di dalam Mesin Perdagangan di Balik 'Swap Cepat dan Mulus' ChangeNOW",
+      "title": "Pembeli token kripto Trump turun $3,8 miliar, menurut data blockchain",
+      "desc": "Token TRUMP turun 96% dari puncaknya, dan 85% dompet pasar sekunder untuk WLFI berada di bawah air, mencerminkan penurunan yang lebih luas di sektor ini.",
+      "time": "7 menit lalu",
+      "date": "4 Jul 2026",
+      "source": "CoinDesk",
+      "url": "https://www.coindesk.com/business/2026/07/04/trump-s-crypto-token-buyers-are-down-usd3-8-billion-blockchain-data-shows",
+      "region": "Indonesia",
+      "image": "https://cdn.sanity.io/images/s3y3vcno/production/84a461bc77fdc8be2e55a8cfa0a0aa196e958396-4928x2772.jpg?fm=jpg&amp;w=1920&amp;h=1080&amp;crop=focalpoint&amp;fit=clip",
+      "source_icon": null,
+      "highlight": true,
+      "body": [
+        "Token TRUMP turun 96% dari puncaknya, dan 85% dompet pasar sekunder untuk WLFI berada di bawah air, mencerminkan penurunan yang lebih luas di sektor ini."
+      ]
+    },
+    {
+      "cat": "Crypto",
+      "title": "Di Dalam Mesin Perdagangan di Balik 'Swap Cepat dan Mulus' ChangeNOW",
       "desc": "CSO ChangeNOW Pauline Shangett menggali infrastruktur yang mendasari frontend bursa yang sederhana dan efisien.",
-      "time": "21 menit lalu",
+      "time": "2 jam lalu",
       "date": "4 Jul 2026",
       "source": "Decrypt",
       "url": "https://decrypt.co/372679/inside-the-trading-engine-behind-changenows-fast-seamless-swaps",
       "region": "Indonesia",
       "image": "https://img.decrypt.co/insecure/rs:fill:1024:512:1:0/plain/https://cdn.decrypt.co/wp-content/uploads/2026/07/changenow-02-tweak-gID_7.jpg@png",
       "source_icon": null,
-      "highlight": true,
+      "highlight": false,
       "body": [
         "CSO ChangeNOW Pauline Shangett menggali infrastruktur yang mendasari frontend bursa yang sederhana dan efisien."
       ]
@@ -213,7 +229,7 @@
       "cat": "Crypto",
       "title": "Eropa memimpin regulasi kripto. Sekarang implementasinya harus sesuai dengan ambisi",
       "desc": "Eropa memimpin regulasi kripto. Sekarang implementasinya harus sesuai dengan ambisi",
-      "time": "22 menit lalu",
+      "time": "2 jam lalu",
       "date": "4 Jul 2026",
       "source": "CoinDesk",
       "url": "https://www.coindesk.com/opinion/2026/07/04/europe-led-on-crypto-regulation-now-implementation-must-match-ambition",
@@ -228,8 +244,8 @@
     {
       "cat": "Crypto",
       "title": "Tindakan UE untuk menghalangi investor ritel dari ledakan ledakan pasar prediksi bernilai miliaran dolar",
-      "desc": "Regulator di kawasan ini menekankan bahwa fungsi sebenarnya suatu produk sebagai turunan lebih penting daripada nama komersial atau label ketika menilai kepatuhan.",
-      "time": "25 menit lalu",
+      "desc": "Regulator di kawasan ini menekankan bahwa fungsi sebenarnya suatu produk sebagai turunan lebih penting daripada nama komersial atau labelnya ketika menilai kepatuhan.",
+      "time": "2 jam lalu",
       "date": "4 Jul 2026",
       "source": "CoinDesk",
       "url": "https://www.coindesk.com/policy/2026/07/04/eu-moves-to-block-retail-investors-from-explosive-boom-of-multibillion-dollar-prediction-markets",
@@ -238,14 +254,14 @@
       "source_icon": null,
       "highlight": false,
       "body": [
-        "Regulator di kawasan ini menekankan bahwa fungsi sebenarnya suatu produk sebagai turunan lebih penting daripada nama komersial atau label ketika menilai kepatuhan."
+        "Regulator di kawasan ini menekankan bahwa fungsi sebenarnya suatu produk sebagai turunan lebih penting daripada nama komersial atau labelnya ketika menilai kepatuhan."
       ]
     },
     {
       "cat": "Crypto",
       "title": "Pencipta Bollinger Bands mengincar akhir pasar bearish Bitcoin, pembalikan berbentuk 'W'",
       "desc": "Kekuatan harga Bitcoin dapat \"memecahkan\" seluruh tren turun jika pola pembalikan selesai, saran John Bollinger sehubungan dengan rebound BTC.",
-      "time": "1 jam lalu",
+      "time": "2 jam lalu",
       "date": "4 Jul 2026",
       "source": "Cointelegraph",
       "url": "https://cointelegraph.com/markets/bollinger-bands-creator-eyes-bitcoin-bear-market-end-w-shaped-reversal?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -261,7 +277,7 @@
       "cat": "Crypto",
       "title": "Inilah yang terjadi di kripto hari ini",
       "desc": "Ingin tahu apa yang terjadi di crypto hari ini? Berikut adalah berita terbaru tentang tren dan peristiwa harian yang memengaruhi harga Bitcoin, blockchain, DeFi, Web3, dan regulasi kripto.",
-      "time": "2 jam lalu",
+      "time": "4 jam lalu",
       "date": "4 Jul 2026",
       "source": "Cointelegraph",
       "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -271,22 +287,6 @@
       "highlight": false,
       "body": [
         "Ingin tahu apa yang terjadi di crypto hari ini? Berikut adalah berita terbaru tentang tren dan peristiwa harian yang memengaruhi harga Bitcoin, blockchain, DeFi, Web3, dan regulasi kripto."
-      ]
-    },
-    {
-      "cat": "Crypto",
-      "title": "Peraturan kripto baru yang berani di Inggris menjanjikan untuk membuka perdagangan global, namun hambatan kepatuhan yang besar masih mengancam peluncurannya",
-      "desc": "Kerangka kerja kripto FCA Inggris telah dipuji karena memprioritaskan likuiditas global dan adopsi institusional, namun proses otorisasinya diperkirakan akan sulit.",
-      "time": "2 jam lalu",
-      "date": "4 Jul 2026",
-      "source": "CoinDesk",
-      "url": "https://www.coindesk.com/policy/2026/07/04/uk-s-bold-new-crypto-rules-promise-to-unlock-global-trading-but-huge-compliance-hurdles-still-threaten-the-rollout",
-      "region": "Indonesia",
-      "image": "https://cdn.sanity.io/images/s3y3vcno/production/e0513d0a4817ed047117319c2338d720ea07bb82-1920x1439.jpg?fm=jpg&amp;w=1920&amp;h=1080&amp;crop=focalpoint&amp;fit=clip",
-      "source_icon": null,
-      "highlight": false,
-      "body": [
-        "Kerangka kerja kripto FCA Inggris telah dipuji karena memprioritaskan likuiditas global dan adopsi institusional, namun proses otorisasinya diperkirakan akan sulit."
       ]
     }
   ]
