@@ -1,18 +1,34 @@
 {
-  "updated": "2026-07-04T10:12:15.598Z",
+  "updated": "2026-07-04T10:22:51.711Z",
   "articles": [
+    {
+      "cat": "Ekonomi",
+      "title": "Turki Investasi US$ 130 Juta ke KEK Sei Mangkei",
+      "desc": "PT Evyap Sabun Indonesia resmi beroperasi di KEK Sei Mangkei dengan investasi sekitar US$ 130 juta.",
+      "time": "8 menit lalu",
+      "date": "4 Jul 2026",
+      "source": "Liputan6",
+      "url": "https://www.liputan6.com/bisnis/read/8233153/turki-investasi-us-130-juta-ke-kek-sei-mangkei",
+      "region": "Indonesia",
+      "image": "https://cdn1-production-images-kly.akamaized.net/iDT-GnQFdnqwmjUSDtYamu_hy1Y=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/9259725/original/094511800_1783155812-2f2J2cRKgvKWOTXp4l2cOBUcTmQUxK0PD4igFR1C.jpg",
+      "source_icon": null,
+      "highlight": true,
+      "body": [
+        "PT Evyap Sabun Indonesia resmi beroperasi di KEK Sei Mangkei dengan investasi sekitar US$ 130 juta."
+      ]
+    },
     {
       "cat": "Ekonomi",
       "title": "Danantara dan BNI Bahas Strategi Pembiayaan Sektor Produktif",
       "desc": "BNI dan Danantara membahas penguatan aksi korporasi, sinergi BUMN, serta peningkatan pembiayaan sektor produktif.",
-      "time": "21 menit lalu",
+      "time": "32 menit lalu",
       "date": "4 Jul 2026",
       "source": "Liputan6",
       "url": "https://www.liputan6.com/bisnis/read/8232435/danantara-dan-bni-bahas-strategi-pembiayaan-sektor-produktif",
       "region": "Indonesia",
       "image": "https://cdn1-production-images-kly.akamaized.net/jrmAJcugJfePWQjq_qcxi6YoD_g=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/9257584/original/059554100_1783153169-WhatsApp_Image_2026-07-04_at_11.52.09.jpeg",
       "source_icon": null,
-      "highlight": true,
+      "highlight": false,
       "body": [
         "BNI dan Danantara membahas penguatan aksi korporasi, sinergi BUMN, serta peningkatan pembiayaan sektor produktif."
       ]
@@ -21,7 +37,7 @@
       "cat": "Ekonomi",
       "title": "BNI Hadirkan Promo Spesial Rayakan 80 Tahun Pengabdian untuk Negeri",
       "desc": "BNI rayakan HUT ke-80 dengan program 'Terus Ada, Ada Terus', menawarkan promo menarik di berbagai sektor untuk apresiasi nasabah. Nikmati diskon hingga Rp8 juta",
-      "time": "27 menit lalu",
+      "time": "38 menit lalu",
       "date": "4 Jul 2026",
       "source": "Detik Finance",
       "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8559728/bni-hadirkan-promo-spesial-rayakan-80-tahun-pengabdian-untuk-negeri",
@@ -37,7 +53,7 @@
       "cat": "Ekonomi",
       "title": "Orang Malaysia Doyan Naik Whoosh, Januari-Juni Tembus 74.902 Penumpang",
       "desc": "Kereta Cepat Indonesia-China (KCIC) mencatat penumpang warga negara asing (WNA) sebanyak 184.740 sepanjang periode Januari-Juni 2026.",
-      "time": "40 menit lalu",
+      "time": "51 menit lalu",
       "date": "4 Jul 2026",
       "source": "Detik Finance",
       "url": "https://finance.detik.com/infrastruktur/d-8559733/orang-malaysia-doyan-naik-whoosh-januari-juni-tembus-74-902-penumpang",
@@ -53,7 +69,7 @@
       "cat": "Ekonomi",
       "title": "Libur Sekolah Picu Lonjakan Pengguna KRL Jabodetabek",
       "desc": "Mobilitas warga selama libur sekolah mendorong lonjakan pengguna KRL Jabodetabek. Jumlah penumpang pada hari kerja menembus satu juta orang per hari.",
-      "time": "42 menit lalu",
+      "time": "52 menit lalu",
       "date": "4 Jul 2026",
       "source": "Detik Finance",
       "url": "https://finance.detik.com/foto-bisnis/d-8558794/libur-sekolah-picu-lonjakan-pengguna-krl-jabodetabek",
@@ -82,33 +98,65 @@
       ]
     },
     {
-      "cat": "Ekonomi",
-      "title": "Intip Ekonomi Cabo Verde, Negara yang Pemainnya Bikin Messi cs Kewalahan",
-      "desc": "Intip ekonomi Cabo Verde atau Tanjung Verde, negara yang sempat bikin Argentina kewalahan di Piala Dunia.",
-      "time": "1 jam lalu",
+      "cat": "Saham",
+      "title": "Trump Accounts akan debut saat AS memulai perayaan Hari Kemerdekaan ke-250",
+      "desc": "Trump Accounts akan debut saat AS memulai perayaan Hari Kemerdekaan ke-250",
+      "time": "16 menit lalu",
+      "date": "4 Jul 2026",
+      "source": "Investing.com",
+      "url": "https://www.investing.com/news/stock-market-news/trump-accounts-to-debut-as-us-kicks-off-250th-independence-day-celebrations-4775357",
+      "region": "Internasional",
+      "image": "https://i-invdn-com.investing.com/trkd-images/LYNXMPEM6309F_L.jpg",
+      "source_icon": null,
+      "highlight": true,
+      "body": [
+        "Trump Accounts akan debut saat AS memulai perayaan Hari Kemerdekaan ke-250"
+      ]
+    },
+    {
+      "cat": "Saham",
+      "title": "Pegang 24,99% Saham, GOTO Buka Suara soal PHK Massal Tokopedia",
+      "desc": "PT GoTo Gojek Tokopedia Tbk (GOTO) buka suara terkait pemutusan hubungan kerja (PHK) Tokopedia usai diambil alih TikTok.",
+      "time": "17 menit lalu",
       "date": "4 Jul 2026",
       "source": "Detik Finance",
-      "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8559696/intip-ekonomi-cabo-verde-negara-yang-pemainnya-bikin-messi-cs-kewalahan",
+      "url": "https://finance.detik.com/bursa-dan-valas/d-8559769/pegang-24-99-saham-goto-buka-suara-soal-phk-massal-tokopedia",
       "region": "Indonesia",
-      "image": "https://akcdn.detik.net.id/community/media/visual/2025/10/14/cape-verde-1760414406482_169.jpeg?w=360&amp;q=90",
+      "image": "https://akcdn.detik.net.id/community/media/visual/2024/01/31/ilustrasi-logo-goto_169.jpeg?w=360&amp;q=90",
       "source_icon": null,
       "highlight": false,
       "body": [
-        "Intip ekonomi Cabo Verde atau Tanjung Verde, negara yang sempat bikin Argentina kewalahan di Piala Dunia."
+        "PT GoTo Gojek Tokopedia Tbk (GOTO) buka suara terkait pemutusan hubungan kerja (PHK) Tokopedia usai diambil alih TikTok."
+      ]
+    },
+    {
+      "cat": "Saham",
+      "title": "Continental menjual ContiTech ke Lone Star Funds seharga €4 miliar",
+      "desc": "Continental menjual ContiTech ke Lone Star Funds seharga €4 miliar",
+      "time": "19 menit lalu",
+      "date": "4 Jul 2026",
+      "source": "Investing.com",
+      "url": "https://www.investing.com/news/stock-market-news/continental-sells-contitech-to-lone-star-funds-for-4-bln-4775356",
+      "region": "Internasional",
+      "image": null,
+      "source_icon": null,
+      "highlight": false,
+      "body": [
+        "Continental menjual ContiTech ke Lone Star Funds seharga €4 miliar"
       ]
     },
     {
       "cat": "Saham",
       "title": "Suku bunga hipotek dan pembiayaan kembali hari ini, Sabtu, 4 Juli: Suku bunga beragam pada liburan 4 Juli ini",
       "desc": "Suku bunga hipotek dan pembiayaan kembali hari ini, Sabtu, 4 Juli: Suku bunga beragam pada liburan 4 Juli ini",
-      "time": "12 menit lalu",
+      "time": "23 menit lalu",
       "date": "4 Jul 2026",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/personal-finance/mortgages/article/mortgage-and-refinance-interest-rates-today-saturday-july-4-rates-are-mixed-this-july-4-holiday-100000596.html",
       "region": "Internasional",
       "image": "https://s.yimg.com/os/creatr-uploaded-images/2024-04/86ef4c20-03dd-11ef-b7af-5ddf7b57fe6e",
       "source_icon": null,
-      "highlight": true,
+      "highlight": false,
       "body": [
         "Suku bunga hipotek dan pembiayaan kembali hari ini, Sabtu, 4 Juli: Suku bunga beragam pada liburan 4 Juli ini"
       ]
@@ -117,7 +165,7 @@
       "cat": "Saham",
       "title": "Tarif CD terbaik hari ini, Sabtu 4 Juli 2026: Akun terbaik memberikan APY 4,10%",
       "desc": "Tarif CD terbaik hari ini, Sabtu 4 Juli 2026: Akun terbaik memberikan APY 4,10%",
-      "time": "12 menit lalu",
+      "time": "23 menit lalu",
       "date": "4 Jul 2026",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/personal-finance/banking/article/best-cd-rates-today-saturday-july-4-2026-best-account-provides-410-apy-100000802.html",
@@ -131,66 +179,18 @@
     },
     {
       "cat": "Saham",
-      "title": "Continental akan menjual unit ContiTech ke Lone Star Funds seharga $4,6 miliar",
-      "desc": "Continental akan menjual unit ContiTech ke Lone Star Funds seharga $4,6 miliar",
-      "time": "30 menit lalu",
+      "title": "Morgan Stanley beralih ke saham energi Eropa yang defensif, meningkatkan peringkat Galp",
+      "desc": "Morgan Stanley beralih ke saham energi Eropa yang defensif, meningkatkan peringkat Galp",
+      "time": "27 menit lalu",
       "date": "4 Jul 2026",
       "source": "Investing.com",
-      "url": "https://www.investing.com/news/stock-market-news/continental-to-sell-contitech-unit-to-lone-star-funds-for-46-billion-4775355",
+      "url": "https://www.investing.com/news/stock-market-news/morgan-stanley-shifts-to-defensive-european-energy-stocks-upgrades-galp-4775214",
       "region": "Internasional",
-      "image": "https://i-invdn-com.investing.com/trkd-images/LYNXMPEM6308J_L.jpg",
+      "image": "https://i-invdn-com.investing.com/news/LYNXNPEC6J0XD_M.jpg",
       "source_icon": null,
       "highlight": false,
       "body": [
-        "Continental akan menjual unit ContiTech ke Lone Star Funds seharga $4,6 miliar"
-      ]
-    },
-    {
-      "cat": "Saham",
-      "title": "Next dari Inggris merencanakan tawaran pengambilalihan Harvey Nichols, Sky News melaporkan",
-      "desc": "Next dari Inggris merencanakan tawaran pengambilalihan Harvey Nichols, Sky News melaporkan",
-      "time": "59 menit lalu",
-      "date": "4 Jul 2026",
-      "source": "Investing.com",
-      "url": "https://www.investing.com/news/stock-market-news/uks-next-plans-takeover-bid-for-harvey-nichols-sky-news-reports-4775353",
-      "region": "Internasional",
-      "image": "https://i-invdn-com.investing.com/trkd-images/LYNXMPEM6308H_L.jpg",
-      "source_icon": null,
-      "highlight": false,
-      "body": [
-        "Next dari Inggris merencanakan tawaran pengambilalihan Harvey Nichols, Sky News melaporkan"
-      ]
-    },
-    {
-      "cat": "Saham",
-      "title": "IHSG Turun ke Level 5.875, Nilai Transaksi Bursa Anjlok Hampir 36%",
-      "desc": "IHSG melemah 0,35% pada pekan 29 Juni-3 Juli 2026. Nilai transaksi harian BEI anjlok hampir 36%, sementara investor asing masih mencatat jual bersih.",
-      "time": "1 jam lalu",
-      "date": "4 Jul 2026",
-      "source": "Liputan6",
-      "url": "https://www.liputan6.com/saham/read/8226538/ihsg-turun-ke-level-5875-nilai-transaksi-bursa-anjlok-hampir-36",
-      "region": "Indonesia",
-      "image": "https://cdn0-production-images-kly.akamaized.net/ZRRqiT15TrUOeT5j8OnqVrWCI5U=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4277612/original/069968900_1672400409-Penutupan_Perdagangan_Bursa_Efek_Indonesia_2022-Angga-1.JPG",
-      "source_icon": null,
-      "highlight": false,
-      "body": [
-        "IHSG melemah 0,35% pada pekan 29 Juni-3 Juli 2026. Nilai transaksi harian BEI anjlok hampir 36%, sementara investor asing masih mencatat jual bersih."
-      ]
-    },
-    {
-      "cat": "Saham",
-      "title": "Iforte Gelar Tender Offer Saham IBST di Harga Rp 5.400",
-      "desc": "Seiring go private dan delisting PT Inti Bangun Sejahtera Tbk (IBST) telah disetujui dalam RUPSLB, Iforte menggelar tender offer saham IBST.",
-      "time": "2 jam lalu",
-      "date": "4 Jul 2026",
-      "source": "Liputan6",
-      "url": "https://www.liputan6.com/saham/read/8227240/iforte-gelar-tender-offer-saham-ibst-di-harga-rp-5400",
-      "region": "Indonesia",
-      "image": "https://cdn1-production-images-kly.akamaized.net/-7BckhRnBYo5liqIOdphEpiliRg=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4112072/original/006568500_1659528503-IHSG_Ditutup_Menguat-Angga-2.jpg",
-      "source_icon": null,
-      "highlight": false,
-      "body": [
-        "Seiring go private dan delisting PT Inti Bangun Sejahtera Tbk (IBST) telah disetujui dalam RUPSLB, Iforte menggelar tender offer saham IBST."
+        "Morgan Stanley beralih ke saham energi Eropa yang defensif, meningkatkan peringkat Galp"
       ]
     },
     {
@@ -212,7 +212,7 @@
     {
       "cat": "Crypto",
       "title": "XRP naik 8% karena kerugian pemegang rekor menandakan imbalan risiko yang lebih baik bagi pembeli",
-      "desc": "MVRV token 30 hari dan 365 hari, ukuran seberapa jauh pemegangnya berada di bawah air, berada di dekat -45% dan -47%, posisi terendah yang menurut Santiment belum pernah dicapai XRP sebelumnya. Beberapa pedagang membaca kerugian yang berkepanjangan sebagai sinyal pelawan.",
+      "desc": "MVRV token selama 30 hari dan 365 hari, ukuran seberapa jauh pemegangnya berada di bawah air, berada di dekat -45% dan -47%, posisi terendah yang menurut Santiment belum pernah dicapai XRP sebelumnya. Beberapa pedagang membaca kerugian yang berkepanjangan sebagai sinyal pelawan.",
       "time": "3 jam lalu",
       "date": "4 Jul 2026",
       "source": "CoinDesk",
@@ -222,14 +222,14 @@
       "source_icon": null,
       "highlight": false,
       "body": [
-        "MVRV token 30 hari dan 365 hari, ukuran seberapa jauh pemegangnya berada di bawah air, berada di dekat -45% dan -47%, posisi terendah yang menurut Santiment belum pernah dicapai XRP sebelumnya. Beberapa pedagang membaca kerugian yang berkepanjangan sebagai sinyal pelawan."
+        "MVRV token selama 30 hari dan 365 hari, ukuran seberapa jauh pemegangnya berada di bawah air, berada di dekat -45% dan -47%, posisi terendah yang menurut Santiment belum pernah dicapai XRP sebelumnya. Beberapa pedagang membaca kerugian yang berkepanjangan sebagai sinyal pelawan."
       ]
     },
     {
       "cat": "Crypto",
       "title": "Pergerakan parabola Bitcoin berikutnya mungkin membutuhkan modal segar sebesar $1 triliun",
       "desc": "Pada siklus ini, uang baru senilai sekitar $697 miliar telah menghasilkan keuntungan sekitar 689%, dibandingkan dengan siklus sebelumnya di mana modal yang jauh lebih sedikit mendorong pengembalian hingga 50.000%.",
-      "time": "3 jam lalu",
+      "time": "4 jam lalu",
       "date": "4 Jul 2026",
       "source": "CoinDesk",
       "url": "https://www.coindesk.com/markets/2026/07/04/bitcoin-s-next-parabolic-run-may-need-usd1-trillion-in-fresh-capital",
