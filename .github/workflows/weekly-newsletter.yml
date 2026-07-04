@@ -1,0 +1,28 @@
+# Kirim newsletter mingguan Kabar Market ke pelanggan Brevo.
+# Jadwal: setiap Senin 06.30 WIB (= Minggu 23.30 UTC).
+
+name: Newsletter Mingguan
+
+on:
+  schedule:
+    - cron: '30 23 * * 0'   # Minggu 23:30 UTC = Senin 06:30 WIB
+  workflow_dispatch:        # bisa dijalankan manual untuk uji coba
+
+jobs:
+  send-newsletter:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ambil kode
+        uses: actions/checkout@v4
+
+      - name: Siapkan Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Kirim newsletter via Brevo
+        env:
+          BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
+          BREVO_LIST_ID: ${{ secrets.BREVO_LIST_ID }}
+          BREVO_SENDER_EMAIL: ${{ secrets.BREVO_SENDER_EMAIL }}
+        run: node automation/send-newsletter.js
