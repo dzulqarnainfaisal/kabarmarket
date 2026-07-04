@@ -1,17 +1,47 @@
 {
-  "updated": "2026-07-04T01:26:55.694Z",
+  "updated": "2026-07-04T05:02:25.222Z",
   "articles": [
+    {
+      "cat": "Ekonomi",
+      "title": "Harga Emas Antam 4 Juli 2026 Melonjak Rp 19.000, Buyback Lebih Tinggi",
+      "desc": "Update terbaru harga emas Antam hari ini Sabtu (4/7/2026) naik Rp 19.000 menjadi Rp 2.670.000 per gram. Harga buyback juga melesat Rp 29.000.",
+      "time": "2 jam lalu",
+      "date": "4 Jul 2026",
+      "source": "Liputan6",
+      "url": "https://www.liputan6.com/bisnis/read/8227605/harga-emas-antam-4-juli-2026-melonjak-rp-19000-buyback-lebih-tinggi",
+      "image": "https://cdn0-production-images-kly.akamaized.net/yUh4KjQqXIbQmS2-SKQr_t6NwCA=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4156441/original/068897800_1663062670-Emas5.jpg",
+      "source_icon": null,
+      "highlight": true,
+      "body": [
+        "Update terbaru harga emas Antam hari ini Sabtu (4/7/2026) naik Rp 19.000 menjadi Rp 2.670.000 per gram. Harga buyback juga melesat Rp 29.000."
+      ]
+    },
+    {
+      "cat": "Ekonomi",
+      "title": "Harga Minyak Dunia Stabil, Pasar Menanti Perdamaian AS-Iran",
+      "desc": "Harga minyak dunia bergerak tipis sepekan terakhir seiring harapan tercapainya kesepakatan damai antara Amerika Serikat dan Iran.",
+      "time": "3 jam lalu",
+      "date": "4 Jul 2026",
+      "source": "Liputan6",
+      "url": "https://www.liputan6.com/bisnis/read/8225945/harga-minyak-dunia-stabil-pasar-menanti-perdamaian-as-iran",
+      "image": "https://cdn1-production-images-kly.akamaized.net/dHaWYLazHMMVFaWO7R0g-yjvW3Y=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4166753/original/096704000_1663802133-Harga_Minyak_Dunia_2.jpg",
+      "source_icon": null,
+      "highlight": false,
+      "body": [
+        "Harga minyak dunia bergerak tipis sepekan terakhir seiring harapan tercapainya kesepakatan damai antara Amerika Serikat dan Iran."
+      ]
+    },
     {
       "cat": "Ekonomi",
       "title": "Shopee Buka Banyak Lowongan Kerja, Lulusan S1 Segera Lamar!",
       "desc": "Shopee kembali membuka lowongan pekerjaan mulai dari strategi bisnis hingga ShopeeFood. Simak syarat dan ketentuannya di sini.",
-      "time": "26 menit lalu",
+      "time": "4 jam lalu",
       "date": "4 Jul 2026",
       "source": "Liputan6",
       "url": "https://www.liputan6.com/bisnis/read/8159800/shopee-buka-banyak-lowongan-kerja-lulusan-s1-segera-lamar",
       "image": "https://cdn0-production-images-kly.akamaized.net/vTP7iEFEXfUtEPDJbsqoQS3Ec4Q=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/2942852/original/036020200_1571384417-Kantor_Shopee.jpg",
       "source_icon": null,
-      "highlight": true,
+      "highlight": false,
       "body": [
         "Shopee kembali membuka lowongan pekerjaan mulai dari strategi bisnis hingga ShopeeFood. Simak syarat dan ketentuannya di sini."
       ]
@@ -20,7 +50,7 @@
       "cat": "Ekonomi",
       "title": "Menkop Ungkap Arahan Prabowo: Koperasi Bisnis Sawit-Bikin Minyak Goreng",
       "desc": "Koperasi akan masuk dalam ekosistem industri sawit, mulai dari hulu hingga hilir.",
-      "time": "31 menit lalu",
+      "time": "4 jam lalu",
       "date": "4 Jul 2026",
       "source": "Detik Finance",
       "url": "https://finance.detik.com/industri/d-8559115/menkop-ungkap-arahan-prabowo-koperasi-bisnis-sawit-bikin-minyak-goreng",
@@ -35,7 +65,7 @@
       "cat": "Ekonomi",
       "title": "Harga Emas Dunia Akhiri Tren Penurunan Empat Pekan",
       "desc": "Harga emas dunia naik lebih dari 2% dalam sepekan setelah laporan tenaga kerja AS di bawah ekspektasi.",
-      "time": "39 menit lalu",
+      "time": "4 jam lalu",
       "date": "4 Jul 2026",
       "source": "Liputan6",
       "url": "https://www.liputan6.com/bisnis/read/8225129/harga-emas-dunia-akhiri-tren-penurunan-empat-pekan",
@@ -50,7 +80,7 @@
       "cat": "Ekonomi",
       "title": "Dua Tetangga Indonesia Naik Kelas Jadi Negara Menengah Atas",
       "desc": "Vietnam dan Filipina resmi naik kelas menjadi negara berpendapatan menengah atas, menurut Bank Dunia. Kenaikan ini berpotensi tingkatkan kepercayaan investor.",
-      "time": "1 jam lalu",
+      "time": "5 jam lalu",
       "date": "4 Jul 2026",
       "source": "Detik Finance",
       "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8559109/dua-tetangga-indonesia-naik-kelas-jadi-negara-menengah-atas",
@@ -62,46 +92,31 @@
       ]
     },
     {
-      "cat": "Ekonomi",
-      "title": "Di Balik Sukses Miniso: Ubah Barang Murah Terasa Mewah",
-      "desc": "Rahasia sukses Miniso dongkrak omzet lewat strategi 'Three Highs, Three Lows', desain emosional, dan kolaborasi IP global.",
-      "time": "1 jam lalu",
+      "cat": "Saham",
+      "title": "Bursa Saham Global Kompak Naik, Wall Street dan Eropa Catat Kinerja Positif",
+      "desc": "Bursa saham global menguat pada akhir pekan didorong harapan penurunan suku bunga The Fed, meski saham sektor semikonduktor masih tertekan.",
+      "time": "3 jam lalu",
       "date": "4 Jul 2026",
       "source": "Liputan6",
-      "url": "https://www.liputan6.com/bisnis/read/8204917/di-balik-sukses-miniso-ubah-barang-murah-terasa-mewah",
-      "image": "https://cdn0-production-images-kly.akamaized.net/Qt1z_P-q0X9Nzc0TUp_V0VbY9DQ=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4133390/original/008858500_1661261315-pexels-rossemarie-beringuel-7971460.jpg",
+      "url": "https://www.liputan6.com/saham/read/8226377/bursa-saham-global-kompak-naik-wall-street-dan-eropa-catat-kinerja-positif",
+      "image": "https://cdn1-production-images-kly.akamaized.net/SfsSqcyBIE4R97FyUZ5-NshW8mY=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3074967/original/055589500_1584006686-20200312-Wall-Street-2.jpg",
       "source_icon": null,
-      "highlight": false,
+      "highlight": true,
       "body": [
-        "Rahasia sukses Miniso dongkrak omzet lewat strategi 'Three Highs, Three Lows', desain emosional, dan kolaborasi IP global."
-      ]
-    },
-    {
-      "cat": "Ekonomi",
-      "title": "DJP Sebut Pencairan JHT Tak Selalu Kena Pajak, Ini Penjelasannya",
-      "desc": "DJP menjelaskan bahwa pencairan JHT BPJS Ketenagakerjaan tidak selalu dikenakan PPh. Perlakuan pajak tergantung cara dan waktu pencairan.",
-      "time": "2 jam lalu",
-      "date": "3 Jul 2026",
-      "source": "Detik Finance",
-      "url": "https://finance.detik.com/moneter/d-8559107/djp-sebut-pencairan-jht-tak-selalu-kena-pajak-ini-penjelasannya",
-      "image": "https://akcdn.detik.net.id/community/media/visual/2022/02/19/ilustrasi-baru-pencairan-jht-bpjs-ketenagakerjaan_169.jpeg?w=360&amp;q=90",
-      "source_icon": null,
-      "highlight": false,
-      "body": [
-        "DJP menjelaskan bahwa pencairan JHT BPJS Ketenagakerjaan tidak selalu dikenakan PPh. Perlakuan pajak tergantung cara dan waktu pencairan."
+        "Bursa saham global menguat pada akhir pekan didorong harapan penurunan suku bunga The Fed, meski saham sektor semikonduktor masih tertekan."
       ]
     },
     {
       "cat": "Saham",
       "title": "Strategi Investasi Saham Ketika IHSG Bergejolak",
       "desc": "Laju Indeks Harga Saham Gabungan (IHSG) masih fluktuatif. Berikut tiga strategi investasi saham.",
-      "time": "2 jam lalu",
+      "time": "6 jam lalu",
       "date": "3 Jul 2026",
       "source": "Liputan6",
       "url": "https://www.liputan6.com/saham/read/8208368/strategi-investasi-saham-ketika-ihsg-bergejolak",
       "image": "https://cdn0-production-images-kly.akamaized.net/2Rr78_11uGIDlqK-_w-cDTMS9og=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/5497597/original/013342400_1770638549-3.jpg",
       "source_icon": null,
-      "highlight": true,
+      "highlight": false,
       "body": [
         "Laju Indeks Harga Saham Gabungan (IHSG) masih fluktuatif. Berikut tiga strategi investasi saham."
       ]
@@ -110,7 +125,7 @@
       "cat": "Saham",
       "title": "Direktur Amman Mineral International Borong 1,4 Juta Saham",
       "desc": "Direktur Amman Mineral International (AMMN) Anthony Robert Mathias memborong 1,41 juta saham perseroan untuk investasi pribadi.",
-      "time": "13 jam lalu",
+      "time": "17 jam lalu",
       "date": "3 Jul 2026",
       "source": "Liputan6",
       "url": "https://www.liputan6.com/saham/read/8196295/direktur-amman-mineral-international-borong-14-juta-saham",
@@ -125,7 +140,7 @@
       "cat": "Saham",
       "title": "Free Float Mitratel Melonjak ke 18,9%",
       "desc": "PT Dayamitra Telekomunikasi Tbk (MTEL) atau Mitratel mendapatkan restu dari BEI kalau kepemilikan saham GIC dikategorikan sebagai free float.",
-      "time": "14 jam lalu",
+      "time": "18 jam lalu",
       "date": "3 Jul 2026",
       "source": "Liputan6",
       "url": "https://www.liputan6.com/saham/read/8203202/free-float-mitratel-melonjak-ke-189",
@@ -140,7 +155,7 @@
       "cat": "Saham",
       "title": "BEI Bakal Lelang 11 Saham Bursa 3 Agustus 2026",
       "desc": "BEI menyebutkan, 11 saham bursa yang dilelang atau telah dibeli kembali oleh bursa, hanya dapat dilakukan lewat lelang saham bursa.",
-      "time": "15 jam lalu",
+      "time": "19 jam lalu",
       "date": "3 Jul 2026",
       "source": "Liputan6",
       "url": "https://www.liputan6.com/saham/read/8196275/bei-bakal-lelang-11-saham-bursa-3-agustus-2026",
@@ -155,7 +170,7 @@
       "cat": "Saham",
       "title": "IHSG Ditutup Menguat 2%, Melesat ke Level 5.875",
       "desc": "IHSG ditutup menguat hingga 2% lebih setelah konsisten berada di zona hijau seharian.",
-      "time": "16 jam lalu",
+      "time": "19 jam lalu",
       "date": "3 Jul 2026",
       "source": "Detik Finance",
       "url": "https://finance.detik.com/bursa-dan-valas/d-8558597/ihsg-ditutup-menguat-2-melesat-ke-level-5-875",
@@ -167,25 +182,10 @@
       ]
     },
     {
-      "cat": "Saham",
-      "title": "IHSG Melesat ke 5.875, Sektor Industri Pimpin Kenaikan",
-      "desc": "Laju Indeks Harga Saham Gabungan (IHSG) bertahan di zona hijau pada penutupan perdagangan saham Jumat, (3/7/2026).",
-      "time": "16 jam lalu",
-      "date": "3 Jul 2026",
-      "source": "Liputan6",
-      "url": "https://www.liputan6.com/saham/read/8200069/ihsg-melesat-ke-5875-sektor-industri-pimpin-kenaikan",
-      "image": "https://cdn1-production-images-kly.akamaized.net/pqeTLpdDF_Otu-jaxdPCdFP9c1I=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/1505533/original/049196400_1486967389-Pembukaan-Saham2.jpg",
-      "source_icon": null,
-      "highlight": false,
-      "body": [
-        "Laju Indeks Harga Saham Gabungan (IHSG) bertahan di zona hijau pada penutupan perdagangan saham Jumat, (3/7/2026)."
-      ]
-    },
-    {
       "cat": "Crypto",
       "title": "Bursa Kripto Mulai Bidik Tokenisasi Karya Kreatif",
       "desc": "Bursa aset kripto, PT Central Finansial X (CFX), mulai memperluas pemanfaatan aset digital di luar aktivitas jual beli kripto.",
-      "time": "15 jam lalu",
+      "time": "18 jam lalu",
       "date": "3 Jul 2026",
       "source": "Detik Finance",
       "url": "https://finance.detik.com/fintech/d-8558700/bursa-kripto-mulai-bidik-tokenisasi-karya-kreatif",
