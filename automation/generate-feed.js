@@ -59,18 +59,28 @@ function run() {
 
   // Perbarui tanggal sitemap.xml agar Google tahu ada konten baru
   const today = new Date().toISOString().slice(0, 10);
+  const pageList = [
+    ['/', '1.0', 'hourly'],
+    ['/berita.html', '0.9', 'hourly'],
+    ['/ekonomi.html', '0.9', 'hourly'],
+    ['/saham.html', '0.9', 'hourly'],
+    ['/crypto.html', '0.9', 'hourly'],
+    ['/edukasi.html', '0.8', 'weekly'],
+    ['/tentang.html', '0.5', 'monthly'],
+  ];
   const sitemap = [
     '<?xml version="1.0" encoding="UTF-8"?>',
     '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
-    '  <url>',
-    '    <loc>' + SITE_URL + '/</loc>',
-    '    <lastmod>' + today + '</lastmod>',
-    '    <changefreq>hourly</changefreq>',
-    '    <priority>1.0</priority>',
-    '  </url>',
-    '</urlset>',
-    '',
-  ].join('\n');
+  ].concat(pageList.map(function(p){
+    return [
+      '  <url>',
+      '    <loc>' + SITE_URL + p[0] + '</loc>',
+      '    <lastmod>' + today + '</lastmod>',
+      '    <changefreq>' + p[2] + '</changefreq>',
+      '    <priority>' + p[1] + '</priority>',
+      '  </url>',
+    ].join('\n');
+  })).concat(['</urlset>', '']).join('\n');
   fs.writeFileSync(path.join(__dirname, '..', 'sitemap.xml'), sitemap, 'utf-8');
 
   console.log('OK: feed.xml + sitemap.xml diperbarui (' + articles.length + ' berita)');

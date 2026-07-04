@@ -25,18 +25,31 @@ const DEFAULT_FEEDS = [
 	{ url: 'https://rss.tempo.co/ekonomi', source: 'Tempo' },
 	{ url: 'https://feed.liputan6.com/rss/saham', source: 'Liputan6' },
 	{ url: 'https://feed.liputan6.com/rss/bisnis', source: 'Liputan6' },
+	// --- Crypto Indonesia ---
+	{ url: 'https://coinvestasi.com/feed', source: 'Coinvestasi', cat: 'Crypto' },
+	// --- Crypto internasional (update cepat & real-time global; dampak makro spt suku bunga The Fed) ---
+	{ url: 'https://www.coindesk.com/arc/outboundfeeds/rss/', source: 'CoinDesk', cat: 'Crypto', translate: true },
+	{ url: 'https://cointelegraph.com/rss', source: 'Cointelegraph', cat: 'Crypto', translate: true },
+	{ url: 'https://decrypt.co/feed', source: 'Decrypt', cat: 'Crypto', translate: true },
+	{ url: 'https://bitcoinmagazine.com/.rss/full', source: 'Bitcoin Magazine', cat: 'Crypto', translate: true },
+	// --- Saham internasional (Wall Street & pasar global; diterjemahkan otomatis ke Bahasa) ---
+	{ url: 'https://www.investing.com/rss/news_25.rss', source: 'Investing.com', cat: 'Saham', region: 'Internasional', translate: true },
+	{ url: 'https://feeds.content.dowjones.io/public/rss/mw_topstories', source: 'MarketWatch', cat: 'Saham', region: 'Internasional', translate: true },
+	{ url: 'https://www.cnbc.com/id/20910258/device/rss/rss.html', source: 'CNBC Markets', cat: 'Saham', region: 'Internasional', translate: true },
+	{ url: 'https://finance.yahoo.com/news/rssindex', source: 'Yahoo Finance', cat: 'Saham', region: 'Internasional', translate: true },
 ];
 
 function loadFeeds() {
 	const env = (process.env.NEWS_FEEDS || '').trim();
 	if (!env) return DEFAULT_FEEDS;
 	return env.split(',').map((chunk) => {
-		const [url, source] = chunk.split('|').map((s) => (s || '').trim());
-		return { url, source: source || hostOf(url) };
+		const [url, source, cat, region] = chunk.split('|').map((s) => (s || '').trim());
+		return { url, source: source || hostOf(url), cat: cat || null, region: region || null };
 	}).filter((f) => f.url);
 }
 
 const PER_CAT = 6; // jumlah berita per kategori
+const DO_TRANSLATE = process.env.TRANSLATE !== '0'; // set TRANSLATE=0 untuk mematikan
 
 function hostOf(u) {
 	try { return new URL(u).hostname.replace(/^www\./, ''); } catch (_) { return 'Sumber'; }
@@ -134,6 +147,9 @@ async function fetchFeed(feed) {
 				url: link,
 				image: imageOf(it),
 				source: feed.source,
+				cat: feed.cat || null,
+				region: feed.region || 'Indonesia',
+				translate: feed.translate || false,
 				when,
 			});
 		}
@@ -142,6 +158,24 @@ async function fetchFeed(feed) {
 	} catch (e) {
 		console.error('  [err] ', feed.url, '->', e.message);
 		return [];
+	}
+}
+
+// --- Terjemahan otomatis ke Bahasa Indonesia (gratis, tanpa API key) ---
+async function translateId(text) {
+	const s = (text || '').trim();
+	if (!s) return text;
+	try {
+		const url = 'https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=id&dt=t&q=' + encodeURIComponent(s);
+		const res = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0 (compatible; KabarMarketBot/1.0)' } });
+		if (!res.ok) return text;
+		const data = await res.json();
+		if (!Array.isArray(data) || !Array.isArray(data[0])) return text;
+		const out = data[0].map((seg) => (seg && seg[0]) ? seg[0] : '').join('');
+		return out || text;
+	} catch (e) {
+		console.error('  [translate err]', e.message);
+		return text;
 	}
 }
 
@@ -167,7 +201,7 @@ async function main() {
 	// Kelompokkan ke kategori
 	const buckets = { Ekonomi: [], Saham: [], Crypto: [] };
 	for (const a of unique) {
-		const cat = classify(a.title + ' ' + a.desc);
+		const cat = a.cat || classify(a.title + ' ' + a.desc);
 		if (buckets[cat].length >= PER_CAT) continue;
 		buckets[cat].push(a);
 	}
@@ -177,18 +211,24 @@ async function main() {
 	for (const cat of ['Ekonomi', 'Saham', 'Crypto']) {
 		let added = 0;
 		for (const a of buckets[cat]) {
+			let tTitle = a.title, tDesc = a.desc;
+			if (DO_TRANSLATE && a.translate) {
+				tTitle = await translateId(a.title);
+				tDesc = await translateId(a.desc);
+			}
 			articles.push({
 				cat,
-				title: a.title,
-				desc: a.desc,
+				title: tTitle,
+				desc: tDesc,
 				time: relTime(a.when),
 				date: fmtDate(a.when),
 				source: a.source,
 				url: a.url,
+				region: a.region || 'Indonesia',
 				image: a.image || null,
 				source_icon: null,
 				highlight: added === 0, // berita terbaru tiap kategori jadi "Populer"
-				body: [a.desc],
+				body: [tDesc],
 			});
 			added++;
 		}
