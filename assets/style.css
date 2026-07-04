@@ -72,9 +72,9 @@
   .brand img{
     height:40px; width:40px;
     object-fit:contain;
-    background:#fff;
+    background:#000;
     border-radius:8px;
-    padding:3px;
+    padding:0;
     display:block;
   }
   nav.links{ display:flex; gap:30px; }

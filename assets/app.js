@@ -582,22 +582,8 @@
 
   /* ===== Multi-halaman: preview, paginasi, helper ===== */
   function phImg(cat){
-    var c = cat || '';
-    var col = c==='Saham' ? '#22B27D' : (c==='Crypto' ? '#E7A33E' : (c==='Ekonomi' ? '#5B8DEF' : (c==='Investasi' ? '#9db4f0' : '#7C8A9C')));
-    var label = (c || 'Kabar Market').toUpperCase();
-    var svg = '<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">'
-      + '<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#16233A"/><stop offset="1" stop-color="#0B1420"/></linearGradient></defs>'
-      + '<rect width="800" height="450" fill="url(#bg)"/>'
-      + '<g stroke="'+col+'" stroke-opacity="0.18" stroke-width="2" fill="none">'
-      + '<path d="M0 340 L120 300 L240 320 L360 250 L480 280 L600 200 L720 230 L800 180"/>'
-      + '<path d="M0 385 L120 365 L240 375 L360 335 L480 355 L600 305 L720 325 L800 295"/>'
-      + '</g>'
-      + '<rect x="330" y="120" width="140" height="140" rx="30" fill="'+col+'"/>'
-      + '<text x="400" y="216" font-family="Arial,Helvetica,sans-serif" font-size="72" font-weight="700" fill="#0B1420" text-anchor="middle">KM</text>'
-      + '<text x="400" y="312" font-family="Arial,Helvetica,sans-serif" font-size="30" font-weight="700" fill="#EDEFF3" text-anchor="middle" letter-spacing="2">'+label+'</text>'
-      + '<text x="400" y="350" font-family="Arial,Helvetica,sans-serif" font-size="17" fill="#7C8A9C" text-anchor="middle" letter-spacing="3">KABAR MARKET</text>'
-      + '</svg>';
-    return 'data:image/svg+xml,' + encodeURIComponent(svg);
+    // Ilustrasi cadangan: logo Kabar Market di atas latar gelap khas situs.
+    return 'assets/km-fallback.png?v=2';
   }
   window.KMph = phImg;
   function newsCardHTML(a){
