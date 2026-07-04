@@ -1,292 +1,121 @@
 {
-  "updated": "2026-07-04T10:22:51.711Z",
+  "updated": "2026-07-02T15:00:00.000Z",
   "articles": [
     {
       "cat": "Ekonomi",
-      "title": "Turki Investasi US$ 130 Juta ke KEK Sei Mangkei",
-      "desc": "PT Evyap Sabun Indonesia resmi beroperasi di KEK Sei Mangkei dengan investasi sekitar US$ 130 juta.",
-      "time": "8 menit lalu",
-      "date": "4 Jul 2026",
-      "source": "Liputan6",
-      "url": "https://www.liputan6.com/bisnis/read/8233153/turki-investasi-us-130-juta-ke-kek-sei-mangkei",
-      "region": "Indonesia",
-      "image": "https://cdn1-production-images-kly.akamaized.net/iDT-GnQFdnqwmjUSDtYamu_hy1Y=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/9259725/original/094511800_1783155812-2f2J2cRKgvKWOTXp4l2cOBUcTmQUxK0PD4igFR1C.jpg",
-      "source_icon": null,
-      "highlight": true,
-      "body": [
-        "PT Evyap Sabun Indonesia resmi beroperasi di KEK Sei Mangkei dengan investasi sekitar US$ 130 juta."
-      ]
-    },
-    {
-      "cat": "Ekonomi",
-      "title": "Danantara dan BNI Bahas Strategi Pembiayaan Sektor Produktif",
-      "desc": "BNI dan Danantara membahas penguatan aksi korporasi, sinergi BUMN, serta peningkatan pembiayaan sektor produktif.",
+      "title": "BI Tahan Suku Bunga Acuan, Rupiah Bergerak Stabil",
+      "desc": "Bank Indonesia mempertahankan suku bunga acuan untuk menjaga stabilitas nilai tukar di tengah ketidakpastian pasar global.",
       "time": "32 menit lalu",
-      "date": "4 Jul 2026",
-      "source": "Liputan6",
-      "url": "https://www.liputan6.com/bisnis/read/8232435/danantara-dan-bni-bahas-strategi-pembiayaan-sektor-produktif",
-      "region": "Indonesia",
-      "image": "https://cdn1-production-images-kly.akamaized.net/jrmAJcugJfePWQjq_qcxi6YoD_g=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/9257584/original/059554100_1783153169-WhatsApp_Image_2026-07-04_at_11.52.09.jpeg",
-      "source_icon": null,
-      "highlight": false,
+      "date": "2 Jul 2026",
+      "source": "Redaksi Kabar Market",
+      "url": null,
       "body": [
-        "BNI dan Danantara membahas penguatan aksi korporasi, sinergi BUMN, serta peningkatan pembiayaan sektor produktif."
+        "Bank Indonesia memutuskan mempertahankan suku bunga acuan pada level saat ini. Keputusan ini diambil untuk menjaga stabilitas nilai tukar rupiah sekaligus mengendalikan tekanan inflasi di tengah ketidakpastian ekonomi global.",
+        "Bagi pelaku pasar, suku bunga yang stabil umumnya dipandang positif bagi sektor yang sensitif terhadap biaya pinjaman. Namun, arah kebijakan berikutnya tetap bergantung pada perkembangan data ekonomi ke depan."
       ]
     },
     {
       "cat": "Ekonomi",
-      "title": "BNI Hadirkan Promo Spesial Rayakan 80 Tahun Pengabdian untuk Negeri",
-      "desc": "BNI rayakan HUT ke-80 dengan program 'Terus Ada, Ada Terus', menawarkan promo menarik di berbagai sektor untuk apresiasi nasabah. Nikmati diskon hingga Rp8 juta",
-      "time": "38 menit lalu",
-      "date": "4 Jul 2026",
-      "source": "Detik Finance",
-      "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8559728/bni-hadirkan-promo-spesial-rayakan-80-tahun-pengabdian-untuk-negeri",
-      "region": "Indonesia",
-      "image": "https://akcdn.detik.net.id/community/media/visual/2026/07/04/bni-1783157176998_169.jpeg?w=360&amp;q=90",
-      "source_icon": null,
-      "highlight": false,
-      "body": [
-        "BNI rayakan HUT ke-80 dengan program 'Terus Ada, Ada Terus', menawarkan promo menarik di berbagai sektor untuk apresiasi nasabah. Nikmati diskon hingga Rp8 juta"
-      ]
-    },
-    {
-      "cat": "Ekonomi",
-      "title": "Orang Malaysia Doyan Naik Whoosh, Januari-Juni Tembus 74.902 Penumpang",
-      "desc": "Kereta Cepat Indonesia-China (KCIC) mencatat penumpang warga negara asing (WNA) sebanyak 184.740 sepanjang periode Januari-Juni 2026.",
-      "time": "51 menit lalu",
-      "date": "4 Jul 2026",
-      "source": "Detik Finance",
-      "url": "https://finance.detik.com/infrastruktur/d-8559733/orang-malaysia-doyan-naik-whoosh-januari-juni-tembus-74-902-penumpang",
-      "region": "Indonesia",
-      "image": "https://akcdn.detik.net.id/community/media/visual/2026/03/15/mobilitas-penumpang-whoosh-diprediksi-meningkat-saat-lebaran-1773573347987_169.jpeg?w=360&amp;q=90",
-      "source_icon": null,
-      "highlight": false,
-      "body": [
-        "Kereta Cepat Indonesia-China (KCIC) mencatat penumpang warga negara asing (WNA) sebanyak 184.740 sepanjang periode Januari-Juni 2026."
-      ]
-    },
-    {
-      "cat": "Ekonomi",
-      "title": "Libur Sekolah Picu Lonjakan Pengguna KRL Jabodetabek",
-      "desc": "Mobilitas warga selama libur sekolah mendorong lonjakan pengguna KRL Jabodetabek. Jumlah penumpang pada hari kerja menembus satu juta orang per hari.",
-      "time": "52 menit lalu",
-      "date": "4 Jul 2026",
-      "source": "Detik Finance",
-      "url": "https://finance.detik.com/foto-bisnis/d-8558794/libur-sekolah-picu-lonjakan-pengguna-krl-jabodetabek",
-      "region": "Indonesia",
-      "image": "https://akcdn.detik.net.id/community/media/visual/2026/07/03/libur-sekolah-picu-lonjakan-pengguna-krl-jabodetabek-1783077811918_169.jpeg?w=360&amp;q=90",
-      "source_icon": null,
-      "highlight": false,
-      "body": [
-        "Mobilitas warga selama libur sekolah mendorong lonjakan pengguna KRL Jabodetabek. Jumlah penumpang pada hari kerja menembus satu juta orang per hari."
-      ]
-    },
-    {
-      "cat": "Ekonomi",
-      "title": "Pertamina Buka Rekrutmen Internship untuk Fresh Graduate",
-      "desc": "Pertamina Group membuka rekrutmen internship untuk fresh graduate. Kesempatan bagi 400 peserta di 21 entitas bisnis. Pendaftaran 1-5 Juli 2026.",
+      "title": "Neraca Dagang Kembali Surplus, Ekspor Komoditas Jadi Penopang",
+      "desc": "Surplus perdagangan bulan ini ditopang oleh permintaan ekspor komoditas unggulan seperti nikel dan batu bara.",
       "time": "1 jam lalu",
-      "date": "4 Jul 2026",
-      "source": "Detik Finance",
-      "url": "https://finance.detik.com/bumn/d-8559707/pertamina-buka-rekrutmen-internship-untuk-fresh-graduate",
-      "region": "Indonesia",
-      "image": "https://akcdn.detik.net.id/community/media/visual/2026/07/04/pertamina-1783156098798_169.jpeg?w=360&amp;q=90",
-      "source_icon": null,
-      "highlight": false,
+      "date": "2 Jul 2026",
+      "source": "Redaksi Kabar Market",
+      "url": null,
       "body": [
-        "Pertamina Group membuka rekrutmen internship untuk fresh graduate. Kesempatan bagi 400 peserta di 21 entitas bisnis. Pendaftaran 1-5 Juli 2026."
+        "Neraca perdagangan Indonesia kembali mencatat surplus pada periode ini. Ekspor komoditas unggulan menjadi pendorong utama, di tengah permintaan global yang masih cukup kuat.",
+        "Surplus perdagangan yang konsisten umumnya dianggap sebagai sinyal positif bagi stabilitas nilai tukar. Meski begitu, komposisi ekspor dan impor tetap penting untuk menilai kualitas surplus tersebut."
       ]
     },
     {
-      "cat": "Saham",
-      "title": "Trump Accounts akan debut saat AS memulai perayaan Hari Kemerdekaan ke-250",
-      "desc": "Trump Accounts akan debut saat AS memulai perayaan Hari Kemerdekaan ke-250",
-      "time": "16 menit lalu",
-      "date": "4 Jul 2026",
-      "source": "Investing.com",
-      "url": "https://www.investing.com/news/stock-market-news/trump-accounts-to-debut-as-us-kicks-off-250th-independence-day-celebrations-4775357",
-      "region": "Internasional",
-      "image": "https://i-invdn-com.investing.com/trkd-images/LYNXMPEM6309F_L.jpg",
-      "source_icon": null,
-      "highlight": true,
-      "body": [
-        "Trump Accounts akan debut saat AS memulai perayaan Hari Kemerdekaan ke-250"
-      ]
-    },
-    {
-      "cat": "Saham",
-      "title": "Pegang 24,99% Saham, GOTO Buka Suara soal PHK Massal Tokopedia",
-      "desc": "PT GoTo Gojek Tokopedia Tbk (GOTO) buka suara terkait pemutusan hubungan kerja (PHK) Tokopedia usai diambil alih TikTok.",
-      "time": "17 menit lalu",
-      "date": "4 Jul 2026",
-      "source": "Detik Finance",
-      "url": "https://finance.detik.com/bursa-dan-valas/d-8559769/pegang-24-99-saham-goto-buka-suara-soal-phk-massal-tokopedia",
-      "region": "Indonesia",
-      "image": "https://akcdn.detik.net.id/community/media/visual/2024/01/31/ilustrasi-logo-goto_169.jpeg?w=360&amp;q=90",
-      "source_icon": null,
-      "highlight": false,
-      "body": [
-        "PT GoTo Gojek Tokopedia Tbk (GOTO) buka suara terkait pemutusan hubungan kerja (PHK) Tokopedia usai diambil alih TikTok."
-      ]
-    },
-    {
-      "cat": "Saham",
-      "title": "Continental menjual ContiTech ke Lone Star Funds seharga €4 miliar",
-      "desc": "Continental menjual ContiTech ke Lone Star Funds seharga €4 miliar",
-      "time": "19 menit lalu",
-      "date": "4 Jul 2026",
-      "source": "Investing.com",
-      "url": "https://www.investing.com/news/stock-market-news/continental-sells-contitech-to-lone-star-funds-for-4-bln-4775356",
-      "region": "Internasional",
-      "image": null,
-      "source_icon": null,
-      "highlight": false,
-      "body": [
-        "Continental menjual ContiTech ke Lone Star Funds seharga €4 miliar"
-      ]
-    },
-    {
-      "cat": "Saham",
-      "title": "Suku bunga hipotek dan pembiayaan kembali hari ini, Sabtu, 4 Juli: Suku bunga beragam pada liburan 4 Juli ini",
-      "desc": "Suku bunga hipotek dan pembiayaan kembali hari ini, Sabtu, 4 Juli: Suku bunga beragam pada liburan 4 Juli ini",
-      "time": "23 menit lalu",
-      "date": "4 Jul 2026",
-      "source": "Yahoo Finance",
-      "url": "https://finance.yahoo.com/personal-finance/mortgages/article/mortgage-and-refinance-interest-rates-today-saturday-july-4-rates-are-mixed-this-july-4-holiday-100000596.html",
-      "region": "Internasional",
-      "image": "https://s.yimg.com/os/creatr-uploaded-images/2024-04/86ef4c20-03dd-11ef-b7af-5ddf7b57fe6e",
-      "source_icon": null,
-      "highlight": false,
-      "body": [
-        "Suku bunga hipotek dan pembiayaan kembali hari ini, Sabtu, 4 Juli: Suku bunga beragam pada liburan 4 Juli ini"
-      ]
-    },
-    {
-      "cat": "Saham",
-      "title": "Tarif CD terbaik hari ini, Sabtu 4 Juli 2026: Akun terbaik memberikan APY 4,10%",
-      "desc": "Tarif CD terbaik hari ini, Sabtu 4 Juli 2026: Akun terbaik memberikan APY 4,10%",
-      "time": "23 menit lalu",
-      "date": "4 Jul 2026",
-      "source": "Yahoo Finance",
-      "url": "https://finance.yahoo.com/personal-finance/banking/article/best-cd-rates-today-saturday-july-4-2026-best-account-provides-410-apy-100000802.html",
-      "region": "Internasional",
-      "image": "https://s.yimg.com/os/creatr-uploaded-images/2024-07/c47af0d0-4f64-11ef-a7fe-afb55aa695d3",
-      "source_icon": null,
-      "highlight": false,
-      "body": [
-        "Tarif CD terbaik hari ini, Sabtu 4 Juli 2026: Akun terbaik memberikan APY 4,10%"
-      ]
-    },
-    {
-      "cat": "Saham",
-      "title": "Morgan Stanley beralih ke saham energi Eropa yang defensif, meningkatkan peringkat Galp",
-      "desc": "Morgan Stanley beralih ke saham energi Eropa yang defensif, meningkatkan peringkat Galp",
-      "time": "27 menit lalu",
-      "date": "4 Jul 2026",
-      "source": "Investing.com",
-      "url": "https://www.investing.com/news/stock-market-news/morgan-stanley-shifts-to-defensive-european-energy-stocks-upgrades-galp-4775214",
-      "region": "Internasional",
-      "image": "https://i-invdn-com.investing.com/news/LYNXNPEC6J0XD_M.jpg",
-      "source_icon": null,
-      "highlight": false,
-      "body": [
-        "Morgan Stanley beralih ke saham energi Eropa yang defensif, meningkatkan peringkat Galp"
-      ]
-    },
-    {
-      "cat": "Crypto",
-      "title": "Tim Draper menyangkal memindahkan Bitcoin, mengulangi prediksi $250,000 BTC",
-      "desc": "Tim Draper menyangkal memindahkan Bitcoin setelah analis blockchain menghubungkannya ke dompet yang mentransfer 1,000 BTC ke Coinbase Prime.",
-      "time": "2 jam lalu",
-      "date": "4 Jul 2026",
-      "source": "Cointelegraph",
-      "url": "https://cointelegraph.com/news/tim-draper-denies-moving-bitcoin-250k-btc-prediction?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "region": "Indonesia",
-      "image": "https://s3-images.ctmedia.io/media/article-covers/hi-investors-chase-web3-as-blockchain-industry-builds-despite-a-bear-market.jpg",
-      "source_icon": null,
-      "highlight": true,
-      "body": [
-        "Tim Draper menyangkal memindahkan Bitcoin setelah analis blockchain menghubungkannya ke dompet yang mentransfer 1,000 BTC ke Coinbase Prime."
-      ]
-    },
-    {
-      "cat": "Crypto",
-      "title": "XRP naik 8% karena kerugian pemegang rekor menandakan imbalan risiko yang lebih baik bagi pembeli",
-      "desc": "MVRV token selama 30 hari dan 365 hari, ukuran seberapa jauh pemegangnya berada di bawah air, berada di dekat -45% dan -47%, posisi terendah yang menurut Santiment belum pernah dicapai XRP sebelumnya. Beberapa pedagang membaca kerugian yang berkepanjangan sebagai sinyal pelawan.",
+      "cat": "Ekonomi",
+      "title": "Inflasi Terkendali di Kisaran Target, Daya Beli Terjaga",
+      "desc": "Laju inflasi tahunan berada dalam rentang sasaran, memberi ruang bagi kebijakan moneter yang lebih akomodatif.",
       "time": "3 jam lalu",
-      "date": "4 Jul 2026",
-      "source": "CoinDesk",
-      "url": "https://www.coindesk.com/markets/2026/07/04/xrp-climbs-8-as-one-onchain-gauge-signal-shows-favorable-risk-reward-for-buyers",
-      "region": "Indonesia",
-      "image": "https://cdn.sanity.io/images/s3y3vcno/production/341ec0cc75f21e4a7dff5d86d7ee120a3f79c843-1593x1194.jpg?fm=jpg&amp;w=1920&amp;h=1080&amp;crop=focalpoint&amp;fit=clip",
-      "source_icon": null,
-      "highlight": false,
+      "date": "2 Jul 2026",
+      "source": "Redaksi Kabar Market",
+      "url": null,
       "body": [
-        "MVRV token selama 30 hari dan 365 hari, ukuran seberapa jauh pemegangnya berada di bawah air, berada di dekat -45% dan -47%, posisi terendah yang menurut Santiment belum pernah dicapai XRP sebelumnya. Beberapa pedagang membaca kerugian yang berkepanjangan sebagai sinyal pelawan."
+        "Laju inflasi tahunan tercatat berada dalam rentang sasaran otoritas moneter. Tekanan harga pada kelompok bahan pokok yang mereda menjadi salah satu faktor penahan laju inflasi.",
+        "Inflasi yang terkendali biasanya menjaga daya beli masyarakat dan memberi ruang kebijakan yang lebih longgar. Investor kerap memantau data ini karena berpengaruh pada arah suku bunga."
       ]
     },
     {
-      "cat": "Crypto",
-      "title": "Pergerakan parabola Bitcoin berikutnya mungkin membutuhkan modal segar sebesar $1 triliun",
-      "desc": "Pada siklus ini, uang baru senilai sekitar $697 miliar telah menghasilkan keuntungan sekitar 689%, dibandingkan dengan siklus sebelumnya di mana modal yang jauh lebih sedikit mendorong pengembalian hingga 50.000%.",
+      "cat": "Saham",
+      "title": "BBRI Catat Pertumbuhan Kredit UMKM Dobel Digit",
+      "desc": "Emiten perbankan pelat merah melaporkan penyaluran kredit ke segmen UMKM tumbuh dobel digit pada semester pertama.",
+      "time": "1 jam lalu",
+      "date": "2 Jul 2026",
+      "source": "Redaksi Kabar Market",
+      "url": null,
+      "body": [
+        "PT Bank Rakyat Indonesia Tbk (BBRI) dilaporkan mencatat pertumbuhan penyaluran kredit ke segmen UMKM secara dobel digit pada paruh pertama tahun ini. Segmen mikro masih menjadi tulang punggung bisnis perseroan.",
+        "Pertumbuhan kredit sering dijadikan indikator ekspansi bisnis perbankan. Namun, kualitas kredit dan rasio kredit bermasalah tetap perlu diperhatikan untuk menilai kesehatan keuangan secara menyeluruh."
+      ]
+    },
+    {
+      "cat": "Saham",
+      "title": "Sektor Tambang Pimpin Penguatan IHSG, ANTM & ADRO Menghijau",
+      "desc": "Saham-saham tambang logam dan energi menguat seiring pergerakan harga komoditas di pasar global.",
+      "time": "2 jam lalu",
+      "date": "2 Jul 2026",
+      "source": "Redaksi Kabar Market",
+      "url": null,
+      "body": [
+        "Indeks Harga Saham Gabungan (IHSG) menguat dengan sektor tambang sebagai penopang utama. Saham emiten seperti ANTM dan ADRO tercatat menghijau seiring pergerakan harga komoditas global.",
+        "Penguatan pada satu sektor tidak selalu mencerminkan kondisi seluruh pasar. Investor biasanya melihat pergerakan indeks sektoral untuk memahami sektor mana yang sedang menjadi sorotan."
+      ]
+    },
+    {
+      "cat": "Saham",
+      "title": "ASII Umumkan Rencana Dividen Interim",
+      "desc": "Rencana pembagian dividen interim oleh emiten konglomerasi ini menjadi sentimen positif bagi sektor otomotif.",
       "time": "4 jam lalu",
-      "date": "4 Jul 2026",
-      "source": "CoinDesk",
-      "url": "https://www.coindesk.com/markets/2026/07/04/bitcoin-s-next-parabolic-run-may-need-usd1-trillion-in-fresh-capital",
-      "region": "Indonesia",
-      "image": "https://cdn.sanity.io/images/s3y3vcno/production/1919049550fea9dad7ad0c30a294acc2a578015a-1920x1440.jpg?fm=jpg&amp;w=1920&amp;h=1080&amp;crop=focalpoint&amp;fit=clip",
-      "source_icon": null,
-      "highlight": false,
+      "date": "2 Jul 2026",
+      "source": "Redaksi Kabar Market",
+      "url": null,
       "body": [
-        "Pada siklus ini, uang baru senilai sekitar $697 miliar telah menghasilkan keuntungan sekitar 689%, dibandingkan dengan siklus sebelumnya di mana modal yang jauh lebih sedikit mendorong pengembalian hingga 50.000%."
+        "PT Astra International Tbk (ASII) mengumumkan rencana pembagian dividen interim kepada pemegang saham. Kabar ini menjadi salah satu sentimen yang diperhatikan pelaku pasar di sektor otomotif.",
+        "Pembagian dividen mencerminkan arus kas perusahaan, namun besaran dan keberlanjutannya bergantung pada kinerja ke depan. Keputusan investasi sebaiknya tidak hanya berdasarkan satu faktor."
+      ]
+    },
+    {
+      "cat": "Saham",
+      "title": "GOTO Lanjutkan Program Buyback Saham",
+      "desc": "Emiten teknologi ini melanjutkan pembelian kembali saham sebagai bagian dari strategi menjaga nilai perusahaan.",
+      "time": "6 jam lalu",
+      "date": "2 Jul 2026",
+      "source": "Redaksi Kabar Market",
+      "url": null,
+      "body": [
+        "PT GoTo Gojek Tokopedia Tbk (GOTO) dilaporkan melanjutkan program pembelian kembali (buyback) saham. Buyback merupakan salah satu strategi yang lazim digunakan perusahaan untuk mengelola struktur modal.",
+        "Program buyback dapat memengaruhi jumlah saham beredar, tetapi dampaknya terhadap harga bergantung pada banyak faktor. Investor umumnya menilai buyback bersama fundamental perusahaan secara keseluruhan."
       ]
     },
     {
       "cat": "Crypto",
-      "title": "Rasio untung dan rugi Bitcoin turun ke level terendah dalam 43 bulan",
-      "desc": "Kepala investasi Bitwise Matt Hougan mengatakan titik terendahnya “lebih dekat dari sebelumnya,” sementara analis Swan Bitcoin menyarankan investor membeli sekarang dengan harga diskon daripada membayar lebih di kemudian hari.",
-      "time": "5 jam lalu",
-      "date": "4 Jul 2026",
-      "source": "Cointelegraph",
-      "url": "https://cointelegraph.com/news/bitcoin-realized-profit-loss-ratio-falls-to-lowest-level-since-2022-cryptoquant?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "region": "Indonesia",
-      "image": "https://s3-images.ctmedia.io/media/article-covers/analytics-red-market-falling-drop-bitcoin-1.jpg",
-      "source_icon": null,
-      "highlight": false,
+      "title": "Bitcoin Konsolidasi di Atas US$67 Ribu Jelang Data Inflasi AS",
+      "desc": "Harga Bitcoin bergerak dalam rentang sempit saat pelaku pasar menanti rilis data inflasi Amerika Serikat.",
+      "time": "2 jam lalu",
+      "date": "2 Jul 2026",
+      "source": "Redaksi Kabar Market",
+      "url": null,
       "body": [
-        "Kepala investasi Bitwise Matt Hougan mengatakan titik terendahnya “lebih dekat dari sebelumnya,” sementara analis Swan Bitcoin menyarankan investor membeli sekarang dengan harga diskon daripada membayar lebih di kemudian hari."
+        "Harga Bitcoin bergerak dalam rentang yang relatif sempit dan bertahan di atas level psikologisnya. Pelaku pasar cenderung menahan diri menjelang rilis data inflasi Amerika Serikat yang dinanti.",
+        "Aset kripto dikenal memiliki volatilitas tinggi. Pergerakan harga jangka pendek sering dipengaruhi sentimen makro, sehingga pemahaman risiko tetap penting sebelum mengambil keputusan."
       ]
     },
     {
       "cat": "Crypto",
-      "title": "Inilah yang terjadi di kripto hari ini",
-      "desc": "Ingin tahu apa yang terjadi di crypto hari ini? Berikut adalah berita terbaru tentang tren dan peristiwa harian yang memengaruhi harga Bitcoin, blockchain, DeFi, Web3, dan regulasi kripto.",
+      "title": "Bappebti Siapkan Aturan Baru Perkuat Perlindungan Investor Kripto",
+      "desc": "Regulasi baru ini bertujuan memperkuat perlindungan investor ritel di tengah pertumbuhan adopsi aset kripto.",
       "time": "5 jam lalu",
-      "date": "4 Jul 2026",
-      "source": "Cointelegraph",
-      "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "region": "Indonesia",
-      "image": "https://s3-images.ctmedia.io/media/article-covers/article-covers-110589-what-happened-in-crypto-today.jpg",
-      "source_icon": null,
-      "highlight": false,
+      "date": "2 Jul 2026",
+      "source": "Redaksi Kabar Market",
+      "url": null,
       "body": [
-        "Ingin tahu apa yang terjadi di crypto hari ini? Berikut adalah berita terbaru tentang tren dan peristiwa harian yang memengaruhi harga Bitcoin, blockchain, DeFi, Web3, dan regulasi kripto."
-      ]
-    },
-    {
-      "cat": "Crypto",
-      "title": "Kelompok penegak hukum AS membatalkan penolakan terhadap CLARITY Act: Report",
-      "desc": "Sheriff Wilayah Besar Amerika mengatakan mereka masih menginginkan Undang-Undang CLARITY diubah untuk memberikan lebih banyak sumber daya kepada penegak hukum setempat untuk menyelidiki kasus keuangan gelap.",
-      "time": "5 jam lalu",
-      "date": "4 Jul 2026",
-      "source": "Cointelegraph",
-      "url": "https://cointelegraph.com/news/us-law-enforcement-group-drops-opposition-to-clarity-act?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "region": "Indonesia",
-      "image": "https://s3-images.ctmedia.io/media/article-covers/hi-fines-and-regulation-the-ever-growing-landscape-of-crypto-compliance.jpg",
-      "source_icon": null,
-      "highlight": false,
-      "body": [
-        "Sheriff Wilayah Besar Amerika mengatakan mereka masih menginginkan Undang-Undang CLARITY diubah untuk memberikan lebih banyak sumber daya kepada penegak hukum setempat untuk menyelidiki kasus keuangan gelap."
+        "Otoritas dilaporkan tengah menyiapkan rancangan aturan baru yang bertujuan memperkuat perlindungan investor ritel di pasar aset kripto, seiring pertumbuhan adopsi yang pesat.",
+        "Regulasi yang lebih jelas kerap dipandang sebagai langkah untuk meningkatkan kepercayaan pengguna. Namun, dampaknya ke pasar biasanya baru terlihat setelah aturan resmi berlaku."
       ]
     }
   ]
