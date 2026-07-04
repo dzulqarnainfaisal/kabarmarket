@@ -1,18 +1,66 @@
 {
-  "updated": "2026-07-04T22:36:45.804Z",
+  "updated": "2026-07-04T23:40:41.409Z",
   "articles": [
+    {
+      "cat": "Ekonomi",
+      "title": "Nasib Tokopedia Usai Diterjang Badai PHK",
+      "desc": "PT GoTo Gojek Tokopedia Tbk (GOTO) buka suara soal dampak pemutusan hubungan kerja (PHK) terhadap kinerja Tokopedia.",
+      "time": "16 menit lalu",
+      "date": "4 Jul 2026",
+      "source": "Detik Finance",
+      "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8560133/nasib-tokopedia-usai-diterjang-badai-phk",
+      "region": "Indonesia",
+      "image": "https://akcdn.detik.net.id/community/media/visual/2022/07/11/gedung-tokopedia_169.jpeg?w=360&amp;q=90",
+      "source_icon": null,
+      "highlight": true,
+      "body": [
+        "PT GoTo Gojek Tokopedia Tbk (GOTO) buka suara soal dampak pemutusan hubungan kerja (PHK) terhadap kinerja Tokopedia."
+      ]
+    },
+    {
+      "cat": "Ekonomi",
+      "title": "Allianz Bocorkan Strategi Investasi Semester II-2026",
+      "desc": "Menghadapi dinamika pasar di semester II-2026, Allianz sebut investor perlu strategi aktif dan melirik aset bernilai tinggi demi imbal hasil optimal.",
+      "time": "41 menit lalu",
+      "date": "4 Jul 2026",
+      "source": "Liputan6",
+      "url": "https://www.liputan6.com/bisnis/read/8226145/allianz-bocorkan-strategi-investasi-semester-ii-2026",
+      "region": "Indonesia",
+      "image": "https://cdn1-production-images-kly.akamaized.net/kyJBgiFrpn5f9YBbIl4HV5jsR-E=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/5013198/original/024167400_1732073224-tips-investasi-saham.jpg",
+      "source_icon": null,
+      "highlight": false,
+      "body": [
+        "Menghadapi dinamika pasar di semester II-2026, Allianz sebut investor perlu strategi aktif dan melirik aset bernilai tinggi demi imbal hasil optimal."
+      ]
+    },
+    {
+      "cat": "Ekonomi",
+      "title": "Sederet Janji demi Tarik Investor Asing Masuk RI",
+      "desc": "Pemerintah berencana membentuk Pusat Finansial Internasional Indonesia (PFII). Rancangan Undang-undang (RUU) PFII sedang dibahas pemerintah dan DPR.",
+      "time": "46 menit lalu",
+      "date": "4 Jul 2026",
+      "source": "Detik Finance",
+      "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8560128/sederet-janji-demi-tarik-investor-asing-masuk-ri",
+      "region": "Indonesia",
+      "image": "https://akcdn.detik.net.id/community/media/visual/2015/06/18/edcc575b-a509-4097-a908-5586ab34fc47_169.jpg?w=360&amp;q=90",
+      "source_icon": null,
+      "highlight": false,
+      "body": [
+        "Pemerintah berencana membentuk Pusat Finansial Internasional Indonesia (PFII). Rancangan Undang-undang (RUU) PFII sedang dibahas pemerintah dan DPR."
+      ]
+    },
     {
       "cat": "Ekonomi",
       "title": "Chery Caplok Pabrik Bekas Nissan di Afrika Selatan",
       "desc": "Produsen mobil asal China, Chery, resmi mengakuisisi pabrik manufaktur bekas Nissan di Rosslyn, Afrika Selatan Jumat (3/7).",
-      "time": "7 jam lalu",
+      "time": "8 jam lalu",
       "date": "4 Jul 2026",
       "source": "Detik Finance",
       "url": "https://finance.detik.com/industri/d-8560116/chery-caplok-pabrik-bekas-nissan-di-afrika-selatan",
       "region": "Indonesia",
       "image": "https://akcdn.detik.net.id/community/media/visual/2023/05/09/produsen-china-banjiri-australia-dengan-mobil-murah-ini-wujudnya-1_169.jpeg?w=360&amp;q=90",
       "source_icon": null,
-      "highlight": true,
+      "highlight": false,
       "body": [
         "Produsen mobil asal China, Chery, resmi mengakuisisi pabrik manufaktur bekas Nissan di Rosslyn, Afrika Selatan Jumat (3/7)."
       ]
@@ -21,7 +69,7 @@
       "cat": "Ekonomi",
       "title": "Cuma di Transmart Full Day Sale Rak Besi Rp 800 Ribuan",
       "desc": "Transmart kembali menggelar program Full Day Sale pada Minggu (5/7/2026). D",
-      "time": "7 jam lalu",
+      "time": "8 jam lalu",
       "date": "4 Jul 2026",
       "source": "Detik Finance",
       "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8560102/cuma-di-transmart-full-day-sale-rak-besi-rp-800-ribuan",
@@ -37,7 +85,7 @@
       "cat": "Ekonomi",
       "title": "WNA Nekat Beli BBM Subsidi Dihukum Denda Rp 88 Juta!",
       "desc": "WNA asal Singapura dijatuhi denda Rp 88 juta gara-gara isi BBM bersubsidi di Malaysia.",
-      "time": "8 jam lalu",
+      "time": "9 jam lalu",
       "date": "4 Jul 2026",
       "source": "Detik Finance",
       "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8560065/wna-nekat-beli-bbm-subsidi-dihukum-denda-rp-88-juta",
@@ -50,154 +98,106 @@
       ]
     },
     {
-      "cat": "Ekonomi",
-      "title": "Cari Sepeda buat Anak? Di Transmart Full Day Sale, Mulai Rp 1 Jutaan",
-      "desc": "Transmart Full Day Sale kembali digelar pada Minggu (5/7/2026).",
-      "time": "8 jam lalu",
-      "date": "4 Jul 2026",
-      "source": "Detik Finance",
-      "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8560044/cari-sepeda-buat-anak-di-transmart-full-day-sale-mulai-rp-1-jutaan",
-      "region": "Indonesia",
-      "image": "https://akcdn.detik.net.id/community/media/visual/2026/07/04/transmart-full-day-sale-sepeda-1783174981128_169.png?w=360&amp;q=90",
-      "source_icon": null,
-      "highlight": false,
-      "body": [
-        "Transmart Full Day Sale kembali digelar pada Minggu (5/7/2026)."
-      ]
-    },
-    {
-      "cat": "Ekonomi",
-      "title": "Ekonom Bandingkan RI dan Vietnam yang Kini Negara Menengah Atas",
-      "desc": "Didik J Rachbini, Ekonom INDEF yang juga Rektor Universitas Paramadina membandingkan kondisi ekonomi Indonesia dan Vietnam yang kini negara menengah atas",
-      "time": "9 jam lalu",
-      "date": "4 Jul 2026",
-      "source": "Detik Finance",
-      "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8560033/ekonom-bandingkan-ri-dan-vietnam-yang-kini-negara-menengah-atas",
-      "region": "Indonesia",
-      "image": "https://akcdn.detik.net.id/community/media/visual/2025/12/02/purbaya-targetkan-pertumbuhan-ekonomi-57-di-kuartal-iv-1764670000397_169.jpeg?w=360&amp;q=90",
-      "source_icon": null,
-      "highlight": false,
-      "body": [
-        "Didik J Rachbini, Ekonom INDEF yang juga Rektor Universitas Paramadina membandingkan kondisi ekonomi Indonesia dan Vietnam yang kini negara menengah atas"
-      ]
-    },
-    {
-      "cat": "Ekonomi",
-      "title": "Proyek Sampah Jadi Listrik Bakal Serap 130 Ribu Tenaga Kerja",
-      "desc": "Danantara memperkirakan pembangunan 33 fasilitas pengolahan sampah menjadi energi akan menyerap hingga 130 ribu tenaga kerja.",
-      "time": "9 jam lalu",
-      "date": "4 Jul 2026",
-      "source": "Liputan6",
-      "url": "https://www.liputan6.com/bisnis/read/8234884/proyek-sampah-jadi-listrik-bakal-serap-130-ribu-tenaga-kerja",
-      "region": "Indonesia",
-      "image": "https://cdn0-production-images-kly.akamaized.net/nAQZhjTgw89HeL5P6h9r8AEAJMc=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/5336028/original/046537900_1756815104-2.jpg",
-      "source_icon": null,
-      "highlight": false,
-      "body": [
-        "Danantara memperkirakan pembangunan 33 fasilitas pengolahan sampah menjadi energi akan menyerap hingga 130 ribu tenaga kerja."
-      ]
-    },
-    {
       "cat": "Saham",
-      "title": "ChatGPT-Maker OpenAI Menuju IPO $1 Triliun. Pemenang Terbesar Mungkin Adalah Saham Microsoft.",
-      "desc": "ChatGPT-Maker OpenAI Menuju IPO $1 Triliun. Pemenang Terbesar Mungkin Adalah Saham Microsoft.",
-      "time": "27 menit lalu",
+      "title": "Chevron vs. Exxon Mobil: Stok Energi Mana yang Lebih Baik Dibeli di Tahun 2026?",
+      "desc": "Chevron vs. Exxon Mobil: Stok Energi Mana yang Lebih Baik Dibeli di Tahun 2026?",
+      "time": "20 menit lalu",
       "date": "4 Jul 2026",
       "source": "Yahoo Finance",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/chatgpt-maker-openai-headed-1-221000694.html",
+      "url": "https://finance.yahoo.com/energy/articles/chevron-vs-exxon-mobil-energy-232101335.html",
       "region": "Internasional",
-      "image": "https://media.zenfs.com/en/motleyfool.com/7f0fc1440060b133777aa02ee123d24a",
+      "image": "https://media.zenfs.com/en/motleyfool.com/eb5062f31a17e14da688248426d8149f",
       "source_icon": null,
       "highlight": true,
       "body": [
-        "ChatGPT-Maker OpenAI Menuju IPO $1 Triliun. Pemenang Terbesar Mungkin Adalah Saham Microsoft."
+        "Chevron vs. Exxon Mobil: Stok Energi Mana yang Lebih Baik Dibeli di Tahun 2026?"
       ]
     },
     {
       "cat": "Saham",
-      "title": "Bisakah Canopy Growth Stock Memberikan Keuntungan 4X lipat? 1 Analis Berpikir Begitu.",
-      "desc": "Bisakah Canopy Growth Stock Memberikan Keuntungan 4X lipat? 1 Analis Berpikir Begitu.",
-      "time": "35 menit lalu",
+      "title": "Rivian Baru saja Menaikkan Outlook 2026 Sementara Saham Tesla Tersandung. Apakah Kendaraan Listrik yang Diunggulkan Akhirnya Dapat Dibeli?",
+      "desc": "Rivian Baru saja Menaikkan Outlook 2026 Sementara Saham Tesla Tersandung. Apakah Kendaraan Listrik yang Diunggulkan Akhirnya Dapat Dibeli?",
+      "time": "31 menit lalu",
       "date": "4 Jul 2026",
       "source": "Yahoo Finance",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/could-canopy-growth-stock-deliver-220200985.html",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/rivian-just-raised-2026-outlook-231000012.html",
       "region": "Internasional",
-      "image": "https://media.zenfs.com/en/motleyfool.com/203d528e5a3335fa5d623f2fcb42a176",
+      "image": "https://media.zenfs.com/en/motleyfool.com/9b01719f53f3ee06d1a8f2f96a254a4e",
       "source_icon": null,
       "highlight": false,
       "body": [
-        "Bisakah Canopy Growth Stock Memberikan Keuntungan 4X lipat? 1 Analis Berpikir Begitu."
+        "Rivian Baru saja Menaikkan Outlook 2026 Sementara Saham Tesla Tersandung. Apakah Kendaraan Listrik yang Diunggulkan Akhirnya Dapat Dibeli?"
       ]
     },
     {
       "cat": "Saham",
-      "title": "ETF Perbankan Mana yang Lebih Baik, KBE State Street atau IAT yang Berfokus pada Bank Regional AS dari iShares?",
-      "desc": "ETF Perbankan Mana yang Lebih Baik, KBE State Street atau IAT yang Berfokus pada Bank Regional AS dari iShares?",
-      "time": "39 menit lalu",
+      "title": "Program B50 Jadi Katalis Positif, Intip Emiten yang Paling Diuntungkan",
+      "desc": "Implementasi B50 diproyeksi dongkrak permintaan CPO domestik. Pengamat sebut emiten sawit seperti AALI, SMAR, LSIP, dan DSNG berpotensi paling diuntungkan.",
+      "time": "41 menit lalu",
+      "date": "4 Jul 2026",
+      "source": "Liputan6",
+      "url": "https://www.liputan6.com/saham/read/8227842/program-b50-jadi-katalis-positif-intip-emiten-yang-paling-diuntungkan",
+      "region": "Indonesia",
+      "image": "https://cdn0-production-images-kly.akamaized.net/fFyvwscjNnCiJ0ROgGnyxmKL9UY=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4277615/original/062866500_1672400411-Penutupan_Perdagangan_Bursa_Efek_Indonesia_2022-Angga-4.JPG",
+      "source_icon": null,
+      "highlight": false,
+      "body": [
+        "Implementasi B50 diproyeksi dongkrak permintaan CPO domestik. Pengamat sebut emiten sawit seperti AALI, SMAR, LSIP, dan DSNG berpotensi paling diuntungkan."
+      ]
+    },
+    {
+      "cat": "Saham",
+      "title": "Jim Cramer berkata inilah waktunya untuk membeli satu stok ruang angkasa yang sedang melonjak",
+      "desc": "Jim Cramer berkata inilah waktunya untuk membeli satu stok ruang angkasa yang sedang melonjak",
+      "time": "41 menit lalu",
       "date": "4 Jul 2026",
       "source": "Yahoo Finance",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/banking-etf-better-state-streets-215801395.html",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-says-time-buy-230000385.html",
       "region": "Internasional",
-      "image": "https://media.zenfs.com/en/motleyfool.com/a234cc3da6368ebdb72ccddb0152e6dd",
+      "image": "https://media.zenfs.com/en/thestreet_881/b37af5732fd88eb7b67c94e51e6da87b",
       "source_icon": null,
       "highlight": false,
       "body": [
-        "ETF Perbankan Mana yang Lebih Baik, KBE State Street atau IAT yang Berfokus pada Bank Regional AS dari iShares?"
+        "Jim Cramer berkata inilah waktunya untuk membeli satu stok ruang angkasa yang sedang melonjak"
       ]
     },
     {
       "cat": "Saham",
-      "title": "Saham Dividen Paling Cerdas untuk Dibeli Dengan $1.000 Saat Ini",
-      "desc": "Saham Dividen Paling Cerdas untuk Dibeli Dengan $1.000 Saat Ini",
-      "time": "42 menit lalu",
+      "title": "Strategy Baru saja Mengumumkan Perubahan Besar pada Rencana Bitcoinnya. Inilah Artinya Bagi Saham MSTR.",
+      "desc": "Strategy Baru saja Mengumumkan Perubahan Besar pada Rencana Bitcoinnya. Inilah Artinya Bagi Saham MSTR.",
+      "time": "46 menit lalu",
       "date": "4 Jul 2026",
       "source": "Yahoo Finance",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/smartest-dividend-stock-buy-1-215500625.html",
+      "url": "https://finance.yahoo.com/markets/crypto/articles/strategy-just-announced-major-shake-225500473.html",
       "region": "Internasional",
-      "image": "https://media.zenfs.com/en/motleyfool.com/2e44aa594a9cdcc5bb559e949fcbe9b9",
+      "image": "https://media.zenfs.com/en/motleyfool.com/b7cd218a08fa663807994caca6ec6351",
       "source_icon": null,
       "highlight": false,
       "body": [
-        "Saham Dividen Paling Cerdas untuk Dibeli Dengan $1.000 Saat Ini"
+        "Strategy Baru saja Mengumumkan Perubahan Besar pada Rencana Bitcoinnya. Inilah Artinya Bagi Saham MSTR."
       ]
     },
     {
       "cat": "Saham",
-      "title": "Taruhan AI Meta berikutnya memiliki satu keuntungan besar bagi investor",
-      "desc": "Taruhan AI Meta berikutnya memiliki satu keuntungan besar bagi investor",
-      "time": "50 menit lalu",
+      "title": "Stok Mikron Melonjak Hampir 700% dalam Setahun. Apakah Stock Split Akan Segera Terjadi?",
+      "desc": "Stok Mikron Melonjak Hampir 700% dalam Setahun. Apakah Stock Split Akan Segera Terjadi?",
+      "time": "58 menit lalu",
       "date": "4 Jul 2026",
       "source": "Yahoo Finance",
-      "url": "https://finance.yahoo.com/technology/ai/articles/meta-next-ai-bet-one-214700848.html",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/micron-stock-soared-nearly-700-224300289.html",
       "region": "Internasional",
-      "image": "https://media.zenfs.com/en/thestreet_881/bef2856e3e4ef366e522b8946b81c348",
+      "image": "https://media.zenfs.com/en/motleyfool.com/7bcb62fafc1ca3e55e234731ad13a644",
       "source_icon": null,
       "highlight": false,
       "body": [
-        "Taruhan AI Meta berikutnya memiliki satu keuntungan besar bagi investor"
-      ]
-    },
-    {
-      "cat": "Saham",
-      "title": "Gamer memperdagangkan disk fisik senilai $1.000 di GameStop, beberapa hari setelah Sony mengumumkan berakhirnya era disk",
-      "desc": "Meskipun beberapa kolektor mungkin berencana untuk menimbun media fisik mereka, seorang gamer asal Columbus memutuskan untuk melikuidasi koleksinya",
-      "time": "57 menit lalu",
-      "date": "4 Jul 2026",
-      "source": "MarketWatch",
-      "url": "https://www.marketwatch.com/story/gamer-trades-in-1-000-of-physical-discs-at-gamestop-days-after-sony-announces-end-of-disc-era-bf8383b7?mod=mw_rss_topstories",
-      "region": "Internasional",
-      "image": "https://images.mktw.net/im-25562075",
-      "source_icon": null,
-      "highlight": false,
-      "body": [
-        "Meskipun beberapa kolektor mungkin berencana untuk menimbun media fisik mereka, seorang gamer asal Columbus memutuskan untuk melikuidasi koleksinya"
+        "Stok Mikron Melonjak Hampir 700% dalam Setahun. Apakah Stock Split Akan Segera Terjadi?"
       ]
     },
     {
       "cat": "Crypto",
       "title": "Kasus penggunaan Tokenisasi berikutnya adalah portofolio yang dipersonalisasi, kata eksekutif NYLIM",
       "desc": "Thomas Sy, kepala solusi multi-aset di manajer aset senilai $800 juta, mengatakan blockchain dapat memungkinkan konstruksi portofolio kompleks yang belum mungkin dilakukan dalam keuangan tradisional.",
-      "time": "3 jam lalu",
+      "time": "4 jam lalu",
       "date": "4 Jul 2026",
       "source": "CoinDesk",
       "url": "https://www.coindesk.com/business/2026/07/02/tokenization-s-next-use-case-is-personalized-portfolios-nylim-executive-says",
@@ -213,7 +213,7 @@
       "cat": "Crypto",
       "title": "Kraken memungkinkan pedagang menggunakan saham yang diberi token sebagai jaminan untuk perdagangan dengan leverage",
       "desc": "Pengguna yang memenuhi syarat sekarang dapat menggunakan saham tokenized dan ETF tertentu sebagai jaminan untuk perdagangan berjangka dan margin tanpa menjual kepemilikan mereka.",
-      "time": "3 jam lalu",
+      "time": "4 jam lalu",
       "date": "4 Jul 2026",
       "source": "Cointelegraph",
       "url": "https://cointelegraph.com/news/kraken-lets-traders-use-tokenized-stocks-as-collateral-for-leveraged-trades?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -229,7 +229,7 @@
       "cat": "Crypto",
       "title": "Bitcoin melonjak di atas $63,000, membalikkan kerugian akhir Juni",
       "desc": "Token mencapai level tertinggi dalam lebih dari sebulan selama perdagangan tipis pada tanggal 4 Juli, dengan XRP naik 5% dalam 24 jam untuk memimpin kenaikan di antara mata uang utama.",
-      "time": "4 jam lalu",
+      "time": "6 jam lalu",
       "date": "4 Jul 2026",
       "source": "CoinDesk",
       "url": "https://www.coindesk.com/markets/2026/07/04/bitcoin-jumps-above-usd63-000-reversing-end-june-losses",
@@ -245,7 +245,7 @@
       "cat": "Crypto",
       "title": "Pakar Bitcoin berbeda pendapat mengenai rencana untuk membekukan 1,1 juta bitcoin milik Satoshi seiring meningkatnya ancaman kuantum",
       "desc": "Pendiri Binance Changpeng Zhao mengatakan bitcoin Satoshi Nakamoto harus dibekukan sebelum komputer kuantum dapat mencurinya. Tidak semua orang setuju.",
-      "time": "5 jam lalu",
+      "time": "6 jam lalu",
       "date": "4 Jul 2026",
       "source": "CoinDesk",
       "url": "https://www.coindesk.com/business/2026/07/04/bitcoin-experts-split-over-plan-to-freeze-satoshi-s-1-1-million-bitcoin-as-quantum-threat-grows",
@@ -261,7 +261,7 @@
       "cat": "Crypto",
       "title": "Bagaimana peretas etis yang hanya memiliki server senilai $3.000 menemukan kelemahan yang dapat membahayakan kripto senilai $70 miliar",
       "desc": "Cacat kritis pada blockchain Aptos, yang telah ditambal, memberi para peneliti tingkat keberhasilan hampir 90% dalam melanggar jaminan keamanan inti, dengan biaya serangan hanya ratusan dolar.",
-      "time": "5 jam lalu",
+      "time": "6 jam lalu",
       "date": "4 Jul 2026",
       "source": "CoinDesk",
       "url": "https://www.coindesk.com/tech/2026/07/04/how-ethical-hackers-with-just-a-usd3-000-server-found-a-flaw-that-could-ve-put-usd70-billion-in-crypto-at-risk",
@@ -277,7 +277,7 @@
       "cat": "Crypto",
       "title": "Bitcoin menjadi $53K? Deposito Bursa Melonjak karena Analis Memperingatkan Peningkatan Volatilitas",
       "desc": "Bitcoin bangkit kembali di atas $60.000 pada minggu ini, tetapi peningkatan volatilitas mungkin akan terjadi karena setoran kripto ke bursa melonjak.",
-      "time": "6 jam lalu",
+      "time": "7 jam lalu",
       "date": "4 Jul 2026",
       "source": "Decrypt",
       "url": "https://decrypt.co/372744/bitcoin-53k-exchange-deposits-jump-analysts-warn-increased-volatility",
