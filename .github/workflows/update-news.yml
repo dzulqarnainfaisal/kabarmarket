@@ -44,7 +44,7 @@ jobs:
       - name: Siapkan folder untuk publikasi (hanya file website)
         run: |
           mkdir -p dist
-          cp index.html berita.html ekonomi.html saham.html crypto.html edukasi.html tentang.html 404.html favicon_km.png logo-km.png og-image.png og-berita.png og-ekonomi.png og-saham.png og-crypto.png og-edukasi.png sitemap.xml robots.txt feed.xml news.json prices.json edu.json dist/
+          cp index.html berita.html ekonomi.html saham.html crypto.html edukasi.html tentang.html dukung.html 404.html favicon_km.png logo-km.png og-image.png og-berita.png og-ekonomi.png og-saham.png og-crypto.png og-edukasi.png sitemap.xml robots.txt feed.xml news.json prices.json edu.json dist/
           cp -r assets dist/
 
       - name: Publikasikan ke Cloudflare Pages
