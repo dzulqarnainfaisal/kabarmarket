@@ -67,6 +67,7 @@ function run() {
     ['/crypto.html', '0.9', 'hourly'],
     ['/edukasi.html', '0.8', 'weekly'],
     ['/tentang.html', '0.5', 'monthly'],
+    ['/dukung.html', '0.5', 'monthly'],
   ];
   const sitemap = [
     '<?xml version="1.0" encoding="UTF-8"?>',

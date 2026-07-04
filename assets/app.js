@@ -176,7 +176,7 @@
     let list = __cat === 'Semua' ? articles.slice() : articles.filter(a => a.cat === __cat);
     const q = currentSearch.trim().toLowerCase();
     if(q){
-      list = articles.filter(a => searchHaystack(a).includes(q));
+      list = list.filter(a => searchHaystack(a).includes(q));
     }
     if(__cat === 'Saham' && currentRegion !== 'Semua'){
       list = list.filter(a => (a.region || 'Indonesia') === currentRegion);
