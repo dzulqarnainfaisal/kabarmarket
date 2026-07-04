@@ -1,114 +1,130 @@
 {
-  "updated": "2026-07-04T07:02:00.330Z",
+  "updated": "2026-07-04T08:03:03.067Z",
   "articles": [
+    {
+      "cat": "Ekonomi",
+      "title": "Pedagang Online Hadapi Aturan Baru Pemungutan Pajak",
+      "desc": "Platform e-commerce bersiap menjalankan pemungutan PPh atas transaksi merchant. Kebijakan baru ini mulai berlaku pada 1 Juli 2026.",
+      "time": "2 menit lalu",
+      "date": "4 Jul 2026",
+      "source": "Detik Finance",
+      "url": "https://finance.detik.com/foto-bisnis/d-8558919/pedagang-online-hadapi-aturan-baru-pemungutan-pajak",
+      "region": "Indonesia",
+      "image": "https://akcdn.detik.net.id/community/media/visual/2026/07/03/pedagang-online-hadapi-aturan-baru-pemungutan-pajak-1783081760499_169.jpeg?w=360&amp;q=90",
+      "source_icon": null,
+      "highlight": true,
+      "body": [
+        "Platform e-commerce bersiap menjalankan pemungutan PPh atas transaksi merchant. Kebijakan baru ini mulai berlaku pada 1 Juli 2026."
+      ]
+    },
+    {
+      "cat": "Ekonomi",
+      "title": "6 Tahun Nasib Nggak Jelas, 422 Eks Buruh Pabrik di Marunda Bakal Dapat Pesangon",
+      "desc": "Setelah lebih dari enam tahun menunggu tanpa kepastian, harapan akhirnya datang bagi 422 mantan pekerja PT Master Wovenindo Label.",
+      "time": "10 menit lalu",
+      "date": "4 Jul 2026",
+      "source": "Detik Finance",
+      "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8559621/6-tahun-nasib-nggak-jelas-422-eks-buruh-pabrik-di-marunda-bakal-dapat-pesangon",
+      "region": "Indonesia",
+      "image": "https://akcdn.detik.net.id/community/media/visual/2018/06/08/de6e9b25-1141-4a3a-8ddf-f9785183de5d_169.jpeg?w=360&amp;q=90",
+      "source_icon": null,
+      "highlight": false,
+      "body": [
+        "Setelah lebih dari enam tahun menunggu tanpa kepastian, harapan akhirnya datang bagi 422 mantan pekerja PT Master Wovenindo Label."
+      ]
+    },
+    {
+      "cat": "Ekonomi",
+      "title": "Harga Emas Pegadaian 4 Juli 2026: Antam, UBS dan Galeri24 Kompak Naik",
+      "desc": "Harga emas Pegadaian pada Sabtu (4/7/2026) mengalami kenaikan untuk seluruh produk, mulai Antam, UBS hingga Galeri24. Simak daftar harga lengkapnya.",
+      "time": "39 menit lalu",
+      "date": "4 Jul 2026",
+      "source": "Liputan6",
+      "url": "https://www.liputan6.com/bisnis/read/8231490/harga-emas-pegadaian-4-juli-2026-antam-ubs-dan-galeri24-kompak-naik",
+      "region": "Indonesia",
+      "image": "https://cdn1-production-images-kly.akamaized.net/Hi7TBb_as7yRccxTg1BGd57JH18=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4805342/original/023824600_1713432003-20240418-Kenaikan_Harga_Emas-HER_4.jpg",
+      "source_icon": null,
+      "highlight": false,
+      "body": [
+        "Harga emas Pegadaian pada Sabtu (4/7/2026) mengalami kenaikan untuk seluruh produk, mulai Antam, UBS hingga Galeri24. Simak daftar harga lengkapnya."
+      ]
+    },
+    {
+      "cat": "Ekonomi",
+      "title": "Dukung Prambanan Jazz Festival, BRI Hadirkan Promo-Kemudahan Transaksi",
+      "desc": "Prambanan Jazz Festival 2026 hadirkan pengalaman musik luar biasa di Candi Prambanan, dengan musisi nasional dan internasional. Nikmati promo tiket lewat BRImo!",
+      "time": "46 menit lalu",
+      "date": "4 Jul 2026",
+      "source": "Detik Finance",
+      "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8559581/dukung-prambanan-jazz-festival-bri-hadirkan-promo-kemudahan-transaksi",
+      "region": "Indonesia",
+      "image": "https://akcdn.detik.net.id/community/media/visual/2024/07/07/penampilan-band-trisum-di-panggung-prambanan-jazz-2024-minggu-772024-1_169.jpeg?w=360&amp;q=90",
+      "source_icon": null,
+      "highlight": false,
+      "body": [
+        "Prambanan Jazz Festival 2026 hadirkan pengalaman musik luar biasa di Candi Prambanan, dengan musisi nasional dan internasional. Nikmati promo tiket lewat BRImo!"
+      ]
+    },
+    {
+      "cat": "Ekonomi",
+      "title": "Said Iqbal Bakal Temui Manajemen Tokopedia & TikTok Usai Heboh PHK Massal",
+      "desc": "Penasihat Khusus Presiden Bidang Ketenagakerjaan dan Kesejahteraan Buruh Said Iqbal menyatakan akan turun langsung menindaklanjuti PHK di Tokopedia dan TikTok.",
+      "time": "56 menit lalu",
+      "date": "4 Jul 2026",
+      "source": "Detik Finance",
+      "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8559567/said-iqbal-bakal-temui-manajemen-tokopedia-tiktok-usai-heboh-phk-massal",
+      "region": "Indonesia",
+      "image": "https://akcdn.detik.net.id/community/media/visual/2026/07/01/penasihat-khusus-presiden-bidang-ketenagakerjaan-dan-kesejahteraan-buruh-said-iqbal-1782911205393_169.jpeg?w=360&amp;q=90",
+      "source_icon": null,
+      "highlight": false,
+      "body": [
+        "Penasihat Khusus Presiden Bidang Ketenagakerjaan dan Kesejahteraan Buruh Said Iqbal menyatakan akan turun langsung menindaklanjuti PHK di Tokopedia dan TikTok."
+      ]
+    },
     {
       "cat": "Ekonomi",
       "title": "Harga Emas Antam Naik Tinggi, Kini Jadi Rp 2.670.000/Gram",
       "desc": "Harga emas Antam 24 karat bergerak naik Rp 19.000 per gram ke level 2.670.000 per gram.",
-      "time": "14 menit lalu",
+      "time": "1 jam lalu",
       "date": "4 Jul 2026",
       "source": "Detik Finance",
       "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8559534/harga-emas-antam-naik-tinggi-kini-jadi-rp-2-670-000-gram",
       "region": "Indonesia",
       "image": "https://akcdn.detik.net.id/community/media/visual/2025/10/22/harga-emas-terjun-bebas-pasar-cikini-langsung-diserbu-pembeli-1761123863094_169.jpeg?w=360&amp;q=90",
       "source_icon": null,
-      "highlight": true,
+      "highlight": false,
       "body": [
         "Harga emas Antam 24 karat bergerak naik Rp 19.000 per gram ke level 2.670.000 per gram."
       ]
     },
     {
-      "cat": "Ekonomi",
-      "title": "BULOG Karawang Tangani Laporan Warga soal Hama dari Gudang Beras",
-      "desc": "Perum BULOG tanggapi laporan warga tentang hama gudang di Karawang. Mereka berkomitmen untuk menangani masalah ini dan menjaga kenyamanan lingkungan sekitar.",
-      "time": "1 jam lalu",
+      "cat": "Saham",
+      "title": "IHSG Melemah Sepekan Terakhir, Kapitalisasi Pasar BEI Ikut Turun",
+      "desc": "Indeks Harga Saham Gabungan (IHSG) melemah tipis sepanjang perdagangan sepekan terakhir.",
+      "time": "39 menit lalu",
       "date": "4 Jul 2026",
       "source": "Detik Finance",
-      "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8559488/bulog-karawang-tangani-laporan-warga-soal-hama-dari-gudang-beras",
+      "url": "https://finance.detik.com/bursa-dan-valas/d-8559594/ihsg-melemah-sepekan-terakhir-kapitalisasi-pasar-bei-ikut-turun",
       "region": "Indonesia",
-      "image": "https://akcdn.detik.net.id/community/media/visual/2026/07/04/perum-bulog-1783144762105_43.jpeg?w=360&amp;q=90",
+      "image": "https://akcdn.detik.net.id/community/media/visual/2026/05/18/ihsg-anjlok-ke-zona-merah-bursa-saham-melemah-tajam-1779098741437_169.jpeg?w=360&amp;q=90",
       "source_icon": null,
-      "highlight": false,
+      "highlight": true,
       "body": [
-        "Perum BULOG tanggapi laporan warga tentang hama gudang di Karawang. Mereka berkomitmen untuk menangani masalah ini dan menjaga kenyamanan lingkungan sekitar."
-      ]
-    },
-    {
-      "cat": "Ekonomi",
-      "title": "Intip Prediksi Rupiah Pekan Depan di Tengah Dinamika Negosiasi AS-Iran",
-      "desc": "Rupiah pekan depan diperkirakan bergerak fluktuatif di rentang 17.850 per dolar AS–18.100 per dolar AS. Pasar fokus pada tensi geopolitik dan kebijakan Fed.",
-      "time": "2 jam lalu",
-      "date": "4 Jul 2026",
-      "source": "Liputan6",
-      "url": "https://www.liputan6.com/bisnis/read/8229266/intip-prediksi-rupiah-pekan-depan-di-tengah-dinamika-negosiasi-as-iran",
-      "region": "Indonesia",
-      "image": "https://cdn0-production-images-kly.akamaized.net/w9RFT_R7sI5URe2Vl3n-HQmVR4I=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/5579576/original/026720500_1778057267-4.jpg",
-      "source_icon": null,
-      "highlight": false,
-      "body": [
-        "Rupiah pekan depan diperkirakan bergerak fluktuatif di rentang 17.850 per dolar AS–18.100 per dolar AS. Pasar fokus pada tensi geopolitik dan kebijakan Fed."
-      ]
-    },
-    {
-      "cat": "Ekonomi",
-      "title": "Harga Emas Antam 4 Juli 2026 Melonjak Rp 19.000, Buyback Lebih Tinggi",
-      "desc": "Update terbaru harga emas Antam hari ini Sabtu (4/7/2026) naik Rp 19.000 menjadi Rp 2.670.000 per gram. Harga buyback juga melesat Rp 29.000.",
-      "time": "4 jam lalu",
-      "date": "4 Jul 2026",
-      "source": "Liputan6",
-      "url": "https://www.liputan6.com/bisnis/read/8227605/harga-emas-antam-4-juli-2026-melonjak-rp-19000-buyback-lebih-tinggi",
-      "region": "Indonesia",
-      "image": "https://cdn0-production-images-kly.akamaized.net/yUh4KjQqXIbQmS2-SKQr_t6NwCA=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4156441/original/068897800_1663062670-Emas5.jpg",
-      "source_icon": null,
-      "highlight": false,
-      "body": [
-        "Update terbaru harga emas Antam hari ini Sabtu (4/7/2026) naik Rp 19.000 menjadi Rp 2.670.000 per gram. Harga buyback juga melesat Rp 29.000."
-      ]
-    },
-    {
-      "cat": "Ekonomi",
-      "title": "Harga Minyak Dunia Stabil, Pasar Menanti Perdamaian AS-Iran",
-      "desc": "Harga minyak dunia bergerak tipis sepekan terakhir seiring harapan tercapainya kesepakatan damai antara Amerika Serikat dan Iran.",
-      "time": "5 jam lalu",
-      "date": "4 Jul 2026",
-      "source": "Liputan6",
-      "url": "https://www.liputan6.com/bisnis/read/8225945/harga-minyak-dunia-stabil-pasar-menanti-perdamaian-as-iran",
-      "region": "Indonesia",
-      "image": "https://cdn1-production-images-kly.akamaized.net/dHaWYLazHMMVFaWO7R0g-yjvW3Y=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4166753/original/096704000_1663802133-Harga_Minyak_Dunia_2.jpg",
-      "source_icon": null,
-      "highlight": false,
-      "body": [
-        "Harga minyak dunia bergerak tipis sepekan terakhir seiring harapan tercapainya kesepakatan damai antara Amerika Serikat dan Iran."
-      ]
-    },
-    {
-      "cat": "Ekonomi",
-      "title": "Shopee Buka Banyak Lowongan Kerja, Lulusan S1 Segera Lamar!",
-      "desc": "Shopee kembali membuka lowongan pekerjaan mulai dari strategi bisnis hingga ShopeeFood. Simak syarat dan ketentuannya di sini.",
-      "time": "6 jam lalu",
-      "date": "4 Jul 2026",
-      "source": "Liputan6",
-      "url": "https://www.liputan6.com/bisnis/read/8159800/shopee-buka-banyak-lowongan-kerja-lulusan-s1-segera-lamar",
-      "region": "Indonesia",
-      "image": "https://cdn0-production-images-kly.akamaized.net/vTP7iEFEXfUtEPDJbsqoQS3Ec4Q=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/2942852/original/036020200_1571384417-Kantor_Shopee.jpg",
-      "source_icon": null,
-      "highlight": false,
-      "body": [
-        "Shopee kembali membuka lowongan pekerjaan mulai dari strategi bisnis hingga ShopeeFood. Simak syarat dan ketentuannya di sini."
+        "Indeks Harga Saham Gabungan (IHSG) melemah tipis sepanjang perdagangan sepekan terakhir."
       ]
     },
     {
       "cat": "Saham",
       "title": "Booming AI membentuk kembali pasar Valas melalui aliran lindung nilai ekuitas",
       "desc": "Booming AI membentuk kembali pasar Valas melalui aliran lindung nilai ekuitas",
-      "time": "2 jam lalu",
+      "time": "3 jam lalu",
       "date": "4 Jul 2026",
       "source": "Investing.com",
       "url": "https://www.investing.com/news/stock-market-news/ai-boom-reshapes-fx-markets-through-equity-hedging-flows-4775340",
       "region": "Internasional",
       "image": "https://i-invdn-com.investing.com/news/LYNXNPEB9606Q_M.jpg",
       "source_icon": null,
-      "highlight": true,
+      "highlight": false,
       "body": [
         "Booming AI membentuk kembali pasar Valas melalui aliran lindung nilai ekuitas"
       ]
@@ -117,7 +133,7 @@
       "cat": "Saham",
       "title": "SK Hynix mempertimbangkan pembayaran biaya 0,5% dalam penawaran ADR, Bloomberg News melaporkan",
       "desc": "SK Hynix mempertimbangkan pembayaran biaya 0,5% dalam penawaran ADR, Bloomberg News melaporkan",
-      "time": "2 jam lalu",
+      "time": "3 jam lalu",
       "date": "4 Jul 2026",
       "source": "Investing.com",
       "url": "https://www.investing.com/news/stock-market-news/sk-hynix-considering-05-fee-payout-in-adr-offering-bloomberg-news-reports-4775339",
@@ -133,7 +149,7 @@
       "cat": "Saham",
       "title": "IHSG Turun ke Level 5.875, Nilai Transaksi Bursa Anjlok Hampir 36%",
       "desc": "IHSG melemah 0,35% pada pekan 29 Juni-3 Juli 2026. Nilai transaksi harian BEI anjlok hampir 36%, sementara investor asing masih mencatat jual bersih.",
-      "time": "2 jam lalu",
+      "time": "3 jam lalu",
       "date": "4 Jul 2026",
       "source": "Liputan6",
       "url": "https://www.liputan6.com/saham/read/8226538/ihsg-turun-ke-level-5875-nilai-transaksi-bursa-anjlok-hampir-36",
@@ -149,7 +165,7 @@
       "cat": "Saham",
       "title": "SK Hynix membebani biaya penjaminan sebesar 0,5% untuk penjualan saham blockbuster AS",
       "desc": "SK Hynix membebani biaya penjaminan sebesar 0,5% untuk penjualan saham blockbuster AS",
-      "time": "2 jam lalu",
+      "time": "3 jam lalu",
       "date": "4 Jul 2026",
       "source": "Investing.com",
       "url": "https://www.investing.com/news/stock-market-news/sk-hynix-weighs-05-underwriting-fee-for-blockbuster-us-share-sale-4775338",
@@ -165,7 +181,7 @@
       "cat": "Saham",
       "title": "Akankah merger DT/TMUS benar-benar terlaksana?",
       "desc": "Akankah merger DT/TMUS benar-benar terlaksana?",
-      "time": "4 jam lalu",
+      "time": "5 jam lalu",
       "date": "4 Jul 2026",
       "source": "Investing.com",
       "url": "https://www.investing.com/news/stock-market-news/will-a-dttmus-merger-really-go-ahead-4775334",
@@ -178,42 +194,42 @@
       ]
     },
     {
-      "cat": "Saham",
-      "title": "Bursa Saham Global Kompak Naik, Wall Street dan Eropa Catat Kinerja Positif",
-      "desc": "Bursa saham global menguat pada akhir pekan didorong harapan penurunan suku bunga The Fed, meski saham sektor semikonduktor masih tertekan.",
-      "time": "5 jam lalu",
+      "cat": "Crypto",
+      "title": "XRP naik 8% karena kerugian pemegang rekor menandakan imbalan risiko yang lebih baik bagi pembeli",
+      "desc": "MVRV token selama 30 hari dan 365 hari, ukuran seberapa jauh pemegangnya berada di bawah air, berada di dekat -45% dan -47%, posisi terendah yang menurut Santiment belum pernah dicapai XRP sebelumnya. Beberapa pedagang membaca kerugian yang berkepanjangan sebagai sinyal pelawan.",
+      "time": "55 menit lalu",
       "date": "4 Jul 2026",
-      "source": "Liputan6",
-      "url": "https://www.liputan6.com/saham/read/8226377/bursa-saham-global-kompak-naik-wall-street-dan-eropa-catat-kinerja-positif",
+      "source": "CoinDesk",
+      "url": "https://www.coindesk.com/markets/2026/07/04/xrp-climbs-8-as-one-onchain-gauge-signal-shows-favorable-risk-reward-for-buyers",
       "region": "Indonesia",
-      "image": "https://cdn1-production-images-kly.akamaized.net/SfsSqcyBIE4R97FyUZ5-NshW8mY=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/3074967/original/055589500_1584006686-20200312-Wall-Street-2.jpg",
+      "image": "https://cdn.sanity.io/images/s3y3vcno/production/341ec0cc75f21e4a7dff5d86d7ee120a3f79c843-1593x1194.jpg?fm=jpg&amp;w=1920&amp;h=1080&amp;crop=focalpoint&amp;fit=clip",
       "source_icon": null,
-      "highlight": false,
+      "highlight": true,
       "body": [
-        "Bursa saham global menguat pada akhir pekan didorong harapan penurunan suku bunga The Fed, meski saham sektor semikonduktor masih tertekan."
+        "MVRV token selama 30 hari dan 365 hari, ukuran seberapa jauh pemegangnya berada di bawah air, berada di dekat -45% dan -47%, posisi terendah yang menurut Santiment belum pernah dicapai XRP sebelumnya. Beberapa pedagang membaca kerugian yang berkepanjangan sebagai sinyal pelawan."
       ]
     },
     {
       "cat": "Crypto",
       "title": "Pergerakan parabola Bitcoin berikutnya mungkin membutuhkan modal segar sebesar $1 triliun",
-      "desc": "Pada siklus ini, uang baru senilai sekitar $697 miliar telah menghasilkan keuntungan sekitar 689%, dibandingkan dengan siklus sebelumnya di mana modal yang jauh lebih sedikit mendorong pengembalian sebesar 2.000 persen hingga lebih dari 50.000 persen.",
-      "time": "13 menit lalu",
+      "desc": "Pada siklus ini, uang baru senilai sekitar $697 miliar telah menghasilkan keuntungan sekitar 689%, dibandingkan dengan siklus sebelumnya di mana modal yang jauh lebih sedikit mendorong pengembalian hingga 50.000%.",
+      "time": "1 jam lalu",
       "date": "4 Jul 2026",
       "source": "CoinDesk",
       "url": "https://www.coindesk.com/markets/2026/07/04/bitcoin-s-next-parabolic-run-may-need-usd1-trillion-in-fresh-capital",
       "region": "Indonesia",
       "image": "https://cdn.sanity.io/images/s3y3vcno/production/1919049550fea9dad7ad0c30a294acc2a578015a-1920x1440.jpg?fm=jpg&amp;w=1920&amp;h=1080&amp;crop=focalpoint&amp;fit=clip",
       "source_icon": null,
-      "highlight": true,
+      "highlight": false,
       "body": [
-        "Pada siklus ini, uang baru senilai sekitar $697 miliar telah menghasilkan keuntungan sekitar 689%, dibandingkan dengan siklus sebelumnya di mana modal yang jauh lebih sedikit mendorong pengembalian sebesar 2.000 persen hingga lebih dari 50.000 persen."
+        "Pada siklus ini, uang baru senilai sekitar $697 miliar telah menghasilkan keuntungan sekitar 689%, dibandingkan dengan siklus sebelumnya di mana modal yang jauh lebih sedikit mendorong pengembalian hingga 50.000%."
       ]
     },
     {
       "cat": "Crypto",
       "title": "Rasio untung dan rugi Bitcoin turun ke level terendah dalam 43 bulan",
       "desc": "Kepala investasi Bitwise Matt Hougan mengatakan titik terendahnya “lebih dekat dari sebelumnya,” sementara analis Swan Bitcoin menyarankan investor membeli sekarang dengan harga diskon daripada membayar lebih di kemudian hari.",
-      "time": "2 jam lalu",
+      "time": "3 jam lalu",
       "date": "4 Jul 2026",
       "source": "Cointelegraph",
       "url": "https://cointelegraph.com/news/bitcoin-realized-profit-loss-ratio-falls-to-lowest-level-since-2022-cryptoquant?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -229,7 +245,7 @@
       "cat": "Crypto",
       "title": "Inilah yang terjadi di kripto hari ini",
       "desc": "Ingin tahu apa yang terjadi di crypto hari ini? Berikut adalah berita terbaru tentang tren dan peristiwa harian yang memengaruhi harga Bitcoin, blockchain, DeFi, Web3, dan regulasi kripto.",
-      "time": "2 jam lalu",
+      "time": "3 jam lalu",
       "date": "4 Jul 2026",
       "source": "Cointelegraph",
       "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -245,7 +261,7 @@
       "cat": "Crypto",
       "title": "Kelompok penegak hukum AS membatalkan penolakan terhadap CLARITY Act: Report",
       "desc": "Sheriff Wilayah Besar Amerika mengatakan mereka masih menginginkan Undang-Undang CLARITY diubah untuk memberikan lebih banyak sumber daya kepada penegak hukum setempat untuk menyelidiki kasus keuangan gelap.",
-      "time": "2 jam lalu",
+      "time": "3 jam lalu",
       "date": "4 Jul 2026",
       "source": "Cointelegraph",
       "url": "https://cointelegraph.com/news/us-law-enforcement-group-drops-opposition-to-clarity-act?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -261,7 +277,7 @@
       "cat": "Crypto",
       "title": "Bitcoin, Ether memperpanjang reli bantuan karena ketakutan ekstrim bertemu dengan pembelian ETF yang baru",
       "desc": "Bitcoin dan Ether memantul dari posisi terendah multi-tahun karena pembeli penurunan akhirnya turun tangan, dan ETF BTC spot mengalami arus masuk $221 juta pada 2 Juli.",
-      "time": "3 jam lalu",
+      "time": "4 jam lalu",
       "date": "4 Jul 2026",
       "source": "Cointelegraph",
       "url": "https://cointelegraph.com/markets/bitcoin-ether-extend-relief-rallies-as-extreme-fear-meets-renewed-etf-buying?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -271,22 +287,6 @@
       "highlight": false,
       "body": [
         "Bitcoin dan Ether memantul dari posisi terendah multi-tahun karena pembeli penurunan akhirnya turun tangan, dan ETF BTC spot mengalami arus masuk $221 juta pada 2 Juli."
-      ]
-    },
-    {
-      "cat": "Crypto",
-      "title": "SOL reli saat memecoin Solana, prediksi lonjakan aktivitas pasar: Apakah bull kembali?",
-      "desc": "Meningkatnya minat terhadap memecoin jaringan Solana dan pasar prediksi diikuti oleh kenaikan harga SOL. Apakah momentum ini akan terus berlanjut?",
-      "time": "9 jam lalu",
-      "date": "3 Jul 2026",
-      "source": "Cointelegraph",
-      "url": "https://cointelegraph.com/markets/sol-rallies-as-solana-memecoins-prediction-market-activity-surge-are-bulls-back?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-      "region": "Indonesia",
-      "image": "https://s3-images.ctmedia.io/media/article-covers/hi-pension-funds-are-opening-up-to-investing-into-crypto-solana.jpg",
-      "source_icon": null,
-      "highlight": false,
-      "body": [
-        "Meningkatnya minat terhadap memecoin jaringan Solana dan pasar prediksi diikuti oleh kenaikan harga SOL. Apakah momentum ini akan terus berlanjut?"
       ]
     }
   ]
