@@ -639,7 +639,7 @@
     try{ window.scrollTo({ top: el.offsetTop - 70, behavior: 'smooth' }); }catch(e){ window.scrollTo(0, Math.max(0, el.offsetTop - 70)); }
   }
   function paginateList(list, containerId, onGo){
-    var per = 10;
+    var per = 12;
     var pages = Math.max(1, Math.ceil(list.length / per));
     var page = Math.min(getPageParam(), pages);
     renderPager(containerId, page, pages, onGo);
