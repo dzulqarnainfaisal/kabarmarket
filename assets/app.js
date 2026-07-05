@@ -200,7 +200,7 @@
           <span>·</span>
           <span>${a.date}</span>
           <span>·</span>
-          <span>${a.time}</span>
+          <span>${kmRelTime(a)}</span>
         </div>
         <span class="read-more">Baca selengkapnya →</span>
         <div class="disclaimer-inline"><span class="mark">⚠</span><span>Bukan ajakan membeli/menjual.</span></div>
@@ -232,6 +232,26 @@
     }
     return kmParseDate(a && a.date);
   }
+  // Hitung keterangan waktu SECARA REALTIME di browser dari timestamp absolut (ts).
+  // Membuat 'x menit/jam/hari lalu' selalu akurat saat halaman dibuka, walau
+  // news.json belum diperbarui. Bila ts tak ada, pakai tanggal; bila itu pun
+  // tak ada, pakai a.time apa adanya.
+  function kmRelTime(a){
+    var base = null;
+    if(a && a.ts){ var p = Date.parse(a.ts); if(!isNaN(p)) base = p; }
+    if(base === null && a && a.date){ var d = kmParseDate(a.date); if(d) base = d; }
+    if(base === null) return (a && a.time) || '';
+    var diff = Date.now() - base; if(diff < 0) diff = 0;
+    var menit = Math.round(diff/60000);
+    if(menit < 1) return 'Baru saja';
+    if(menit < 60) return menit + ' menit lalu';
+    var jam = Math.round(menit/60);
+    if(jam < 24) return jam + ' jam lalu';
+    var hari = Math.round(jam/24);
+    if(hari < 7) return hari + ' hari lalu';
+    var minggu = Math.round(hari/7);
+    return minggu + ' minggu lalu';
+  }
   function renderHighlights(){
     if(!articles || !articles.length) return;
     if(!document.getElementById('heroMainClick')) return;
@@ -249,7 +269,7 @@
       if(__hImg){ __hImg.style.display = ''; __hImg.src = m.image || phImg(m.cat); __hImg.onerror = function(){ __hImg.onerror = null; __hImg.src = phImg(m.cat); }; }
       document.getElementById('heroMainTitle').textContent = m.title;
       document.getElementById('heroMainDesc').textContent = m.desc;
-      document.getElementById('heroMainMeta').textContent = (m.source || '') + (m.time ? ' · ' + m.time : '');
+      document.getElementById('heroMainMeta').textContent = (m.source || '') + (kmRelTime(m) ? ' · ' + kmRelTime(m) : '');
       document.getElementById('heroMainClick').onclick = () => openNewsModal(pick[0]);
     }
     [0,1].forEach(k => {
@@ -268,7 +288,7 @@
       const sp = document.getElementById('heroSide' + k + 'Pill');
       sp.className = 'pill ' + (pillClass[a.cat] || '');
       sp.textContent = a.cat;
-      document.getElementById('heroSide' + k + 'Time').textContent = a.time || '';
+      document.getElementById('heroSide' + k + 'Time').textContent = kmRelTime(a) || '';
       card.style.cursor = 'pointer';
       card.onclick = () => openNewsModal(idx);
     });
@@ -544,7 +564,7 @@
     document.getElementById('newsModalPill').className = 'pill ' + pillClass[a.cat];
     document.getElementById('newsModalPill').textContent = a.cat;
     document.getElementById('newsModalTitle').textContent = a.title;
-    document.getElementById('newsModalMeta').textContent = a.source + ' · ' + a.date + ' · ' + a.time;
+    document.getElementById('newsModalMeta').textContent = a.source + ' · ' + a.date + ' · ' + kmRelTime(a);
     const nImg = document.getElementById('newsModalImg');
     nImg.src = a.image || phImg(a.cat); nImg.style.display = ''; nImg.onerror = () => { nImg.onerror = null; nImg.src = phImg(a.cat); };
     const summary = a.desc || (a.body && a.body.length ? a.body[0] : '');
@@ -613,7 +633,7 @@
       + '<img class="card-img" src="'+(a.image||phImg(a.cat))+'" alt="" loading="lazy" onerror="this.onerror=null;this.src=window.KMph(\''+(a.cat||'')+'\')">'
       + '<span class="pill '+(pillClass[a.cat]||'')+'">'+a.cat+'</span>'
       + '<h3>'+a.title+'</h3><p>'+a.desc+'</p>'
-      + '<div class="meta-row card-meta"><span class="card-source">'+a.source+'</span><span>·</span><span>'+a.date+'</span><span>·</span><span>'+a.time+'</span></div>'
+      + '<div class="meta-row card-meta"><span class="card-source">'+a.source+'</span><span>·</span><span>'+a.date+'</span><span>·</span><span>'+kmRelTime(a)+'</span></div>'
       + '<span class="read-more">Baca selengkapnya →</span>'
       + '<div class="disclaimer-inline"><span class="mark">⚠</span><span>Bukan ajakan membeli/menjual.</span></div>'
       + '</button>';

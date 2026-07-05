@@ -49,7 +49,7 @@ function loadFeeds() {
 }
 
 const PER_CAT = 6; // jumlah berita per kategori (tampilan awal per halaman)
-const ARCHIVE_PER_CAT = Infinity; // tanpa batas - SEMUA berita lama disimpan (untuk paginasi). Ganti ke angka mis. 100 untuk membatasi.
+const ARCHIVE_PER_CAT = 200; // maksimum 200 berita per kategori (arsip untuk paginasi). Berita terlama di atas 200 akan dilepas. Ganti ke Infinity untuk tanpa batas.
 const DO_TRANSLATE = process.env.TRANSLATE !== '0'; // set TRANSLATE=0 untuk mematikan
 
 // --- Filter kualitas berita ---------------------------------------------------
@@ -67,11 +67,13 @@ function stripDash(s) {
 
 function isQuality(a) {
 	const t = ((a.title || '') + ' ' + (a.desc || '')).toLowerCase();
-	if (BLOCK_RE.test(t)) return false;                   // jelas iklan/hiburan
-	if ((a.title || '').trim().length < 20) return false; // judul terlalu pendek/clickbait
-	if (a.cat) return true;                               // dari feed khusus (Saham/Crypto) - sudah relevan
-	return RELEVAN_RE.test(t);                             // wajib relevan ke ekonomi/pasar
+	if (BLOCK_RE.test(t)) return false;                   // buang iklan/promosi/hiburan
+	if ((a.title || '').trim().length < 15) return false; // judul terlalu pendek/clickbait
+	return true;                                          // sisanya lolos (feed sudah fokus ekonomi/pasar)
 }
+// Catatan: RELEVAN_RE sengaja TIDAK dijadikan syarat wajib agar berita ekonomi
+// yang sah tidak ikut terbuang. Dipakai hanya bila ingin penyaringan lebih ketat.
+void RELEVAN_RE;
 
 function hostOf(u) {
 	try { return new URL(u).hostname.replace(/^www\./, ''); } catch (_) { return 'Sumber'; }
@@ -300,6 +302,7 @@ async function main() {
 	const merged = new Map();
 	for (const a of articles) { const k = keyOf(a); if (!merged.has(k)) merged.set(k, a); }
 	for (const a of existing) {
+		if (!a.url) continue;        // lewati data contoh/placeholder (tanpa url) agar tak menumpuk di feed asli
 		if (!isQuality(a)) continue; // arsip lama pun ikut disaring kualitasnya
 		const k = keyOf(a);
 		if (!merged.has(k)) merged.set(k, a);

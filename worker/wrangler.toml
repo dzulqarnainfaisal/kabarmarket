@@ -1,0 +1,24 @@
+# Konfigurasi Cloudflare Worker untuk Asisten Edukasi Kabar Market
+name = "km-ai-worker"
+main = "km-ai-worker.js"
+compatibility_date = "2025-01-01"
+
+# Binding Workers AI (mode default, gratis dalam batas tertentu, tanpa API key eksternal)
+[ai]
+binding = "AI"
+
+# (Opsional) Batasi domain yang boleh memanggil Worker. Ganti '*' menjadi
+# domain situsmu untuk keamanan lebih, mis. "https://kabarmarket.web.id".
+[vars]
+ALLOWED_ORIGIN = "*"
+# CF_MODEL = "@cf/meta/llama-3.1-8b-instruct"   # ganti model Workers AI bila mau
+# OPENAI_MODEL = "gpt-4o-mini"                   # dipakai hanya jika OPENAI_API_KEY diset
+# NVIDIA_MODEL = "z-ai/glm-5.2"                  # dipakai hanya jika NVIDIA_API_KEY diset
+
+# Untuk memakai NVIDIA / GLM-5.2 (prioritas utama, gratis via trial NVIDIA),
+# JANGAN tulis key di sini. Set sebagai secret lewat terminal:
+#   npx wrangler secret put NVIDIA_API_KEY
+#
+# Untuk memakai OpenAI (opsional, kualitas tinggi tapi berbayar), JANGAN
+# tulis key di sini. Set sebagai secret lewat terminal:
+#   npx wrangler secret put OPENAI_API_KEY
