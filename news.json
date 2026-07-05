@@ -1,11 +1,79 @@
 {
-  "updated": "2026-07-05T10:33:34.815Z",
+  "updated": "2026-07-05T12:02:39.658Z",
   "articles": [
+    {
+      "cat": "Ekonomi",
+      "title": "258 Juta Orang Naik Kereta dalam 6 Bulan",
+      "desc": "Ratusan juta orang menggunakan kereta api pada paruh pertama 2026.",
+      "time": "32 menit lalu",
+      "date": "5 Jul 2026",
+      "source": "Detik Finance",
+      "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8560932/258-juta-orang-naik-kereta-dalam-6-bulan",
+      "region": "Indonesia",
+      "image": "https://akcdn.detik.net.id/community/media/visual/2026/03/24/arus-balik-lebaran-lewat-kereta-api-1774345135238_169.jpeg?w=360&amp;q=90",
+      "source_icon": null,
+      "ts": "2026-07-05T11:30:41.000Z",
+      "highlight": true,
+      "body": [
+        "Ratusan juta orang menggunakan kereta api pada paruh pertama 2026."
+      ]
+    },
+    {
+      "cat": "Ekonomi",
+      "title": "Harga Daging Sapi dan Bawang Putih Kompak Naik",
+      "desc": "Berikut sejumlah harga komoditas pangan termasuk bawang, daging sapi hingga beras berdasarkan data PIHPS pada 3 Juli 2026.",
+      "time": "1 jam lalu",
+      "date": "5 Jul 2026",
+      "source": "Liputan6",
+      "url": "https://www.liputan6.com/bisnis/read/8239502/harga-daging-sapi-dan-bawang-putih-kompak-naik",
+      "region": "Indonesia",
+      "image": "https://cdn0-production-images-kly.akamaized.net/DIvSqlasJo2grMjQ46poIR4T7gE=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4006968/original/097443100_1650957727-20220426-Lebaran-Daging-Ayam-Sapi-1.jpg",
+      "source_icon": null,
+      "ts": "2026-07-05T11:00:53.000Z",
+      "highlight": false,
+      "body": [
+        "Berikut sejumlah harga komoditas pangan termasuk bawang, daging sapi hingga beras berdasarkan data PIHPS pada 3 Juli 2026."
+      ]
+    },
+    {
+      "cat": "Ekonomi",
+      "title": "Oman Gandeng Inggris dan Prancis Amankan Pelayaran di Selat Hormuz",
+      "desc": "PM Inggris Keir Starmer dan Presiden Prancis Emmanuel Macron menegaskan, Selat Hormuz adalah jalur vital bagi ekonomi global.",
+      "time": "1 jam lalu",
+      "date": "5 Jul 2026",
+      "source": "Liputan6",
+      "url": "https://www.liputan6.com/bisnis/read/8239480/oman-gandeng-inggris-dan-prancis-amankan-pelayaran-di-selat-hormuz",
+      "region": "Indonesia",
+      "image": "https://cdn0-production-images-kly.akamaized.net/ci3WpTfFY3sfqz9JpDfIZpFd0Tw=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/5544036/original/010993900_1775044436-5.jpg",
+      "source_icon": null,
+      "ts": "2026-07-05T10:33:38.000Z",
+      "highlight": false,
+      "body": [
+        "PM Inggris Keir Starmer dan Presiden Prancis Emmanuel Macron menegaskan, Selat Hormuz adalah jalur vital bagi ekonomi global."
+      ]
+    },
+    {
+      "cat": "Ekonomi",
+      "title": "Puan soal Pemilihan Komisaris BUMN: Kami Dorong Profesional & Kompeten",
+      "desc": "Ketua DPR Puan Maharani merespons soal pemilihan Komisaris BUMN yang disorot oleh publik.",
+      "time": "2 jam lalu",
+      "date": "5 Jul 2026",
+      "source": "Detik Finance",
+      "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8560783/puan-soal-pemilihan-komisaris-bumn-kami-dorong-profesional-kompeten",
+      "region": "Indonesia",
+      "image": "https://akcdn.detik.net.id/community/media/visual/2026/05/20/prabowo-dan-puan-di-paripurna-dpr-1779247773506_169.png?w=360&amp;q=90",
+      "source_icon": null,
+      "ts": "2026-07-05T10:30:06.000Z",
+      "highlight": false,
+      "body": [
+        "Ketua DPR Puan Maharani merespons soal pemilihan Komisaris BUMN yang disorot oleh publik."
+      ]
+    },
     {
       "cat": "Ekonomi",
       "title": "Harga Emas Batangan Berpeluang Sentuh Rp 2,67 Juta per Gram",
       "desc": "Berikut sentimen yang akan mempengaruhi harga emas sepekan.",
-      "time": "55 menit lalu",
+      "time": "2 jam lalu",
       "date": "5 Jul 2026",
       "source": "Liputan6",
       "url": "https://www.liputan6.com/bisnis/read/8239457/harga-emas-batangan-berpeluang-sentuh-rp-267-juta-per-gram",
@@ -13,7 +81,7 @@
       "image": "https://cdn0-production-images-kly.akamaized.net/PGRbrIkAhhdPih1GwSU6kvs2g3c=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4723188/original/034031500_1705921925-fotor-ai-20240122181144.jpg",
       "source_icon": null,
       "ts": "2026-07-05T09:38:47.000Z",
-      "highlight": true,
+      "highlight": false,
       "body": [
         "Berikut sentimen yang akan mempengaruhi harga emas sepekan."
       ]
@@ -22,7 +90,7 @@
       "cat": "Ekonomi",
       "title": "Harga Daging-Beras Kompak Naik!",
       "desc": "Harga daging sapi kualitas 1 naik 0,17% ke harga Rp 150.250/kg, dan daging sapi kualitas 2 naik 0,32% menjadi Rp 141.500/kg.",
-      "time": "1 jam lalu",
+      "time": "3 jam lalu",
       "date": "5 Jul 2026",
       "source": "Detik Finance",
       "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8560843/harga-daging-beras-kompak-naik",
@@ -39,7 +107,7 @@
       "cat": "Ekonomi",
       "title": "Harga Minyak Berpotensi Tertekan, Pasar Fokus Sentimen Timur Tengah",
       "desc": "Volume pengiriman minyak di Selat Hormuz akan terus bertambah seiring kelancaran distribusi minyak di Selat Hormuz.",
-      "time": "2 jam lalu",
+      "time": "4 jam lalu",
       "date": "5 Jul 2026",
       "source": "Liputan6",
       "url": "https://www.liputan6.com/bisnis/read/8239425/harga-minyak-berpotensi-tertekan-pasar-fokus-sentimen-timur-tengah",
@@ -56,7 +124,7 @@
       "cat": "Ekonomi",
       "title": "Bakom Buka Suara soal Pemilihan Komisaris BUMN",
       "desc": "Penunjukan komisaris beberapa BUMN tengah menjadi sorotan.",
-      "time": "2 jam lalu",
+      "time": "4 jam lalu",
       "date": "5 Jul 2026",
       "source": "Detik Finance",
       "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8560734/bakom-buka-suara-soal-pemilihan-komisaris-bumn",
@@ -73,7 +141,7 @@
       "cat": "Ekonomi",
       "title": "Bebas Denda Pajak Kendaraan Masih Berlaku, Catat Tanggalnya",
       "desc": "Masyarakat diharapkan dapat memanfaatkan program pembebasan sanksi keterlambatan pembayaran PKB dan BBNKB.",
-      "time": "3 jam lalu",
+      "time": "4 jam lalu",
       "date": "5 Jul 2026",
       "source": "Liputan6",
       "url": "https://www.liputan6.com/bisnis/read/8239395/bebas-denda-pajak-kendaraan-masih-berlaku-catat-tanggalnya",
@@ -90,7 +158,7 @@
       "cat": "Ekonomi",
       "title": "Produsen Dipantau Ketat Usai Heboh Minyakita Bau Solar",
       "desc": "Kementerian Perdagangan (Kemendag) memperketat pengawasan penyaluran minyak goreng rakyat atau Minyakita mulai dari proses produksi hingga ke masyarakat.",
-      "time": "3 jam lalu",
+      "time": "5 jam lalu",
       "date": "5 Jul 2026",
       "source": "Detik Finance",
       "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8560516/produsen-dipantau-ketat-usai-heboh-minyakita-bau-solar",
@@ -107,7 +175,7 @@
       "cat": "Ekonomi",
       "title": "Pemerintah Butuh Rp 30,16 T buat Tangani 136 Perlintasan Sebidang",
       "desc": "Pemerintah akan menangani sebanyak 136 titik perlintasan sebidang kereta api hingga 2044.",
-      "time": "4 jam lalu",
+      "time": "5 jam lalu",
       "date": "5 Jul 2026",
       "source": "Detik Finance",
       "url": "https://finance.detik.com/infrastruktur/d-8560657/pemerintah-butuh-rp-30-16-t-buat-tangani-136-perlintasan-sebidang",
@@ -124,7 +192,7 @@
       "cat": "Ekonomi",
       "title": "Citi Prediksi Harga Minyak Brent Sentuh US$ 60 Akhir 2026",
       "desc": "Citi mengungkapkan sejumlah faktor yang mendorong harga minyak Brent turun ke depan.",
-      "time": "4 jam lalu",
+      "time": "5 jam lalu",
       "date": "5 Jul 2026",
       "source": "Liputan6",
       "url": "https://www.liputan6.com/bisnis/read/8239367/citi-prediksi-harga-minyak-brent-sentuh-us-60-akhir-2026",
@@ -141,7 +209,7 @@
       "cat": "Ekonomi",
       "title": "BNI Perkenalkan Logo HUT Ke-80 BNI, Ini Makna & Filosofi di Baliknya",
       "desc": "PT BNI memperkenalkan logo HUT ke-80 sebagai simbol pengabdian dan komitmen dalam melayani masyarakat. BNI terus berinovasi untuk kemajuan ekonomi Indonesia.",
-      "time": "4 jam lalu",
+      "time": "5 jam lalu",
       "date": "5 Jul 2026",
       "source": "Detik Finance",
       "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8560649/bni-perkenalkan-logo-hut-ke-80-bni-ini-makna-filosofi-di-baliknya",
@@ -158,7 +226,7 @@
       "cat": "Ekonomi",
       "title": "Pengawasan BUMN Perlu Diperkuat Usai Kasus di PT Pos",
       "desc": "Badan Pengelola Investasi (BPI) Danantara melakukan evaluasi menyeluruh terhadap PT Pos Indonesia.",
-      "time": "4 jam lalu",
+      "time": "6 jam lalu",
       "date": "5 Jul 2026",
       "source": "Detik Finance",
       "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8560671/pengawasan-bumn-perlu-diperkuat-usai-kasus-di-pt-pos",
@@ -175,7 +243,7 @@
       "cat": "Ekonomi",
       "title": "Pengawasan BUMN Perlu Diperkuat Usai Kasus PT Pos Terkuak",
       "desc": "Badan Pengelola Investasi (BPI) Danantara melakukan evaluasi menyeluruh terhadap PT Pos Indonesia.",
-      "time": "4 jam lalu",
+      "time": "6 jam lalu",
       "date": "5 Jul 2026",
       "source": "Detik Finance",
       "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8560671/pengawasan-bumn-perlu-diperkuat-usai-kasus-pt-pos-terkuak",
@@ -192,7 +260,7 @@
       "cat": "Ekonomi",
       "title": "Harga Emas Diprediksi Menguat Pekan Depan, Ini Pemicunya",
       "desc": "Harga emas dunia dinilai masih akan mengalami penguatan dalam waktu dekat.",
-      "time": "5 jam lalu",
+      "time": "6 jam lalu",
       "date": "5 Jul 2026",
       "source": "Detik Finance",
       "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8560600/harga-emas-diprediksi-menguat-pekan-depan-ini-pemicunya",
@@ -209,7 +277,7 @@
       "cat": "Ekonomi",
       "title": "Harga Emas Pegadaian 5 Juli 2026: Galeri24 dan UBS Kompak Stagnan",
       "desc": "Berikut daftar lengkap harga emas buatan Galeri24, UBS, dan Antam di Pegadaian pada Minggu, (5/7/2026).",
-      "time": "5 jam lalu",
+      "time": "7 jam lalu",
       "date": "5 Jul 2026",
       "source": "Liputan6",
       "url": "https://www.liputan6.com/bisnis/read/8239309/harga-emas-pegadaian-5-juli-2026-galeri24-dan-ubs-kompak-stagnan",
@@ -226,7 +294,7 @@
       "cat": "Ekonomi",
       "title": "Mengenal Cabo Verde, Negara yang Sempat Membuat Messi Cs Kewalahan",
       "desc": "Melihat ekonomi Cabo Verde, atau juga disebut Tanjung Verde, negara yang terdiri dari gugusan pulau terletak di lepas pantai barat Afrika.",
-      "time": "6 jam lalu",
+      "time": "8 jam lalu",
       "date": "5 Jul 2026",
       "source": "Liputan6",
       "url": "https://www.liputan6.com/bisnis/read/8239261/mengenal-cabo-verde-negara-yang-sempat-membuat-messi-cs-kewalahan",
@@ -243,7 +311,7 @@
       "cat": "Ekonomi",
       "title": "Minyakita Bau Solar Bikin Heboh, Produsen Terancam Sanksi Berat!",
       "desc": "Produk minyak goreng rakyat alias Minyakita yang diduga berbau solar ditemukan di Jawa Tengah.",
-      "time": "6 jam lalu",
+      "time": "8 jam lalu",
       "date": "5 Jul 2026",
       "source": "Detik Finance",
       "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8560451/minyakita-bau-solar-bikin-heboh-produsen-terancam-sanksi-berat",
@@ -260,7 +328,7 @@
       "cat": "Ekonomi",
       "title": "Daftar Lengkap Harga Emas Perhiasan Hari Ini 5 Juli 2026",
       "desc": "Berikut daftar lengkap harga emas perhiasan di Raja Emas dan Laku Emas pada Minggu, (5/7/2026).",
-      "time": "7 jam lalu",
+      "time": "8 jam lalu",
       "date": "5 Jul 2026",
       "source": "Liputan6",
       "url": "https://www.liputan6.com/bisnis/read/8239283/daftar-lengkap-harga-emas-perhiasan-hari-ini-5-juli-2026",
@@ -277,7 +345,7 @@
       "cat": "Ekonomi",
       "title": "Stasiun Induk CNG Mau Dibangun di Tanjung Enim",
       "desc": "Penggunaan Compressed Natural Gas (CNG) bakal diperluas di Indonesia.",
-      "time": "7 jam lalu",
+      "time": "8 jam lalu",
       "date": "5 Jul 2026",
       "source": "Detik Finance",
       "url": "https://finance.detik.com/energi/d-8560436/stasiun-induk-cng-mau-dibangun-di-tanjung-enim",
@@ -294,7 +362,7 @@
       "cat": "Ekonomi",
       "title": "Sinarmas AM Bidik Pasar Dana Pensiun Pekerja Informal",
       "desc": "Selama ini, industri dana pensiun nasional masih menghadapi tantangan rendahnya tingkat partisipasi masyarakat.",
-      "time": "7 jam lalu",
+      "time": "9 jam lalu",
       "date": "5 Jul 2026",
       "source": "Liputan6",
       "url": "https://www.liputan6.com/saham/read/8239216/sinarmas-am-bidik-pasar-dana-pensiun-pekerja-informal",
@@ -311,7 +379,7 @@
       "cat": "Ekonomi",
       "title": "Wacana Tarif Selat Hormuz Bisa Guncang Pasar Minyak Dunia",
       "desc": "Oman menjadi sorotan setelah muncul wacana penerapan tarif di Selat Hormuz. Analis menilai kebijakan itu berpotensi memengaruhi pasar minyak dunia.",
-      "time": "8 jam lalu",
+      "time": "9 jam lalu",
       "date": "5 Jul 2026",
       "source": "Liputan6",
       "url": "https://www.liputan6.com/bisnis/read/8237705/wacana-tarif-selat-hormuz-bisa-guncang-pasar-minyak-dunia",
@@ -328,7 +396,7 @@
       "cat": "Ekonomi",
       "title": "BUMN Ikut Kelola Kawasan Industri Garam di NTT buat Geber Produksi",
       "desc": "Kementerian Kelautan dan Perikanan (KKP) menggandeng PT Garam untuk percepatan swasembada garam nasional.",
-      "time": "8 jam lalu",
+      "time": "9 jam lalu",
       "date": "5 Jul 2026",
       "source": "Detik Finance",
       "url": "https://finance.detik.com/industri/d-8560332/bumn-ikut-kelola-kawasan-industri-garam-di-ntt-buat-geber-produksi",
@@ -345,7 +413,7 @@
       "cat": "Ekonomi",
       "title": "Transaksi QRIS Jakarta Tembus 38% dari Total Nasional",
       "desc": "Transaksi QRIS di Jakarta mencapai 38% dari total nasional, berkat kolaborasi Pemprov, BI, dan OJK. Dukung digitalisasi UMKM dan pasar rakyat.",
-      "time": "8 jam lalu",
+      "time": "9 jam lalu",
       "date": "5 Jul 2026",
       "source": "Detik Finance",
       "url": "https://finance.detik.com/moneter/d-8560358/transaksi-qris-jakarta-tembus-38-dari-total-nasional",
@@ -362,7 +430,7 @@
       "cat": "Ekonomi",
       "title": "Cek Harga Emas Antam Hari Ini 5 Juli 2026",
       "desc": "Berikut daftar lengkap harga emas PT Aneka Tambang Tbk (Antam) pada Minggu, (5/7/2026).",
-      "time": "8 jam lalu",
+      "time": "10 jam lalu",
       "date": "5 Jul 2026",
       "source": "Liputan6",
       "url": "https://www.liputan6.com/bisnis/read/8239240/cek-harga-emas-antam-hari-ini-5-juli-2026",
@@ -379,7 +447,7 @@
       "cat": "Ekonomi",
       "title": "BSI Tawarkan Sukuk Keberlanjutan Rp 5 Triliun",
       "desc": "BSI rilis Sukuk Mudharabah Keberlanjutan I Tahap II senilai Rp 5 triliun dengan rating idAAA(sy) dari Pefindo. Cek rincian imbal hasil dan tenornya di sini.",
-      "time": "9 jam lalu",
+      "time": "10 jam lalu",
       "date": "5 Jul 2026",
       "source": "Liputan6",
       "url": "https://www.liputan6.com/saham/read/8229072/bsi-tawarkan-sukuk-keberlanjutan-rp-5-triliun",
@@ -396,7 +464,7 @@
       "cat": "Ekonomi",
       "title": "Daftar Harga BBM 5 Juli 2026",
       "desc": "Harga BBM terbaru berlaku mulai Juli 2026. Pertamax Turbo, Dexlite dan Pertamina Dex turun harga. Simak juga tarif BBM Vivo, Shell dan BP-AKR.",
-      "time": "9 jam lalu",
+      "time": "10 jam lalu",
       "date": "5 Jul 2026",
       "source": "Liputan6",
       "url": "https://www.liputan6.com/bisnis/read/8237394/daftar-harga-bbm-5-juli-2026",
@@ -413,7 +481,7 @@
       "cat": "Ekonomi",
       "title": "Harga Emas Sepekan Naik Rp 25.000/Gram, Jadi Segini Sekarang",
       "desc": "Harga emas mengalami penguatan selama sepekan ini. Kenaikan harga terjadi sebesar 0,94% sejak awal pekan hingga hari ini.",
-      "time": "9 jam lalu",
+      "time": "10 jam lalu",
       "date": "5 Jul 2026",
       "source": "Detik Finance",
       "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8560318/harga-emas-sepekan-naik-rp-25-000-gram-jadi-segini-sekarang",
@@ -430,7 +498,7 @@
       "cat": "Ekonomi",
       "title": "Perempuan Didorong Kembangkan Ekonomi Desa, Pakai Cara Ini",
       "desc": "Program ini merupakan gerakan kolaboratif untuk mendorong desa yang inklusif, mandiri, dan berkelanjutan.",
-      "time": "9 jam lalu",
+      "time": "10 jam lalu",
       "date": "5 Jul 2026",
       "source": "Detik Finance",
       "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8560324/perempuan-didorong-kembangkan-ekonomi-desa-pakai-cara-ini",
@@ -447,7 +515,7 @@
       "cat": "Ekonomi",
       "title": "Pembangunan Infrastruktur di Jabar Masih Terkendala Pembebasan Lahan",
       "desc": "Pembangunan infrastruktur di Jawa Barat terhambat pembebasan lahan. Sinergi antara pemerintah pusat dan daerah diperlukan untuk percepatan proyek strategis",
-      "time": "9 jam lalu",
+      "time": "10 jam lalu",
       "date": "5 Jul 2026",
       "source": "Detik Finance",
       "url": "https://finance.detik.com/infrastruktur/d-8560328/pembangunan-infrastruktur-di-jabar-masih-terkendala-pembebasan-lahan",
@@ -464,7 +532,7 @@
       "cat": "Ekonomi",
       "title": "Lowongan Kerja OLX Indonesia 2026, Cek Posisi Magang hingga Profesional yang Dibuka",
       "desc": "Lowongan Kerja OLXMobbi kembali dibuka. Tersedia posisi magang hingga profesional di bidang Brand Marketing, Tax, Finance, dan Business Intelligence.",
-      "time": "10 jam lalu",
+      "time": "11 jam lalu",
       "date": "5 Jul 2026",
       "source": "Liputan6",
       "url": "https://www.liputan6.com/bisnis/read/8198125/lowongan-kerja-olx-indonesia-2026-cek-posisi-magang-hingga-profesional-yang-dibuka",
@@ -481,7 +549,7 @@
       "cat": "Ekonomi",
       "title": "Daftar 10 Negara yang Warganya Jajal Whoosh Saat ke Indonesia",
       "desc": "Kereta Cepat Indonesia-China (KCIC), operator kereta cepat atau Whoosh, melayani 184.740 penumpang warga negara asing (WNA) selama periode Januari-Juni 2026.",
-      "time": "10 jam lalu",
+      "time": "11 jam lalu",
       "date": "5 Jul 2026",
       "source": "Detik Finance",
       "url": "https://finance.detik.com/infrastruktur/d-8560142/daftar-10-negara-yang-warganya-jajal-whoosh-saat-ke-indonesia",
@@ -498,7 +566,7 @@
       "cat": "Ekonomi",
       "title": "Mentan Amran: Sawah Baru Papua Milik Rakyat, Bukan Siapa-siapa",
       "desc": "Mentan Amran Sulaiman menuturkan, saat program pengembangan sawah di Papua berjalan, pendapatan masyarakat naik hingga 300%.",
-      "time": "10 jam lalu",
+      "time": "12 jam lalu",
       "date": "5 Jul 2026",
       "source": "Liputan6",
       "url": "https://www.liputan6.com/bisnis/read/8239212/mentan-amran-sawah-baru-papua-milik-rakyat-bukan-siapa-siapa",
@@ -515,7 +583,7 @@
       "cat": "Ekonomi",
       "title": "BPR Modal Inti di Bawah Rp 6 Miliar Siap-siap Kena Sanksi",
       "desc": "Aturan terbaru OJK mewajibkan BPR memiliki modal inti minimum Rp 6 miliar.",
-      "time": "10 jam lalu",
+      "time": "12 jam lalu",
       "date": "5 Jul 2026",
       "source": "Detik Finance",
       "url": "https://finance.detik.com/moneter/d-8560138/bpr-modal-inti-di-bawah-rp-6-miliar-siap-siap-kena-sanksi",
@@ -532,7 +600,7 @@
       "cat": "Ekonomi",
       "title": "Top 3: Prediksi Rupiah Pekan Depan",
       "desc": "Berikut ini adalah tiga artikel terpopuler atau Top 3 di kanal bisnis Liputan6.com pada Minggu (5/7/2026).",
-      "time": "11 jam lalu",
+      "time": "12 jam lalu",
       "date": "5 Jul 2026",
       "source": "Liputan6",
       "url": "https://www.liputan6.com/bisnis/read/8237866/top-3-prediksi-rupiah-pekan-depan",
@@ -549,7 +617,7 @@
       "cat": "Ekonomi",
       "title": "Nasib Tokopedia Usai Diterjang Badai PHK",
       "desc": "PT GoTo Gojek Tokopedia Tbk (GOTO) buka suara soal dampak pemutusan hubungan kerja (PHK) terhadap kinerja Tokopedia.",
-      "time": "11 jam lalu",
+      "time": "13 jam lalu",
       "date": "4 Jul 2026",
       "source": "Detik Finance",
       "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8560133/nasib-tokopedia-usai-diterjang-badai-phk",
@@ -566,7 +634,7 @@
       "cat": "Ekonomi",
       "title": "Allianz Bocorkan Strategi Investasi Semester II-2026",
       "desc": "Menghadapi dinamika pasar di semester II-2026, Allianz sebut investor perlu strategi aktif dan melirik aset bernilai tinggi demi imbal hasil optimal.",
-      "time": "12 jam lalu",
+      "time": "13 jam lalu",
       "date": "4 Jul 2026",
       "source": "Liputan6",
       "url": "https://www.liputan6.com/bisnis/read/8226145/allianz-bocorkan-strategi-investasi-semester-ii-2026",
@@ -583,7 +651,7 @@
       "cat": "Ekonomi",
       "title": "Sederet Janji demi Tarik Investor Asing Masuk RI",
       "desc": "Pemerintah berencana membentuk Pusat Finansial Internasional Indonesia (PFII). Rancangan Undang-undang (RUU) PFII sedang dibahas pemerintah dan DPR.",
-      "time": "12 jam lalu",
+      "time": "13 jam lalu",
       "date": "4 Jul 2026",
       "source": "Detik Finance",
       "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8560128/sederet-janji-demi-tarik-investor-asing-masuk-ri",
@@ -600,7 +668,7 @@
       "cat": "Ekonomi",
       "title": "Chery Caplok Pabrik Bekas Nissan di Afrika Selatan",
       "desc": "Produsen mobil asal China, Chery, resmi mengakuisisi pabrik manufaktur bekas Nissan di Rosslyn, Afrika Selatan Jumat (3/7).",
-      "time": "19 jam lalu",
+      "time": "20 jam lalu",
       "date": "4 Jul 2026",
       "source": "Detik Finance",
       "url": "https://finance.detik.com/industri/d-8560116/chery-caplok-pabrik-bekas-nissan-di-afrika-selatan",
@@ -617,7 +685,7 @@
       "cat": "Ekonomi",
       "title": "WNA Nekat Beli BBM Subsidi Dihukum Denda Rp 88 Juta!",
       "desc": "WNA asal Singapura dijatuhi denda Rp 88 juta gara-gara isi BBM bersubsidi di Malaysia.",
-      "time": "20 jam lalu",
+      "time": "21 jam lalu",
       "date": "4 Jul 2026",
       "source": "Detik Finance",
       "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8560065/wna-nekat-beli-bbm-subsidi-dihukum-denda-rp-88-juta",
@@ -634,7 +702,7 @@
       "cat": "Ekonomi",
       "title": "Ekonom Bandingkan RI dan Vietnam yang Kini Negara Menengah Atas",
       "desc": "Didik J Rachbini, Ekonom INDEF yang juga Rektor Universitas Paramadina membandingkan kondisi ekonomi Indonesia dan Vietnam yang kini negara menengah atas",
-      "time": "20 jam lalu",
+      "time": "22 jam lalu",
       "date": "4 Jul 2026",
       "source": "Detik Finance",
       "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8560033/ekonom-bandingkan-ri-dan-vietnam-yang-kini-negara-menengah-atas",
@@ -651,7 +719,7 @@
       "cat": "Ekonomi",
       "title": "Proyek Sampah Jadi Listrik Bakal Serap 130 Ribu Tenaga Kerja",
       "desc": "Danantara memperkirakan pembangunan 33 fasilitas pengolahan sampah menjadi energi akan menyerap hingga 130 ribu tenaga kerja.",
-      "time": "21 jam lalu",
+      "time": "22 jam lalu",
       "date": "4 Jul 2026",
       "source": "Liputan6",
       "url": "https://www.liputan6.com/bisnis/read/8234884/proyek-sampah-jadi-listrik-bakal-serap-130-ribu-tenaga-kerja",
@@ -668,7 +736,7 @@
       "cat": "Ekonomi",
       "title": "Tadinya Mau PHK Karyawan Diganti AI, Perusahaan Ini Akhirnya Batalkan",
       "desc": "Sejumlah perusahaan mulai mengubah pandangannya tentang kecerdasan buatan (AI) yang diklaim dapat menggantikan semua pekerjaan.",
-      "time": "21 jam lalu",
+      "time": "22 jam lalu",
       "date": "4 Jul 2026",
       "source": "Detik Finance",
       "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8560024/tadinya-mau-phk-karyawan-diganti-ai-perusahaan-ini-akhirnya-batalkan",
@@ -685,7 +753,7 @@
       "cat": "Ekonomi",
       "title": "Bulog Dukung Gerakan Tanam Padi Serentak di Kawasan Cetak Sawah Merauke",
       "desc": "Perum Bulog dukung swasembada pangan melalui Gerakan Tanam Padi Serentak di Papua Selatan. Fokus pada peningkatan produksi dan penyerapan hasil panen petani.",
-      "time": "21 jam lalu",
+      "time": "23 jam lalu",
       "date": "4 Jul 2026",
       "source": "Detik Finance",
       "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8560014/bulog-dukung-gerakan-tanam-padi-serentak-di-kawasan-cetak-sawah-merauke",
@@ -702,7 +770,7 @@
       "cat": "Ekonomi",
       "title": "Daftar 95 Pinjol Legal OJK Juli 2026, Cek Sebelum Ajukan Pinjaman",
       "desc": "OJK mencatat utang pinjol mencapai Rp 101,03 triliun per Maret 2026. Sebelum meminjam, cek daftar 95 pinjol legal yang telah berizin OJK.",
-      "time": "22 jam lalu",
+      "time": "23 jam lalu",
       "date": "4 Jul 2026",
       "source": "Liputan6",
       "url": "https://www.liputan6.com/bisnis/read/8234637/daftar-95-pinjol-legal-ojk-juli-2026-cek-sebelum-ajukan-pinjaman",
@@ -719,7 +787,7 @@
       "cat": "Ekonomi",
       "title": "Sederet Janji Kemudahan buat Investor Asing yang Masuk PFII",
       "desc": "Pemerintah menawarkan berbagai kemudahan bagi investor yang menanamkan modalnya di Pusat Finansial Internasional Indonesia (PFII).",
-      "time": "22 jam lalu",
+      "time": "23 jam lalu",
       "date": "4 Jul 2026",
       "source": "Detik Finance",
       "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8559948/sederet-janji-kemudahan-buat-investor-asing-yang-masuk-pfii",
@@ -736,7 +804,7 @@
       "cat": "Ekonomi",
       "title": "Minat Naik Transportasi Umum di Jakarta Terus Bertumbuh",
       "desc": "Jumlah penumpang transportasi publik Jakarta terus bertambah pada Mei 2026. MRT, LRT, dan Transjakarta sama-sama mencatat pertumbuhan tahunan.",
-      "time": "22 jam lalu",
+      "time": "1 hari lalu",
       "date": "4 Jul 2026",
       "source": "Detik Finance",
       "url": "https://finance.detik.com/foto-bisnis/d-8559743/minat-naik-transportasi-umum-di-jakarta-terus-bertumbuh",
@@ -753,7 +821,7 @@
       "cat": "Ekonomi",
       "title": "Pendaftaran Internship Pertamina Group 2026 Ditutup Besok, Ada 400 Posisi",
       "desc": "Pertamina masih membuka pendaftaran magang dengan lebih dari 400 posisi di 21 entitas. Registrasi ditutup pada 5 Juli 2026.",
-      "time": "23 jam lalu",
+      "time": "1 hari lalu",
       "date": "4 Jul 2026",
       "source": "Liputan6",
       "url": "https://www.liputan6.com/bisnis/read/8233326/pendaftaran-internship-pertamina-group-2026-ditutup-besok-ada-400-posisi",
@@ -770,7 +838,7 @@
       "cat": "Ekonomi",
       "title": "Hama Masuk ke Permukiman, Bulog Fumigasi Gudang Beras",
       "desc": "Tanggapi keluhan warga Karawang soal gangguan hama gudang sewaan, Perum Bulog langsung lakukan sterilisasi intensif lewat metode fumigasi sulfur.",
-      "time": "23 jam lalu",
+      "time": "1 hari lalu",
       "date": "4 Jul 2026",
       "source": "Liputan6",
       "url": "https://www.liputan6.com/bisnis/read/8231913/hama-masuk-ke-permukiman-bulog-fumigasi-gudang-beras",
@@ -787,7 +855,7 @@
       "cat": "Ekonomi",
       "title": "Harga Emas Pegadaian 4 Juli 2026: Antam, UBS dan Galeri24 Kompak Naik",
       "desc": "Harga emas Pegadaian pada Sabtu (4/7/2026) mengalami kenaikan untuk seluruh produk, mulai Antam, UBS hingga Galeri24. Simak daftar harga lengkapnya.",
-      "time": "23 jam lalu",
+      "time": "1 hari lalu",
       "date": "4 Jul 2026",
       "source": "Liputan6",
       "url": "https://www.liputan6.com/bisnis/read/8231490/harga-emas-pegadaian-4-juli-2026-antam-ubs-dan-galeri24-kompak-naik",
@@ -804,7 +872,7 @@
       "cat": "Ekonomi",
       "title": "Intip Prediksi Rupiah Pekan Depan di Tengah Dinamika Negosiasi AS-Iran",
       "desc": "Rupiah pekan depan diperkirakan bergerak fluktuatif di rentang 17.850 per dolar AS-18.100 per dolar AS. Pasar fokus pada tensi geopolitik dan kebijakan Fed.",
-      "time": "23 jam lalu",
+      "time": "1 hari lalu",
       "date": "4 Jul 2026",
       "source": "Liputan6",
       "url": "https://www.liputan6.com/bisnis/read/8229266/intip-prediksi-rupiah-pekan-depan-di-tengah-dinamika-negosiasi-as-iran",
@@ -821,7 +889,7 @@
       "cat": "Ekonomi",
       "title": "Trump & Keluarga Raup Rp 5,39 Triliun dari Bisnis di Timur Tengah",
       "desc": "Presiden Amerika Serikat (AS) Donald Trump dan keluarga memperoleh US$ 300 juta atau sekitar Rp 5,39 triliun (Kurs 17.994/US$) dari bisnis di Timur Tengah.",
-      "time": "23 jam lalu",
+      "time": "1 hari lalu",
       "date": "4 Jul 2026",
       "source": "Detik Finance",
       "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8559874/trump-keluarga-raup-rp-5-39-triliun-dari-bisnis-di-timur-tengah",
@@ -838,7 +906,7 @@
       "cat": "Ekonomi",
       "title": "Enam Tahun Menunggu, Pesangon Eks Pekerja Master Wovenindo Segera Dibayar",
       "desc": "Said Iqbal memastikan negara mengawal pembayaran pesangon 422 mantan pekerja PT Master Wovenindo setelah dua putusan Mahkamah Agung memenangkan para pekerja.",
-      "time": "23 jam lalu",
+      "time": "1 hari lalu",
       "date": "4 Jul 2026",
       "source": "Liputan6",
       "url": "https://www.liputan6.com/bisnis/read/8232614/enam-tahun-menunggu-pesangon-eks-pekerja-master-wovenindo-segera-dibayar",
@@ -1161,7 +1229,7 @@
       "cat": "Ekonomi",
       "title": "Dua Tetangga Indonesia Naik Kelas Jadi Negara Menengah Atas",
       "desc": "Vietnam dan Filipina resmi naik kelas menjadi negara berpendapatan menengah atas, menurut Bank Dunia. Kenaikan ini berpotensi tingkatkan kepercayaan investor.",
-      "time": "1 hari lalu",
+      "time": "2 hari lalu",
       "date": "4 Jul 2026",
       "source": "Detik Finance",
       "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8559109/dua-tetangga-indonesia-naik-kelas-jadi-negara-menengah-atas",
@@ -1178,7 +1246,7 @@
       "cat": "Ekonomi",
       "title": "Di Balik Sukses Miniso: Ubah Barang Murah Terasa Mewah",
       "desc": "Rahasia sukses Miniso dongkrak omzet lewat strategi 'Three Highs, Three Lows', desain emosional, dan kolaborasi IP global.",
-      "time": "1 hari lalu",
+      "time": "2 hari lalu",
       "date": "4 Jul 2026",
       "source": "Liputan6",
       "url": "https://www.liputan6.com/bisnis/read/8204917/di-balik-sukses-miniso-ubah-barang-murah-terasa-mewah",
@@ -1195,7 +1263,7 @@
       "cat": "Ekonomi",
       "title": "DJP Sebut Pencairan JHT Tak Selalu Kena Pajak, Ini Penjelasannya",
       "desc": "DJP menjelaskan bahwa pencairan JHT BPJS Ketenagakerjaan tidak selalu dikenakan PPh. Perlakuan pajak tergantung cara dan waktu pencairan.",
-      "time": "1 hari lalu",
+      "time": "2 hari lalu",
       "date": "3 Jul 2026",
       "source": "Detik Finance",
       "url": "https://finance.detik.com/moneter/d-8559107/djp-sebut-pencairan-jht-tak-selalu-kena-pajak-ini-penjelasannya",
@@ -1212,7 +1280,7 @@
       "cat": "Ekonomi",
       "title": "Top 3: 240 BUMN Sudah Dipangkas, Pengelolaan Aset Makin Besar",
       "desc": "Berikut tiga artikel terpopuler di Kanal Bisnis Liputan6.com yang dirangkum pada Sabtu, (4/7/2026). Salah satunya soal BUMN.",
-      "time": "1 hari lalu",
+      "time": "2 hari lalu",
       "date": "3 Jul 2026",
       "source": "Liputan6",
       "url": "https://www.liputan6.com/bisnis/read/8206587/top-3-240-bumn-sudah-dipangkas-pengelolaan-aset-makin-besar",
@@ -1229,7 +1297,7 @@
       "cat": "Ekonomi",
       "title": "Badai PHK di Tokopedia Usai Dicaplok TikTok",
       "desc": "Deretan badai PHK terjadi di Tokopedia sejak perusahaan dicaplok TikTok pada akhir 2023.",
-      "time": "1 hari lalu",
+      "time": "2 hari lalu",
       "date": "3 Jul 2026",
       "source": "Detik Finance",
       "url": "https://finance.detik.com/berita-ekonomi-bisnis/d-8558750/badai-phk-di-tokopedia-usai-dicaplok-tiktok",
@@ -2774,17 +2842,34 @@
     },
     {
       "cat": "Saham",
+      "title": "Trisula International Siapkan Dana Rp 15 Miliar untuk Buyback Saham",
+      "desc": "PT Trisula International Tbk (TRIS) menyiapkan dana Rp 15 miliar untuk buyback saham yang akan berlangsung mulai 6 Juli hingga 5 Oktober 2026.",
+      "time": "1 jam lalu",
+      "date": "5 Jul 2026",
+      "source": "Liputan6",
+      "url": "https://www.liputan6.com/saham/read/8237226/trisula-international-siapkan-dana-rp-15-miliar-untuk-buyback-saham",
+      "region": "Indonesia",
+      "image": "https://cdn1-production-images-kly.akamaized.net/bHNNQhOhVY8WssE_eOukWZq14Fw=/673x379/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4610082/original/002510000_1697207781-TRIS_Factory.jpg",
+      "source_icon": null,
+      "ts": "2026-07-05T11:00:41.000Z",
+      "highlight": true,
+      "body": [
+        "PT Trisula International Tbk (TRIS) menyiapkan dana Rp 15 miliar untuk buyback saham yang akan berlangsung mulai 6 Juli hingga 5 Oktober 2026."
+      ]
+    },
+    {
+      "cat": "Saham",
       "title": "Mahkamah Agung AS akan menyidangkan kasus senjata api, LGBT, dan hak suara pada masa jabatan mendatang",
       "desc": "Mahkamah Agung AS akan menyidangkan kasus senjata api, LGBT, dan hak suara pada masa jabatan mendatang",
-      "time": "21 menit lalu",
+      "time": "1 jam lalu",
       "date": "5 Jul 2026",
       "source": "Investing.com",
       "url": "https://www.investing.com/news/stock-market-news/us-supreme-court-to-hear-gun-lgbt-voting-rights-cases-in-next-term-4775416",
       "region": "Internasional",
       "image": "https://i-invdn-com.investing.com/trkd-images/LYNXMPEM6404N_L.jpg",
       "source_icon": null,
-      "ts": "2026-07-05T10:12:28.000Z",
-      "highlight": true,
+      "ts": "2026-07-05T10:48:23.000Z",
+      "highlight": false,
       "body": [
         "Mahkamah Agung AS akan menyidangkan kasus senjata api, LGBT, dan hak suara pada masa jabatan mendatang"
       ]
@@ -2793,7 +2878,7 @@
       "cat": "Saham",
       "title": "Investasi, Direktur BRMS Beli 400.000 Saham",
       "desc": "Direktur Bumi Resources Minerals Adrian Wicaksono membeli saham BRMS untuk investasi.",
-      "time": "30 menit lalu",
+      "time": "2 jam lalu",
       "date": "5 Jul 2026",
       "source": "Liputan6",
       "url": "https://www.liputan6.com/saham/read/8239227/investasi-direktur-brms-beli-400000-saham",
@@ -2810,7 +2895,7 @@
       "cat": "Saham",
       "title": "Suku bunga hipotek dan pembiayaan kembali hari ini, Minggu, 5 Juli: Suku bunga naik sejak minggu lalu",
       "desc": "Suku bunga hipotek dan pembiayaan kembali hari ini, Minggu, 5 Juli: Suku bunga naik sejak minggu lalu",
-      "time": "34 menit lalu",
+      "time": "2 jam lalu",
       "date": "5 Jul 2026",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/personal-finance/mortgages/article/mortgage-and-refinance-interest-rates-today-sunday-july-5-rates-way-up-since-last-week-100000265.html",
@@ -2827,7 +2912,7 @@
       "cat": "Saham",
       "title": "Tarif CD terbaik hari ini, Minggu, 5 Juli 2026: Kunci APY hingga 4,10%",
       "desc": "Tarif CD terbaik hari ini, Minggu, 5 Juli 2026: Kunci APY hingga 4,10%",
-      "time": "34 menit lalu",
+      "time": "2 jam lalu",
       "date": "5 Jul 2026",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/personal-finance/banking/article/best-cd-rates-today-sunday-july-5-2026-lock-in-up-to-410-apy-100000607.html",
@@ -2844,7 +2929,7 @@
       "cat": "Saham",
       "title": "Pendapatan Foxconn pada kuartal kedua melonjak, perusahaan memperingatkan mengenai geopolitik",
       "desc": "Pendapatan Foxconn pada kuartal kedua melonjak, perusahaan memperingatkan mengenai geopolitik",
-      "time": "57 menit lalu",
+      "time": "2 jam lalu",
       "date": "5 Jul 2026",
       "source": "Investing.com",
       "url": "https://www.investing.com/news/stock-market-news/foxconn-secondquarter-revenue-jumps-40-yy-4775408",
@@ -2861,7 +2946,7 @@
       "cat": "Saham",
       "title": "Daftar 10 Saham Top Losers pada 29 Juni-3 Juli 2026",
       "desc": "Berikut 10 saham top losers saat Indeks Harga Saham Gabungan (IHSG) melemah 0,35% pada 29 Juni-3 Juli 2026.",
-      "time": "4 jam lalu",
+      "time": "5 jam lalu",
       "date": "5 Jul 2026",
       "source": "Liputan6",
       "url": "https://www.liputan6.com/saham/read/8239351/daftar-10-saham-top-losers-pada-29-juni-3-juli-2026",
@@ -2878,7 +2963,7 @@
       "cat": "Saham",
       "title": "Uber menghentikan ekspansi pengiriman makanan di Eropa untuk mengejar kesepakatan Delivery Hero, lapor FT",
       "desc": "Uber menghentikan ekspansi pengiriman makanan di Eropa untuk mengejar kesepakatan Delivery Hero, lapor FT",
-      "time": "5 jam lalu",
+      "time": "7 jam lalu",
       "date": "5 Jul 2026",
       "source": "Investing.com",
       "url": "https://www.investing.com/news/stock-market-news/uber-pauses-europe-food-delivery-expansion-as-it-pursues-delivery-hero-deal-ft-reports-4775399",
@@ -2895,7 +2980,7 @@
       "cat": "Saham",
       "title": "Imbas Program B50, Analis Minta Investor Selektif Pilih Saham Emiten Sawit",
       "desc": "Program Biodiesel B50 jadi katalis positif sektor sawit, namun dampaknya tak merata. Investor perlu cermati valuasi dan efisiensi emiten.",
-      "time": "6 jam lalu",
+      "time": "7 jam lalu",
       "date": "5 Jul 2026",
       "source": "Liputan6",
       "url": "https://www.liputan6.com/saham/read/8229828/imbas-program-b50-analis-minta-investor-selektif-pilih-saham-emiten-sawit",
@@ -2912,7 +2997,7 @@
       "cat": "Saham",
       "title": "India kembali mendapatkan dukungan karena para investor mencari perlindungan dari perubahan pasar yang disebabkan oleh AI",
       "desc": "India kembali mendapatkan dukungan karena para investor mencari perlindungan dari perubahan pasar yang disebabkan oleh AI",
-      "time": "8 jam lalu",
+      "time": "9 jam lalu",
       "date": "5 Jul 2026",
       "source": "Investing.com",
       "url": "https://www.investing.com/news/stock-market-news/india-regains-favor-as-investors-seek-shelter-from-aidriven-market-swings-4775395",
@@ -2929,7 +3014,7 @@
       "cat": "Saham",
       "title": "Daftar 10 Saham Top Gainers Sepekan: TRUS hingga CSMI",
       "desc": "Berikut 10 saham top gainers sepekan, tepatnya pada 29 Juni-3 Juli 2026 saat Indeks Harga Saham Gabungan (IHSG) turun 0,35%.",
-      "time": "10 jam lalu",
+      "time": "11 jam lalu",
       "date": "5 Jul 2026",
       "source": "Liputan6",
       "url": "https://www.liputan6.com/saham/read/8239204/daftar-10-saham-top-gainers-sepekan-trus-hingga-csmi",
@@ -2946,7 +3031,7 @@
       "cat": "Saham",
       "title": "Program B50 Jadi Katalis Positif, Intip Emiten yang Paling Diuntungkan",
       "desc": "Implementasi B50 diproyeksi dongkrak permintaan CPO domestik. Pengamat sebut emiten sawit seperti AALI, SMAR, LSIP, dan DSNG berpotensi paling diuntungkan.",
-      "time": "12 jam lalu",
+      "time": "13 jam lalu",
       "date": "4 Jul 2026",
       "source": "Liputan6",
       "url": "https://www.liputan6.com/saham/read/8227842/program-b50-jadi-katalis-positif-intip-emiten-yang-paling-diuntungkan",
@@ -2963,7 +3048,7 @@
       "cat": "Saham",
       "title": "Gamer memperdagangkan disk fisik senilai $1.000 di GameStop, beberapa hari setelah Sony mengumumkan berakhirnya era disk",
       "desc": "Meskipun beberapa kolektor mungkin berencana untuk menimbun media fisik mereka, seorang gamer asal Columbus memutuskan untuk melikuidasi koleksinya",
-      "time": "13 jam lalu",
+      "time": "14 jam lalu",
       "date": "4 Jul 2026",
       "source": "MarketWatch",
       "url": "https://www.marketwatch.com/story/gamer-trades-in-1-000-of-physical-discs-at-gamestop-days-after-sony-announces-end-of-disc-era-bf8383b7?mod=mw_rss_topstories",
@@ -2980,7 +3065,7 @@
       "cat": "Saham",
       "title": "Saham Rusia melemah pada penutupan perdagangan; Indeks MOEX Rusia tidak berubah",
       "desc": "Saham Rusia melemah pada penutupan perdagangan; Indeks MOEX Rusia tidak berubah",
-      "time": "13 jam lalu",
+      "time": "15 jam lalu",
       "date": "4 Jul 2026",
       "source": "Investing.com",
       "url": "https://www.investing.com/news/stock-market-news/russia-stocks-lower-at-close-of-trade-moex-russia-index-unchanged-4775384",
@@ -2997,7 +3082,7 @@
       "cat": "Saham",
       "title": "‘Dia ingin dia pergi’: Teman saya menerima seorang pria tunawisma sebagai pengasuhnya. Setelah 10 tahun, bagaimana dia bisa mengusirnya?",
       "desc": "“Dia hidup tanpa biaya sewa, membantunya mengatasi masalah kesehatan dan tugas lainnya.”",
-      "time": "14 jam lalu",
+      "time": "15 jam lalu",
       "date": "4 Jul 2026",
       "source": "MarketWatch",
       "url": "https://www.marketwatch.com/story/she-wants-him-gone-my-friend-took-in-a-homeless-man-as-a-caretaker-after-10-years-how-can-she-evict-him-01672de2?mod=mw_rss_topstories",
@@ -3014,7 +3099,7 @@
       "cat": "Saham",
       "title": "Pratinjau musim pendapatan Eropa: Perhatikan 3 hal ini, kata analis",
       "desc": "Pratinjau musim pendapatan Eropa: Perhatikan 3 hal ini, kata analis",
-      "time": "14 jam lalu",
+      "time": "16 jam lalu",
       "date": "4 Jul 2026",
       "source": "Investing.com",
       "url": "https://www.investing.com/news/stock-market-news/european-earnings-season-preview-watch-these-3-things-analyst-says-4775381",
@@ -3031,7 +3116,7 @@
       "cat": "Saham",
       "title": "Inilah yang layak untuk streaming pada Juli 2026 di Netflix, Hulu, HBO Max, dan banyak lagi",
       "desc": "Mengapa ini bulan yang baik untuk menghemat streaming, meskipun ‘Enola Holmes’ kembali ke Netflix dan ‘Silo’ ke Apple",
-      "time": "16 jam lalu",
+      "time": "17 jam lalu",
       "date": "4 Jul 2026",
       "source": "MarketWatch",
       "url": "https://www.marketwatch.com/story/heres-whats-worth-streaming-in-july-2026-on-netflix-hulu-hbo-max-and-more-58d07528?mod=mw_rss_topstories",
@@ -3048,7 +3133,7 @@
       "cat": "Saham",
       "title": "Mengapa seorang pendiri di usia 50 tahun memiliki kemungkinan dua kali lebih besar untuk meraih kesuksesan dibandingkan pendiri di usia 30 tahun",
       "desc": "Pekerja yang lebih tua melawan ageisme dengan memulai bisnis mereka sendiri - dan kinerja mereka mengungguli pengusaha muda",
-      "time": "16 jam lalu",
+      "time": "17 jam lalu",
       "date": "4 Jul 2026",
       "source": "MarketWatch",
       "url": "https://www.marketwatch.com/story/older-workers-are-fighting-ageism-by-starting-their-own-businesses-and-theyre-outperforming-younger-entrepreneurs-5fc701fc?mod=mw_rss_topstories",
@@ -3065,7 +3150,7 @@
       "cat": "Saham",
       "title": "Mengapa data pekerjaan dan inflasi bulan Juni bersifat bullish untuk obligasi",
       "desc": "Laporan ketenagakerjaan baru ini lebih buruk dari yang disadari banyak orang.",
-      "time": "16 jam lalu",
+      "time": "17 jam lalu",
       "date": "4 Jul 2026",
       "source": "MarketWatch",
       "url": "https://www.marketwatch.com/story/why-the-jobs-and-inflation-data-are-bullish-for-bonds-fcedffd2?mod=mw_rss_topstories",
@@ -3082,7 +3167,7 @@
       "cat": "Saham",
       "title": "Perusahaan asuransi mengalihkan biaya penggantian atap ke pemilik rumah berkat peraturan federal yang baru - tepat pada saat musim hujan es dan badai",
       "desc": "Mereka yang menemukan kerusakan parah pada atap rumah mereka mungkin terjebak di antara dua pilihan: Mengajukan klaim asuransi, yang dapat memicu kenaikan premi, atau mengeluarkan uang tunai untuk perbaikan atau penggantian yang diperlukan.",
-      "time": "16 jam lalu",
+      "time": "18 jam lalu",
       "date": "4 Jul 2026",
       "source": "MarketWatch",
       "url": "https://www.marketwatch.com/story/insurers-shifted-roof-replacement-costs-onto-homeowners-thanks-to-a-new-federal-rule-just-in-time-for-hail-and-hurricane-season-e86068df?mod=mw_rss_topstories",
@@ -3098,8 +3183,8 @@
     {
       "cat": "Saham",
       "title": "Di mana saya dapat menginvestasikan uang 'akun Trump' anak saya? Departemen Keuangan baru saja menjawab pertanyaan itu.",
-      "desc": "Uang dalam “rekening Trump” harus diinvestasikan dalam dana indeks berbiaya rendah - dan sekarang orang tua dan investor sedang mempelajari dana mana yang benar-benar dapat mereka gunakan.",
-      "time": "17 jam lalu",
+      "desc": "Uang di “rekening Trump” harus diinvestasikan dalam dana indeks berbiaya rendah - dan sekarang orang tua dan investor sedang mempelajari dana mana yang benar-benar dapat mereka gunakan.",
+      "time": "18 jam lalu",
       "date": "4 Jul 2026",
       "source": "MarketWatch",
       "url": "https://www.marketwatch.com/story/where-can-i-invest-my-kids-trump-account-money-the-treasury-department-just-answered-that-question-4f656574?mod=mw_rss_topstories",
@@ -3109,14 +3194,14 @@
       "ts": "2026-07-04T17:59:00.000Z",
       "highlight": false,
       "body": [
-        "Uang dalam “rekening Trump” harus diinvestasikan dalam dana indeks berbiaya rendah - dan sekarang orang tua dan investor sedang mempelajari dana mana yang benar-benar dapat mereka gunakan."
+        "Uang di “rekening Trump” harus diinvestasikan dalam dana indeks berbiaya rendah - dan sekarang orang tua dan investor sedang mempelajari dana mana yang benar-benar dapat mereka gunakan."
       ]
     },
     {
       "cat": "Saham",
       "title": "Mantan istri Jelly Roll, Bunnie Xo, mengatakan dia memberinya harta warisan Tennessee senilai $6 juta sebagai bentuk perceraian",
       "desc": "Mantan istri penyanyi country Jelly Roll, Bunnie Xo, telah mengungkapkan bahwa dia akan mengambil kepemilikan penuh atas kompleks mantan pasangan tersebut di Tennessee sebagai bagian dari penyelesaian perceraian mereka.",
-      "time": "17 jam lalu",
+      "time": "18 jam lalu",
       "date": "4 Jul 2026",
       "source": "MarketWatch",
       "url": "https://www.marketwatch.com/story/jelly-rolls-ex-wife-bunnie-xo-says-he-gave-her-their-6-million-tennessee-estate-in-divorce-97a6c910?mod=mw_rss_topstories",
@@ -3133,7 +3218,7 @@
       "cat": "Saham",
       "title": "Ingin hidup lebih lama di masa pensiun? Perpindahan uang yang satu ini dapat menambah tahun hidup Anda.",
       "desc": "Portofolio pensiun yang aman bertindak seperti pelindung kesehatan, menenangkan kecemasan pasar yang sebenarnya dapat memperpendek harapan hidup.",
-      "time": "17 jam lalu",
+      "time": "18 jam lalu",
       "date": "4 Jul 2026",
       "source": "MarketWatch",
       "url": "https://www.marketwatch.com/story/want-to-live-longer-in-retirement-this-one-money-move-could-add-years-to-your-life-e8f2b4ba?mod=mw_rss_topstories",
@@ -3148,9 +3233,9 @@
     },
     {
       "cat": "Saham",
-      "title": "Saya tidak punya anak. Apakah saya akan menyebabkan drama keluarga dengan meninggalkan jumlah yang berbeda kepada keponakan saya?",
+      "title": "Saya tidak punya anak. Akankah saya menyebabkan drama keluarga dengan meninggalkan jumlah yang berbeda kepada keponakan saya?",
       "desc": "“Sebagian dari diri saya lebih memilih untuk memberikan lebih banyak kepada mereka yang merasa bahwa uang tersebut dapat membawa perubahan yang berarti.”",
-      "time": "17 jam lalu",
+      "time": "19 jam lalu",
       "date": "4 Jul 2026",
       "source": "MarketWatch",
       "url": "https://www.marketwatch.com/story/i-have-no-kids-will-i-cause-family-drama-by-leaving-different-amounts-to-my-nieces-and-nephews-14c0fdda?mod=mw_rss_topstories",
@@ -3167,7 +3252,7 @@
       "cat": "Saham",
       "title": "Trump Accounts akan debut saat AS memulai perayaan Hari Kemerdekaan ke-250",
       "desc": "Trump Accounts akan debut saat AS memulai perayaan Hari Kemerdekaan ke-250",
-      "time": "18 jam lalu",
+      "time": "20 jam lalu",
       "date": "4 Jul 2026",
       "source": "Investing.com",
       "url": "https://www.investing.com/news/stock-market-news/trump-accounts-to-debut-as-us-kicks-off-250th-independence-day-celebrations-4775357",
@@ -3184,7 +3269,7 @@
       "cat": "Saham",
       "title": "Apakah inflasi AI bersifat sementara?",
       "desc": "Apakah inflasi AI bersifat sementara?",
-      "time": "20 jam lalu",
+      "time": "22 jam lalu",
       "date": "4 Jul 2026",
       "source": "Investing.com",
       "url": "https://www.investing.com/news/stock-market-news/is-ai-inflation-transitory-4775369",
@@ -3199,9 +3284,315 @@
     },
     {
       "cat": "Saham",
+      "title": "Penggemar Saham UnitedHealth yang terhormat, Tandai Kalender Anda untuk 16 Juli",
+      "desc": "Penggemar Saham UnitedHealth yang terhormat, Tandai Kalender Anda untuk 16 Juli",
+      "time": "23 jam lalu",
+      "date": "4 Jul 2026",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/dear-unitedhealth-stock-fans-mark-130003581.html",
+      "region": "Internasional",
+      "image": "https://media.zenfs.com/en/barchart_com_477/e627f8b80b259ac71804b3d9abc79b3b",
+      "source_icon": null,
+      "ts": "2026-07-04T13:00:03.000Z",
+      "highlight": false,
+      "body": [
+        "Penggemar Saham UnitedHealth yang terhormat, Tandai Kalender Anda untuk 16 Juli"
+      ]
+    },
+    {
+      "cat": "Saham",
+      "title": "DigitalOcean Baru Saja Bergabung dengan Russell 1000. Saham DOCN Masih Layak Dibeli Di Sini Setelah Lonjakan 350%.",
+      "desc": "DigitalOcean Baru Saja Bergabung dengan Russell 1000. Saham DOCN Masih Layak Dibeli Di Sini Setelah Lonjakan 350%.",
+      "time": "23 jam lalu",
+      "date": "4 Jul 2026",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/digitalocean-just-joined-russell-1000-130002481.html",
+      "region": "Internasional",
+      "image": "https://media.zenfs.com/en/barchart_com_477/c49a056e5df3f5077102a8fb0585cda3",
+      "source_icon": null,
+      "ts": "2026-07-04T13:00:02.000Z",
+      "highlight": false,
+      "body": [
+        "DigitalOcean Baru Saja Bergabung dengan Russell 1000. Saham DOCN Masih Layak Dibeli Di Sini Setelah Lonjakan 350%."
+      ]
+    },
+    {
+      "cat": "Saham",
+      "title": "Mengapa Aksi Jual Saham Teknologi Besar Saat Ini Menjadi Batu Loncatan untuk Reli Baru",
+      "desc": "Mengapa Aksi Jual Saham Teknologi Besar Saat Ini Menjadi Batu Loncatan untuk Reli Baru",
+      "time": "23 jam lalu",
+      "date": "4 Jul 2026",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/why-current-selloff-big-tech-130002898.html",
+      "region": "Internasional",
+      "image": "https://media.zenfs.com/en/barchart_com_477/f9197f239b6c754ae5b461a271b93b0e",
+      "source_icon": null,
+      "ts": "2026-07-04T13:00:02.000Z",
+      "highlight": false,
+      "body": [
+        "Mengapa Aksi Jual Saham Teknologi Besar Saat Ini Menjadi Batu Loncatan untuk Reli Baru"
+      ]
+    },
+    {
+      "cat": "Saham",
+      "title": "Apakah Rocket Lab (RKLB) Salah Satu Saham NASDAQ Terbaik untuk Berinvestasi Jangka Panjang?",
+      "desc": "Apakah Rocket Lab (RKLB) Salah Satu Saham NASDAQ Terbaik untuk Berinvestasi Jangka Panjang?",
+      "time": "23 jam lalu",
+      "date": "4 Jul 2026",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/rocket-lab-rklb-one-best-125611792.html",
+      "region": "Internasional",
+      "image": "https://media.zenfs.com/en/insidermonkey.com/1b3a1e2827bd1208f4a818c3de2bc05f",
+      "source_icon": null,
+      "ts": "2026-07-04T12:56:11.000Z",
+      "highlight": false,
+      "body": [
+        "Apakah Rocket Lab (RKLB) Salah Satu Saham NASDAQ Terbaik untuk Berinvestasi Jangka Panjang?"
+      ]
+    },
+    {
+      "cat": "Saham",
+      "title": "SoFi Technologies (SOFI) Meluncurkan Komposer Platform Investasi Bertenaga AI oleh SoFi",
+      "desc": "SoFi Technologies (SOFI) Meluncurkan Komposer Platform Investasi Bertenaga AI oleh SoFi",
+      "time": "23 jam lalu",
+      "date": "4 Jul 2026",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/technology/ai/articles/sofi-technologies-sofi-launches-ai-125603171.html",
+      "region": "Internasional",
+      "image": "https://media.zenfs.com/en/insidermonkey.com/d25ee3a1967b0b8a47186e4151f23199",
+      "source_icon": null,
+      "ts": "2026-07-04T12:56:03.000Z",
+      "highlight": false,
+      "body": [
+        "SoFi Technologies (SOFI) Meluncurkan Komposer Platform Investasi Bertenaga AI oleh SoFi"
+      ]
+    },
+    {
+      "cat": "Saham",
+      "title": "Nebius (NBIS) AI Cloud 3.6 Diluncurkan Dengan Agen Nebius Echo yang Didukung AI",
+      "desc": "Nebius (NBIS) AI Cloud 3.6 Diluncurkan Dengan Agen Nebius Echo yang Didukung AI",
+      "time": "23 jam lalu",
+      "date": "4 Jul 2026",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/technology/ai/articles/nebius-nbis-ai-cloud-3-125557692.html",
+      "region": "Internasional",
+      "image": "https://media.zenfs.com/en/insidermonkey.com/e13eafb879d337f843e648dbb91ec2ea",
+      "source_icon": null,
+      "ts": "2026-07-04T12:55:57.000Z",
+      "highlight": false,
+      "body": [
+        "Nebius (NBIS) AI Cloud 3.6 Diluncurkan Dengan Agen Nebius Echo yang Didukung AI"
+      ]
+    },
+    {
+      "cat": "Saham",
+      "title": "CoStar Group (CSGP): 10 Saham NASDAQ Terbaik untuk Diinvestasikan Untuk Jangka Panjang",
+      "desc": "CoStar Group (CSGP): 10 Saham NASDAQ Terbaik untuk Diinvestasikan Untuk Jangka Panjang",
+      "time": "23 jam lalu",
+      "date": "4 Jul 2026",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/real-estate/articles/costar-group-csgp-10-best-125550444.html",
+      "region": "Internasional",
+      "image": "https://media.zenfs.com/en/insidermonkey.com/67613d147fd0c33272a3c9d6519f7d66",
+      "source_icon": null,
+      "ts": "2026-07-04T12:55:50.000Z",
+      "highlight": false,
+      "body": [
+        "CoStar Group (CSGP): 10 Saham NASDAQ Terbaik untuk Diinvestasikan Untuk Jangka Panjang"
+      ]
+    },
+    {
+      "cat": "Saham",
+      "title": "Texas Instruments (TXN) Menunjuk Julie Knecht sebagai CFO Baru",
+      "desc": "Texas Instruments (TXN) Menunjuk Julie Knecht sebagai CFO Baru",
+      "time": "23 jam lalu",
+      "date": "4 Jul 2026",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/texas-instruments-txn-appoints-julie-125458818.html",
+      "region": "Internasional",
+      "image": "https://media.zenfs.com/en/insidermonkey.com/a99fb68631ca24eb25c6859d7e68279b",
+      "source_icon": null,
+      "ts": "2026-07-04T12:54:58.000Z",
+      "highlight": false,
+      "body": [
+        "Texas Instruments (TXN) Menunjuk Julie Knecht sebagai CFO Baru"
+      ]
+    },
+    {
+      "cat": "Saham",
+      "title": "Qualcomm (QCOM), Hugging Face Perluas Kemitraan untuk Mempercepat Pengembangan AI Terbuka",
+      "desc": "Qualcomm (QCOM), Hugging Face Perluas Kemitraan untuk Mempercepat Pengembangan AI Terbuka",
+      "time": "23 jam lalu",
+      "date": "4 Jul 2026",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/technology/ai/articles/qualcomm-qcom-hugging-face-expand-125450801.html",
+      "region": "Internasional",
+      "image": "https://media.zenfs.com/en/insidermonkey.com/84a7c3a5aeceee0093fb443e0a2a0445",
+      "source_icon": null,
+      "ts": "2026-07-04T12:54:50.000Z",
+      "highlight": false,
+      "body": [
+        "Qualcomm (QCOM), Hugging Face Perluas Kemitraan untuk Mempercepat Pengembangan AI Terbuka"
+      ]
+    },
+    {
+      "cat": "Saham",
+      "title": "CrowdStrike (CRWD) Bergabung dengan OpenID Foundation untuk Meningkatkan Keamanan Identitas Sadar Risiko",
+      "desc": "CrowdStrike (CRWD) Bergabung dengan OpenID Foundation untuk Meningkatkan Keamanan Identitas Sadar Risiko",
+      "time": "23 jam lalu",
+      "date": "4 Jul 2026",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/technology/ai/articles/crowdstrike-crwd-joins-openid-foundation-125442744.html",
+      "region": "Internasional",
+      "image": "https://media.zenfs.com/en/insidermonkey.com/20b3982b97234827b6c8db5af3ab847e",
+      "source_icon": null,
+      "ts": "2026-07-04T12:54:42.000Z",
+      "highlight": false,
+      "body": [
+        "CrowdStrike (CRWD) Bergabung dengan OpenID Foundation untuk Meningkatkan Keamanan Identitas Sadar Risiko"
+      ]
+    },
+    {
+      "cat": "Saham",
+      "title": "Qualcomm (QCOM), Meta (META) Mengumumkan Perjanjian Pasokan CPU Pusat Data Multi-Generasi",
+      "desc": "Qualcomm (QCOM), Meta (META) Mengumumkan Perjanjian Pasokan CPU Pusat Data Multi-Generasi",
+      "time": "23 jam lalu",
+      "date": "4 Jul 2026",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/technology/ai/articles/qualcomm-qcom-meta-meta-announce-125431859.html",
+      "region": "Internasional",
+      "image": "https://media.zenfs.com/en/insidermonkey.com/d636804777e86306db796c6b7eec75a0",
+      "source_icon": null,
+      "ts": "2026-07-04T12:54:31.000Z",
+      "highlight": false,
+      "body": [
+        "Qualcomm (QCOM), Meta (META) Mengumumkan Perjanjian Pasokan CPU Pusat Data Multi-Generasi"
+      ]
+    },
+    {
+      "cat": "Saham",
+      "title": "FactSet Bermitra dengan Google Cloud (GOOGL) untuk Mengintegrasikan Gemini AI ke dalam Platform Keuangan",
+      "desc": "FactSet Bermitra dengan Google Cloud (GOOGL) untuk Mengintegrasikan Gemini AI ke dalam Platform Keuangan",
+      "time": "23 jam lalu",
+      "date": "4 Jul 2026",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/technology/ai/articles/factset-partners-google-cloud-googl-125357373.html",
+      "region": "Internasional",
+      "image": "https://media.zenfs.com/en/insidermonkey.com/bf70576034ec66062328b598e2c99ce8",
+      "source_icon": null,
+      "ts": "2026-07-04T12:53:57.000Z",
+      "highlight": false,
+      "body": [
+        "FactSet Bermitra dengan Google Cloud (GOOGL) untuk Mengintegrasikan Gemini AI ke dalam Platform Keuangan"
+      ]
+    },
+    {
+      "cat": "Saham",
+      "title": "Inilah Mengapa Microsoft (MSFT) adalah Salah Satu Saham NASDAQ Terbaik untuk Berinvestasi dalam Jangka Panjang",
+      "desc": "Inilah Mengapa Microsoft (MSFT) adalah Salah Satu Saham NASDAQ Terbaik untuk Berinvestasi dalam Jangka Panjang",
+      "time": "23 jam lalu",
+      "date": "4 Jul 2026",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/why-microsoft-msft-one-best-125351983.html",
+      "region": "Internasional",
+      "image": "https://media.zenfs.com/en/insidermonkey.com/b5fca8d1106b22f327b2338c10eb2ab1",
+      "source_icon": null,
+      "ts": "2026-07-04T12:53:51.000Z",
+      "highlight": false,
+      "body": [
+        "Inilah Mengapa Microsoft (MSFT) adalah Salah Satu Saham NASDAQ Terbaik untuk Berinvestasi dalam Jangka Panjang"
+      ]
+    },
+    {
+      "cat": "Saham",
+      "title": "Trump menjatuhkan bom cinta pada Micron sambil memegang sahamnya - naik 209% tahun ini. Para ahli mengatakan hal ini ‘merusak’ sistem",
+      "desc": "Trump menjatuhkan bom cinta pada Micron sambil memegang sahamnya - naik 209% tahun ini. Para ahli mengatakan hal ini ‘merusak’ sistem",
+      "time": "23 jam lalu",
+      "date": "4 Jul 2026",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/trump-drops-love-bomb-micron-124000756.html",
+      "region": "Internasional",
+      "image": "https://media.zenfs.com/en/moneywise_327/1351f13c39c942a2f96bd71ef9974012",
+      "source_icon": null,
+      "ts": "2026-07-04T12:40:00.000Z",
+      "highlight": false,
+      "body": [
+        "Trump menjatuhkan bom cinta pada Micron sambil memegang sahamnya - naik 209% tahun ini. Para ahli mengatakan hal ini ‘merusak’ sistem"
+      ]
+    },
+    {
+      "cat": "Saham",
+      "title": "Dow Jones Futures: Tren AI Sinyal Kenaikan Teknologi Belum Berakhir; Apple, Sinyal Beli Flash Robinhood",
+      "desc": "Dow Jones Futures: Tren AI Sinyal Kenaikan Teknologi Belum Berakhir; Apple, Sinyal Beli Flash Robinhood",
+      "time": "1 hari lalu",
+      "date": "4 Jul 2026",
+      "source": "Yahoo Finance",
+      "url": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-ai-tumbles-apple-robinhood-buy-signals-tesla-sandisk-dive/?src=A00220&yptr=yahoo",
+      "region": "Internasional",
+      "image": "https://media.zenfs.com/en/ibd.com/aa912d4180e53e99e00e888061772f33",
+      "source_icon": null,
+      "ts": "2026-07-04T12:31:02.000Z",
+      "highlight": false,
+      "body": [
+        "Dow Jones Futures: Tren AI Sinyal Kenaikan Teknologi Belum Berakhir; Apple, Sinyal Beli Flash Robinhood"
+      ]
+    },
+    {
+      "cat": "Saham",
+      "title": "Pratinjau Pendapatan Kuartalan Phillips 66: Yang Perlu Anda Ketahui",
+      "desc": "Pratinjau Pendapatan Kuartalan Phillips 66: Yang Perlu Anda Ketahui",
+      "time": "1 hari lalu",
+      "date": "4 Jul 2026",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/phillips-66-quarterly-earnings-preview-121902480.html",
+      "region": "Internasional",
+      "image": "https://media.zenfs.com/en/barchart_com_477/b41291c7659f0918c398bd1534bc6923",
+      "source_icon": null,
+      "ts": "2026-07-04T12:19:02.000Z",
+      "highlight": false,
+      "body": [
+        "Pratinjau Pendapatan Kuartalan Phillips 66: Yang Perlu Anda Ketahui"
+      ]
+    },
+    {
+      "cat": "Saham",
+      "title": "Kekayaan bersih Jared Kushner tumbuh 1.440% sejak 2009 - 9 kali lebih besar dari rata-rata rumah tangga di AS. Inilah yang menyebabkan kesenjangan tersebut",
+      "desc": "Kekayaan bersih Jared Kushner tumbuh 1.440% sejak 2009 - 9 kali lebih besar dari rata-rata rumah tangga di AS. Inilah yang menyebabkan kesenjangan tersebut",
+      "time": "1 hari lalu",
+      "date": "4 Jul 2026",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/jared-kushners-net-worth-grew-121500238.html",
+      "region": "Internasional",
+      "image": "https://media.zenfs.com/en/moneywise_ecomm_711/3104a344d02519fef3af25312f5e02e9",
+      "source_icon": null,
+      "ts": "2026-07-04T12:15:00.000Z",
+      "highlight": false,
+      "body": [
+        "Kekayaan bersih Jared Kushner tumbuh 1.440% sejak 2009 - 9 kali lebih besar dari rata-rata rumah tangga di AS. Inilah yang menyebabkan kesenjangan tersebut"
+      ]
+    },
+    {
+      "cat": "Saham",
+      "title": "Seorang pria berusia 74 tahun dipaksa untuk mendapatkan perpanjangan garansi truk sebesar $3.000. Dia membatalkan tepat waktu - beberapa bulan kemudian, masih belum ada pengembalian uang",
+      "desc": "Seorang pria berusia 74 tahun dipaksa untuk mendapatkan perpanjangan garansi truk sebesar $3.000. Dia membatalkan tepat waktu - beberapa bulan kemudian, masih belum ada pengembalian uang",
+      "time": "1 hari lalu",
+      "date": "4 Jul 2026",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/small-business/articles/74-old-pressured-3-000-121000075.html",
+      "region": "Internasional",
+      "image": "https://media.zenfs.com/en/moneywise_327/b6ad495dfbe06c10594d5fd4c65e66f8",
+      "source_icon": null,
+      "ts": "2026-07-04T12:10:00.000Z",
+      "highlight": false,
+      "body": [
+        "Seorang pria berusia 74 tahun dipaksa untuk mendapatkan perpanjangan garansi truk sebesar $3.000. Dia membatalkan tepat waktu - beberapa bulan kemudian, masih belum ada pengembalian uang"
+      ]
+    },
+    {
+      "cat": "Saham",
       "title": "Konflik Iran memperkuat argumen mengenai kekuasaan, logam dibandingkan minyak: ahli strategi",
       "desc": "Konflik Iran memperkuat argumen mengenai kekuasaan, logam dibandingkan minyak: ahli strategi",
-      "time": "22 jam lalu",
+      "time": "1 hari lalu",
       "date": "4 Jul 2026",
       "source": "Investing.com",
       "url": "https://www.investing.com/news/stock-market-news/iran-conflict-strengthens-case-for-power-metals-over-oil-strategist-4775367",
@@ -3218,7 +3609,7 @@
       "cat": "Saham",
       "title": "Robinhood, Dell Memimpin 5 Saham Mendekati Titik Beli Dengan AI Tailwinds",
       "desc": "Robinhood, Dell Memimpin 5 Saham Mendekati Titik Beli Dengan AI Tailwinds",
-      "time": "23 jam lalu",
+      "time": "1 hari lalu",
       "date": "4 Jul 2026",
       "source": "Yahoo Finance",
       "url": "https://www.investors.com/news/robinhood-dell-stocks-near-buy-points-ai/?src=A00220&yptr=yahoo",
@@ -3235,7 +3626,7 @@
       "cat": "Saham",
       "title": "Next dari Inggris merencanakan tawaran pengambilalihan Harvey Nichols, Sky News melaporkan",
       "desc": "Next dari Inggris merencanakan tawaran pengambilalihan Harvey Nichols, Sky News melaporkan",
-      "time": "23 jam lalu",
+      "time": "1 hari lalu",
       "date": "4 Jul 2026",
       "source": "Investing.com",
       "url": "https://www.investing.com/news/stock-market-news/uks-next-plans-takeover-bid-for-harvey-nichols-sky-news-reports-4775353",
@@ -3252,7 +3643,7 @@
       "cat": "Saham",
       "title": "Bernie Sanders ingin pemerintah memiliki setengah dari seluruh perusahaan AI di AS - inilah dampaknya bagi dompet Anda",
       "desc": "Bernie Sanders ingin pemerintah memiliki setengah dari seluruh perusahaan AI di AS - inilah dampaknya bagi dompet Anda",
-      "time": "23 jam lalu",
+      "time": "1 hari lalu",
       "date": "4 Jul 2026",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/technology/ai/articles/bernie-sanders-wants-government-own-114000993.html",
@@ -3269,7 +3660,7 @@
       "cat": "Saham",
       "title": "Mengapa mantra 'ikuti hasrat Anda' dapat menggagalkan karier Anda - dan apa yang harus dilakukan secara berbeda",
       "desc": "Mengapa mantra 'ikuti hasrat Anda' dapat menggagalkan karier Anda - dan apa yang harus dilakukan secara berbeda",
-      "time": "23 jam lalu",
+      "time": "1 hari lalu",
       "date": "4 Jul 2026",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/economy/article/why-the-follow-your-passion-mantra-can-derail-your-career--and-what-to-do-differently-113556625.html",
@@ -3286,7 +3677,7 @@
       "cat": "Saham",
       "title": "Juara tinju Floyd 'Money' Mayweather naik ring dengan IRS atas hak gadai pajak sebesar $7,3 juta. Juke KO pajak Anda sendiri",
       "desc": "Juara tinju Floyd 'Money' Mayweather naik ring dengan IRS atas hak gadai pajak sebesar $7,3 juta. Juke KO pajak Anda sendiri",
-      "time": "23 jam lalu",
+      "time": "1 hari lalu",
       "date": "4 Jul 2026",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/markets/currencies/articles/boxing-champion-floyd-money-mayweather-113500894.html",
@@ -3303,7 +3694,7 @@
       "cat": "Saham",
       "title": "'Beli sendiri penyangga': Rencana 5 langkah CEO Amplifi Braiden Shaw tentang di mana uang Anda harus diinvestasikan",
       "desc": "'Beli sendiri penyangga': Rencana 5 langkah CEO Amplifi Braiden Shaw tentang di mana uang Anda harus diinvestasikan",
-      "time": "23 jam lalu",
+      "time": "1 hari lalu",
       "date": "4 Jul 2026",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/markets/articles/buy-yourself-buffer-amplifi-ceo-111500081.html",
@@ -3314,6 +3705,57 @@
       "highlight": false,
       "body": [
         "'Beli sendiri penyangga': Rencana 5 langkah CEO Amplifi Braiden Shaw tentang di mana uang Anda harus diinvestasikan"
+      ]
+    },
+    {
+      "cat": "Saham",
+      "title": "FHLC vs. BBH: ETF Layanan Kesehatan Mana yang Lebih Baik Dibeli?",
+      "desc": "FHLC vs. BBH: ETF Layanan Kesehatan Mana yang Lebih Baik Dibeli?",
+      "time": "1 hari lalu",
+      "date": "4 Jul 2026",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/healthcare/articles/fhlc-vs-bbh-healthcare-etf-110601167.html",
+      "region": "Internasional",
+      "image": "https://media.zenfs.com/en/motleyfool.com/057f0a4da36aed304d5126e836a6efed",
+      "source_icon": null,
+      "ts": "2026-07-04T11:06:01.000Z",
+      "highlight": false,
+      "body": [
+        "FHLC vs. BBH: ETF Layanan Kesehatan Mana yang Lebih Baik Dibeli?"
+      ]
+    },
+    {
+      "cat": "Saham",
+      "title": "Alphabet Resmi Bergabung dengan Dow. 3 Saham Dividen Dow Ini Lebih Baik Dibeli di Bulan Juli.",
+      "desc": "Alphabet Resmi Bergabung dengan Dow. 3 Saham Dividen Dow Ini Lebih Baik Dibeli di Bulan Juli.",
+      "time": "1 hari lalu",
+      "date": "4 Jul 2026",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/alphabet-officially-joins-dow-3-110400389.html",
+      "region": "Internasional",
+      "image": "https://media.zenfs.com/en/motleyfool.com/5f16c1e4e6665a4c720093ab1d3f5aef",
+      "source_icon": null,
+      "ts": "2026-07-04T11:04:00.000Z",
+      "highlight": false,
+      "body": [
+        "Alphabet Resmi Bergabung dengan Dow. 3 Saham Dividen Dow Ini Lebih Baik Dibeli di Bulan Juli."
+      ]
+    },
+    {
+      "cat": "Saham",
+      "title": "Dave Ramsey memperingatkan tentang kebiasaan Costco yang bisa menghabiskan biaya $108,000",
+      "desc": "Dave Ramsey memperingatkan tentang kebiasaan Costco yang bisa menghabiskan biaya $108,000",
+      "time": "1 hari lalu",
+      "date": "4 Jul 2026",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/articles/dave-ramsey-warns-costco-habit-110300687.html",
+      "region": "Internasional",
+      "image": "https://media.zenfs.com/en/thestreet_881/db0c3eb2b7683350926d2fc6441592ca",
+      "source_icon": null,
+      "ts": "2026-07-04T11:03:00.000Z",
+      "highlight": false,
+      "body": [
+        "Dave Ramsey memperingatkan tentang kebiasaan Costco yang bisa menghabiskan biaya $108,000"
       ]
     },
     {
@@ -3335,6 +3777,40 @@
     },
     {
       "cat": "Saham",
+      "title": "1,25 juta anak-anak kehilangan Nomor Jaminan Sosialnya - dan 75% dari kasus tersebut, pencurinya adalah seseorang yang mereka kenal",
+      "desc": "1,25 juta anak-anak kehilangan Nomor Jaminan Sosialnya - dan 75% dari kasus tersebut, pencurinya adalah seseorang yang mereka kenal",
+      "time": "1 hari lalu",
+      "date": "4 Jul 2026",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/small-business/articles/1-25-million-kids-social-110000792.html",
+      "region": "Internasional",
+      "image": "https://media.zenfs.com/en/moneywise_327/6171763f87079061891561ab7cff22b6",
+      "source_icon": null,
+      "ts": "2026-07-04T11:00:00.000Z",
+      "highlight": false,
+      "body": [
+        "1,25 juta anak-anak kehilangan Nomor Jaminan Sosialnya - dan 75% dari kasus tersebut, pencurinya adalah seseorang yang mereka kenal"
+      ]
+    },
+    {
+      "cat": "Saham",
+      "title": "Ulasan MarketBeat Week - 29/06 - 07/03",
+      "desc": "Ulasan MarketBeat Week - 29/06 - 07/03",
+      "time": "1 hari lalu",
+      "date": "4 Jul 2026",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/marketbeat-week-review-06-29-110000272.html",
+      "region": "Internasional",
+      "image": "https://media.zenfs.com/en/marketbeat_955/cf47917fa3c492d5b3887e7e08095f57",
+      "source_icon": null,
+      "ts": "2026-07-04T11:00:00.000Z",
+      "highlight": false,
+      "body": [
+        "Ulasan MarketBeat Week - 29/06 - 07/03"
+      ]
+    },
+    {
+      "cat": "Saham",
       "title": "8 dari 10 saham penghasil kekayaan teratas selama 100 tahun adalah Big Tech. Namun kedua outlier ini masih menghasilkan $2,6T",
       "desc": "8 dari 10 saham penghasil kekayaan teratas selama 100 tahun adalah Big Tech. Namun kedua outlier ini masih menghasilkan $2,6T",
       "time": "1 hari lalu",
@@ -3352,19 +3828,53 @@
     },
     {
       "cat": "Saham",
-      "title": "1,25 juta anak-anak kehilangan Nomor Jaminan Sosialnya - dan 75% dari kasus tersebut, pencurinya adalah seseorang yang mereka kenal",
-      "desc": "1,25 juta anak-anak kehilangan Nomor Jaminan Sosialnya - dan 75% dari kasus tersebut, pencurinya adalah seseorang yang mereka kenal",
+      "title": "Inisiatif Stablecoin Baru yang Besar Dapat Mengganggu Pasar Crypto. Inilah Yang Perlu Anda Ketahui.",
+      "desc": "Inisiatif Stablecoin Baru yang Besar Dapat Mengganggu Pasar Crypto. Inilah Yang Perlu Anda Ketahui.",
       "time": "1 hari lalu",
       "date": "4 Jul 2026",
       "source": "Yahoo Finance",
-      "url": "https://finance.yahoo.com/small-business/articles/1-25-million-kids-social-110000792.html",
+      "url": "https://finance.yahoo.com/markets/crypto/articles/huge-stablecoin-initiative-could-disrupt-105000387.html",
       "region": "Internasional",
-      "image": "https://media.zenfs.com/en/moneywise_327/6171763f87079061891561ab7cff22b6",
+      "image": "https://media.zenfs.com/en/motleyfool.com/3028f3ace416a9396e646d50aebd8554",
       "source_icon": null,
-      "ts": "2026-07-04T11:00:00.000Z",
+      "ts": "2026-07-04T10:50:00.000Z",
       "highlight": false,
       "body": [
-        "1,25 juta anak-anak kehilangan Nomor Jaminan Sosialnya - dan 75% dari kasus tersebut, pencurinya adalah seseorang yang mereka kenal"
+        "Inisiatif Stablecoin Baru yang Besar Dapat Mengganggu Pasar Crypto. Inilah Yang Perlu Anda Ketahui."
+      ]
+    },
+    {
+      "cat": "Saham",
+      "title": "JPMorgan Mengurangi Target Harga Emas untuk Q4 sebesar 25%",
+      "desc": "JPMorgan Mengurangi Target Harga Emas untuk Q4 sebesar 25%",
+      "time": "1 hari lalu",
+      "date": "4 Jul 2026",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/commodities/articles/jpmorgan-reduces-gold-price-target-104934303.html",
+      "region": "Internasional",
+      "image": "https://media.zenfs.com/en/beincrypto_us_662/a54ba3199e30915e4f3f05790f254868",
+      "source_icon": null,
+      "ts": "2026-07-04T10:49:34.000Z",
+      "highlight": false,
+      "body": [
+        "JPMorgan Mengurangi Target Harga Emas untuk Q4 sebesar 25%"
+      ]
+    },
+    {
+      "cat": "Saham",
+      "title": "Amazon, Walmart, dan Perusahaan Besar Lainnya Dapat Menghadapi Biaya Baru Karena New Jersey Menargetkan Perusahaan Dengan Pekerja Medicaid- Akankah Negara Bagian Lain Mengikuti?",
+      "desc": "Amazon, Walmart, dan Perusahaan Besar Lainnya Dapat Menghadapi Biaya Baru Karena New Jersey Menargetkan Perusahaan Dengan Pekerja Medicaid- Akankah Negara Bagian Lain Mengikuti?",
+      "time": "1 hari lalu",
+      "date": "4 Jul 2026",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/healthcare/articles/amazon-walmart-other-large-employers-104609772.html",
+      "region": "Internasional",
+      "image": "https://media.zenfs.com/en/benzinga_79/0d059cfbd957debd57e63edddfe9c71e",
+      "source_icon": null,
+      "ts": "2026-07-04T10:46:09.000Z",
+      "highlight": false,
+      "body": [
+        "Amazon, Walmart, dan Perusahaan Besar Lainnya Dapat Menghadapi Biaya Baru Karena New Jersey Menargetkan Perusahaan Dengan Pekerja Medicaid- Akankah Negara Bagian Lain Mengikuti?"
       ]
     },
     {
@@ -3403,6 +3913,40 @@
     },
     {
       "cat": "Saham",
+      "title": "Kripto yang Lebih Baik untuk Investasi $500: Bitcoin vs. Dogecoin",
+      "desc": "Kripto yang Lebih Baik untuk Investasi $500: Bitcoin vs. Dogecoin",
+      "time": "1 hari lalu",
+      "date": "4 Jul 2026",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/crypto/articles/better-crypto-500-investment-bitcoin-103700855.html",
+      "region": "Internasional",
+      "image": "https://media.zenfs.com/en/motleyfool.com/32bead68eecd0e901713995a27d37df9",
+      "source_icon": null,
+      "ts": "2026-07-04T10:37:00.000Z",
+      "highlight": false,
+      "body": [
+        "Kripto yang Lebih Baik untuk Investasi $500: Bitcoin vs. Dogecoin"
+      ]
+    },
+    {
+      "cat": "Saham",
+      "title": "Chamath Palihapitiya Bercanda 'Tidak Ada Pekerjaan Tersisa' Saat Nvidia, Corning, dan Ford Menceritakan Kisah AI yang Sangat Berbeda: 'Dario Memberitahu Saya...'",
+      "desc": "Chamath Palihapitiya Bercanda 'Tidak Ada Pekerjaan Tersisa' Saat Nvidia, Corning, dan Ford Menceritakan Kisah AI yang Sangat Berbeda: 'Dario Memberitahu Saya...'",
+      "time": "1 hari lalu",
+      "date": "4 Jul 2026",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/technology/ai/articles/chamath-palihapitiya-jokes-no-jobs-103403894.html",
+      "region": "Internasional",
+      "image": "https://media.zenfs.com/en/benzinga_79/d554df534e410bd7de0869c3c7d2dc76",
+      "source_icon": null,
+      "ts": "2026-07-04T10:34:03.000Z",
+      "highlight": false,
+      "body": [
+        "Chamath Palihapitiya Bercanda 'Tidak Ada Pekerjaan Tersisa' Saat Nvidia, Corning, dan Ford Menceritakan Kisah AI yang Sangat Berbeda: 'Dario Memberitahu Saya...'"
+      ]
+    },
+    {
+      "cat": "Saham",
       "title": "77% perusahaan mendorong AI pada pekerjanya - pengacara ketenagakerjaan mengatakan Anda hampir tidak punya hak untuk menolak",
       "desc": "77% perusahaan mendorong AI pada pekerjanya - pengacara ketenagakerjaan mengatakan Anda hampir tidak punya hak untuk menolak",
       "time": "1 hari lalu",
@@ -3416,6 +3960,23 @@
       "highlight": false,
       "body": [
         "77% perusahaan mendorong AI pada pekerjanya - pengacara ketenagakerjaan mengatakan Anda hampir tidak punya hak untuk menolak"
+      ]
+    },
+    {
+      "cat": "Saham",
+      "title": "Saham SpaceX 169% Dinilai Terlalu Tinggi Menurut Para Ahli. Inilah Alasannya.",
+      "desc": "Saham SpaceX 169% Dinilai Terlalu Tinggi Menurut Para Ahli. Inilah Alasannya.",
+      "time": "1 hari lalu",
+      "date": "4 Jul 2026",
+      "source": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/spacex-stock-169-overvalued-according-102500691.html",
+      "region": "Internasional",
+      "image": "https://media.zenfs.com/en/motleyfool.com/14dee8d56d3bd719ead012540688e248",
+      "source_icon": null,
+      "ts": "2026-07-04T10:25:00.000Z",
+      "highlight": false,
+      "body": [
+        "Saham SpaceX 169% Dinilai Terlalu Tinggi Menurut Para Ahli. Inilah Alasannya."
       ]
     },
     {
@@ -4204,7 +4765,7 @@
       "cat": "Saham",
       "title": "Bagaimana Reset Panduan Server AI Dell Technologies Inc. (DELL) Mendorong Momentum Estimasi Pendapatannya",
       "desc": "Bagaimana Reset Panduan Server AI Dell Technologies Inc. (DELL) Mendorong Momentum Estimasi Pendapatannya",
-      "time": "1 hari lalu",
+      "time": "2 hari lalu",
       "date": "3 Jul 2026",
       "source": "Yahoo Finance",
       "url": "https://finance.yahoo.com/markets/stocks/articles/dell-technologies-inc-dell-ai-233035592.html",
@@ -4561,7 +5122,7 @@
       "cat": "Saham",
       "title": "Prediksi IHSG dan Rekomendasi Saham 3 Juli 2026",
       "desc": "Indeks Harga Saham Gabungan (IHSG) akan menguji 5.472-5.540 pada perdagangan saham Jumat, (3/7/2026). Berikut strategi rekomendasi sahamnya.",
-      "time": "2 hari lalu",
+      "time": "3 hari lalu",
       "date": "3 Jul 2026",
       "source": "Liputan6",
       "url": "https://www.liputan6.com/saham/read/8192246/prediksi-ihsg-dan-rekomendasi-saham-3-juli-2026",
@@ -4918,7 +5479,7 @@
       "cat": "Saham",
       "title": "IHSG Bakal Tergelincir, Simak Rekomendasi Saham 2 Juli 2026",
       "desc": "Laju Indeks Harga Saham Gabungan (IHSG) rawan koreksi, dan menguji posisi 5.472-5.540. Berikut straregi rekomendasi saham, Kamis, (2/7/2026).",
-      "time": "3 hari lalu",
+      "time": "4 hari lalu",
       "date": "2 Jul 2026",
       "source": "Liputan6",
       "url": "https://www.liputan6.com/saham/read/8155086/ihsg-bakal-tergelincir-simak-rekomendasi-saham-2-juli-2026",
@@ -5001,7 +5562,7 @@
     },
     {
       "cat": "Saham",
-      "title": "Apakah Anda benar-benar mencintai pekerjaan Anda? Maka Anda tidak sendirian, menurut hasil mengejutkan dari survei ini",
+      "title": "Apakah Anda benar-benar menyukai pekerjaan Anda? Maka Anda tidak sendirian, menurut hasil mengejutkan dari survei ini",
       "desc": "Mereka yang disurvei menunjukkan 78,9% pekerja yang \"melaporkan merasa positif di akhir giliran kerja mereka.\"",
       "time": "5 hari lalu",
       "date": "30 Jun 2026",
@@ -5087,7 +5648,7 @@
     {
       "cat": "Saham",
       "title": "Iran memperingatkan kapal-kapal yang transit di Selat Hormuz tanpa persetujuan mereka adalah tindakan yang 'tidak dapat diterima dan berbahaya'",
-      "desc": "Peringatan keras ini menggarisbawahi tekad Teheran untuk mempertahankan kendali atas Selat Hormuz dan menolak transit yang melanggar izinnya.",
+      "desc": "Peringatan keras tersebut menggarisbawahi tekad Teheran untuk mempertahankan kendali atas Selat Hormuz dan menolak transit yang melanggar izinnya.",
       "time": "10 hari lalu",
       "date": "25 Jun 2026",
       "source": "CNBC Markets",
@@ -5098,7 +5659,7 @@
       "ts": "2026-06-25T14:03:16.000Z",
       "highlight": false,
       "body": [
-        "Peringatan keras ini menggarisbawahi tekad Teheran untuk mempertahankan kendali atas Selat Hormuz dan menolak transit yang melanggar izinnya."
+        "Peringatan keras tersebut menggarisbawahi tekad Teheran untuk mempertahankan kendali atas Selat Hormuz dan menolak transit yang melanggar izinnya."
       ]
     },
     {
@@ -5121,7 +5682,7 @@
     {
       "cat": "Saham",
       "title": "PHK di pabrik pada bulan Juni mendekati tingkat krisis keuangan dan Covid, kata S&P",
-      "desc": "Meskipun indeks manufaktur perusahaan tersebut berjalan lebih baik dari perkiraan pada bulan Juni, hal ini sebagian besar disebabkan oleh perbaikan persediaan dan meskipun adanya pengurangan jumlah pekerja secara signifikan.",
+      "desc": "Meskipun indeks manufaktur perusahaan tersebut berjalan lebih baik dari perkiraan pada bulan Juni, hal ini sebagian besar disebabkan oleh perbaikan persediaan dan meskipun ada pengurangan jumlah pekerja yang signifikan.",
       "time": "12 hari lalu",
       "date": "23 Jun 2026",
       "source": "CNBC Markets",
@@ -5132,13 +5693,13 @@
       "ts": "2026-06-23T16:40:57.000Z",
       "highlight": false,
       "body": [
-        "Meskipun indeks manufaktur perusahaan tersebut berjalan lebih baik dari perkiraan pada bulan Juni, hal ini sebagian besar disebabkan oleh perbaikan persediaan dan meskipun adanya pengurangan jumlah pekerja secara signifikan."
+        "Meskipun indeks manufaktur perusahaan tersebut berjalan lebih baik dari perkiraan pada bulan Juni, hal ini sebagian besar disebabkan oleh perbaikan persediaan dan meskipun ada pengurangan jumlah pekerja yang signifikan."
       ]
     },
     {
       "cat": "Saham",
       "title": "Permasalahan AS yang mencakup keringanan sanksi minyak terhadap Iran, memberikan pendapatan miliaran dolar bagi Teheran",
-      "desc": "AS mengeluarkan pencabutan sanksi terhadap minyak Iran, menawarkan Teheran bantuan ekonomi sementara perundingan menuju kesepakatan damai terus berlanjut.",
+      "desc": "AS mengeluarkan pencabutan sanksi terhadap minyak Iran, menawarkan Teheran bantuan ekonomi sementara negosiasi menuju kesepakatan damai terus berlanjut.",
       "time": "12 hari lalu",
       "date": "23 Jun 2026",
       "source": "CNBC Markets",
@@ -5149,7 +5710,7 @@
       "ts": "2026-06-23T14:56:38.000Z",
       "highlight": false,
       "body": [
-        "AS mengeluarkan pencabutan sanksi terhadap minyak Iran, menawarkan Teheran bantuan ekonomi sementara perundingan menuju kesepakatan damai terus berlanjut."
+        "AS mengeluarkan pencabutan sanksi terhadap minyak Iran, menawarkan Teheran bantuan ekonomi sementara negosiasi menuju kesepakatan damai terus berlanjut."
       ]
     },
     {
@@ -5239,7 +5800,7 @@
     },
     {
       "cat": "Saham",
-      "title": "Tiga kapal tanker Iran keluar dari blokade AS untuk pertama kalinya dalam beberapa bulan ketika pemilik kapal memandang Hormuz dengan 'tak percaya'",
+      "title": "Tiga kapal tanker Iran keluar dari blokade AS untuk pertama kalinya dalam beberapa bulan ketika pemilik kapal memandang Hormuz dengan ‘waspada dan tidak percaya’",
       "desc": "Setidaknya tiga kapal tanker Iran yang membawa hampir lima juta barel minyak mentah telah keluar dari blokade Angkatan Laut AS.",
       "time": "18 hari lalu",
       "date": "17 Jun 2026",
@@ -5426,9 +5987,26 @@
     },
     {
       "cat": "Crypto",
+      "title": "Afrika Selatan mengusulkan aturan pajak kripto berdasarkan kerangka pajak yang ada",
+      "desc": "Otoritas pajak Afrika Selatan mengusulkan rancangan panduan yang mengklarifikasi bagaimana aset kripto dikenakan pajak berdasarkan aturan pajak pendapatan dan keuntungan modal yang ada, dan meminta masukan publik hingga 31 Agustus.",
+      "time": "10 menit lalu",
+      "date": "5 Jul 2026",
+      "source": "Cointelegraph",
+      "url": "https://cointelegraph.com/news/south-africa-proposes-crypto-tax-draft-guidance?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+      "region": "Indonesia",
+      "image": "https://s3-images.ctmedia.io/media/article-covers/booksouth-africa.png",
+      "source_icon": null,
+      "ts": "2026-07-05T11:52:47.000Z",
+      "highlight": true,
+      "body": [
+        "Otoritas pajak Afrika Selatan mengusulkan rancangan panduan yang mengklarifikasi bagaimana aset kripto dikenakan pajak berdasarkan aturan pajak pendapatan dan keuntungan modal yang ada, dan meminta masukan publik hingga 31 Agustus."
+      ]
+    },
+    {
+      "cat": "Crypto",
       "title": "Arus keluar Binance tiga kali lipat menjadi $1.2 miliar karena penarikan ETH mencapai level tertinggi dalam 3 tahun",
       "desc": "Binance mencatat arus keluar bersih mingguan sebesar $1,23 miliar, naik 207% dari minggu sebelumnya, karena penarikan Ethereum melonjak ke level tertinggi dalam tiga tahun.",
-      "time": "2 jam lalu",
+      "time": "3 jam lalu",
       "date": "5 Jul 2026",
       "source": "Cointelegraph",
       "url": "https://cointelegraph.com/news/binance-outflows-1-23-billion-eth-withdrawals-3-year-high?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -5436,7 +6014,7 @@
       "image": "https://s3-images.ctmedia.io/media/article-covers/hi-how-to-assess-the-value-of-binance.jpg",
       "source_icon": null,
       "ts": "2026-07-05T08:33:39.000Z",
-      "highlight": true,
+      "highlight": false,
       "body": [
         "Binance mencatat arus keluar bersih mingguan sebesar $1,23 miliar, naik 207% dari minggu sebelumnya, karena penarikan Ethereum melonjak ke level tertinggi dalam tiga tahun."
       ]
@@ -5445,7 +6023,7 @@
       "cat": "Crypto",
       "title": "Portnoy dari Barstool berencana untuk menahan bitcoin hingga nol setelah selalu salah mengatur waktu",
       "desc": "Pendiri Barstool Sports Dave Portnoy mengatakan dia akan menahan bitcoin hingga nol setelah membeli mendekati $100,000.",
-      "time": "5 jam lalu",
+      "time": "6 jam lalu",
       "date": "5 Jul 2026",
       "source": "CoinDesk",
       "url": "https://www.coindesk.com/markets/2026/07/05/barstool-s-portnoy-plans-to-hold-bitcoin-down-to-zero-after-timing-it-wrong-every-time",
@@ -5462,7 +6040,7 @@
       "cat": "Crypto",
       "title": "Inilah yang terjadi di kripto hari ini",
       "desc": "Ingin tahu apa yang terjadi di crypto hari ini? Berikut adalah berita terbaru tentang tren dan peristiwa harian yang memengaruhi harga Bitcoin, blockchain, DeFi, Web3, dan regulasi kripto.",
-      "time": "7 jam lalu",
+      "time": "8 jam lalu",
       "date": "5 Jul 2026",
       "source": "Cointelegraph",
       "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -5479,7 +6057,7 @@
       "cat": "Crypto",
       "title": "Vitalik Buterin berbagi prioritas utama untuk peta jerami 'Lean Ethereum' yang baru",
       "desc": "Bagian dari rencana Ethereum Foundation untuk menjadikan Ethereum lebih pribadi dan terukur adalah dengan memperkenalkan mesin virtual baru, dengan leanISA dan RISC-V di antara kandidat teratas.",
-      "time": "7 jam lalu",
+      "time": "8 jam lalu",
       "date": "5 Jul 2026",
       "source": "Cointelegraph",
       "url": "https://cointelegraph.com/news/vitalik-buterin-shares-top-priorities-for-new-lean-ethereum-roadmap?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -5496,7 +6074,7 @@
       "cat": "Crypto",
       "title": "Moonbeam akan beralih dari Polkadot ke Base, memperkenalkan kerangka kerja agen AI",
       "desc": "Moonbeam tidak memberikan batas waktu kapan akan meluncurkan platform agen AI tetapi mengatakan kepada pemegang GLMR untuk menjembatani token mereka dari parachain Polkadot ke Base sebelum 31 Juli.",
-      "time": "10 jam lalu",
+      "time": "11 jam lalu",
       "date": "5 Jul 2026",
       "source": "Cointelegraph",
       "url": "https://cointelegraph.com/news/moonbeam-pivots-from-polkadot-to-base-unveils-ai-agent-framework?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -5513,7 +6091,7 @@
       "cat": "Crypto",
       "title": "Kasus penggunaan Tokenisasi berikutnya adalah portofolio yang dipersonalisasi, kata eksekutif NYLIM",
       "desc": "Thomas Sy, kepala solusi multi-aset di manajer aset senilai $800 juta, mengatakan blockchain dapat memungkinkan konstruksi portofolio kompleks yang belum mungkin dilakukan dalam keuangan tradisional.",
-      "time": "15 jam lalu",
+      "time": "16 jam lalu",
       "date": "4 Jul 2026",
       "source": "CoinDesk",
       "url": "https://www.coindesk.com/business/2026/07/02/tokenization-s-next-use-case-is-personalized-portfolios-nylim-executive-says",
@@ -5530,7 +6108,7 @@
       "cat": "Crypto",
       "title": "Kraken memungkinkan pedagang menggunakan saham yang diberi token sebagai jaminan untuk perdagangan dengan leverage",
       "desc": "Pengguna yang memenuhi syarat sekarang dapat menggunakan saham tokenized dan ETF tertentu sebagai jaminan untuk perdagangan berjangka dan margin tanpa menjual kepemilikan mereka.",
-      "time": "15 jam lalu",
+      "time": "16 jam lalu",
       "date": "4 Jul 2026",
       "source": "Cointelegraph",
       "url": "https://cointelegraph.com/news/kraken-lets-traders-use-tokenized-stocks-as-collateral-for-leveraged-trades?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -5547,7 +6125,7 @@
       "cat": "Crypto",
       "title": "Bitcoin melonjak di atas $63,000, membalikkan kerugian akhir Juni",
       "desc": "Token mencapai level tertinggi dalam lebih dari sebulan selama perdagangan tipis pada tanggal 4 Juli, dengan XRP naik 5% dalam 24 jam untuk memimpin kenaikan di antara mata uang utama.",
-      "time": "16 jam lalu",
+      "time": "18 jam lalu",
       "date": "4 Jul 2026",
       "source": "CoinDesk",
       "url": "https://www.coindesk.com/markets/2026/07/04/bitcoin-jumps-above-usd63-000-reversing-end-june-losses",
@@ -5564,7 +6142,7 @@
       "cat": "Crypto",
       "title": "Pakar Bitcoin berbeda pendapat mengenai rencana untuk membekukan 1,1 juta bitcoin milik Satoshi seiring meningkatnya ancaman kuantum",
       "desc": "Pendiri Binance Changpeng Zhao mengatakan bitcoin Satoshi Nakamoto harus dibekukan sebelum komputer kuantum dapat mencurinya. Tidak semua orang setuju.",
-      "time": "17 jam lalu",
+      "time": "18 jam lalu",
       "date": "4 Jul 2026",
       "source": "CoinDesk",
       "url": "https://www.coindesk.com/business/2026/07/04/bitcoin-experts-split-over-plan-to-freeze-satoshi-s-1-1-million-bitcoin-as-quantum-threat-grows",
@@ -5581,7 +6159,7 @@
       "cat": "Crypto",
       "title": "Bagaimana peretas etis yang hanya memiliki server senilai $3.000 menemukan kelemahan yang dapat membahayakan kripto senilai $70 miliar",
       "desc": "Cacat kritis pada blockchain Aptos, yang telah ditambal, memberi para peneliti tingkat keberhasilan hampir 90% dalam melanggar jaminan keamanan inti, dengan biaya serangan hanya ratusan dolar.",
-      "time": "17 jam lalu",
+      "time": "18 jam lalu",
       "date": "4 Jul 2026",
       "source": "CoinDesk",
       "url": "https://www.coindesk.com/tech/2026/07/04/how-ethical-hackers-with-just-a-usd3-000-server-found-a-flaw-that-could-ve-put-usd70-billion-in-crypto-at-risk",
@@ -5598,7 +6176,7 @@
       "cat": "Crypto",
       "title": "Bitcoin menjadi $53K? Deposito Bursa Melonjak karena Analis Memperingatkan Peningkatan Volatilitas",
       "desc": "Bitcoin bangkit kembali di atas $60.000 pada minggu ini, tetapi peningkatan volatilitas mungkin akan terjadi karena setoran kripto ke bursa melonjak.",
-      "time": "18 jam lalu",
+      "time": "19 jam lalu",
       "date": "4 Jul 2026",
       "source": "Decrypt",
       "url": "https://decrypt.co/372744/bitcoin-53k-exchange-deposits-jump-analysts-warn-increased-volatility",
@@ -5615,7 +6193,7 @@
       "cat": "Crypto",
       "title": "Kalshi mencapai rekor volume perdagangan bulan Juni karena Piala Dunia memicu pasar prediksi",
       "desc": "Data DefiLlama menunjukkan Kalshi membukukan rekor bulan untuk volume perdagangan karena perluasan Piala Dunia FIFA meningkatkan aktivitas pasar prediksi.",
-      "time": "18 jam lalu",
+      "time": "19 jam lalu",
       "date": "4 Jul 2026",
       "source": "Cointelegraph",
       "url": "https://cointelegraph.com/news/world-cup-drives-prediction-markets-to-record-june-trading-volumes?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -5632,7 +6210,7 @@
       "cat": "Crypto",
       "title": "Salah Satu Pendiri Perplexity: Keamanan AI Adalah Alasan untuk Mengunci Perbatasan",
       "desc": "Andy Konwinski menggunakan bencana Fable 5 Anthropic sebagai bukti A dalam kasus yang melarang segelintir laboratorium swasta mengatur siapa yang boleh melakukan penelitian AI.",
-      "time": "18 jam lalu",
+      "time": "20 jam lalu",
       "date": "4 Jul 2026",
       "source": "Decrypt",
       "url": "https://decrypt.co/372755/perplexity-co-founder-ai-safety-excuse-lock-down-frontier",
@@ -5649,7 +6227,7 @@
       "cat": "Crypto",
       "title": "Mengapa terputusnya bitcoin dari saham-saham yang mencapai rekor tertinggi tidak akan bertahan lama",
       "desc": "Para peneliti di Schwab dan Hashdex mengatakan AI telah mengalihkan modal dari aset digital sementara bitcoin terus mengikuti pola pemulihan pasca-separuh yang lazim.",
-      "time": "19 jam lalu",
+      "time": "20 jam lalu",
       "date": "4 Jul 2026",
       "source": "CoinDesk",
       "url": "https://www.coindesk.com/markets/2026/07/03/why-bitcoin-s-disconnect-from-record-high-stocks-won-t-last",
@@ -5666,7 +6244,7 @@
       "cat": "Crypto",
       "title": "Pembeli token kripto Trump turun $3,8 miliar, menurut data blockchain",
       "desc": "Token TRUMP turun 96% dari puncaknya, dan 85% dompet pasar sekunder untuk WLFI berada di bawah air, mencerminkan penurunan yang lebih luas di sektor ini.",
-      "time": "19 jam lalu",
+      "time": "21 jam lalu",
       "date": "4 Jul 2026",
       "source": "CoinDesk",
       "url": "https://www.coindesk.com/business/2026/07/04/trump-s-crypto-token-buyers-are-down-usd3-8-billion-blockchain-data-shows",
@@ -5681,9 +6259,9 @@
     },
     {
       "cat": "Crypto",
-      "title": "Di Dalam Mesin Perdagangan di Balik 'Swap Cepat dan Mulus' ChangeNOW",
+      "title": "Di dalam Mesin Perdagangan di Balik 'Swap Cepat dan Mulus' ChangeNOW",
       "desc": "CSO ChangeNOW Pauline Shangett menggali infrastruktur yang mendasari frontend bursa yang sederhana dan efisien.",
-      "time": "21 jam lalu",
+      "time": "22 jam lalu",
       "date": "4 Jul 2026",
       "source": "Decrypt",
       "url": "https://decrypt.co/372679/inside-the-trading-engine-behind-changenows-fast-seamless-swaps",
@@ -5700,7 +6278,7 @@
       "cat": "Crypto",
       "title": "Eropa memimpin regulasi kripto. Sekarang implementasinya harus sesuai dengan ambisi",
       "desc": "Eropa memimpin regulasi kripto. Sekarang implementasinya harus sesuai dengan ambisi",
-      "time": "21 jam lalu",
+      "time": "22 jam lalu",
       "date": "4 Jul 2026",
       "source": "CoinDesk",
       "url": "https://www.coindesk.com/opinion/2026/07/04/europe-led-on-crypto-regulation-now-implementation-must-match-ambition",
@@ -5716,8 +6294,8 @@
     {
       "cat": "Crypto",
       "title": "Tindakan UE untuk menghalangi investor ritel dari ledakan ledakan pasar prediksi bernilai miliaran dolar",
-      "desc": "Regulator di kawasan ini menekankan bahwa fungsi sebenarnya suatu produk sebagai turunan lebih penting daripada nama komersial atau labelnya ketika menilai kepatuhan.",
-      "time": "21 jam lalu",
+      "desc": "Regulator di kawasan ini menekankan bahwa fungsi sebenarnya suatu produk sebagai turunan lebih penting daripada nama komersial atau label ketika menilai kepatuhan.",
+      "time": "22 jam lalu",
       "date": "4 Jul 2026",
       "source": "CoinDesk",
       "url": "https://www.coindesk.com/policy/2026/07/04/eu-moves-to-block-retail-investors-from-explosive-boom-of-multibillion-dollar-prediction-markets",
@@ -5727,14 +6305,14 @@
       "ts": "2026-07-04T13:56:27.000Z",
       "highlight": false,
       "body": [
-        "Regulator di kawasan ini menekankan bahwa fungsi sebenarnya suatu produk sebagai turunan lebih penting daripada nama komersial atau labelnya ketika menilai kepatuhan."
+        "Regulator di kawasan ini menekankan bahwa fungsi sebenarnya suatu produk sebagai turunan lebih penting daripada nama komersial atau label ketika menilai kepatuhan."
       ]
     },
     {
       "cat": "Crypto",
       "title": "Pencipta Bollinger Bands mengincar akhir pasar bearish Bitcoin, pembalikan berbentuk 'W'",
       "desc": "Kekuatan harga Bitcoin dapat \"memecahkan\" seluruh tren turun jika pola pembalikan selesai, saran John Bollinger sehubungan dengan rebound BTC.",
-      "time": "21 jam lalu",
+      "time": "23 jam lalu",
       "date": "4 Jul 2026",
       "source": "Cointelegraph",
       "url": "https://cointelegraph.com/markets/bollinger-bands-creator-eyes-bitcoin-bear-market-end-w-shaped-reversal?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -5751,7 +6329,7 @@
       "cat": "Crypto",
       "title": "Peraturan kripto baru yang berani di Inggris menjanjikan untuk membuka perdagangan global, namun hambatan kepatuhan yang besar masih mengancam peluncurannya",
       "desc": "Kerangka kerja kripto FCA Inggris telah dipuji karena memprioritaskan likuiditas global dan adopsi institusional, namun proses otorisasinya diperkirakan akan sulit.",
-      "time": "23 jam lalu",
+      "time": "1 hari lalu",
       "date": "4 Jul 2026",
       "source": "CoinDesk",
       "url": "https://www.coindesk.com/policy/2026/07/04/uk-s-bold-new-crypto-rules-promise-to-unlock-global-trading-but-huge-compliance-hurdles-still-threaten-the-rollout",
@@ -5768,7 +6346,7 @@
       "cat": "Crypto",
       "title": "Memberontak untuk menghapuskan USDT pada bulan Agustus, dengan alasan kekhawatiran peraturan dan risiko",
       "desc": "Revolut memberi tahu beberapa pelanggan bahwa mereka akan menghapus USDT setelah 31 Agustus, dan sisa kepemilikan secara otomatis dikonversi ke mata uang dasar pengguna.",
-      "time": "23 jam lalu",
+      "time": "1 hari lalu",
       "date": "4 Jul 2026",
       "source": "Cointelegraph",
       "url": "https://cointelegraph.com/news/revolut-usdt-delisting-regulatory-risk-concerns?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -6192,7 +6770,7 @@
     {
       "cat": "Crypto",
       "title": "StanChart bergabung dengan pembaruan register MiCA pertama ESMA sejak batas waktu",
-      "desc": "ESMA menerbitkan pembaruan pendaftaran MiCA pasca-batas waktu pertamanya, menambahkan 37 penyedia layanan aset kripto, termasuk Standard Chartered dan FalconX.",
+      "desc": "ESMA menerbitkan pembaruan pendaftaran MiCA pasca-tenggat waktu pertamanya, menambahkan 37 penyedia layanan aset kripto, termasuk Standard Chartered dan FalconX.",
       "time": "2 hari lalu",
       "date": "3 Jul 2026",
       "source": "Cointelegraph",
@@ -6203,7 +6781,7 @@
       "ts": "2026-07-03T12:02:41.000Z",
       "highlight": false,
       "body": [
-        "ESMA menerbitkan pembaruan pendaftaran MiCA pasca-batas waktu pertamanya, menambahkan 37 penyedia layanan aset kripto, termasuk Standard Chartered dan FalconX."
+        "ESMA menerbitkan pembaruan pendaftaran MiCA pasca-tenggat waktu pertamanya, menambahkan 37 penyedia layanan aset kripto, termasuk Standard Chartered dan FalconX."
       ]
     },
     {
@@ -6294,7 +6872,7 @@
     {
       "cat": "Crypto",
       "title": "Kripto menguat karena risiko kenaikan suku bunga AS berkurang",
-      "desc": "Crypto mengakhiri minggu ini dalam kondisi yang lebih baik setelah data pekerjaan AS yang lemah mengurangi kemungkinan kenaikan suku bunga Fed dan Uniswap memperoleh keuntungan karena bekerja sama dengan Robinhood.",
+      "desc": "Crypto mengakhiri minggu ini dalam kondisi yang lebih baik setelah data pekerjaan AS yang lemah mengurangi kemungkinan kenaikan suku bunga Fed dan Uniswap menguat melalui kerja sama dengan Robinhood.",
       "time": "2 hari lalu",
       "date": "3 Jul 2026",
       "source": "CoinDesk",
@@ -6305,7 +6883,7 @@
       "ts": "2026-07-03T11:11:39.000Z",
       "highlight": false,
       "body": [
-        "Crypto mengakhiri minggu ini dalam kondisi yang lebih baik setelah data pekerjaan AS yang lemah mengurangi kemungkinan kenaikan suku bunga Fed dan Uniswap memperoleh keuntungan karena bekerja sama dengan Robinhood."
+        "Crypto mengakhiri minggu ini dalam kondisi yang lebih baik setelah data pekerjaan AS yang lemah mengurangi kemungkinan kenaikan suku bunga Fed dan Uniswap menguat melalui kerja sama dengan Robinhood."
       ]
     },
     {
@@ -6447,7 +7025,7 @@
     {
       "cat": "Crypto",
       "title": "Binance mengatakan MiCA harus dinilai berdasarkan siapa yang dilisensikannya, bukan siapa yang dikecualikan",
-      "desc": "Kepala Eropa Gillian Lynch mengatakan Binance memenuhi persyaratan lisensi Yunani dan perusahaan tetap berkomitmen terhadap UE, meskipun menarik aplikasi MiCA beberapa hari sebelum batas waktu 1 Juli.",
+      "desc": "Kepala Eropa Gillian Lynch mengatakan Binance memenuhi persyaratan perizinan Yunani dan perusahaan tetap berkomitmen terhadap UE, meskipun menarik aplikasi MiCA beberapa hari sebelum batas waktu 1 Juli.",
       "time": "2 hari lalu",
       "date": "3 Jul 2026",
       "source": "CoinDesk",
@@ -6458,7 +7036,7 @@
       "ts": "2026-07-03T06:30:00.000Z",
       "highlight": false,
       "body": [
-        "Kepala Eropa Gillian Lynch mengatakan Binance memenuhi persyaratan lisensi Yunani dan perusahaan tetap berkomitmen terhadap UE, meskipun menarik aplikasi MiCA beberapa hari sebelum batas waktu 1 Juli."
+        "Kepala Eropa Gillian Lynch mengatakan Binance memenuhi persyaratan perizinan Yunani dan perusahaan tetap berkomitmen terhadap UE, meskipun menarik aplikasi MiCA beberapa hari sebelum batas waktu 1 Juli."
       ]
     },
     {
@@ -6498,7 +7076,7 @@
     {
       "cat": "Crypto",
       "title": "ETF Bitcoin melihat arus masuk $221 juta, akhirnya mengakhiri penjualan beruntun 10 hari yang menyakitkan",
-      "desc": "ETF Spot mengalami arus masuk terkuat dalam dua bulan, didorong oleh dana selain IBIT BlackRock.",
+      "desc": "ETF spot mengalami arus masuk terkuat dalam dua bulan, didorong oleh dana selain IBIT BlackRock.",
       "time": "2 hari lalu",
       "date": "3 Jul 2026",
       "source": "CoinDesk",
@@ -6509,7 +7087,7 @@
       "ts": "2026-07-03T05:54:51.000Z",
       "highlight": false,
       "body": [
-        "ETF Spot mengalami arus masuk terkuat dalam dua bulan, didorong oleh dana selain IBIT BlackRock."
+        "ETF spot mengalami arus masuk terkuat dalam dua bulan, didorong oleh dana selain IBIT BlackRock."
       ]
     },
     {
@@ -6634,7 +7212,7 @@
     {
       "cat": "Crypto",
       "title": "Sekuritisasi memberi token senilai $295 juta dari sahamnya sendiri di Solana dan Avalanche di tengah debut NYSE",
-      "desc": "Saham perusahaan publik yang baru ini adalah saham tokenisasi terbesar yang disponsori penerbit pada saat peluncuran, yang bertujuan untuk bersaing dengan penerbit token saham pihak ketiga saingannya.",
+      "desc": "Saham perusahaan publik yang baru ini adalah saham tokenisasi terbesar yang disponsori penerbit pada saat peluncuran, yang bertujuan untuk bersaing dengan penerbit token saham pihak ketiga yang bersaing.",
       "time": "3 hari lalu",
       "date": "2 Jul 2026",
       "source": "CoinDesk",
@@ -6645,7 +7223,7 @@
       "ts": "2026-07-02T19:00:03.000Z",
       "highlight": false,
       "body": [
-        "Saham perusahaan publik yang baru ini adalah saham tokenisasi terbesar yang disponsori penerbit pada saat peluncuran, yang bertujuan untuk bersaing dengan penerbit token saham pihak ketiga saingannya."
+        "Saham perusahaan publik yang baru ini adalah saham tokenisasi terbesar yang disponsori penerbit pada saat peluncuran, yang bertujuan untuk bersaing dengan penerbit token saham pihak ketiga yang bersaing."
       ]
     },
     {
@@ -6719,7 +7297,7 @@
     {
       "cat": "Crypto",
       "title": "Standard Chartered Menjadi Bank Global Pertama yang Menawarkan Akses USDC Langsung ke Institusi",
-      "desc": "Standard Chartered adalah Bank Penting Sistemik Global pertama yang diberi wewenang untuk mengizinkan institusi mencetak dan menukarkan USDC Circle.",
+      "desc": "Standard Chartered adalah Bank Global Systemically Important pertama yang diberi wewenang untuk mengizinkan institusi mencetak dan menukarkan USDC Circle.",
       "time": "3 hari lalu",
       "date": "2 Jul 2026",
       "source": "Decrypt",
@@ -6730,13 +7308,13 @@
       "ts": "2026-07-02T13:58:09.000Z",
       "highlight": false,
       "body": [
-        "Standard Chartered adalah Bank Penting Sistemik Global pertama yang diberi wewenang untuk mengizinkan institusi mencetak dan menukarkan USDC Circle."
+        "Standard Chartered adalah Bank Global Systemically Important pertama yang diberi wewenang untuk mengizinkan institusi mencetak dan menukarkan USDC Circle."
       ]
     },
     {
       "cat": "Crypto",
       "title": "Metaplanet Menambahkan 2,823 Bitcoin di Q2 saat Kecepatan Pembelian Mendingin",
-      "desc": "Tumpukan 43,000 BTC perusahaan Jepang sekarang berada jauh di bawah basis biayanya, dan perusahaan tersebut lebih mengandalkan utang daripada ekuitas untuk terus membeli.",
+      "desc": "Tumpukan 43,000 BTC perusahaan Jepang sekarang berada jauh di bawah basis biayanya, dan perusahaan tersebut mengandalkan utang dibandingkan ekuitas untuk terus membeli.",
       "time": "3 hari lalu",
       "date": "2 Jul 2026",
       "source": "Decrypt",
@@ -6747,7 +7325,7 @@
       "ts": "2026-07-02T13:11:16.000Z",
       "highlight": false,
       "body": [
-        "Tumpukan 43,000 BTC perusahaan Jepang sekarang berada jauh di bawah basis biayanya, dan perusahaan tersebut lebih mengandalkan utang daripada ekuitas untuk terus membeli."
+        "Tumpukan 43,000 BTC perusahaan Jepang sekarang berada jauh di bawah basis biayanya, dan perusahaan tersebut mengandalkan utang dibandingkan ekuitas untuk terus membeli."
       ]
     },
     {
@@ -6769,7 +7347,7 @@
     },
     {
       "cat": "Crypto",
-      "title": "Tersangka Laba-laba Tersebar Diekstradisi ke AS Lebih dari $8M Permintaan Tebusan Kripto",
+      "title": "Tersangka Laba-laba Tersebar Diekstradisi ke AS Lebih dari $8 Juta Permintaan Tebusan Kripto",
       "desc": "Remaja tersebut diduga membantu membobol toko perhiasan mewah dan meminta $8 juta dalam bentuk kripto, sebagai bagian dari kru yang terikat dengan uang tebusan sebesar $100 juta.",
       "time": "3 hari lalu",
       "date": "2 Jul 2026",
@@ -6854,7 +7432,7 @@
     },
     {
       "cat": "Crypto",
-      "title": "Bitcoin Amerika yang Didukung Trump Mencapai Harga Rendah Baru Menjelang Reverse Stock Split",
+      "title": "Bitcoin Amerika yang Didukung Trump Mencapai Harga Rendah Baru Menjelang Pemecahan Saham Terbalik",
       "desc": "Perusahaan penambangan Bitcoin, American Bitcoin, jatuh ke harga terendah baru pada hari Rabu, satu hari sebelum melakukan reverse stock split 1-untuk-15.",
       "time": "4 hari lalu",
       "date": "1 Jul 2026",
