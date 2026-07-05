@@ -550,7 +550,7 @@
     .modal-box{ padding:26px; }
   }
 
-  /* ===== TABLET (641–900px) ===== */
+  /* ===== TABLET (641-900px) ===== */
   @media (min-width:641px) and (max-width:900px){
     .hero{ padding-top:44px; gap:20px; }
     .hero-main{ min-height:300px; padding:32px; }

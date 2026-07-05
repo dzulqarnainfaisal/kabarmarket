@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /*
- * fetch-news.js  —  Pengambil berita Kabar Market via RSS media Indonesia.
+ * fetch-news.js  -  Pengambil berita Kabar Market via RSS media Indonesia.
  * ---------------------------------------------------------------------------
  * REAL-TIME, GRATIS, TANPA API KEY.
  * Mengambil langsung dari RSS resmi media (ANTARA, Detik Finance, CNBC
@@ -8,7 +8,7 @@
  * Crypto berdasarkan kata kunci, dan menyimpan ke ../news.json.
  *
  * Gaya agregator: hanya judul + ringkasan + tautan ke sumber asli (bukan
- * menyalin isi penuh) — aman hak cipta, seperti Google News.
+ * menyalin isi penuh) - aman hak cipta, seperti Google News.
  *
  * Jalankan: node automation/fetch-news.js
  */
@@ -48,8 +48,30 @@ function loadFeeds() {
 	}).filter((f) => f.url);
 }
 
-const PER_CAT = 6; // jumlah berita per kategori
+const PER_CAT = 6; // jumlah berita per kategori (tampilan awal per halaman)
+const ARCHIVE_PER_CAT = Infinity; // tanpa batas - SEMUA berita lama disimpan (untuk paginasi). Ganti ke angka mis. 100 untuk membatasi.
 const DO_TRANSLATE = process.env.TRANSLATE !== '0'; // set TRANSLATE=0 untuk mematikan
+
+// --- Filter kualitas berita ---------------------------------------------------
+// Buang konten promosi/iklan/hiburan yang bukan berita pasar (mis. "Full Day Sale",
+// diskon, giveaway, gosip, zodiak, dll) agar kualitas berita lebih terjaga.
+const BLOCK_RE = /(full day sale|banting harga|diskon|obral|\bpromo\b|voucher|kupon|cashback|flash sale|harga murah|termurah|gratis ongkir|serba gratis|giveaway|berhadiah|undian|kode redeem|beli sekarang|buruan|link nonton|nonton film|streaming film|jadwal tayang|sinopsis|spoiler|zodiak|horoskop|ramalan|primbon|resep masak|gaya hidup|lifestyle|wisata kuliner|selebriti|selebgram|\bartis\b|gosip|prediksi skor|hasil pertandingan|klasemen liga|transfer pemain|jadwal sholat|kata mutiara|ucapan selamat)/i;
+// Kata kunci relevansi ekonomi/pasar. Berita tanpa kategori feed eksplisit harus
+// menyinggung salah satu topik ini agar dianggap layak tayang.
+const RELEVAN_RE = /(ekonomi|ihsg|saham|bursa|emiten|rupiah|dolar|dollar|inflasi|deflasi|suku bunga|bank indonesia|\bbi\b|the fed|obligasi|surat utang|sukuk|investasi|investor|pasar modal|reksa ?dana|makro|neraca|ekspor|impor|\bpdb\b|apbn|pajak|cukai|komoditas|nikel|batu ?bara|emas|minyak|\bgas\b|kripto|crypto|bitcoin|ethereum|blockchain|token|dividen|\bipo\b|laba|rugi|pendapatan|kuartal|perbankan|fintech|\bbumn\b|nilai tukar|indeks|perdagangan|harga pangan|subsidi|utang|anggaran|moneter|fiskal|manufaktur|industri|properti)/i;
+
+// Ganti em dash / en dash jadi tanda hubung biasa agar tidak muncul di web.
+function stripDash(s) {
+	return typeof s === 'string' ? s.replace(/[\u2014\u2013]/g, '-') : s;
+}
+
+function isQuality(a) {
+	const t = ((a.title || '') + ' ' + (a.desc || '')).toLowerCase();
+	if (BLOCK_RE.test(t)) return false;                   // jelas iklan/hiburan
+	if ((a.title || '').trim().length < 20) return false; // judul terlalu pendek/clickbait
+	if (a.cat) return true;                               // dari feed khusus (Saham/Crypto) - sudah relevan
+	return RELEVAN_RE.test(t);                             // wajib relevan ke ekonomi/pasar
+}
 
 function hostOf(u) {
 	try { return new URL(u).hostname.replace(/^www\./, ''); } catch (_) { return 'Sumber'; }
@@ -121,6 +143,17 @@ function relTime(d) {
 function fmtDate(d) {
 	const bulan = ['Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun', 'Jul', 'Agu', 'Sep', 'Okt', 'Nov', 'Des'];
 	return d.getDate() + ' ' + bulan[d.getMonth()] + ' ' + d.getFullYear();
+}
+
+// Parse tanggal Indonesia "2 Jul 2026" -> ms (untuk arsip lama tanpa ts).
+function parseIndoDate(s) {
+	if (!s) return 0;
+	const bulan = { Jan: 0, Feb: 1, Mar: 2, Apr: 3, Mei: 4, Jun: 5, Jul: 6, Agu: 7, Sep: 8, Okt: 9, Nov: 10, Des: 11 };
+	const m = String(s).match(/(\d{1,2})\s+([A-Za-z]{3})\s+(\d{4})/);
+	if (!m) return 0;
+	const mo = bulan[m[2]];
+	if (mo === undefined) return 0;
+	return new Date(parseInt(m[3], 10), mo, parseInt(m[1], 10)).getTime();
 }
 
 async function fetchFeed(feed) {
@@ -198,11 +231,15 @@ async function main() {
 	// Urutkan terbaru dulu
 	unique.sort((a, b) => b.when - a.when);
 
-	// Kelompokkan ke kategori
+	// Saring berita berkualitas (buang promosi/iklan/hiburan).
+	const quality = unique.filter(isQuality);
+	console.error('Setelah filter kualitas:', quality.length, 'dari', unique.length, 'berita');
+
+	// Kelompokkan ke kategori (simpan hingga ARCHIVE_PER_CAT agar berita lama tak hilang)
 	const buckets = { Ekonomi: [], Saham: [], Crypto: [] };
-	for (const a of unique) {
+	for (const a of quality) {
 		const cat = a.cat || classify(a.title + ' ' + a.desc);
-		if (buckets[cat].length >= PER_CAT) continue;
+		if (buckets[cat].length >= ARCHIVE_PER_CAT) continue;
 		buckets[cat].push(a);
 	}
 
@@ -227,7 +264,8 @@ async function main() {
 				region: a.region || 'Indonesia',
 				image: a.image || null,
 				source_icon: null,
-				highlight: added === 0, // berita terbaru tiap kategori jadi "Populer"
+				ts: (a.when instanceof Date ? a.when : new Date(a.when)).toISOString(), // waktu absolut untuk urutan & merge
+				highlight: false, // ditentukan ulang setelah merge
 				body: [tDesc],
 			});
 			added++;
@@ -235,15 +273,65 @@ async function main() {
 	}
 
 	if (articles.length === 0) {
-		console.error('Tidak ada berita terambil — news.json TIDAK diubah.');
+		console.error('Tidak ada berita terambil - news.json TIDAK diubah.');
 		process.exit(1);
 	}
 
 	const outPath = path.join(__dirname, '..', 'news.json');
-	const payload = { updated: new Date().toISOString(), articles };
+
+	// --- Gabungkan dengan arsip lama agar berita lama TIDAK hilang ---
+	let existing = [];
+	try {
+		const prev = JSON.parse(fs.readFileSync(outPath, 'utf8'));
+		existing = Array.isArray(prev) ? prev : (prev && prev.articles) || [];
+	} catch (_) { existing = []; }
+
+	function keyOf(a) {
+		const u = (a.url || '').trim();
+		if (u) return 'u:' + u;
+		return 't:' + (a.title || '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim().slice(0, 80);
+	}
+	function tsOf(a) {
+		if (a.ts) { const p = Date.parse(a.ts); if (!isNaN(p)) return p; }
+		return parseIndoDate(a.date);
+	}
+
+	// Berita baru diutamakan, lalu arsip lama yang belum ada.
+	const merged = new Map();
+	for (const a of articles) { const k = keyOf(a); if (!merged.has(k)) merged.set(k, a); }
+	for (const a of existing) {
+		if (!isQuality(a)) continue; // arsip lama pun ikut disaring kualitasnya
+		const k = keyOf(a);
+		if (!merged.has(k)) merged.set(k, a);
+	}
+
+	// Kelompokkan ulang per kategori, urutkan terbaru dulu, batasi arsip.
+	const finalBuckets = { Ekonomi: [], Saham: [], Crypto: [] };
+	for (const a of merged.values()) {
+		const cat = ['Ekonomi', 'Saham', 'Crypto'].includes(a.cat) ? a.cat : classify((a.title || '') + ' ' + (a.desc || ''));
+		a.cat = cat;
+		finalBuckets[cat].push(a);
+	}
+
+	const finalArticles = [];
+	for (const cat of ['Ekonomi', 'Saham', 'Crypto']) {
+		let list = finalBuckets[cat];
+		list.sort((x, y) => tsOf(y) - tsOf(x));   // terbaru dulu
+		list = list.slice(0, ARCHIVE_PER_CAT);    // arsip maksimum per kategori
+		list.forEach((a, i) => {
+			if (a.ts) { const d = new Date(a.ts); a.time = relTime(d); a.date = fmtDate(d); } // segarkan waktu relatif
+			a.highlight = i === 0;                 // berita terbaru per kategori = "Populer"
+			a.title = stripDash(a.title);          // bersihkan em/en dash dari konten berita
+			a.desc = stripDash(a.desc);
+			if (Array.isArray(a.body)) a.body = a.body.map(stripDash);
+		});
+		finalArticles.push(...list);
+	}
+
+	const payload = { updated: new Date().toISOString(), articles: finalArticles };
 	fs.writeFileSync(outPath, JSON.stringify(payload, null, 2));
-	console.error('OK: ' + articles.length + ' berita ditulis ke news.json');
-	console.error('  Ekonomi=' + buckets.Ekonomi.length + ' Saham=' + buckets.Saham.length + ' Crypto=' + buckets.Crypto.length);
+	console.error('OK: ' + finalArticles.length + ' berita ditulis ke news.json (arsip digabung)');
+	console.error('  Ekonomi=' + finalBuckets.Ekonomi.length + ' Saham=' + finalBuckets.Saham.length + ' Crypto=' + finalBuckets.Crypto.length);
 }
 
 main();

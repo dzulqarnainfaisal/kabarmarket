@@ -210,15 +210,36 @@
       card.addEventListener('click', () => openNewsModal(parseInt(card.dataset.idx)));
     });
   }
+  // Parse tanggal "2 Jul 2026" -> ms.
+  function kmParseDate(s){
+    if(!s) return 0;
+    var bulan = {Jan:0,Feb:1,Mar:2,Apr:3,Mei:4,Jun:5,Jul:6,Agu:7,Sep:8,Okt:9,Nov:10,Des:11};
+    var m = String(s).match(/(\d{1,2})\s+([A-Za-z]{3})\s+(\d{4})/);
+    if(!m) return 0;
+    var mo = bulan[m[2]]; if(mo === undefined) return 0;
+    return new Date(parseInt(m[3],10), mo, parseInt(m[1],10)).getTime();
+  }
+  // Peringkat waktu: makin baru makin besar (dipakai untuk memilih sorotan).
+  function kmTimeRank(a){
+    if(a && a.ts){ var p = Date.parse(a.ts); if(!isNaN(p)) return p; }
+    var t = ((a && a.time) || '').toLowerCase();
+    if(t.indexOf('baru') >= 0) return Date.now();
+    var m = t.match(/(\d+)\s*(menit|jam|hari|minggu)/);
+    if(m){
+      var n = parseInt(m[1], 10), u = m[2];
+      var ms = u === 'menit' ? n*60000 : u === 'jam' ? n*3600000 : u === 'hari' ? n*86400000 : n*604800000;
+      return Date.now() - ms;
+    }
+    return kmParseDate(a && a.date);
+  }
   function renderHighlights(){
     if(!articles || !articles.length) return;
     if(!document.getElementById('heroMainClick')) return;
-    const pick = []; const used = new Set();
-    ['Ekonomi','Saham','Crypto'].forEach(c => {
-      const i = articles.findIndex((a, idx) => a.cat === c && !used.has(idx));
-      if(i >= 0){ pick.push(i); used.add(i); }
-    });
-    for(let i = 0; i < articles.length && pick.length < 3; i++){ if(!used.has(i)){ pick.push(i); used.add(i); } }
+    // Ambil 3 berita TERBARU dari SEMUA kategori (bukan hanya Ekonomi).
+    // Yang paling baru menjadi kartu utama (paling besar) di desktop & mobile.
+    const pick = articles.map(function(a, idx){ return idx; })
+      .sort(function(x, y){ return kmTimeRank(articles[y]) - kmTimeRank(articles[x]); })
+      .slice(0, 3);
     const m = articles[pick[0]];
     if(m){
       const mp = document.getElementById('heroMainPill');
