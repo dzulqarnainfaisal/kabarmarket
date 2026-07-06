@@ -7,11 +7,14 @@
  *    TIDAK memberi rekomendasi beli/jual atau prediksi harga.
  *  - Membatasi panjang & jumlah pesan agar hemat biaya.
  *
- * Tiga mode (prioritas otomatis berdasarkan secret yang diset):
- *  1) NVIDIA (GLM-5.2): aktif bila secret NVIDIA_API_KEY diset. Gratis via
+ * Empat mode (prioritas otomatis berdasarkan secret yang diset):
+ *  1) GROQ (prioritas utama): aktif bila secret GROQ_API_KEY diset. GRATIS,
+ *     TERCEPAT (LPU, ~500 token/detik), model canggih (GPT-OSS 120B).
+ *     Endpoint OpenAI-compatible. Ambil key gratis: https://console.groq.com/keys
+ *  2) NVIDIA (GLM-5.2): aktif bila secret NVIDIA_API_KEY diset. Gratis via
  *     endpoint OpenAI-compatible NVIDIA build (trial - ada rate limit).
- *  2) OpenAI: aktif bila secret OPENAI_API_KEY diset (berbayar per pemakaian).
- *  3) DEFAULT: Cloudflare Workers AI (gratis dalam batas tertentu, tanpa
+ *  3) OpenAI: aktif bila secret OPENAI_API_KEY diset (berbayar per pemakaian).
+ *  4) DEFAULT: Cloudflare Workers AI (gratis dalam batas tertentu, tanpa
  *     API key eksternal). Perlu binding [ai] di wrangler.toml.
  *
  * Lihat README-DEPLOY.md untuk langkah deploy.
@@ -34,6 +37,7 @@ const SYSTEM_PROMPT = [
 const MODEL_CF = '@cf/meta/llama-3.1-8b-instruct';
 const MODEL_OPENAI = 'gpt-4o-mini';
 const MODEL_NVIDIA = 'z-ai/glm-5.2'; // GLM-5.2 via NVIDIA (endpoint OpenAI-compatible)
+const MODEL_GROQ = 'openai/gpt-oss-120b'; // Groq (gratis, cepat, canggih). Alternatif ringan & lebih hemat kuota: 'llama-3.1-8b-instant'
 const MAX_MSGS = 10;
 const MAX_CHARS = 1500;
 
@@ -84,6 +88,20 @@ export default {
     const chat = [{ role: 'system', content: systemContent }, ...msgs];
 
     try {
+      // --- Mode GROQ (prioritas utama: gratis + tercepat, aktif bila ada secret GROQ_API_KEY) ---
+      // Endpoint OpenAI-compatible, jadi format request/response sama seperti OpenAI.
+      if (env.GROQ_API_KEY) {
+        const r = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + env.GROQ_API_KEY },
+          body: JSON.stringify({ model: env.GROQ_MODEL || MODEL_GROQ, messages: chat, temperature: 0.3, max_tokens: 500 }),
+        });
+        if (!r.ok) { const t = await r.text(); return json({ error: 'AI error (Groq): ' + t.slice(0, 200) }, 502, cors); }
+        const d = await r.json();
+        const reply = d && d.choices && d.choices[0] && d.choices[0].message && d.choices[0].message.content;
+        return json({ reply: (reply || '').trim() }, 200, cors);
+      }
+
       // --- Mode NVIDIA / GLM-5.2 (prioritas, aktif bila ada secret NVIDIA_API_KEY) ---
       // Endpoint OpenAI-compatible, jadi format request/response sama seperti OpenAI.
       if (env.NVIDIA_API_KEY) {

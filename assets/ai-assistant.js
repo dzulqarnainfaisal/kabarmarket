@@ -4,14 +4,18 @@
    Widget ini menyuntik dirinya sendiri ke halaman. Cukup sertakan satu
    baris <script src="assets/ai-assistant.js" defer></script> di tiap halaman.
 
-   >>> WAJIB DIISI: alamat Cloudflare Worker kamu (lihat worker/README-DEPLOY.md)
-   Setelah men-deploy Worker, ganti nilai di bawah dengan URL Worker-mu,
-   contoh: 'https://km-ai-worker.namakamu.workers.dev'
+   OTAK AI berjalan lewat Cloudflare Pages Functions di alamat SAMA situsmu:
+   POST /api/ai  (lihat file functions/api/ai.js + CARA-AKTIFKAN-AI.md).
+   Kamu TIDAK perlu mengisi URL apa pun di sini. Cukup set secret
+   GROQ_API_KEY di dashboard Cloudflare Pages, lalu deploy dari GitHub.
+
+   Kalau otak AI belum aktif/gagal, widget otomatis memakai mode offline
+   bawaan sehingga tombol "Tanya AI" tidak pernah mati.
    ===================================================================== */
 (function () {
   'use strict';
-  var WORKER_URL = window.KM_AI_ENDPOINT ||  'https://km-ai-worker.amarlevi86.workers.dev';
-  var CONFIGURED = WORKER_URL.indexOf('GANTI-SUBDOMAIN') === -1;
+  var WORKER_URL = window.KM_AI_ENDPOINT || '/api/ai';
+  var CONFIGURED = !!WORKER_URL && WORKER_URL.indexOf('GANTI-SUBDOMAIN') === -1;
 
   // Jangan tampilkan dua kali
   if (window.__KM_AI_LOADED) return;
@@ -126,6 +130,82 @@
     return ctx;
   }
 
+  /* ---------- Basis pengetahuan lokal (mode offline, tanpa Worker) ---------- */
+  var KB = [
+    { k:['ihsg','indeks harga saham gabungan'], a:'IHSG (Indeks Harga Saham Gabungan) adalah indeks yang mengukur pergerakan harga seluruh saham yang tercatat di Bursa Efek Indonesia. Anggap saja sebagai "rapor rata-rata" pasar saham kita: kalau IHSG naik, mayoritas saham cenderung menguat; kalau turun, sebaliknya. Sering dipakai untuk melihat kondisi pasar secara umum.' },
+    { k:['inflasi'], a:'Inflasi adalah kondisi ketika harga barang dan jasa secara umum naik dari waktu ke waktu, sehingga nilai uang jadi "mengecil" (uang yang sama membeli lebih sedikit barang). Sedikit inflasi itu normal, tapi kalau terlalu tinggi bisa menekan daya beli masyarakat.' },
+    { k:['deflasi'], a:'Deflasi adalah kebalikan dari inflasi, yaitu ketika harga barang dan jasa secara umum turun. Kedengarannya enak, tapi deflasi berkepanjangan bisa jadi tanda ekonomi lesu karena orang menunda belanja.' },
+    { k:['dividen','deviden'], a:'Dividen adalah bagian keuntungan perusahaan yang dibagikan kepada para pemegang saham. Jadi kalau kamu punya saham perusahaan yang membagikan dividen, kamu bisa dapat "bonus" tunai (atau saham) sesuai jumlah lembar yang kamu miliki.' },
+    { k:['saham'], a:'Saham adalah bukti kepemilikan atas sebuah perusahaan. Kalau kamu beli saham, artinya kamu jadi pemilik sebagian kecil perusahaan itu dan berhak atas potensi keuntungan (lewat kenaikan harga maupun dividen), sekaligus ikut menanggung risikonya.' },
+    { k:['obligasi','surat utang'], a:'Obligasi adalah surat utang. Saat kamu membeli obligasi, kamu "meminjamkan" uang ke penerbit (pemerintah atau perusahaan), dan sebagai gantinya kamu dapat bunga (kupon) rutin plus pengembalian pokok saat jatuh tempo. Umumnya risikonya lebih rendah dari saham.' },
+    { k:['reksadana','reksa dana'], a:'Reksa dana adalah wadah yang mengumpulkan dana dari banyak investor, lalu dikelola oleh Manajer Investasi ke berbagai aset (saham, obligasi, pasar uang). Cocok untuk pemula karena praktis dan otomatis terdiversifikasi.' },
+    { k:['crypto','kripto','bitcoin','btc','aset kripto'], a:'Kripto (cryptocurrency) adalah aset digital yang berjalan di teknologi blockchain, contohnya Bitcoin. Sifatnya sangat fluktuatif (harganya bisa naik-turun tajam), jadi potensi untung dan ruginya sama-sama besar. Pahami risikonya sebelum ikut.' },
+    { k:['ipo','initial public offering','penawaran umum perdana'], a:'IPO (Initial Public Offering) adalah momen ketika sebuah perusahaan pertama kali menjual sahamnya ke publik di bursa. Setelah IPO, sahamnya bisa diperjualbelikan bebas oleh masyarakat.' },
+    { k:['bull market','bullish','pasar bull'], a:'Bull market (bullish) adalah kondisi pasar yang sedang tren naik, di mana harga-harga cenderung terus menguat dan optimisme investor tinggi. Istilahnya diambil dari banteng yang menyeruduk ke atas.' },
+    { k:['bear market','bearish','pasar bear'], a:'Bear market (bearish) adalah kondisi pasar yang sedang tren turun, harga-harga melemah dan pelaku pasar cenderung pesimis. Diibaratkan beruang yang mencakar ke bawah.' },
+    { k:['blue chip','saham blue chip'], a:'Blue chip adalah sebutan untuk saham perusahaan besar, mapan, dan punya kinerja stabil bertahun-tahun. Biasanya dianggap relatif lebih aman dibanding saham kecil, meski tetap ada risiko.' },
+    { k:['emiten'], a:'Emiten adalah perusahaan yang menerbitkan dan mencatatkan sahamnya (atau obligasinya) di bursa untuk dibeli publik. Singkatnya, emiten = perusahaan yang "go public".' },
+    { k:['kapitalisasi pasar','market cap','market capitalization','kapitalisasi'], a:'Kapitalisasi pasar (market cap) adalah nilai total sebuah perusahaan di bursa, dihitung dari harga saham dikali jumlah saham beredar. Dipakai untuk mengukur seberapa "besar" sebuah perusahaan.' },
+    { k:['per','price earning ratio','price to earning'], a:'PER (Price to Earning Ratio) membandingkan harga saham dengan laba per saham. Secara sederhana, PER menunjukkan seberapa mahal/murah sebuah saham relatif terhadap keuntungannya. PER tinggi belum tentu jelek, perlu dibandingkan dengan yang sejenis.' },
+    { k:['pbv','price to book value'], a:'PBV (Price to Book Value) membandingkan harga saham dengan nilai buku per saham. Dipakai untuk memperkirakan apakah harga saham tergolong murah atau mahal dibanding nilai aset bersih perusahaannya.' },
+    { k:['cut loss','cutloss'], a:'Cut loss adalah keputusan menjual aset yang sedang rugi untuk membatasi kerugian agar tidak makin membengkak. Ini bagian dari manajemen risiko, bukan tanda gagal.' },
+    { k:['cuan'], a:'Cuan adalah istilah populer untuk keuntungan atau profit. Kalau investasimu "cuan", artinya nilainya naik dan kamu untung.' },
+    { k:['portofolio','portepel'], a:'Portofolio adalah kumpulan seluruh aset investasi yang kamu miliki (misal beberapa saham, reksa dana, obligasi). Portofolio yang sehat biasanya tidak menumpuk di satu aset saja.' },
+    { k:['diversifikasi'], a:'Diversifikasi adalah strategi menyebar investasi ke beberapa aset berbeda supaya risiko tidak menumpuk di satu tempat. Prinsipnya seperti pepatah: jangan taruh semua telur dalam satu keranjang.' },
+    { k:['volatilitas','fluktuasi'], a:'Volatilitas adalah ukuran seberapa cepat dan tajam harga suatu aset naik-turun. Volatilitas tinggi berarti harga bergerak liar (potensi untung/rugi besar), volatilitas rendah berarti pergerakannya lebih tenang.' },
+    { k:['likuiditas','likuid'], a:'Likuiditas menggambarkan seberapa mudah sebuah aset dijual jadi uang tunai tanpa banyak menurunkan harganya. Saham yang ramai diperdagangkan tergolong likuid; yang sepi peminat cenderung tidak likuid.' },
+    { k:['suku bunga','bi rate','bi-rate','bunga acuan'], a:'Suku bunga acuan (di Indonesia: BI-Rate dari Bank Indonesia) adalah bunga patokan yang memengaruhi bunga kredit dan tabungan di perbankan. Saat suku bunga naik, biaya pinjaman naik dan biasanya berpengaruh ke pasar saham serta obligasi.' },
+    { k:['resesi'], a:'Resesi adalah kondisi ketika ekonomi menyusut (biasanya ditandai pertumbuhan negatif dua kuartal berturut-turut). Efeknya bisa terasa lewat perlambatan bisnis, PHK, dan turunnya daya beli.' },
+    { k:['nilai tukar','kurs','rupiah','valas','forex'], a:'Nilai tukar (kurs) adalah harga satu mata uang terhadap mata uang lain, misalnya Rupiah terhadap Dolar AS. Pergerakan kurs memengaruhi harga barang impor, ekspor, dan bisa berdampak ke pasar modal.' },
+    { k:['yield','imbal hasil'], a:'Yield (imbal hasil) adalah tingkat pengembalian dari sebuah investasi, biasanya dinyatakan dalam persen per tahun. Contohnya yield obligasi menunjukkan berapa persen keuntungan bunga relatif terhadap harganya.' },
+    { k:['ara','arb','auto reject'], a:'ARA (Auto Reject Atas) dan ARB (Auto Reject Bawah) adalah batas maksimal kenaikan/penurunan harga saham dalam satu hari yang ditetapkan bursa. Kalau menyentuh batas ini, harga tidak bisa bergerak lebih jauh pada hari itu.' },
+    { k:['lot'], a:'Lot adalah satuan pembelian saham di bursa. Di Indonesia, 1 lot = 100 lembar saham. Jadi kalau kamu beli 5 lot, artinya kamu punya 500 lembar.' }
+  ];
+  function kmNorm(s){ return String(s || '').toLowerCase().replace(/[^a-z0-9\s]/g, ' ').replace(/\s+/g, ' ').trim(); }
+  function summarizePage(){
+    var text = '';
+    try { text = String(window.getSelection ? window.getSelection().toString() : '').trim(); } catch(e){}
+    if (!text || text.length < 40){
+      var modal = document.getElementById('newsModal');
+      var mb = document.getElementById('newsModalBody');
+      var visible = modal && (modal.classList.contains('open') || modal.offsetParent !== null);
+      if (mb && visible){
+        var tt = document.getElementById('newsModalTitle');
+        text = ((tt && tt.textContent) ? tt.textContent + '. ' : '') + mb.textContent;
+      }
+    }
+    if (!text || text.length < 40){
+      var md = document.querySelector('meta[name="description"]');
+      if (md) text = md.getAttribute('content') || '';
+    }
+    text = (text || '').replace(/\s+/g, ' ').trim();
+    if (!text || text.length < 40){
+      return 'Biar aku bisa meringkas, buka dulu salah satu kartu berita atau sorot (blok) teks yang mau kamu ringkas, lalu tanya lagi "ringkas berita ini" ya. 🙂';
+    }
+    var sentences = text.split(/(?<=[.!?])\s+/).filter(function(s){ return s.length > 20; });
+    var pick = sentences.slice(0, 2).join(' ');
+    if (!pick) pick = text.slice(0, 300);
+    if (pick.length > 420) pick = pick.slice(0, 420) + '…';
+    return 'Ringkasan singkat:\n\n' + pick + '\n\nIntinya, ini kabar seputar pasar/ekonomi yang konteksnya perlu kamu cermati. Buat detail lengkapnya, baca artikel sumbernya ya. (Ini edukasi, bukan rekomendasi beli/jual.)';
+  }
+  function localAnswer(q){
+    var n = kmNorm(q);
+    if (/ringkas|rangkum|simpulkan|jelaskan berita|jelasin berita|berita ini|halaman ini/.test(n)){
+      return summarizePage();
+    }
+    var best = null, bestScore = 0;
+    KB.forEach(function(item){
+      var score = 0;
+      item.k.forEach(function(key){
+        var kk = kmNorm(key);
+        if (kk && n.indexOf(kk) !== -1) score += kk.length + 2;
+      });
+      if (score > bestScore){ bestScore = score; best = item; }
+    });
+    if (best && bestScore > 0) return best.a;
+    return 'Aku belum punya penjelasan siap-pakai untuk itu di mode offline ini. Coba tanya istilah ekonomi/pasar yang lebih spesifik, misalnya "apa itu IHSG?", "jelaskan inflasi", atau "apa itu dividen?". Kamu juga bisa minta aku "ringkas berita ini" saat sedang membuka sebuah artikel. 🙂';
+  }
+
   /* ---------- Kirim ---------- */
   function send(text){
     text = (text || input.value || '').trim();
@@ -137,7 +217,13 @@
     if (chipsWrap) chipsWrap.style.display = 'none';
 
     if (!CONFIGURED){
-      addMsg('bot', 'Asisten AI belum diaktifkan. Pemilik situs perlu men-deploy Cloudflare Worker lalu mengisi alamatnya di assets/ai-assistant.js (lihat worker/README-DEPLOY.md).');
+      showTyping();
+      setTimeout(function(){
+        hideTyping();
+        var ans = localAnswer(text);
+        addMsg('bot', ans);
+        messages.push({ role: 'assistant', content: ans });
+      }, 350);
       return;
     }
 
@@ -153,7 +239,10 @@
       hideTyping();
       var reply = (res.j && (res.j.reply || res.j.answer || res.j.text)) || '';
       if (!res.ok || !reply){
-        addMsg('bot', (res.j && res.j.error) ? ('Maaf, terjadi kendala: ' + res.j.error) : 'Maaf, asisten sedang tidak bisa menjawab. Coba lagi sebentar lagi ya.');
+        try { console.warn('KM AI backend:', (res.j && res.j.error) || ('HTTP ' + (res.status || '?'))); } catch(e){}
+        var ansE = localAnswer(text);
+        addMsg('bot', ansE);
+        messages.push({ role: 'assistant', content: ansE });
       } else {
         addMsg('bot', reply);
         messages.push({ role: 'assistant', content: reply });
@@ -161,7 +250,9 @@
     })
     .catch(function(){
       hideTyping();
-      addMsg('bot', 'Maaf, koneksi ke asisten gagal. Periksa koneksi internet lalu coba lagi.');
+      var ans = localAnswer(text);
+      addMsg('bot', ans);
+      messages.push({ role: 'assistant', content: ans });
     })
     .finally(function(){ busy = false; sendBtn.disabled = false; input.focus(); });
   }
