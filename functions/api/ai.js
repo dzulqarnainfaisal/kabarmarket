@@ -10,10 +10,10 @@
  * Lihat CARA-AKTIFKAN-AI.md.
  *
  * Prioritas mesin (otomatis, berdasarkan secret yang diset):
- *  1) GROQ (GROQ_API_KEY)   - GRATIS + cepat + canggih (default openai/gpt-oss-120b)
- *  2) NVIDIA (NVIDIA_API_KEY)- gratis via trial NVIDIA
- *  3) OpenAI (OPENAI_API_KEY)- berbayar per pemakaian
- *  4) Workers AI (binding AI)- bila diaktifkan di Pages (opsional)
+ *  1) GROQ (GROQ_API_KEY)    - GRATIS + cepat + canggih (default openai/gpt-oss-120b)
+ *  2) NVIDIA (NVIDIA_API_KEY) - gratis via trial NVIDIA
+ *  3) OpenAI (OPENAI_API_KEY) - berbayar per pemakaian
+ *  4) Workers AI (binding AI) - bila diaktifkan di Pages (opsional)
  * ===================================================================== */
 
 const SYSTEM_PROMPT = [

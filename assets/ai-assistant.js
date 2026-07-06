@@ -239,7 +239,7 @@
       hideTyping();
       var reply = (res.j && (res.j.reply || res.j.answer || res.j.text)) || '';
       if (!res.ok || !reply){
-        try { console.warn('KM AI backend:', (res.j && res.j.error) || ('HTTP ' + (res.status || '?'))); } catch(e){}
+        try { console.warn('KM AI backend:', (res.j && res.j.error) || 'gagal'); } catch(e){}
         var ansE = localAnswer(text);
         addMsg('bot', ansE);
         messages.push({ role: 'assistant', content: ansE });

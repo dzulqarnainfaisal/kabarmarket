@@ -500,14 +500,38 @@
   }
   let currentEduFilter = 'Semua';
   let currentEduSearch = '';
+  // ===== Deep link per kartu edukasi (tiap kartu punya link sendiri) =====
+  function kmEduSlug(a){
+    var s = ((a && a.title) || '').toString().toLowerCase();
+    s = s.replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 80);
+    return s || 'edukasi';
+  }
+  function kmEduFindIdxBySlug(slug){
+    if(!slug) return -1;
+    for(var i=0; i<eduArticles.length; i++){ if(kmEduSlug(eduArticles[i]) === slug) return i; }
+    return -1;
+  }
+  var kmEduDeepLinkOpened = false;
+  function kmEduGetParam(){
+    try{ return new URLSearchParams(location.search).get('edu'); }catch(e){ return null; }
+  }
+  // Buka otomatis materi yang sesuai link yang dibagikan (dipanggil setelah data edukasi dimuat).
+  function kmEduOpenFromUrl(){
+    if(kmEduDeepLinkOpened) return;
+    var slug = kmEduGetParam();
+    if(!slug) return;
+    var idx = kmEduFindIdxBySlug(slug);
+    if(idx >= 0){ kmEduDeepLinkOpened = true; openEduModal(idx); }
+  }
   renderEdu(currentEduFilter);
+  kmEduOpenFromUrl();
 
   // Muat materi edukasi dari edu.json (kamu tulis sendiri). Jika belum ada, pakai contoh di atas.
   fetch('edu.json', { cache: 'no-store' })
     .then(r => r.ok ? r.json() : Promise.reject())
     .then(data => {
       const list = Array.isArray(data) ? data : (data && data.articles);
-      if (Array.isArray(list) && list.length) { eduArticles.length = 0; list.forEach(x => eduArticles.push(deepCleanDash(x))); renderEdu(currentEduFilter); }
+      if (Array.isArray(list) && list.length) { eduArticles.length = 0; list.forEach(x => eduArticles.push(deepCleanDash(x))); renderEdu(currentEduFilter); kmEduOpenFromUrl(); }
     })
     .catch(() => {});
 
@@ -572,12 +596,24 @@
     const eduParts = partners[a.cat] || [];
     if (eduParts.length) { document.getElementById('eduModalReferralText').textContent = a.referralText || defaultReferralText[a.cat] || defaultReferralText._; eduRef.style.display = ''; renderPartners(document.getElementById('eduPartnerGrid'), a.cat); }
     else { eduRef.style.display = 'none'; }
+    // Setiap kartu edukasi punya link sendiri: perbarui alamat URL agar bisa dibagikan.
+    try{
+      var __u = new URL(location.href);
+      __u.searchParams.set('edu', kmEduSlug(a));
+      history.replaceState({ edu: kmEduSlug(a) }, '', __u.toString());
+    }catch(e){}
+    kmRenderEduShare(a);
     document.getElementById('eduModal').classList.add('open');
     document.body.style.overflow = 'hidden';
   }
   function closeEduModal(){
     var __m0=document.getElementById('eduModal'); if(__m0) __m0.classList.remove('open');
     document.body.style.overflow = '';
+    // Bersihkan parameter link materi dari alamat URL saat modal ditutup.
+    try{
+      var __u = new URL(location.href);
+      if(__u.searchParams.has('edu')){ __u.searchParams.delete('edu'); history.replaceState(null, '', __u.pathname + __u.search + __u.hash); }
+    }catch(e){}
   }
   var __emc = document.getElementById('eduModalClose');
   if(__emc){
@@ -611,6 +647,35 @@
     if(wa){ wa.href = 'https://wa.me/?text=' + encodeURIComponent((a.title || '') + ' \u2014 ' + link); }
     var done = document.getElementById('newsShareDone');
     var btn = document.getElementById('newsShareBtn');
+    if(btn){
+      btn.addEventListener('click', function(){
+        var url = location.href;
+        var showOk = function(){ if(done){ done.classList.add('show'); setTimeout(function(){ done.classList.remove('show'); }, 2200); } };
+        if(navigator.clipboard && navigator.clipboard.writeText){
+          navigator.clipboard.writeText(url).then(showOk, function(){ kmFallbackCopy(url); showOk(); });
+        } else { kmFallbackCopy(url); showOk(); }
+      });
+    }
+  }
+  // Tombol bagikan/salin link untuk kartu edukasi yang sedang dibuka.
+  function kmRenderEduShare(a){
+    var titleEl = document.getElementById('eduModalTitle');
+    if(!titleEl) return;
+    var box = document.getElementById('eduModalShare');
+    if(!box){
+      box = document.createElement('div');
+      box.id = 'eduModalShare';
+      box.className = 'news-share';
+      titleEl.parentNode.insertBefore(box, titleEl.nextSibling);
+    }
+    box.innerHTML = '<button type="button" class="share-btn" id="eduShareBtn">\uD83D\uDD17 Salin link materi</button>'
+      + '<a class="share-btn share-wa" id="eduShareWa" target="_blank" rel="noopener">\uD83D\uDCAC WhatsApp</a>'
+      + '<span class="share-done" id="eduShareDone">\u2713 Link tersalin</span>';
+    var link = location.href;
+    var wa = document.getElementById('eduShareWa');
+    if(wa){ wa.href = 'https://wa.me/?text=' + encodeURIComponent((a.title || '') + ' \u2014 ' + link); }
+    var done = document.getElementById('eduShareDone');
+    var btn = document.getElementById('eduShareBtn');
     if(btn){
       btn.addEventListener('click', function(){
         var url = location.href;
