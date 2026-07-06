@@ -10,7 +10,7 @@
    ===================================================================== */
 (function () {
   'use strict';
-  var WORKER_URL = window.KM_AI_ENDPOINT || 'https://km-ai-worker.GANTI-SUBDOMAIN.workers.dev';
+  var WORKER_URL = window.KM_AI_ENDPOINT ||  'https://km-ai-worker.amarlevi86.workers.dev';
   var CONFIGURED = WORKER_URL.indexOf('GANTI-SUBDOMAIN') === -1;
 
   // Jangan tampilkan dua kali
