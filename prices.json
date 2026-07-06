@@ -1,37 +1,13 @@
 {
-  "updated": "2026-07-06T06:15:15.366Z",
+  "updated": "2026-07-02T10:00:00.000Z",
   "items": {
-    "IHSG": {
-      "value": 5864.968,
-      "change": 3.93
-    },
-    "USD/IDR": {
-      "value": 17992,
-      "change": 0.37
-    },
-    "BBCA": {
-      "value": 6100,
-      "change": 9.91
-    },
-    "BBRI": {
-      "value": 2690,
-      "change": -1.47
-    },
-    "BMRI": {
-      "value": 3950,
-      "change": 2.6
-    },
-    "TLKM": {
-      "value": 2490,
-      "change": 5.96
-    },
-    "ASII": {
-      "value": 4720,
-      "change": 4.42
-    },
-    "S&P 500": {
-      "value": 7483.24,
-      "change": 1.71
-    }
+    "IHSG": { "value": 7412.88, "change": 0.42 },
+    "USD/IDR": { "value": 16245, "change": -0.08 },
+    "BBCA": { "value": 9875, "change": 0.25 },
+    "BBRI": { "value": 4520, "change": 0.67 },
+    "BMRI": { "value": 6875, "change": -0.36 },
+    "TLKM": { "value": 3180, "change": 0.32 },
+    "ASII": { "value": 5125, "change": -0.19 },
+    "S&P 500": { "value": 5980.12, "change": -0.15 }
   }
 }

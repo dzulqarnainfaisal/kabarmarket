@@ -789,3 +789,11 @@
 .support-point{display:flex;gap:10px;align-items:flex-start;color:var(--muted);font-size:14px;line-height:1.55}
 .support-point .ic{color:var(--gain);font-weight:800;flex:none}
 .footer-col a.footer-support{color:var(--gold)}
+
+/* ===== Tombol bagikan link kartu berita ===== */
+.news-share{ display:flex; flex-wrap:wrap; align-items:center; gap:10px; margin:14px 0 4px; }
+.news-share .share-btn{ display:inline-flex; align-items:center; gap:6px; font-family:'Inter', sans-serif; font-size:13px; font-weight:600; line-height:1; padding:9px 14px; border-radius:10px; border:1px solid var(--line); background:var(--ink-3); color:var(--paper); cursor:pointer; text-decoration:none; transition:border-color .15s ease, transform .15s ease; }
+.news-share .share-btn:hover{ border-color:rgba(231,163,62,0.45); transform:translateY(-1px); }
+.news-share .share-wa{ color:#25d366; }
+.news-share .share-done{ font-size:12.5px; font-weight:600; color:var(--gain); opacity:0; transform:translateY(2px); transition:opacity .2s ease, transform .2s ease; }
+.news-share .share-done.show{ opacity:1; transform:none; }

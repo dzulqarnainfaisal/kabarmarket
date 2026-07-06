@@ -123,7 +123,30 @@ function classify(text) {
 	return 'Ekonomi';
 }
 
-function trimDesc(s, n = 220) {
+// Kalimat pemantik rasa penasaran agar pembaca ingin membuka berita aslinya.
+const TEASERS = [
+	'Penasaran gimana kelanjutannya? Yuk, baca langsung di sumber aslinya.',
+	'Kira-kira efeknya ke pasar gimana, ya? Cus, cek selengkapnya di sumbernya.',
+	'Ada beberapa hal seru yang sayang kalau dilewatin, intip yuk selengkapnya.',
+	'Biar makin paham dan nggak penasaran, mending baca cerita lengkapnya, deh.',
+];
+function teaserFor(title) {
+	let h = 0;
+	const s = String(title || '');
+	for (let i = 0; i < s.length; i++) { h = (h * 31 + s.charCodeAt(i)) & 0x7fffffff; }
+	return TEASERS[h % TEASERS.length];
+}
+// Ubah ringkasan RSS jadi satu paragraf lebih panjang yang memancing rasa ingin tahu.
+function makeTeaser(desc, title) {
+	let d = (desc || '').trim();
+	if (!d) d = String(title || '').trim();
+	if (d && !/[.!?\u2026]$/.test(d)) d += '.';
+	const hook = teaserFor(title);
+	if (d.indexOf(hook) !== -1) return d;
+	return (d + ' ' + hook).trim();
+}
+
+function trimDesc(s, n = 340) {
 	if (!s) return '';
 	if (s.length <= n) return s;
 	const cut = s.slice(0, n);
@@ -258,7 +281,7 @@ async function main() {
 			articles.push({
 				cat,
 				title: tTitle,
-				desc: tDesc,
+				desc: makeTeaser(tDesc, tTitle),
 				time: relTime(a.when),
 				date: fmtDate(a.when),
 				source: a.source,
