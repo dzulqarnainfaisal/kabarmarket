@@ -130,20 +130,37 @@ const TEASERS = [
 	'Ada beberapa hal seru yang sayang kalau dilewatin, intip yuk selengkapnya.',
 	'Biar makin paham dan nggak penasaran, mending baca cerita lengkapnya, deh.',
 ];
-function teaserFor(title) {
-	let h = 0;
-	const s = String(title || '');
-	for (let i = 0; i < s.length; i++) { h = (h * 31 + s.charCodeAt(i)) & 0x7fffffff; }
-	return TEASERS[h % TEASERS.length];
+function hashOf(s, seed) {
+	let h = seed || 0;
+	const t = String(s || '');
+	for (let i = 0; i < t.length; i++) { h = (h * 31 + t.charCodeAt(i)) & 0x7fffffff; }
+	return h;
 }
-// Ubah ringkasan RSS jadi satu paragraf lebih panjang yang memancing rasa ingin tahu.
+function teaserFor(title) {
+	return TEASERS[hashOf(title, 0) % TEASERS.length];
+}
+// Kalimat jembatan biar caption terasa lebih panjang & mengundang (gaya santai).
+const BRIDGES = [
+	'Buat kamu yang lagi mantau pasar, ini kabar yang sayang banget kalau sampai kelewat.',
+	'Berita ini lagi ramai jadi bahan obrolan di kalangan investor, lho.',
+	'Di balik kabar singkat ini, ternyata ada beberapa hal menarik yang bikin penasaran.',
+	'Dampaknya ke pasar ternyata bisa lebih luas dari yang mungkin kamu bayangin.',
+	'Momen seperti ini biasanya bergerak cepat, jadi menarik banget buat terus diikuti.',
+];
+function bridgeFor(title) {
+	return BRIDGES[hashOf(title, 7) % BRIDGES.length];
+}
+// Ubah ringkasan RSS jadi satu paragraf lebih panjang & santai yang memancing rasa ingin tahu.
 function makeTeaser(desc, title) {
 	let d = (desc || '').trim();
 	if (!d) d = String(title || '').trim();
 	if (d && !/[.!?\u2026]$/.test(d)) d += '.';
+	const bridge = bridgeFor(title);
 	const hook = teaserFor(title);
-	if (d.indexOf(hook) !== -1) return d;
-	return (d + ' ' + hook).trim();
+	let out = d;
+	if (out.indexOf(bridge) === -1) out += ' ' + bridge;
+	if (out.indexOf(hook) === -1) out += ' ' + hook;
+	return out.trim();
 }
 
 function trimDesc(s, n = 340) {
