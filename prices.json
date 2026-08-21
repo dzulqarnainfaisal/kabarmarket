@@ -1,9 +1,9 @@
 {
-  "updated": "2026-08-21T04:37:40.349Z",
+  "updated": "2026-08-21T05:08:44.582Z",
   "items": {
     "IHSG": {
-      "value": 6534.909,
-      "change": 1.32
+      "value": 6535.575,
+      "change": 1.33
     },
     "USD/IDR": {
       "value": 17690,
@@ -26,8 +26,8 @@
       "change": 0.77
     },
     "ASII": {
-      "value": 4780,
-      "change": -0.21
+      "value": 4800,
+      "change": 0.21
     },
     "S&P 500": {
       "value": 7641.16,
