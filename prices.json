@@ -1,21 +1,21 @@
 {
-  "updated": "2026-08-21T03:15:19.556Z",
+  "updated": "2026-08-21T04:00:23.587Z",
   "items": {
     "IHSG": {
-      "value": 6530.568,
-      "change": 1.25
+      "value": 6540.366,
+      "change": 1.4
     },
     "USD/IDR": {
-      "value": 17774,
-      "change": -0.31
+      "value": 17690,
+      "change": -0.79
     },
     "BBCA": {
-      "value": 6425,
-      "change": 1.98
+      "value": 6450,
+      "change": 2.38
     },
     "BBRI": {
-      "value": 3220,
-      "change": 4.55
+      "value": 3230,
+      "change": 4.87
     },
     "BMRI": {
       "value": 4210,
