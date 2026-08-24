@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-24T00:32:14.550Z",
+  "updated": "2026-08-24T02:08:51.406Z",
   "items": {
     "IHSG": {
       "value": 6525.69,
@@ -22,12 +22,12 @@
       "change": 1.69
     },
     "TLKM": {
-      "value": 2610,
-      "change": 0.38
+      "value": 2620,
+      "change": 0.77
     },
     "ASII": {
-      "value": 4780,
-      "change": -0.21
+      "value": 4800,
+      "change": 0.21
     },
     "S&P 500": {
       "value": 7674.37,
