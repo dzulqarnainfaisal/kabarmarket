@@ -1,13 +1,13 @@
 {
-  "updated": "2026-08-24T16:22:57.784Z",
+  "updated": "2026-08-24T17:03:33.467Z",
   "items": {
     "IHSG": {
       "value": 6501.667,
       "change": 0.8
     },
     "USD/IDR": {
-      "value": 17698,
-      "change": -0.71
+      "value": 17705,
+      "change": -0.67
     },
     "BBCA": {
       "value": 6400,
@@ -30,8 +30,8 @@
       "change": 0
     },
     "S&P 500": {
-      "value": 7668.59,
-      "change": -0.99
+      "value": 7658.83,
+      "change": -1.11
     }
   }
 }
