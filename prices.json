@@ -1,9 +1,9 @@
 {
-  "updated": "2026-09-03T17:13:12.030Z",
+  "updated": "2026-09-03T19:49:58.632Z",
   "items": {
     "IHSG": {
       "value": 6667.891,
-      "change": 2.18
+      "change": 2.3
     },
     "USD/IDR": {
       "value": 17684,
@@ -30,8 +30,8 @@
       "change": 5.21
     },
     "S&P 500": {
-      "value": 7740.16,
-      "change": 0.12
+      "value": 7749.21,
+      "change": 0.24
     }
   }
 }
