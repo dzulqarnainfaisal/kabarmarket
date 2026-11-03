@@ -1,33 +1,33 @@
 {
-  "updated": "2026-11-03T01:06:36.887Z",
+  "updated": "2026-11-03T07:54:58.475Z",
   "items": {
     "IHSG": {
-      "value": 5096.83,
-      "change": -3.21
+      "value": 4918.617,
+      "change": -6.89
     },
     "USD/IDR": {
-      "value": 18161,
-      "change": 0.12
+      "value": 18158,
+      "change": 0.1
     },
     "BBCA": {
-      "value": 4980,
-      "change": 1.63
+      "value": 4860,
+      "change": -7.87
     },
     "BBRI": {
-      "value": 2820,
-      "change": -2.76
+      "value": 2710,
+      "change": -7.19
     },
     "BMRI": {
-      "value": 3700,
-      "change": -4.39
+      "value": 3590,
+      "change": -6.51
     },
     "TLKM": {
-      "value": 1960,
-      "change": -8.41
+      "value": 1865,
+      "change": -9.9
     },
     "ASII": {
-      "value": 4860,
-      "change": 4.97
+      "value": 4640,
+      "change": -7.2
     },
     "S&P 500": {
       "value": 7541.4,
