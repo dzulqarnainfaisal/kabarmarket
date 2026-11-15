@@ -256,18 +256,25 @@ async function fetchFeed(feed) {
 }
 
 // --- Terjemahan otomatis ke Bahasa Indonesia (gratis, tanpa API key) ---
-async function translateId(text) {
+// Google Translate membatasi laju panggilan; kalau gagal (mis. 429), coba lagi
+// sampai 3x dengan jeda membesar, supaya artikel asing tidak tertinggal Inggris.
+async function translateId(text, attempt) {
 	const s = (text || '').trim();
 	if (!s) return text;
+	attempt = attempt || 1;
 	try {
 		const url = 'https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=id&dt=t&q=' + encodeURIComponent(s);
 		const res = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0 (compatible; KabarMarketBot/1.0)' } });
-		if (!res.ok) return text;
+		if (!res.ok) throw new Error('HTTP ' + res.status);
 		const data = await res.json();
-		if (!Array.isArray(data) || !Array.isArray(data[0])) return text;
+		if (!Array.isArray(data) || !Array.isArray(data[0])) throw new Error('bad response');
 		const out = data[0].map((seg) => (seg && seg[0]) ? seg[0] : '').join('');
 		return out || text;
 	} catch (e) {
+		if (attempt < 3) {
+			await new Promise((r) => setTimeout(r, attempt * 1000));
+			return translateId(text, attempt + 1);
+		}
 		console.error('  [translate err]', e.message);
 		return text;
 	}
