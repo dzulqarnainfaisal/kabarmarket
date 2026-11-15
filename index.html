@@ -21,7 +21,7 @@
 <meta name="twitter:title" content="Kabar Market: Ekonomi, Saham & Crypto">
 <meta name="twitter:description" content="Berita ekonomi, saham, dan crypto plus edukasi pasar yang ringkas dan mudah dipahami.">
 <meta name="twitter:image" content="https://kabarmarket.web.id/og-image.png">
-<meta name="theme-color" content="#0B1420">
+<meta name="theme-color" content="#ffffff">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://kabarmarket.web.id/">
 <link rel="alternate" type="application/rss+xml" title="Kabar Market | Berita Ekonomi, Saham & Crypto" href="https://kabarmarket.web.id/feed.xml">
@@ -65,6 +65,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
+<script>
+/* Tema gelap/terang: dibaca sebelum render supaya halaman tidak berkedip.
+   Pilihan tersimpan di localStorage 'km-theme'; kunjungan pertama mengikuti
+   preferensi sistem (prefers-color-scheme: dark). */
+(function(){try{var t=localStorage.getItem('km-theme');if(!t){t=(window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light';}if(t==='dark'){document.documentElement.classList.add('dark');var m=document.querySelector('meta[name="theme-color"]');if(m){m.setAttribute('content','#0F1115');}}}catch(e){}})();
+</script>
 
 <!-- Cloudflare Web Analytics -->
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js"
@@ -73,21 +79,27 @@
 </head>
 <body>
 <div class="ticker-wrap">
-  <div class="ticker mono" id="tickerStrip"></div>
+  <span class="ticker-label"><span class="live is-open" id="marketDot"></span><span class="ticker-label-text">PASAR HARI INI</span><span class="ticker-status" id="marketLabel">Pasar buka</span><span class="ticker-clock mono" id="clock"></span></span>
+  <div class="ticker-viewport"><div class="ticker mono" id="tickerStrip"></div></div>
 </div>
 
 <header class="nav">
-  <div class="brand">
-    <img alt="Logo Kabar Market" src="assets/logo-header.png?v=2" width="40" height="40" decoding="async">
-    Kabar Market
-  </div>
+  <a class="brand" href="index.html" aria-label="Kabar Market - Beranda">
+    <span class="brand-logo"><img src="assets/logo-kabarmarket.jpg" alt="Logo Kabar Market" width="1536" height="1024" decoding="async" fetchpriority="high"></span>
+    <span class="brand-tagline">PASAR • KRIPTO • EKONOMI</span>
+  </a>
     <nav class="links" id="navLinks">
-    <a href="index.html" class="active">Beranda</a>
-    <a href="berita.html">Berita</a>
+    <a href="berita.html" class="active">Berita</a>
+    <a href="crypto.html">Crypto</a>
+    <a href="ekonomi.html">Ekonomi</a>
     <a href="edukasi.html">Edukasi</a>
-    <a href="tentang.html">Tentang Kami</a>
   </nav>
-  <div class="time-badge" id="marketBadge"><span class="badge-status"><span class="live is-open" id="marketDot"></span><span id="marketLabel">Pasar buka</span></span><span class="badge-sep"> · </span><span id="clock" class="mono"></span></div>
+    <div class="nav-icons">
+    <button type="button" class="nav-icon" id="navSearchBtn" aria-label="Cari berita"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.5" y2="16.5"></line></svg></button>
+    <a class="nav-icon" href="#newsletter" aria-label="Notifikasi dan newsletter"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.7 21a2 2 0 0 1-3.4 0"></path></svg></a>
+    <a class="nav-icon" href="tentang.html" aria-label="Tentang Kabar Market"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></a>
+    <button type="button" class="nav-icon" id="themeToggle" aria-label="Aktifkan mode gelap"><svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg><svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg></button>
+  </div>
   <button class="hamburger" id="hamburgerBtn" aria-label="Buka menu" aria-expanded="false"><span></span><span></span><span></span></button>
 </header>
 
@@ -105,7 +117,7 @@
       </div>
     </div>
     <div class="hero-cta">
-      <a href="#berita" class="cta-primary">Baca Berita Terbaru →</a>
+      <button type="button" class="cta-primary" id="heroReadBtn">Baca Selengkapnya →</button>
       <a href="#edukasi" class="cta-secondary">Mulai Belajar Investasi</a>
     </div>
   </div>
@@ -140,6 +152,8 @@
 </section>
 
 
+<div class="content-layout">
+  <div class="content-main">
 <section class="news" id="berita">
   <div class="news-head"><h2>Berita Terbaru</h2></div>
   <div class="news-toolbar"><div class="search-wrap"><span class="search-ic" aria-hidden="true">⌕</span><input type="text" id="newsSearch" placeholder="Cari berita, saham, crypto, atau topik… (mis. BBCA)" aria-label="Cari berita"></div></div>
@@ -149,7 +163,7 @@
   <p class="news-intro" style="color:var(--muted);max-width:760px;margin:0 0 18px;line-height:1.7;">Kabar Market merangkum <strong>berita ekonomi, pasar saham (IHSG), dan aset kripto</strong> terkini dari media terpercaya Indonesia, diperbarui otomatis setiap beberapa menit. Gunakan filter <em>Ekonomi</em>, <em>Saham</em>, dan <em>Crypto</em> atau kotak pencarian di atas untuk menemukan topik yang kamu cari.</p>
   <noscript>
     <div style="padding:16px;border:1px solid var(--ink-3);border-radius:12px;color:var(--muted);line-height:1.7;">
-      Berita terbaru dimuat secara dinamis dan membutuhkan JavaScript. Untuk mengikuti update tanpa membuka situs, berlangganan <a href="https://kabarmarket.web.id/feed.xml" style="color:var(--gold);">RSS feed Kabar Market</a> atau newsletter kami. Kategori yang kami liput: Ekonomi, Saham, dan Crypto.
+      Berita terbaru dimuat secara dinamis dan membutuhkan JavaScript. Untuk mengikuti update tanpa membuka situs, berlangganan <a href="https://kabarmarket.web.id/feed.xml" style="color:var(--blue);">RSS feed Kabar Market</a> atau newsletter kami. Kategori yang kami liput: Ekonomi, Saham, dan Crypto.
     </div>
   </noscript>
   <div id="homeSearchResults" class="news-grid" style="display:none"></div>
@@ -169,6 +183,25 @@
   </div>
   </div>
 </section>
+  </div>
+  <aside class="sidebar" aria-label="Sidebar">
+    <div class="trend-box">
+      <h3><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg> TRENDING SEKARANG</h3>
+      <ol class="trend-list" id="trendingList"></ol>
+    </div>
+    <div class="side-nl">
+      <div class="side-nl-title">NEWSLETTER KABAR MARKET</div>
+      <p>Dapatkan update pasar &amp; kripto terbaru setiap hari langsung ke email Anda.</p>
+      <form class="nl-form" action="https://cda88ff4.sibforms.com/serve/MUIFAM-up4Irau7JvmeuxlP9JvKYcVSPBMRV5YnlIidKdCMepRM1dRz3xmevgFLyNoX6Ao1DLsG45f4dta7lQ32ZxN1LJ7KI_-A7DTvlAz3UsBC_oUenKoalMMS96UJJcrcQalcIwD9iCB7wFUURlG6Hrb6GjAI4EOosbGPIQbfwyxfqW-7qj1VHE0fuRSRqqimSYlJtK0VEQbDiCQ==" method="post" novalidate>
+        <input type="text" name="email_address_check" value="" style="display:none" tabindex="-1" autocomplete="off">
+        <input type="hidden" name="locale" value="en">
+        <input class="nl-input" type="email" name="EMAIL" placeholder="Masukkan email Anda..." aria-label="Alamat email" required>
+        <button class="nl-btn" type="submit">Berlangganan</button>
+      </form>
+      <div class="nl-msg" role="status"></div>
+    </div>
+  </aside>
+</div>
 
 <section class="edu" id="edukasi">
   <div class="edu-head"><h2>Edukasi Dasar</h2><p>Materi dasar buat kamu yang baru mulai belajar saham dan crypto, dibahas ringkas, netral, tanpa jargon berlebihan.</p></div>
@@ -222,6 +255,8 @@
       <a href="index.html">Berita</a>
       <a href="edukasi.html">Edukasi</a>
       <a href="tentang.html">Tentang Kami</a>
+      <a href="tentang.html#pedoman">Pedoman Media</a>
+      <a href="tentang.html#karir">Karir</a>
       <a href="dukung.html" class="footer-support">Dukung Kami ☕</a>
       <a href="mailto:kabarmarket1@gmail.com">Kontak</a>
       <a href="#" class="open-privacy">Kebijakan Privasi</a>
@@ -269,7 +304,7 @@
       <div class="nl-msg" role="status"></div>
     </div>
     <div class="disclaimer-inline" style="margin-top:18px;">
-      <span class="mark">⚠</span>
+      <span class="mark"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg></span>
       <span>Berita ini bersifat informatif, bukan ajakan atau rekomendasi untuk membeli/menjual instrumen investasi tertentu.</span>
     </div>
   </div>
@@ -290,7 +325,7 @@
       <div class="referral-note">Tautan afiliasi/referral, kami dapat memperoleh komisi jika kamu mendaftar lewat tautan ini. Ini bukan rekomendasi maupun ajakan investasi.</div>
     </div>
     <div class="disclaimer-inline" style="margin-top:18px;">
-      <span class="mark">⚠</span>
+      <span class="mark"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg></span>
       <span>Konten ini adalah edukasi umum, bukan nasihat keuangan. Selalu lakukan riset mandiri (DYOR) sebelum mengambil keputusan finansial.</span>
     </div>
   </div>

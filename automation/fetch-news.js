@@ -120,11 +120,26 @@ function imageOf(block) {
 	return null;
 }
 
-function classify(text) {
-	const t = (text || '').toLowerCase();
-	if (/(kripto|crypto|bitcoin|\bbtc\b|ethereum|\beth\b|blockchain|aset digital|token kripto|\bkoin\b|\bnft\b|binance|solana|dogecoin)/.test(t)) return 'Crypto';
-	if (/(saham|ihsg|emiten|bursa efek|\bbei\b|dividen|\bipo\b|\brups\b|indeks harga saham|\blq45\b|right issue)/.test(t)) return 'Saham';
-	return 'Ekonomi';
+const CRYPTO_PAT = 'kripto|crypto|bitcoin|\\bbtc\\b|ethereum|\\beth\\b|blockchain|aset digital|token kripto|\\bkoin\\b|\\bnft\\b|binance|solana|dogecoin';
+const SAHAM_PAT = 'saham|ihsg|emiten|bursa efek|\\bbei\\b|dividen|\\bipo\\b|\\brups\\b|indeks harga saham|\\blq45\\b|right issue';
+// Klasifikasi kategori berita. Judul paling menentukan topik utama; deskripsi
+// hanya dipakai kalau judul tidak mengandung kata kunci. Di dalam satu teks,
+// jumlah kata kunci yang menang yang menentukan; kalau seri, kata kunci yang
+// muncul duluan yang menentukan. Tanpa kata kunci sama sekali -> Ekonomi.
+function classify(title, desc) {
+	function decide(s) {
+		const t = (s || '').toLowerCase();
+		const c = (t.match(new RegExp(CRYPTO_PAT, 'g')) || []).length;
+		const sh = (t.match(new RegExp(SAHAM_PAT, 'g')) || []).length;
+		if (c > sh) return 'Crypto';
+		if (sh > c) return 'Saham';
+		const ci = t.search(new RegExp(CRYPTO_PAT));
+		const si = t.search(new RegExp(SAHAM_PAT));
+		if (ci === -1 && si === -1) return null;
+		if (ci !== -1 && (si === -1 || ci < si)) return 'Crypto';
+		return 'Saham';
+	}
+	return decide(title) || decide(desc) || 'Ekonomi';
 }
 
 // Kalimat pemantik rasa penasaran agar pembaca ingin membuka berita aslinya.
@@ -284,7 +299,7 @@ async function main() {
 	// Kelompokkan ke kategori (simpan hingga ARCHIVE_PER_CAT agar berita lama tak hilang)
 	const buckets = { Ekonomi: [], Saham: [], Crypto: [] };
 	for (const a of quality) {
-		const cat = a.cat || classify(a.title + ' ' + a.desc);
+		const cat = a.cat || classify(a.title, a.desc);
 		if (buckets[cat].length >= ARCHIVE_PER_CAT) continue;
 		buckets[cat].push(a);
 	}

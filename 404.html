@@ -5,37 +5,62 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Halaman Tidak Ditemukan (404) - Kabar Market</title>
 <meta name="robots" content="noindex, follow">
-<meta name="theme-color" content="#0B1420">
+<meta name="theme-color" content="#ffffff">
+<script>
+/* Tema gelap/terang: dibaca sebelum render supaya halaman tidak berkedip.
+   Pilihan tersimpan di localStorage 'km-theme'; kunjungan pertama mengikuti
+   preferensi sistem (prefers-color-scheme: dark). */
+(function(){try{var t=localStorage.getItem('km-theme');if(!t){t=(window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light';}if(t==='dark'){document.documentElement.classList.add('dark');var m=document.querySelector('meta[name="theme-color"]');if(m){m.setAttribute('content','#0F1115');}}}catch(e){}})();
+</script>
 <link rel="icon" type="image/png" href="/favicon_km.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
-    --ink:#0B1420; --ink-2:#121D2E; --ink-3:#1A2740;
-    --paper:#EDEFF3; --muted:#7C8A9C; --gold:#E7A33E;
-    --gain:#22B27D; --line:rgba(237,239,243,0.08);
+    --ink:#FFFFFF; --ink-2:#FFFFFF; --ink-3:#EEF2F7;
+    --paper:#0B1420; --muted:#5B6B7F; --blue:#0B6FE0;
+    --gain:#22B27D; --line:rgba(11,20,32,0.12);
   }
+  /* Mode gelap: variabel sama seperti assets/style.css. */
+  html.dark{
+    --ink:#0F1115; --ink-2:#171B22; --ink-3:#1E2530;
+    --paper:#E8EEF5; --muted:#9AA7B8; --line:rgba(255,255,255,0.12);
+  }
+  /* Tombol tema mengambang (404 tidak punya header nav). */
+  .theme-toggle{
+    position:fixed; top:16px; right:16px; z-index:10;
+    width:40px; height:40px; border-radius:50%;
+    border:1px solid var(--line); background:var(--ink-2); color:var(--paper);
+    cursor:pointer; display:inline-flex; align-items:center; justify-content:center;
+  }
+  .theme-toggle .icon-sun{ display:none; }
+  html.dark .theme-toggle .icon-sun{ display:block; }
+  html.dark .theme-toggle .icon-moon{ display:none; }
   *{ margin:0; padding:0; box-sizing:border-box; }
   body{
     background:var(--ink); color:var(--paper);
     font-family:'Inter', sans-serif;
     min-height:100vh; display:flex; align-items:center; justify-content:center;
     padding:24px; text-align:center;
-    background-image:radial-gradient(circle at 50% 0%, rgba(231,163,62,0.10), transparent 55%);
+    background-image:radial-gradient(circle at 50% 0%, rgba(11,111,224,0.08), transparent 55%);
   }
   .wrap{ max-width:520px; }
-  .brand{ display:inline-flex; align-items:center; gap:12px; margin-bottom:40px; }
-  .km{
-    width:44px; height:44px; border-radius:11px;
-    background:linear-gradient(135deg,#9c6416,#e7a33e);
-    display:inline-flex; align-items:center; justify-content:center;
-    font-family:'Space Grotesk', sans-serif; font-weight:700; font-size:18px; color:#0B1420;
+  .brand{ display:inline-flex; align-items:center; margin-bottom:40px; }
+  /* Logo asli Kabar Market, file apa adanya. Zoom CSS karena file logo
+     punya padding hitam lebar di sekeliling artwork. */
+  .brand-logo{
+    display:block; width:110px; height:70px;
+    overflow:hidden; position:relative; background:#000000; border-radius:14px;
   }
-  .brand span{ font-family:'Space Grotesk', sans-serif; font-weight:600; font-size:20px; }
+  .brand-logo img{
+    position:absolute; left:50%; top:53%;
+    width:270%; height:auto; max-width:none;
+    transform:translate(-50%,-53%);
+  }
   .code{
     font-family:'Space Grotesk', sans-serif; font-weight:700;
     font-size:clamp(90px,22vw,150px); line-height:1;
-    background:linear-gradient(135deg,#e7a33e,#f2c877);
+    background:linear-gradient(135deg,#0B6FE0,#60A5FA);
     -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
   }
   h1{ font-family:'Space Grotesk', sans-serif; font-size:24px; font-weight:600; margin:18px 0 12px; }
@@ -45,14 +70,14 @@
     text-decoration:none; font-weight:600; font-size:15px;
     padding:13px 24px; border-radius:12px; transition:transform .15s ease, border-color .15s ease;
   }
-  .btn-primary{ background:var(--gold); color:#0B1420; }
+  .btn-primary{ background:var(--blue); color:#FFFFFF; }
   .btn-primary:hover{ transform:translateY(-2px); }
   .btn-ghost{ background:var(--ink-2); color:var(--paper); border:1px solid var(--line); }
-  .btn-ghost:hover{ border-color:rgba(231,163,62,0.4); transform:translateY(-2px); }
+  .btn-ghost:hover{ border-color:rgba(11,111,224,0.4); transform:translateY(-2px); }
   .links{ margin-top:36px; padding-top:24px; border-top:1px solid var(--line); }
   .links-title{ font-size:12px; color:var(--muted); text-transform:uppercase; letter-spacing:1px; margin-bottom:14px; font-family:'JetBrains Mono', monospace; }
   .links a{ color:var(--paper); text-decoration:none; font-size:14.5px; margin:0 10px; transition:color .15s ease; }
-  .links a:hover{ color:var(--gold); }
+  .links a:hover{ color:var(--blue); }
 </style>
 
 <!-- Cloudflare Web Analytics -->
@@ -61,10 +86,10 @@
 <!-- End Cloudflare Web Analytics -->
 </head>
 <body>
+  <button type="button" class="theme-toggle" id="themeToggle" aria-label="Aktifkan mode gelap"><svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg><svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg></button>
   <div class="wrap">
     <div class="brand">
-      <span class="km">KM</span>
-      <span>Kabar Market</span>
+      <span class="brand-logo"><img src="/assets/logo-kabarmarket.jpg" alt="Logo Kabar Market" width="1536" height="1024" decoding="async"></span>
     </div>
     <div class="code">404</div>
     <h1>Halaman tidak ditemukan</h1>
@@ -81,5 +106,25 @@
       <a href="/#tentang">Tentang Kami</a>
     </div>
   </div>
+<script>
+/* Saklar mode gelap/terang di 404 (app.js tidak dimuat di halaman ini). */
+(function(){
+  var btn = document.getElementById('themeToggle');
+  if(!btn) return;
+  function label(dark){
+    btn.setAttribute('aria-label', dark ? 'Aktifkan mode terang' : 'Aktifkan mode gelap');
+    btn.setAttribute('title', dark ? 'Mode terang' : 'Mode gelap');
+  }
+  label(document.documentElement.classList.contains('dark'));
+  btn.addEventListener('click', function(){
+    var dark = !document.documentElement.classList.contains('dark');
+    document.documentElement.classList.toggle('dark', dark);
+    try{ localStorage.setItem('km-theme', dark ? 'dark' : 'light'); }catch(e){}
+    var m = document.querySelector('meta[name="theme-color"]');
+    if(m){ m.setAttribute('content', dark ? '#0F1115' : '#ffffff'); }
+    label(dark);
+  });
+})();
+</script>
 </body>
 </html>

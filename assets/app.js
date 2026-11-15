@@ -78,6 +78,46 @@
     });
   })();
 
+  // Tombol cari di header: fokus ke kotak pencarian (atau buka halaman berita)
+  (function(){
+    const btn = document.getElementById('navSearchBtn');
+    if(!btn) return;
+    btn.addEventListener('click', function(){
+      const input = document.getElementById('newsSearch');
+      if(input){
+        input.scrollIntoView({ behavior:'smooth', block:'center' });
+        input.focus({ preventScroll:true });
+      } else {
+        location.href = 'index.html#berita';
+      }
+    });
+  })();
+
+  // Saklar mode gelap/terang (tombol bulan/matahari di header, id themeToggle).
+  // Kelas 'dark' di <html> sudah dipasang sedini mungkin oleh skrip init di <head>
+  // supaya halaman tidak berkedip; di sini hanya sinkronkan label dan pasang klik.
+  // Pilihan disimpan di localStorage 'km-theme' ('dark'/'light').
+  (function(){
+    var KEY = 'km-theme';
+    var btn = document.getElementById('themeToggle');
+    if(!btn) return;
+    function label(dark){
+      btn.setAttribute('aria-label', dark ? 'Aktifkan mode terang' : 'Aktifkan mode gelap');
+      btn.setAttribute('title', dark ? 'Mode terang' : 'Mode gelap');
+    }
+    function setTheme(dark){
+      document.documentElement.classList.toggle('dark', dark);
+      try{ localStorage.setItem(KEY, dark ? 'dark' : 'light'); }catch(e){}
+      var m = document.querySelector('meta[name="theme-color"]');
+      if(m){ m.setAttribute('content', dark ? '#0F1115' : '#ffffff'); }
+      label(dark);
+    }
+    label(document.documentElement.classList.contains('dark'));
+    btn.addEventListener('click', function(){
+      setTheme(!document.documentElement.classList.contains('dark'));
+    });
+  })();
+
   const CG_URL = 'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,binancecoin,solana&vs_currencies=usd&include_24hr_change=true';
   // ===== DATA PASAR LIVE =====
   // Sumber data:
@@ -209,7 +249,7 @@
     list = paginateList(list, 'pagination', function(){ renderNews(); scrollToEl('berita'); });
     grid.innerHTML = list.map(a => `
       <button class="card news-card-btn${a.highlight ? ' is-popular' : ''}" data-idx="${articles.indexOf(a)}">
-        ${a.highlight ? '<span class="popular-badge">🔥 Populer</span>' : ''}
+        ${a.highlight ? '<span class="popular-badge"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg> Populer</span>' : ''}
         <img class="card-img" src="${esc(safeUrl(a.image) || phImg(a.cat))}" alt="" loading="lazy" onerror="this.onerror=null;this.src=window.KMph()">
         <span class="pill ${esc(pillClass[a.cat] || '')}">${esc(a.cat)}</span>
         <h3>${esc(a.title)}</h3>
@@ -222,7 +262,7 @@
           <span>${esc(kmRelTime(a))}</span>
         </div>
         <span class="read-more">Baca selengkapnya →</span>
-        <div class="disclaimer-inline"><span class="mark">⚠</span><span>Bukan ajakan membeli/menjual.</span></div>
+        <div class="disclaimer-inline"><span class="mark"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg></span><span>Bukan ajakan membeli/menjual.</span></div>
       </button>
     `).join('');
     document.querySelectorAll('.news-card-btn').forEach(card => {
@@ -302,7 +342,7 @@
       if(__sImg){ __sImg.style.display=''; __sImg.src = a.image || phImg(a.cat); __sImg.onerror=function(){ __sImg.onerror=null; __sImg.src=phImg(a.cat); }; }
       const eb = document.getElementById('heroSide' + k + 'Eyebrow');
       eb.textContent = a.cat;
-      eb.style.color = a.cat === 'Saham' ? 'var(--gain)' : (a.cat === 'Crypto' ? 'var(--gold)' : (a.cat === 'Investasi' ? '#9db4f0' : 'var(--muted)'));
+      eb.style.color = a.cat === 'Saham' ? 'var(--gain)' : (a.cat === 'Crypto' ? 'var(--blue)' : (a.cat === 'Investasi' ? '#2B4ACB' : 'var(--muted)'));
       document.getElementById('heroSide' + k + 'Title').textContent = a.title;
       const sp = document.getElementById('heroSide' + k + 'Pill');
       sp.className = 'pill ' + (pillClass[a.cat] || '');
@@ -310,6 +350,41 @@
       document.getElementById('heroSide' + k + 'Time').textContent = kmRelTime(a) || '';
       card.style.cursor = 'pointer';
       card.onclick = () => openNewsModal(idx);
+    });
+  }
+  // ===== TRENDING SEKARANG (sidebar beranda) =====
+  // 5 berita terbaru; judul ditulis via textContent (bukan innerHTML) agar aman.
+  function renderTrending(){
+    const list = document.getElementById('trendingList');
+    if(!list || !articles || !articles.length) return;
+    const top = articles.map(function(a, idx){ return idx; })
+      .sort(function(x, y){ return kmTimeRank(articles[y]) - kmTimeRank(articles[x]); })
+      .slice(0, 5);
+    list.innerHTML = '';
+    top.forEach(function(idx, i){
+      const a = articles[idx];
+      const li = document.createElement('li');
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'trend-item';
+      const num = document.createElement('span');
+      num.className = 'trend-num';
+      num.textContent = String(i + 1);
+      const body = document.createElement('span');
+      body.className = 'trend-body';
+      const title = document.createElement('span');
+      title.className = 'trend-title';
+      title.textContent = a.title || '';
+      const meta = document.createElement('span');
+      meta.className = 'trend-meta';
+      meta.textContent = (a.source || '') + (kmRelTime(a) ? ' · ' + kmRelTime(a) : '');
+      body.appendChild(title);
+      body.appendChild(meta);
+      btn.appendChild(num);
+      btn.appendChild(body);
+      btn.addEventListener('click', function(){ openNewsModal(idx); });
+      li.appendChild(btn);
+      list.appendChild(li);
     });
   }
   // ===== Deep link per kartu berita (tiap kartu punya link sendiri) =====
@@ -338,6 +413,7 @@
 
   renderNews();
   renderHighlights();
+  renderTrending();
   kmOpenFromUrl();
 
   // Muat berita otomatis dari news.json (diperbarui oleh skrip otomatisasi).
@@ -346,7 +422,7 @@
     .then(r => r.ok ? r.json() : Promise.reject())
     .then(data => {
       const list = Array.isArray(data) ? data : (data && data.articles);
-      if (Array.isArray(list) && list.length) { articles = deepCleanDash(list); renderNews(); renderHighlights(); kmOpenFromUrl(); }
+      if (Array.isArray(list) && list.length) { articles = deepCleanDash(list); renderNews(); renderHighlights(); renderTrending(); kmOpenFromUrl(); }
     })
     .catch(() => {});
 
@@ -658,8 +734,8 @@
       box.className = 'news-share';
       meta.parentNode.insertBefore(box, meta.nextSibling);
     }
-    box.innerHTML = '<button type="button" class="share-btn" id="newsShareBtn">\uD83D\uDD17 Salin link berita</button>'
-      + '<a class="share-btn share-wa" id="newsShareWa" target="_blank" rel="noopener">\uD83D\uDCAC WhatsApp</a>'
+    box.innerHTML = '<button type="button" class="share-btn" id="newsShareBtn"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg> Salin link berita</button>'
+      + '<a class="share-btn share-wa" id="newsShareWa" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg> WhatsApp</a>'
       + '<span class="share-done" id="newsShareDone">\u2713 Link tersalin</span>';
     var link = location.href;
     var wa = document.getElementById('newsShareWa');
@@ -687,8 +763,8 @@
       box.className = 'news-share';
       titleEl.parentNode.insertBefore(box, titleEl.nextSibling);
     }
-    box.innerHTML = '<button type="button" class="share-btn" id="eduShareBtn">\uD83D\uDD17 Salin link materi</button>'
-      + '<a class="share-btn share-wa" id="eduShareWa" target="_blank" rel="noopener">\uD83D\uDCAC WhatsApp</a>'
+    box.innerHTML = '<button type="button" class="share-btn" id="eduShareBtn"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg> Salin link materi</button>'
+      + '<a class="share-btn share-wa" id="eduShareWa" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg> WhatsApp</a>'
       + '<span class="share-done" id="eduShareDone">\u2713 Link tersalin</span>';
     var link = location.href;
     var wa = document.getElementById('eduShareWa');
@@ -788,13 +864,13 @@
   window.KMph = phImg;
   function newsCardHTML(a){
     return '<button class="card news-card-btn'+(a.highlight?' is-popular':'')+'" data-idx="'+articles.indexOf(a)+'">'
-      + (a.highlight?'<span class="popular-badge">🔥 Populer</span>':'')
+      + (a.highlight?'<span class="popular-badge"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg> Populer</span>':'')
       + '<img class="card-img" src="'+esc(safeUrl(a.image)||phImg(a.cat))+'" alt="" loading="lazy" onerror="this.onerror=null;this.src=window.KMph()">'
       + '<span class="pill '+esc(pillClass[a.cat]||'')+'">'+esc(a.cat)+'</span>'
       + '<h3>'+esc(a.title)+'</h3><p>'+esc(a.desc)+'</p>'
       + '<div class="meta-row card-meta"><span class="card-source">'+esc(a.source)+'</span><span>·</span><span>'+esc(a.date)+'</span><span>·</span><span>'+esc(kmRelTime(a))+'</span></div>'
       + '<span class="read-more">Baca selengkapnya →</span>'
-      + '<div class="disclaimer-inline"><span class="mark">⚠</span><span>Bukan ajakan membeli/menjual.</span></div>'
+      + '<div class="disclaimer-inline"><span class="mark"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg></span><span>Bukan ajakan membeli/menjual.</span></div>'
       + '</button>';
   }
   function bindNewsCards(){
