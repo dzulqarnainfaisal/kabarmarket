@@ -1,6 +1,25 @@
 
   // Jam realtime WIB + status Pasar (jam Bursa Efek Indonesia / IDX)
   // Hari libur bursa 2026 = libur nasional + cuti bersama (SKB 3 Menteri & Kalender Libur Bursa BEI 2026)
+  // ===== Keamanan (perbaikan XSS, Nov 2026) =====
+  // esc(): ubah & < > " ' menjadi entitas HTML supaya teks dari sumber luar
+  // (RSS/news.json, parameter URL) tidak bisa menjadi tag/skrip saat
+  // dimasukkan ke innerHTML. Pakai untuk SEMUA data berita sebelum dirender.
+  function esc(s){
+    return String(s == null ? '' : s).replace(/[&<>"']/g, function(c){
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+    });
+  }
+  // safeUrl(): hanya izinkan URL https:// . Tolak javascript:, data:, http://
+  // dan URL aneh lainnya agar tidak bisa dipakai untuk breakout atribut atau
+  // eksekusi skrip. Kembalikan null bila tidak aman; pemanggil memakai
+  // gambar/link cadangan (phImg / '#').
+  function safeUrl(u){
+    if(typeof u !== 'string') return null;
+    var s = u.trim();
+    if(/^https:\/\//i.test(s)) return s;
+    return null;
+  }
   const HARI_LIBUR_BURSA = new Set([
     '2026-01-01','2026-01-16','2026-02-16','2026-02-17','2026-03-18','2026-03-19',
     '2026-03-20','2026-03-23','2026-03-24','2026-04-03','2026-05-01','2026-05-14',
@@ -191,16 +210,16 @@
     grid.innerHTML = list.map(a => `
       <button class="card news-card-btn${a.highlight ? ' is-popular' : ''}" data-idx="${articles.indexOf(a)}">
         ${a.highlight ? '<span class="popular-badge">🔥 Populer</span>' : ''}
-        <img class="card-img" src="${a.image || phImg(a.cat)}" alt="" loading="lazy" onerror="this.onerror=null;this.src=window.KMph('${a.cat||''}')">
-        <span class="pill ${pillClass[a.cat]}">${a.cat}</span>
-        <h3>${a.title}</h3>
-        <p>${a.desc}</p>
+        <img class="card-img" src="${esc(safeUrl(a.image) || phImg(a.cat))}" alt="" loading="lazy" onerror="this.onerror=null;this.src=window.KMph()">
+        <span class="pill ${esc(pillClass[a.cat] || '')}">${esc(a.cat)}</span>
+        <h3>${esc(a.title)}</h3>
+        <p>${esc(a.desc)}</p>
         <div class="meta-row card-meta">
-          <span class="card-source">${a.source}</span>
+          <span class="card-source">${esc(a.source)}</span>
           <span>·</span>
-          <span>${a.date}</span>
+          <span>${esc(a.date)}</span>
           <span>·</span>
-          <span>${kmRelTime(a)}</span>
+          <span>${esc(kmRelTime(a))}</span>
         </div>
         <span class="read-more">Baca selengkapnya →</span>
         <div class="disclaimer-inline"><span class="mark">⚠</span><span>Bukan ajakan membeli/menjual.</span></div>
@@ -488,9 +507,9 @@
     grid.innerHTML = list.map((a, i) => `
       <button class="edu-card ${eduCatClass(a.cat)}" data-idx="${eduArticles.indexOf(a)}">
         ${eduChipHTML(a.cat)}
-        <span class="edu-num mono">${String(i+1).padStart(2,'0')} · ${a.cat}</span>
-        <h3>${a.title}</h3>
-        <p>${a.summary}</p>
+        <span class="edu-num mono">${String(i+1).padStart(2,'0')} · ${esc(a.cat)}</span>
+        <h3>${esc(a.title)}</h3>
+        <p>${esc(a.summary)}</p>
         <span class="read-more">Baca materi →</span>
       </button>
     `).join('');
@@ -591,7 +610,7 @@
     document.getElementById('eduModalPill').className = 'pill ' + pillClassMap[a.cat];
     document.getElementById('eduModalPill').textContent = a.cat;
     document.getElementById('eduModalTitle').textContent = a.title;
-    document.getElementById('eduModalBody').innerHTML = (a.body || []).map(p => `<p>${p}</p>`).join('');
+    document.getElementById('eduModalBody').innerHTML = (a.body || []).map(p => `<p>${esc(p)}</p>`).join('');
     const eduRef = document.getElementById('eduModalReferral');
     const eduParts = partners[a.cat] || [];
     if (eduParts.length) { document.getElementById('eduModalReferralText').textContent = a.referralText || defaultReferralText[a.cat] || defaultReferralText._; eduRef.style.display = ''; renderPartners(document.getElementById('eduPartnerGrid'), a.cat); }
@@ -693,10 +712,11 @@
     document.getElementById('newsModalTitle').textContent = a.title;
     document.getElementById('newsModalMeta').textContent = a.source + ' · ' + a.date + ' · ' + kmRelTime(a);
     const nImg = document.getElementById('newsModalImg');
-    nImg.src = a.image || phImg(a.cat); nImg.style.display = ''; nImg.onerror = () => { nImg.onerror = null; nImg.src = phImg(a.cat); };
+    nImg.src = safeUrl(a.image) || phImg(a.cat); nImg.style.display = ''; nImg.onerror = () => { nImg.onerror = null; nImg.src = phImg(a.cat); };
     const summary = a.desc || (a.body && a.body.length ? a.body[0] : '');
-    let bodyHtml = `<p>${summary}</p>`;
-    var __click = a.url ? ' href="' + a.url + '" target="_blank" rel="noopener nofollow"' : ' href="#" onclick="return false;"';
+    let bodyHtml = `<p>${esc(summary)}</p>`;
+    var __safeLink = safeUrl(a.url);
+    var __click = __safeLink ? ' href="' + esc(__safeLink) + '" target="_blank" rel="noopener nofollow"' : ' href="#" onclick="return false;"';
     bodyHtml += '<a class="source-more"' + __click + '>Baca selengkapnya</a>';
     document.getElementById('newsModalBody').innerHTML = bodyHtml;
     const nBox = document.getElementById('newsModalReferral');
@@ -769,10 +789,10 @@
   function newsCardHTML(a){
     return '<button class="card news-card-btn'+(a.highlight?' is-popular':'')+'" data-idx="'+articles.indexOf(a)+'">'
       + (a.highlight?'<span class="popular-badge">🔥 Populer</span>':'')
-      + '<img class="card-img" src="'+(a.image||phImg(a.cat))+'" alt="" loading="lazy" onerror="this.onerror=null;this.src=window.KMph(\''+(a.cat||'')+'\')">'
-      + '<span class="pill '+(pillClass[a.cat]||'')+'">'+a.cat+'</span>'
-      + '<h3>'+a.title+'</h3><p>'+a.desc+'</p>'
-      + '<div class="meta-row card-meta"><span class="card-source">'+a.source+'</span><span>·</span><span>'+a.date+'</span><span>·</span><span>'+kmRelTime(a)+'</span></div>'
+      + '<img class="card-img" src="'+esc(safeUrl(a.image)||phImg(a.cat))+'" alt="" loading="lazy" onerror="this.onerror=null;this.src=window.KMph()">'
+      + '<span class="pill '+esc(pillClass[a.cat]||'')+'">'+esc(a.cat)+'</span>'
+      + '<h3>'+esc(a.title)+'</h3><p>'+esc(a.desc)+'</p>'
+      + '<div class="meta-row card-meta"><span class="card-source">'+esc(a.source)+'</span><span>·</span><span>'+esc(a.date)+'</span><span>·</span><span>'+esc(kmRelTime(a))+'</span></div>'
       + '<span class="read-more">Baca selengkapnya →</span>'
       + '<div class="disclaimer-inline"><span class="mark">⚠</span><span>Bukan ajakan membeli/menjual.</span></div>'
       + '</button>';
@@ -797,8 +817,8 @@
   function eduCardHTML(a, i){
     return '<button class="edu-card '+eduCatClass(a.cat)+'" data-idx="'+eduArticles.indexOf(a)+'">'
       + eduChipHTML(a.cat)
-      + '<span class="edu-num mono">'+String(i+1).padStart(2,'0')+' · '+a.cat+'</span>'
-      + '<h3>'+a.title+'</h3><p>'+a.summary+'</p>'
+      + '<span class="edu-num mono">'+String(i+1).padStart(2,'0')+' · '+esc(a.cat)+'</span>'
+      + '<h3>'+esc(a.title)+'</h3><p>'+esc(a.summary)+'</p>'
       + '<span class="read-more">Baca materi →</span></button>';
   }
   function bindEduCards(){
@@ -871,7 +891,7 @@
     results.style.display='';
     var list = articles.filter(function(a){ return searchHaystack(a).includes(q); });
     if(!list.length){
-      results.innerHTML = '<p class="no-result">Tidak ada hasil untuk "'+q+'".</p>';
+      results.innerHTML = '<p class="no-result">Tidak ada hasil untuk &quot;'+esc(q)+'&quot;.</p>';
       renderPager('homeSearchPager',1,1,null);
       return;
     }

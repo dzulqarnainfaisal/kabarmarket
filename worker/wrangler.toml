@@ -7,10 +7,10 @@ compatibility_date = "2025-01-01"
 [ai]
 binding = "AI"
 
-# (Opsional) Batasi domain yang boleh memanggil Worker. Ganti '*' menjadi
-# domain situsmu untuk keamanan lebih, mis. "https://kabarmarket.web.id".
+# (Keamanan, Nov 2026) Hanya domain situs sendiri yang boleh memanggil Worker.
+# JANGAN kembalikan ke '*' — itu mengizinkan situs mana pun memakai kuota AI.
 [vars]
-ALLOWED_ORIGIN = "*"
+ALLOWED_ORIGIN = "https://kabarmarket.web.id"
 # GROQ_MODEL = "openai/gpt-oss-120b"           # dipakai jika GROQ_API_KEY diset (default). Alternatif hemat kuota: "llama-3.1-8b-instant"
 # CF_MODEL = "@cf/meta/llama-3.1-8b-instruct"   # ganti model Workers AI bila mau
 # OPENAI_MODEL = "gpt-4o-mini"                   # dipakai hanya jika OPENAI_API_KEY diset

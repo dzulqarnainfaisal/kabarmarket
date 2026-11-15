@@ -79,12 +79,13 @@ function hostOf(u) {
 	try { return new URL(u).hostname.replace(/^www\./, ''); } catch (_) { return 'Sumber'; }
 }
 
-// --- Pembersih teks: buang CDATA, tag HTML, decode entitas umum ---
+// --- Pembersih teks: decode entitas dulu, BARU buang tag HTML (keamanan XSS, Nov 2026) ---
+// Urutan ini penting: kalau tag dibuang dulu lalu entitas di-decode,
+// payload &lt;svg onload=...&gt; lolos lalu berubah jadi tag sungguhan.
 function decode(s) {
 	if (!s) return '';
 	return String(s)
 		.replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1')
-		.replace(/<[^>]+>/g, ' ')
 		.replace(/&nbsp;/g, ' ')
 		.replace(/&amp;/g, '&')
 		.replace(/&quot;/g, '"')
@@ -95,6 +96,9 @@ function decode(s) {
 		.replace(/&#8211;|&ndash;/g, '-')
 		.replace(/&#8212;|&mdash;/g, '-')
 		.replace(/&[a-z]+;/gi, ' ')
+		// Buang tag HTML SETELAH semua entitas di-decode, supaya tag
+		// hasil decode (mis. dari &lt;svg ...&gt;) ikut terbuang.
+		.replace(/<[^>]+>/g, ' ')
 		.replace(/\s+/g, ' ')
 		.trim();
 }

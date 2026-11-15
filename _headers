@@ -1,0 +1,19 @@
+# Kabar Market — Security headers (Cloudflare Pages)
+# File ini dibaca otomatis oleh Cloudflare Pages untuk semua path.
+# Ditambahkan Nov 2026 sebagai bagian dari perbaikan keamanan (XSS & clickjacking).
+#
+# CATATAN CSP: situs ini masih memakai inline <script> (bootstrap KM_PAGE di
+# tiap halaman HTML) dan inline onerror handler di template kartu berita,
+# jadi script-src/style-src masih memerlukan 'unsafe-inline'. Pertahanan XSS
+# utama adalah escape HTML (esc()) + validasi URL (safeUrl()) di app.js dan
+# perbaikan urutan decode() di automation/fetch-news.js. Langkah pengerasan
+# lanjutan: pindahkan inline script ke file eksternal, lalu hapus
+# 'unsafe-inline' dan ganti dengan nonce/hash.
+
+/*
+  Content-Security-Policy: default-src 'self'; script-src 'self' https://static.cloudflareinsights.com 'unsafe-inline'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://api.coingecko.com https://cda88ff4.sibforms.com; form-action 'self' https://cda88ff4.sibforms.com; frame-ancestors 'none'; object-src 'none'; base-uri 'self'; upgrade-insecure-requests
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
