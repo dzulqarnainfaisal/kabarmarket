@@ -55,7 +55,7 @@ const DO_TRANSLATE = process.env.TRANSLATE !== '0'; // set TRANSLATE=0 untuk mem
 // --- Filter kualitas berita ---------------------------------------------------
 // Buang konten promosi/iklan/hiburan yang bukan berita pasar (mis. "Full Day Sale",
 // diskon, giveaway, gosip, zodiak, dll) agar kualitas berita lebih terjaga.
-const BLOCK_RE = /(full day sale|banting harga|diskon|obral|\bpromo\b|voucher|kupon|cashback|flash sale|harga murah|termurah|gratis ongkir|serba gratis|giveaway|berhadiah|undian|kode redeem|beli sekarang|buruan|link nonton|nonton film|streaming film|jadwal tayang|sinopsis|spoiler|zodiak|horoskop|ramalan|primbon|resep masak|gaya hidup|lifestyle|wisata kuliner|selebriti|selebgram|\bartis\b|gosip|prediksi skor|hasil pertandingan|klasemen liga|transfer pemain|jadwal sholat|kata mutiara|ucapan selamat)/i;
+const BLOCK_RE = /(full day sale|banting harga|diskon|obral|\bpromo\b|voucher|kupon|cashback|flash sale|harga murah|termurah|gratis ongkir|serba gratis|giveaway|berhadiah|undian|kode redeem|beli sekarang|buruan|link nonton|nonton film|streaming film|jadwal tayang|sinopsis|spoiler|zodiak|horoskop|ramalan|primbon|resep masak|gaya hidup|lifestyle|wisata kuliner|selebriti|selebgram|\bartis\b|gosip|prediksi skor|hasil pertandingan|klasemen liga|transfer pemain|jadwal sholat|kata mutiara|ucapan selamat|moneyist|should i be worried|i inherited|my (elderly )?(mother|father|husband|wife|brother|sister|cousin|son|daughter)\b|dear moneyist)/i;
 // Kata kunci relevansi ekonomi/pasar. Berita tanpa kategori feed eksplisit harus
 // menyinggung salah satu topik ini agar dianggap layak tayang.
 const RELEVAN_RE = /(ekonomi|ihsg|saham|bursa|emiten|rupiah|dolar|dollar|inflasi|deflasi|suku bunga|bank indonesia|\bbi\b|the fed|obligasi|surat utang|sukuk|investasi|investor|pasar modal|reksa ?dana|makro|neraca|ekspor|impor|\bpdb\b|apbn|pajak|cukai|komoditas|nikel|batu ?bara|emas|minyak|\bgas\b|kripto|crypto|bitcoin|ethereum|blockchain|token|dividen|\bipo\b|laba|rugi|pendapatan|kuartal|perbankan|fintech|\bbumn\b|nilai tukar|indeks|perdagangan|harga pangan|subsidi|utang|anggaran|moneter|fiskal|manufaktur|industri|properti)/i;
@@ -95,6 +95,10 @@ function decode(s) {
 		.replace(/&hellip;|&#8230;/g, '\u2026')
 		.replace(/&#8211;|&ndash;/g, '-')
 		.replace(/&#8212;|&mdash;/g, '-')
+		// Entitas numerik umum (desimal &#8216; dan heksa &#x2018;) yang tidak
+		// ada di daftar spesifik di atas, mis. tanda kutip &#x2018; &#x2019;.
+		.replace(/&#x([0-9a-fA-F]+);/g, (_, h) => String.fromCharCode(parseInt(h, 16)))
+		.replace(/&#(\d+);/g, (_, d) => String.fromCharCode(parseInt(d, 10)))
 		.replace(/&[a-z]+;/gi, ' ')
 		// Buang tag HTML SETELAH semua entitas di-decode, supaya tag
 		// hasil decode (mis. dari &lt;svg ...&gt;) ikut terbuang.
@@ -280,6 +284,55 @@ async function translateId(text, attempt) {
 	}
 }
 
+// --- Terjemahan via Groq (dipakai kalau GROQ_API_KEY tersedia di Secrets) ---
+// Google Translate gratis diblokir dari IP GitHub Actions, jadi Groq adalah
+// jalur utama. Model llama-3.1-8b-instant cepat dan gratis (sama seperti AI widget).
+const GROQ_KEY = process.env.GROQ_API_KEY || '';
+const GROQ_MODEL = process.env.GROQ_MODEL || 'llama-3.1-8b-instant';
+async function translateGroq(text, attempt) {
+	const s = (text || '').trim();
+	if (!s) return text;
+	attempt = attempt || 1;
+	try {
+		const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+			method: 'POST',
+			headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + GROQ_KEY },
+			body: JSON.stringify({
+				model: GROQ_MODEL,
+				messages: [
+					{ role: 'system', content: 'You are a translator. Translate the following English text to Bahasa Indonesia. Return ONLY the translation, no explanation, no quotes, no extra text.' },
+					{ role: 'user', content: s }
+				],
+				temperature: 0.2,
+				max_tokens: 1000
+			})
+		});
+		if (!res.ok) throw new Error('HTTP ' + res.status);
+		const data = await res.json();
+		const out = (data.choices && data.choices[0] && data.choices[0].message && data.choices[0].message.content || '').trim();
+		return out || text;
+	} catch (e) {
+		if (attempt < 3) {
+			await new Promise((r) => setTimeout(r, attempt * 1500));
+			return translateGroq(text, attempt + 1);
+		}
+		console.error('  [groq translate err]', e.message);
+		return text;
+	}
+}
+
+// Pembungkus: Groq dulu (kalau ada kunci), kalau tidak ada/gagal pakai Google.
+async function translate(text) {
+	if (GROQ_KEY) {
+		const out = await translateGroq(text);
+		// Jeda singkat supaya tidak kena batas laju Groq.
+		await new Promise((r) => setTimeout(r, 300));
+		if (out && out !== text) return out;
+		// Kalau Groq mengembalikan teks asli (gagal diam-diam), coba Google.
+	}
+	return translateId(text);
+}
+
 async function main() {
 	const FEEDS = loadFeeds();
 	console.error('Mengambil', FEEDS.length, 'RSS feed...');
@@ -318,8 +371,8 @@ async function main() {
 		for (const a of buckets[cat]) {
 			let tTitle = a.title, tDesc = a.desc;
 			if (DO_TRANSLATE && a.translate) {
-				tTitle = await translateId(a.title);
-				tDesc = await translateId(a.desc);
+				tTitle = await translate(a.title);
+				tDesc = await translate(a.desc);
 			}
 			articles.push({
 				cat,
