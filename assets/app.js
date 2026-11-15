@@ -582,6 +582,7 @@
     list = paginateList(list, 'eduPagination', function(){ renderEdu(currentEduFilter); scrollToEl('edukasi'); });
     grid.innerHTML = list.map((a, i) => `
       <button class="edu-card ${eduCatClass(a.cat)}" data-idx="${eduArticles.indexOf(a)}">
+        ${a.img ? `<img class="edu-card-img" src="${esc(a.img)}" alt="" loading="lazy" onerror="this.remove()">` : ''}
         ${eduChipHTML(a.cat)}
         <span class="edu-num mono">${String(i+1).padStart(2,'0')} · ${esc(a.cat)}</span>
         <h3>${esc(a.title)}</h3>
@@ -892,6 +893,7 @@
   }
   function eduCardHTML(a, i){
     return '<button class="edu-card '+eduCatClass(a.cat)+'" data-idx="'+eduArticles.indexOf(a)+'">'
+      + (a.img ? '<img class="edu-card-img" src="'+esc(a.img)+'" alt="" loading="lazy" onerror="this.remove()">' : '')
       + eduChipHTML(a.cat)
       + '<span class="edu-num mono">'+String(i+1).padStart(2,'0')+' · '+esc(a.cat)+'</span>'
       + '<h3>'+esc(a.title)+'</h3><p>'+esc(a.summary)+'</p>'

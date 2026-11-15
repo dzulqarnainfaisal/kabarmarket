@@ -419,6 +419,10 @@
     transform:translateY(-2px);
     border-color:rgba(11,111,224,0.35);
   }
+  .edu-card-img{
+    display:block; width:calc(100% + 40px); height:150px; object-fit:cover;
+    margin:-20px -20px 14px; border-radius:14px 14px 0 0; background:var(--ink-3);
+  }
   .edu-num{
     font-family:'JetBrains Mono', monospace;
     font-size:12px;
