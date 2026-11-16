@@ -12,6 +12,12 @@ on:
 permissions:
   contents: write
 
+# Cegah run tumpang tindih: kalau ada run yang masih jalan, run berikutnya
+# antre (bukan jalan bareng) supaya push ke GitHub tidak bentrok dan gagal.
+concurrency:
+  group: update-news
+  cancel-in-progress: false
+
 jobs:
   update-news:
     runs-on: ubuntu-latest
