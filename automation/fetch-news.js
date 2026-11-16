@@ -333,6 +333,65 @@ async function translate(text) {
 	return translateId(text);
 }
 
+// --- Terjemahan batch via Groq (JSON mode) ---
+// Satu panggilan menerjemahkan banyak teks sekaligus, supaya tidak kena
+// batas laju Groq (30 req/menit di tier gratis) dan run tidak berlarut-larut.
+// Kalau satu batch gagal, jatuh kembali ke translate() per item.
+async function translateBatchGroq(texts) {
+	const BATCH = 12;
+	const results = [];
+	for (let i = 0; i < texts.length; i += BATCH) {
+		const chunk = texts.slice(i, i + BATCH);
+		let done = false;
+		for (let attempt = 1; attempt <= 3 && !done; attempt++) {
+			try {
+				const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+					method: 'POST',
+					headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + GROQ_KEY },
+					body: JSON.stringify({
+						model: GROQ_MODEL,
+						messages: [
+							{ role: 'system', content: 'You are a translator. Translate each English text in the JSON array to Bahasa Indonesia. Return ONLY a JSON object {"translations": ["...", "..."]} with the same number of items in the same order. No explanation, no quotes around the whole object.' },
+							{ role: 'user', content: JSON.stringify(chunk) }
+						],
+						temperature: 0.2,
+						max_tokens: 4000,
+						response_format: { type: 'json_object' }
+					})
+				});
+				if (!res.ok) throw new Error('HTTP ' + res.status);
+				const data = await res.json();
+				const content = (data.choices && data.choices[0] && data.choices[0].message && data.choices[0].message.content) || '';
+				const parsed = JSON.parse(content);
+				const arr = Array.isArray(parsed) ? parsed : parsed.translations;
+				if (!Array.isArray(arr) || arr.length !== chunk.length) throw new Error('bad batch shape');
+				results.push(...arr.map((s) => String(s == null ? '' : s).trim()));
+				done = true;
+			} catch (e) {
+				console.error('  [groq batch err]', e.message, 'chunk', (i / BATCH) + 1, 'attempt', attempt);
+				if (attempt < 3) await new Promise((r) => setTimeout(r, attempt * 2000));
+			}
+		}
+		if (!done) {
+			for (const t of chunk) results.push(await translate(t));
+		}
+		await new Promise((r) => setTimeout(r, 500));
+	}
+	return results;
+}
+
+// Terjemahkan banyak teks: batch Groq kalau ada kunci, kalau tidak per item.
+async function translateBatch(texts) {
+	if (!texts.length) return [];
+	if (GROQ_KEY) {
+		const out = await translateBatchGroq(texts);
+		if (out && out.length === texts.length) return out;
+	}
+	const res = [];
+	for (const t of texts) res.push(await translate(t));
+	return res;
+}
+
 async function main() {
 	const FEEDS = loadFeeds();
 	console.error('Mengambil', FEEDS.length, 'RSS feed...');
@@ -365,16 +424,30 @@ async function main() {
 	}
 
 	// Jika Crypto/Saham kurang, biarkan apa adanya (Ekonomi biasanya paling banyak).
+	// Terjemahan: pakai ulang hasil lama (by URL) kalau sudah diterjemahkan,
+	// sisanya diterjemahkan sekaligus secara batch supaya cepat & tidak kena 429.
+	const outPath = path.join(__dirname, '..', 'news.json');
+	const existingByUrl = new Map();
+	try {
+		const prev = JSON.parse(fs.readFileSync(outPath, 'utf8'));
+		const prevArts = Array.isArray(prev) ? prev : (prev && prev.articles) || [];
+		for (const a of prevArts) if (a && a.url) existingByUrl.set(a.url, a);
+	} catch (_) { /* belum ada news.json */ }
 	const articles = [];
+	const pending = []; // { art, origTitle, origDesc }
 	for (const cat of ['Ekonomi', 'Saham', 'Crypto']) {
-		let added = 0;
 		for (const a of buckets[cat]) {
 			let tTitle = a.title, tDesc = a.desc;
-			if (DO_TRANSLATE && a.translate) {
-				tTitle = await translate(a.title);
-				tDesc = await translate(a.desc);
+			let needTranslate = DO_TRANSLATE && a.translate;
+			if (needTranslate) {
+				const prev = existingByUrl.get(a.url);
+				if (prev && prev.title && prev.title !== a.title) {
+					tTitle = prev.title;
+					tDesc = (prev.desc && prev.desc !== a.desc) ? prev.desc : (Array.isArray(prev.body) && prev.body[0]) || a.desc;
+					needTranslate = false;
+				}
 			}
-			articles.push({
+			const art = {
 				cat,
 				title: tTitle,
 				desc: makeTeaser(tDesc, tTitle),
@@ -388,17 +461,29 @@ async function main() {
 				ts: (a.when instanceof Date ? a.when : new Date(a.when)).toISOString(), // waktu absolut untuk urutan & merge
 				highlight: false, // ditentukan ulang setelah merge
 				body: [tDesc],
-			});
-			added++;
+			};
+			articles.push(art);
+			if (needTranslate) pending.push({ art, origTitle: a.title, origDesc: a.desc });
 		}
+	}
+	if (pending.length) {
+		console.error('Menerjemahkan', pending.length, 'artikel baru (batch)...');
+		const tTitles = await translateBatch(pending.map((p) => p.origTitle));
+		const tDescs = await translateBatch(pending.map((p) => p.origDesc));
+		pending.forEach((p, i) => {
+			const nt = tTitles[i] || p.origTitle;
+			const nd = tDescs[i] || p.origDesc;
+			p.art.title = nt;
+			p.art.desc = makeTeaser(nd, nt);
+			p.art.body = [nd];
+		});
+		console.error('Terjemahan batch selesai:', pending.length, 'artikel');
 	}
 
 	if (articles.length === 0) {
 		console.error('Tidak ada berita terambil - news.json TIDAK diubah.');
 		process.exit(1);
 	}
-
-	const outPath = path.join(__dirname, '..', 'news.json');
 
 	// --- Gabungkan dengan arsip lama agar berita lama TIDAK hilang ---
 	let existing = [];
@@ -457,3 +542,4 @@ async function main() {
 }
 
 main();
+
