@@ -336,13 +336,17 @@ async function translate(text) {
 // --- Terjemahan batch via Groq (JSON mode) ---
 // Satu panggilan menerjemahkan banyak teks sekaligus, supaya tidak kena
 // batas laju Groq (30 req/menit di tier gratis) dan run tidak berlarut-larut.
-// Kalau satu batch gagal, jatuh kembali ke translate() per item.
+// Aturan 429: jeda antar batch 3 dtk (<=20 req/menit), backoff makin lama
+// saat 429, dan kalau satu batch tetap gagal, LEWATI saja (artikel tetap
+// Inggris run ini, run berikutnya mencoba lagi). Jangan jatuh ke per-item
+// saat 429, karena itu memperbanyak request dan memperparah rate limit.
 async function translateBatchGroq(texts) {
 	const BATCH = 12;
 	const results = [];
 	for (let i = 0; i < texts.length; i += BATCH) {
 		const chunk = texts.slice(i, i + BATCH);
 		let done = false;
+		let lastErr = null;
 		for (let attempt = 1; attempt <= 3 && !done; attempt++) {
 			try {
 				const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
@@ -359,6 +363,14 @@ async function translateBatchGroq(texts) {
 						response_format: { type: 'json_object' }
 					})
 				});
+				if (res.status === 429) {
+					const ra = parseInt(res.headers.get('retry-after') || '', 10);
+					const waitSec = (Number.isFinite(ra) && ra > 0) ? ra : Math.min(60, 10 * attempt);
+					console.error('  [groq batch 429] chunk', (i / BATCH) + 1, 'attempt', attempt, 'tunggu', waitSec + ' dtk');
+					if (attempt < 3) await new Promise((r) => setTimeout(r, waitSec * 1000));
+					lastErr = new Error('HTTP 429');
+					continue;
+				}
 				if (!res.ok) throw new Error('HTTP ' + res.status);
 				const data = await res.json();
 				const content = (data.choices && data.choices[0] && data.choices[0].message && data.choices[0].message.content) || '';
@@ -368,14 +380,19 @@ async function translateBatchGroq(texts) {
 				results.push(...arr.map((s) => String(s == null ? '' : s).trim()));
 				done = true;
 			} catch (e) {
-				console.error('  [groq batch err]', e.message, 'chunk', (i / BATCH) + 1, 'attempt', attempt);
-				if (attempt < 3) await new Promise((r) => setTimeout(r, attempt * 2000));
+				lastErr = e;
+				if (e.message !== 'HTTP 429') {
+					console.error('  [groq batch err]', e.message, 'chunk', (i / BATCH) + 1, 'attempt', attempt);
+					if (attempt < 3) await new Promise((r) => setTimeout(r, attempt * 2000));
+				}
 			}
 		}
 		if (!done) {
-			for (const t of chunk) results.push(await translate(t));
+			console.error('  [groq batch skip] chunk', (i / BATCH) + 1, 'dilewati, tetap Inggris:', lastErr && lastErr.message);
+			for (const t of chunk) results.push(t);
 		}
-		await new Promise((r) => setTimeout(r, 500));
+		// Jeda antar batch supaya di bawah 30 req/menit Groq tier gratis.
+		await new Promise((r) => setTimeout(r, 3000));
 	}
 	return results;
 }
