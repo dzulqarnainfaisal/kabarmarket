@@ -397,12 +397,19 @@ async function translateBatchGroq(texts) {
 	return results;
 }
 
-// Terjemahkan banyak teks: batch Groq kalau ada kunci, kalau tidak per item.
+// Terjemahkan banyak teks: batch Groq kalau ada kunci.
+// Kalau GROQ_API_KEY kosong: di GitHub Actions, Google Translate diblokir
+// (429 semua), jadi LEWATI saja supaya run tidak banjir log dan buang waktu.
+// Di laptop (bukan Actions), Google masih bisa dipakai sebagai fallback.
 async function translateBatch(texts) {
 	if (!texts.length) return [];
 	if (GROQ_KEY) {
 		const out = await translateBatchGroq(texts);
 		if (out && out.length === texts.length) return out;
+	}
+	if (process.env.GITHUB_ACTIONS) {
+		console.error('  [warn] GROQ_API_KEY kosong, terjemahan dilewati (artikel tetap Inggris). Cek Secrets repo dan env workflow.');
+		return texts.slice();
 	}
 	const res = [];
 	for (const t of texts) res.push(await translate(t));
