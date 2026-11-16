@@ -586,6 +586,9 @@
     if(q){
       list = list.filter(a => (a.title||'').toLowerCase().includes(q) || (a.summary||'').toLowerCase().includes(q) || (Array.isArray(a.body) ? a.body.join(' ').toLowerCase().includes(q) : false));
     }
+    // Terbaru paling atas: edu.json menyimpan dari yang lama ke baru,
+    // jadi dibalik supaya materi terbaru paling kelihatan.
+    list.reverse();
     if(list.length === 0){
       grid.innerHTML = '<p class="no-result">Tidak ada materi yang cocok dengan pencarianmu.</p>';
       renderPager('eduPagination',1,1,null);
@@ -918,7 +921,7 @@
   }
   function renderEduPreview(){
     var g = document.getElementById('eduPreview'); if(!g) return;
-    var list = eduArticles.slice(0,8);
+    var list = eduArticles.slice(-8).reverse();
     g.innerHTML = list.map(function(a,i){ return eduCardHTML(a,i); }).join('');
     bindEduCards();
   }
