@@ -286,9 +286,10 @@ async function translateId(text, attempt) {
 
 // --- Terjemahan via Groq (dipakai kalau GROQ_API_KEY tersedia di Secrets) ---
 // Google Translate gratis diblokir dari IP GitHub Actions, jadi Groq adalah
-// jalur utama. Model llama-3.1-8b-instant cepat dan gratis (sama seperti AI widget).
+// jalur utama. Model openai/gpt-oss-20b cepat dan gratis (pengganti resmi
+// Groq untuk llama-3.1-8b-instant, yang dimatikan 16 Agu 2026 dan kini 404).
 const GROQ_KEY = process.env.GROQ_API_KEY || '';
-const GROQ_MODEL = process.env.GROQ_MODEL || 'llama-3.1-8b-instant';
+const GROQ_MODEL = process.env.GROQ_MODEL || 'openai/gpt-oss-20b';
 async function translateGroq(text, attempt) {
 	const s = (text || '').trim();
 	if (!s) return text;
