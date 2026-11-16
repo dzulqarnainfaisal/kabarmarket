@@ -38,7 +38,7 @@ const SYSTEM_PROMPT = [
 const MODEL_CF = '@cf/meta/llama-3.1-8b-instruct';
 const MODEL_OPENAI = 'gpt-4o-mini';
 const MODEL_NVIDIA = 'z-ai/glm-5.2'; // GLM-5.2 via NVIDIA (endpoint OpenAI-compatible)
-const MODEL_GROQ = 'openai/gpt-oss-120b'; // Groq (gratis, cepat, canggih). Alternatif ringan & lebih hemat kuota: 'llama-3.1-8b-instant'
+const MODEL_GROQ = 'openai/gpt-oss-120b'; // Groq (gratis, cepat, canggih). Alternatif ringan & lebih hemat kuota: 'openai/gpt-oss-20b'
 const MAX_MSGS = 10;
 const MAX_CHARS = 1500;
 

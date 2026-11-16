@@ -75,7 +75,7 @@ Default-nya `openai/gpt-oss-120b` (pintar + cepat). Kalau lalu lintas situs rama
 
 ```toml
 [vars]
-GROQ_MODEL = "llama-3.1-8b-instant"
+GROQ_MODEL = "openai/gpt-oss-20b"
 ```
 
 lalu `npx wrangler deploy` lagi. (Daftar model terbaru: https://console.groq.com/docs/models)
