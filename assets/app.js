@@ -10,6 +10,18 @@
       return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
     });
   }
+  // eduHtml(): seperti esc(), tapi mengizinkan kembali tag format yang memang
+  // dipakai materi Edukasi (ditulis sendiri oleh tim, bukan dari RSS luar):
+  // <strong>, </strong>, <em>, </em>, <br>. Semua tag lain tetap di-escape,
+  // jadi tidak bisa dipakai untuk XSS (tidak ada atribut yang lolos).
+  function eduHtml(s){
+    return esc(s)
+      .replace(/&lt;strong&gt;/g, '<strong>')
+      .replace(/&lt;\/strong&gt;/g, '</strong>')
+      .replace(/&lt;em&gt;/g, '<em>')
+      .replace(/&lt;\/em&gt;/g, '</em>')
+      .replace(/&lt;br\s*\/?&gt;/g, '<br>');
+  }
   // safeUrl(): hanya izinkan URL https:// . Tolak javascript:, data:, http://
   // dan URL aneh lainnya agar tidak bisa dipakai untuk breakout atribut atau
   // eksekusi skrip. Kembalikan null bila tidak aman; pemanggil memakai
@@ -687,7 +699,7 @@
     document.getElementById('eduModalPill').className = 'pill ' + pillClassMap[a.cat];
     document.getElementById('eduModalPill').textContent = a.cat;
     document.getElementById('eduModalTitle').textContent = a.title;
-    document.getElementById('eduModalBody').innerHTML = (a.body || []).map(p => `<p>${esc(p)}</p>`).join('');
+    document.getElementById('eduModalBody').innerHTML = (a.body || []).map(p => `<p>${eduHtml(p)}</p>`).join('');
     const eduRef = document.getElementById('eduModalReferral');
     const eduParts = partners[a.cat] || [];
     if (eduParts.length) { document.getElementById('eduModalReferralText').textContent = a.referralText || defaultReferralText[a.cat] || defaultReferralText._; eduRef.style.display = ''; renderPartners(document.getElementById('eduPartnerGrid'), a.cat); }
