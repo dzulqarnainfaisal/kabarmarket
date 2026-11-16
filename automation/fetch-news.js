@@ -336,16 +336,25 @@ async function translate(text) {
 
 // --- Terjemahan batch via Groq (JSON mode) ---
 // Satu panggilan menerjemahkan banyak teks sekaligus, supaya tidak kena
-// batas laju Groq (30 req/menit di tier gratis) dan run tidak berlarut-larut.
-// Aturan 429: jeda antar batch 3 dtk (<=20 req/menit), backoff makin lama
-// saat 429, dan kalau satu batch tetap gagal, LEWATI saja (artikel tetap
-// Inggris run ini, run berikutnya mencoba lagi). Jangan jatuh ke per-item
-// saat 429, karena itu memperbanyak request dan memperparah rate limit.
-async function translateBatchGroq(texts) {
-	const BATCH = 12;
+// batas laju Groq (30 req/menit DAN 8K token/menit di tier gratis) dan run
+// tidak berlarut-larut. Deskripsi jauh lebih panjang dari judul, jadi
+// batch deskripsi lebih kecil dan jedanya lebih lama.
+// Aturan 429: hormati Retry-After, backoff makin lama, dan kalau satu batch
+// tetap gagal, LEWATI saja (artikel tetap Inggris run ini, run berikutnya
+// mencoba lagi). Jangan jatuh ke per-item saat 429, karena itu memperbanyak
+// request dan memperparah rate limit.
+// Kalau model mengembalikan JSON tidak lengkap (bad batch shape), selamatkan
+// sebagian: pakai terjemahan yang ada, sisanya tetap Inggris, jangan buang
+// satu chunk penuh. Mengembalikan { texts, translated, skipped } supaya log
+// jujur soal berapa teks yang benar-benar diterjemahkan.
+async function translateBatchGroq(texts, opts) {
+	const BATCH = (opts && opts.batchSize) || 8;
+	const DELAY_MS = (opts && opts.delayMs) || 6000;
 	const results = [];
+	let translated = 0, skipped = 0;
 	for (let i = 0; i < texts.length; i += BATCH) {
 		const chunk = texts.slice(i, i + BATCH);
+		const chunkNo = (i / BATCH) + 1;
 		let done = false;
 		let lastErr = null;
 		for (let attempt = 1; attempt <= 3 && !done; attempt++) {
@@ -366,8 +375,8 @@ async function translateBatchGroq(texts) {
 				});
 				if (res.status === 429) {
 					const ra = parseInt(res.headers.get('retry-after') || '', 10);
-					const waitSec = (Number.isFinite(ra) && ra > 0) ? ra : Math.min(60, 10 * attempt);
-					console.error('  [groq batch 429] chunk', (i / BATCH) + 1, 'attempt', attempt, 'tunggu', waitSec + ' dtk');
+					const waitSec = (Number.isFinite(ra) && ra > 0) ? Math.min(120, ra) : Math.min(90, 20 * attempt);
+					console.error('  [groq batch 429] chunk', chunkNo, 'attempt', attempt, 'tunggu', waitSec + ' dtk');
 					if (attempt < 3) await new Promise((r) => setTimeout(r, waitSec * 1000));
 					lastErr = new Error('HTTP 429');
 					continue;
@@ -375,46 +384,84 @@ async function translateBatchGroq(texts) {
 				if (!res.ok) throw new Error('HTTP ' + res.status);
 				const data = await res.json();
 				const content = (data.choices && data.choices[0] && data.choices[0].message && data.choices[0].message.content) || '';
-				const parsed = JSON.parse(content);
-				const arr = Array.isArray(parsed) ? parsed : parsed.translations;
-				if (!Array.isArray(arr) || arr.length !== chunk.length) throw new Error('bad batch shape');
-				results.push(...arr.map((s) => String(s == null ? '' : s).trim()));
+				let parsed = null;
+				try { parsed = JSON.parse(content); }
+				catch (_) {
+					// Kadang model membungkus JSON dengan teks lain; ambil objek JSON-nya.
+					const m = content.match(/\{[\s\S]*\}/);
+					if (m) { try { parsed = JSON.parse(m[0]); } catch (_) { parsed = null; } }
+				}
+				const arr = parsed && (Array.isArray(parsed) ? parsed : parsed.translations);
+				if (!Array.isArray(arr) || arr.length === 0) throw new Error('bad batch shape');
+				// Selamatkan sebagian: pakai terjemahan yang ada, sisanya tetap Inggris.
+				let usedCount = 0;
+				for (let j = 0; j < chunk.length; j++) {
+					const tr = j < arr.length ? String(arr[j] == null ? '' : arr[j]).trim() : '';
+					results.push(tr || chunk[j]);
+					if (tr) usedCount++;
+				}
+				if (usedCount < chunk.length) console.error('  [groq batch partial] chunk', chunkNo, 'dapat', usedCount, 'dari', chunk.length, 'teks');
+				translated += usedCount;
+				skipped += chunk.length - usedCount;
 				done = true;
 			} catch (e) {
 				lastErr = e;
 				if (e.message !== 'HTTP 429') {
-					console.error('  [groq batch err]', e.message, 'chunk', (i / BATCH) + 1, 'attempt', attempt);
-					if (attempt < 3) await new Promise((r) => setTimeout(r, attempt * 2000));
+					console.error('  [groq batch err]', e.message, 'chunk', chunkNo, 'attempt', attempt);
+					if (attempt < 3) await new Promise((r) => setTimeout(r, attempt * 3000));
 				}
 			}
 		}
 		if (!done) {
-			console.error('  [groq batch skip] chunk', (i / BATCH) + 1, 'dilewati, tetap Inggris:', lastErr && lastErr.message);
+			console.error('  [groq batch skip] chunk', chunkNo, 'dilewati, tetap Inggris:', lastErr && lastErr.message);
 			for (const t of chunk) results.push(t);
+			skipped += chunk.length;
 		}
-		// Jeda antar batch supaya di bawah 30 req/menit Groq tier gratis.
-		await new Promise((r) => setTimeout(r, 3000));
+		// Jeda antar batch supaya di bawah batas Groq tier gratis.
+		if (i + BATCH < texts.length) await new Promise((r) => setTimeout(r, DELAY_MS));
 	}
-	return results;
+	console.error('  [groq batch]', translated, 'teks diterjemahkan,', skipped, 'tetap Inggris dari', texts.length, 'teks');
+	return { texts: results, translated, skipped };
 }
 
 // Terjemahkan banyak teks: batch Groq kalau ada kunci.
 // Kalau GROQ_API_KEY kosong: di GitHub Actions, Google Translate diblokir
 // (429 semua), jadi LEWATI saja supaya run tidak banjir log dan buang waktu.
 // Di laptop (bukan Actions), Google masih bisa dipakai sebagai fallback.
-async function translateBatch(texts) {
-	if (!texts.length) return [];
+// Mengembalikan { texts, translated, skipped }.
+async function translateBatch(texts, opts) {
+	if (!texts.length) return { texts: [], translated: 0, skipped: 0 };
 	if (GROQ_KEY) {
-		const out = await translateBatchGroq(texts);
-		if (out && out.length === texts.length) return out;
+		const out = await translateBatchGroq(texts, opts);
+		if (out && out.texts && out.texts.length === texts.length) return out;
 	}
 	if (process.env.GITHUB_ACTIONS) {
 		console.error('  [warn] GROQ_API_KEY kosong, terjemahan dilewati (artikel tetap Inggris). Cek Secrets repo dan env workflow.');
-		return texts.slice();
+		return { texts: texts.slice(), translated: 0, skipped: texts.length };
 	}
 	const res = [];
 	for (const t of texts) res.push(await translate(t));
-	return res;
+	return { texts: res, translated: res.filter((s, i) => s !== texts[i]).length, skipped: res.filter((s, i) => s === texts[i]).length };
+}
+
+// --- Deteksi judul berbahasa Inggris (untuk re-terjemahan arsip) ---
+// Heuristik sederhana: judul dianggap Inggris kalau mengandung >= 2 kata
+// fungsi Inggris (the, is, are, ...) dan TIDAK mengandung kata Indonesia
+// (yang, dan, di, ...). Judul Indonesia yang diawali nama/produk Inggris
+// (mis. "Goldman Sachs Turunkan Proyeksi Harga Emas 2027") tidak ikut kena
+// karena ada kata Indonesianya. Salah deteksi tidak berbahaya: judul
+// Indonesia yang ikut diterjemahkan akan kembali hampir sama.
+const EN_FUNC = ['the', 'a', 'an', 'is', 'are', 'was', 'were', 'will', 'would', 'has', 'have', 'had', 'with', 'from', 'after', 'before', 'says', 'said', 'urges', 'amid', 'despite', 'while', 'when', 'below', 'above', 'over', 'under', 'near', 'as', 'at', 'by', 'for', 'in', 'of', 'on', 'to', 'into', 'per', 'and', 'or', 'but', 'not', 'more', 'than', 'its', 'this', 'that', 'these', 'those', 'their', 'he', 'she', 'they', 'we', 'you', 'what', 'how', 'why'];
+const ID_FUNC = ['yang', 'dan', 'di', 'ke', 'dari', 'untuk', 'dengan', 'ini', 'itu', 'adalah', 'akan', 'sudah', 'dalam', 'pada', 'oleh', 'sebagai', 'atau', 'tidak', 'bisa', 'saat', 'usai', 'juga', 'lebih', 'baru', 'harga', 'saham', 'pasar', 'rupiah', 'persen', 'naik', 'turun', 'emiten', 'investor', 'perusahaan', 'ekonomi', 'keuangan', 'bank', 'pemerintah', 'tahun', 'bulan', 'juta', 'miliar', 'triliun', 'kabar', 'berita', 'setelah', 'sebelum', 'antara', 'hingga', 'sampai', 'masih', 'kini', 'hari', 'pekan'];
+function looksEnglish(s) {
+	const words = String(s || '').toLowerCase().split(/[^a-z]+/).filter(Boolean);
+	if (!words.length) return false;
+	let en = 0, id = 0;
+	for (const w of words) {
+		if (EN_FUNC.includes(w)) en++;
+		if (ID_FUNC.includes(w)) id++;
+	}
+	return en >= 2 && id === 0;
 }
 
 async function main() {
@@ -493,8 +540,10 @@ async function main() {
 	}
 	if (pending.length) {
 		console.error('Menerjemahkan', pending.length, 'artikel baru (batch)...');
-		const tTitles = await translateBatch(pending.map((p) => p.origTitle));
-		const tDescs = await translateBatch(pending.map((p) => p.origDesc));
+		const rTitles = await translateBatch(pending.map((p) => p.origTitle), { batchSize: 8, delayMs: 6000 });
+		const rDescs = await translateBatch(pending.map((p) => p.origDesc), { batchSize: 6, delayMs: 10000 });
+		const tTitles = rTitles.texts;
+		const tDescs = rDescs.texts;
 		pending.forEach((p, i) => {
 			const nt = tTitles[i] || p.origTitle;
 			const nd = tDescs[i] || p.origDesc;
@@ -502,7 +551,7 @@ async function main() {
 			p.art.desc = makeTeaser(nd, nt);
 			p.art.body = [nd];
 		});
-		console.error('Terjemahan batch selesai:', pending.length, 'artikel');
+		console.error('Terjemahan batch selesai:', (rTitles.translated + rDescs.translated), 'teks diterjemahkan,', (rTitles.skipped + rDescs.skipped), 'teks tetap Inggris dari', pending.length * 2, 'teks');
 	}
 
 	if (articles.length === 0) {
@@ -560,6 +609,35 @@ async function main() {
 		finalArticles.push(...list);
 	}
 
+	// --- Re-terjemahan arsip (bertahap) ---
+	// Judul Inggris lama tidak pernah diterjemahkan ulang (reuse by URL),
+	// jadi menumpuk di arsip. Setiap run menerjemahkan hingga 12 artikel
+	// arsip berbahasa Inggris (terbaru dulu), supaya arsip pelan-pelan jadi
+	// Indonesia semua tanpa membebani rate limit Groq dalam satu run.
+	// Artikel baru yang gagal diterjemahkan run ini tidak ikut (dicoba lagi
+	// run berikutnya lewat jalur normal).
+	const ARCHIVE_RETRANSLATE_PER_RUN = 12;
+	const pendingUrls = new Set(pending.map((p) => p.art.url));
+	const archiveCandidates = [];
+	for (const a of finalArticles) {
+		if (archiveCandidates.length >= ARCHIVE_RETRANSLATE_PER_RUN) break;
+		if (!a.url || pendingUrls.has(a.url)) continue;
+		if (looksEnglish(a.title)) archiveCandidates.push(a);
+	}
+	if (archiveCandidates.length && GROQ_KEY) {
+		console.error('Menerjemahkan ulang', archiveCandidates.length, 'judul arsip Inggris...');
+		const aTitles = await translateBatch(archiveCandidates.map((a) => a.title), { batchSize: 8, delayMs: 6000 });
+		const aDescs = await translateBatch(archiveCandidates.map((a) => (Array.isArray(a.body) && a.body[0]) || a.desc || a.title), { batchSize: 6, delayMs: 10000 });
+		archiveCandidates.forEach((a, i) => {
+			const nt = aTitles.texts[i] || a.title;
+			const nd = aDescs.texts[i] || ((Array.isArray(a.body) && a.body[0]) || a.desc);
+			a.title = nt;
+			a.body = [nd];
+			a.desc = makeTeaser(nd, nt);
+		});
+		console.error('Arsip diterjemahkan:', (aTitles.translated + aDescs.translated), 'teks diterjemahkan,', (aTitles.skipped + aDescs.skipped), 'teks tetap Inggris');
+	}
+
 	const payload = { updated: new Date().toISOString(), articles: finalArticles };
 	fs.writeFileSync(outPath, JSON.stringify(payload, null, 2));
 	console.error('OK: ' + finalArticles.length + ' berita ditulis ke news.json (arsip digabung)');
@@ -567,4 +645,3 @@ async function main() {
 }
 
 main();
-
