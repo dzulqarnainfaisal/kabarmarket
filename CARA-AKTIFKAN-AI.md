@@ -40,7 +40,7 @@ dan membuat alamat `POST /api/ai` di situsmu.
    - **Value:** tempel kunci `gsk_...` dari Langkah 1
 4. (Opsional) Tambah satu lagi kalau mau atur model:
    - **Name:** `GROQ_MODEL`
-   - **Value:** `openai/gpt-oss-120b`  (default; alternatif hemat kuota: `llama-3.1-8b-instant`)
+   - **Value:** `openai/gpt-oss-120b`  (default; alternatif hemat kuota: `openai/gpt-oss-20b`)
 5. Klik **Save**.
 6. Buka tab **Deployments** -> klik **Retry deployment** pada versi terbaru
    (atau push perubahan kecil ke GitHub) supaya kunci ikut terpasang.
@@ -67,7 +67,7 @@ https://console.groq.com/docs/models
 
 Model yang disarankan & jarang berubah:
 - `openai/gpt-oss-120b` (default, canggih)
-- `llama-3.1-8b-instant` (paling irit kuota, sangat cepat)
+- `openai/gpt-oss-20b` (paling irit kuota, sangat cepat)
 
 ---
 
