@@ -480,6 +480,31 @@
         "Anggaran yang baik bukan yang paling ketat, melainkan yang paling bisa kamu jalani terus. Mulai dari bulan ini: bagi gajimu ke tiga pos, sisihkan tabungan di awal, dan lihat sendiri bedanya di akhir bulan."
       ],
       "img": "assets/edu/edu-investasi-anggaran-50-30-20.webp"
+    },
+    {
+      "cat": "Saham",
+      "title": "Mengenal Sektor Saham di BEI dan Cara Memilihnya",
+      "summary": "Saham di bursa dikelompokkan ke dalam sektor, seperti los-los di pasar tradisional. Kenali sektor-sektor utama di BEI dan cara memilihnya sesuai kondisi ekonomi.",
+      "body": [
+        "Di Bursa Efek Indonesia ada ratusan saham dari perusahaan yang bisnisnya macam-macam: ada bank, ada perusahaan makanan, ada perusahaan tambang, ada perusahaan telekomunikasi. Supaya tidak bingung, saham-saham itu dikelompokkan berdasarkan jenis usahanya. Kelompok ini disebut sektor.",
+        "Bayangkan pasar tradisional. Di sana ada los sayur, los daging, los pakaian, dan los buah, masing-masing berisi pedagang sejenis. Sektor saham bekerja dengan cara yang sama: perusahaan yang bisnisnya mirip dikumpulkan dalam satu kelompok, supaya investor mudah membandingkan dan memantau pergerakannya.",
+        "<strong>Apa itu sektor dan siapa yang mengaturnya</strong>",
+        "Bursa Efek Indonesia memakai klasifikasi bernama IDX-IC untuk mengelompokkan saham. Totalnya ada sebelas sektor, antara lain:<br>• <strong>Keuangan</strong> - bank, asuransi, dan perusahaan pembiayaan<br>• <strong>Barang konsumsi primer</strong> - makanan, minuman, dan kebutuhan sehari-hari<br>• <strong>Barang konsumsi non-primer</strong> - barang yang biasanya dibeli kalau ada uang lebih, misalnya kendaraan dan hiburan<br>• <strong>Energi</strong> - perusahaan tambang batu bara, minyak, dan gas<br>• <strong>Kesehatan</strong> - rumah sakit dan perusahaan farmasi<br>• <strong>Properti dan real estat</strong> - pengembang perumahan, mal, dan gedung perkantoran<br>• <strong>Teknologi</strong> - perusahaan perangkat lunak dan layanan digital<br>• <strong>Infrastruktur</strong> - jalan tol, pelabuhan, dan telekomunikasi",
+        "<strong>Sektor defensif dan sektor siklikal</strong>",
+        "Sektor juga bisa dibagi dua sifat besar. Sektor defensif berisi perusahaan yang produknya tetap dibutuhkan dalam kondisi apa pun, misalnya makanan, obat, dan listrik. Orang tetap makan dan berobat walau ekonomi sedang lesu, jadi kinerja perusahaan di sektor ini cenderung lebih stabil.",
+        "Sektor siklikal adalah kebalikannya: kinerjanya ikut naik-turun mengikuti kondisi ekonomi. Contohnya properti, otomotif, dan pariwisata. Saat ekonomi sedang bagus dan orang punya uang lebih, penjualan rumah dan mobil biasanya ikut naik. Saat ekonomi melambat, orang menunda membeli barang-barang seperti itu.",
+        "<strong>Contoh kasus: warung Pak Budi</strong>",
+        "Pak Budi punya warung kelontong di dekat rumah. Setiap hari dagangannya yang paling laris adalah beras, minyak goreng, sabun, dan mi instan. Barang-barang itu tetap dibeli tetangga walau sedang tanggal tua, karena memang kebutuhan pokok. Inilah gambaran sektor defensif.",
+        "Di seberang warung ada toko elektronik. Televisi dan kulkas di toko itu lakunya tidak setiap hari. Kalau ekonomi warga sedang bagus, toko itu ramai. Kalau sedang sulit, orang menunda beli televisi baru karena televisi lama masih bisa dipakai. Inilah gambaran sektor siklikal.",
+        "Pelajaran dari cerita ini sederhana: perusahaan yang menjual kebutuhan pokok cenderung stabil, sedangkan perusahaan yang menjual barang yang bisa ditunda cenderung naik-turun mengikuti kondisi ekonomi. Memahami perbedaan ini membantumu tidak kaget saat harga saham bergerak.",
+        "<strong>Kenapa sektor penting buat investor pemula</strong>",
+        "Harga saham dalam satu sektor sering bergerak ke arah yang sama karena dipengaruhi kabar yang sama. Misalnya, ketika harga batu bara dunia naik, saham-saham perusahaan tambang cenderung ikut naik. Sebaliknya, kabar buruk di satu sektor bisa menekan banyak saham sekaligus di sektor itu.",
+        "Karena itu, sektor membantumu melakukan diversifikasi dengan lebih rapi. Kalau semua uangmu hanya di satu sektor, satu kabar buruk bisa mengguncang seluruh portofoliomu. Menyebar ke beberapa sektor membuat risiko tidak menumpuk di satu tempat.",
+        "<strong>Cara memilih sektor untuk pemula</strong>",
+        "Kamu tidak perlu menghafal semua sektor. Cukup mulai dari tiga langkah ini:<br>• <strong>Pilih sektor yang kamu pahami</strong> - kalau kamu sehari-hari memakai layanan bank dan belanja kebutuhan pokok, sektor keuangan dan barang konsumsi lebih mudah kamu ikuti perkembangannya daripada sektor yang asing buatmu.<br>• <strong>Perhatikan kondisi ekonomi secara umum</strong> - misalnya, saat suku bunga naik, perusahaan yang banyak berutang seperti properti biasanya lebih tertekan. Kamu tidak perlu jadi ahli ekonomi, cukup tahu arah besarnya.<br>• <strong>Sebar ke beberapa sektor</strong> - jangan taruh semua dana di satu sektor saja, supaya kalau satu sektor sedang lesu, sektor lain masih bisa menopang.",
+        "Mengenal sektor bukan soal menghafal nama-nama sulit, melainkan soal memahami bisnis di balik saham yang kamu beli. Mulailah dari sektor yang paling dekat dengan kehidupanmu sehari-hari, lalu pelan-pelan perluas ke sektor lain sambil terus belajar."
+      ],
+      "img": "assets/edu/edu-saham-sektor.webp"
     }
   ]
 }
