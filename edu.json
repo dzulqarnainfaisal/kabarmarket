@@ -505,6 +505,22 @@
         "Mengenal sektor bukan soal menghafal nama-nama sulit, melainkan soal memahami bisnis di balik saham yang kamu beli. Mulailah dari sektor yang paling dekat dengan kehidupanmu sehari-hari, lalu pelan-pelan perluas ke sektor lain sambil terus belajar."
       ],
       "img": "assets/edu/edu-saham-sektor.webp"
+    },
+    {
+      "cat": "Crypto",
+      "title": "Apa Itu Smart Contract: Kontrak Digital yang Jalan Sendiri",
+      "summary": "Smart contract adalah perjanjian digital yang berjalan otomatis di blockchain begitu syaratnya terpenuhi, tanpa perlu perantara. Kenali cara kerjanya lewat analogi mesin penjual otomatis.",
+      "body": [
+        "Smart contract adalah perjanjian digital yang ditulis dalam bentuk kode komputer dan disimpan di blockchain. Bedanya dengan perjanjian biasa, smart contract bisa menjalankan dirinya sendiri: begitu syarat yang ditulis di dalamnya terpenuhi, aksinya langsung berjalan otomatis tanpa perlu menunggu persetujuan orang lain.",
+        "<strong>Analogi paling gampang: mesin penjual otomatis</strong><br>Bayangkan mesin penjual minuman di stasiun. Kamu memasukkan uang, menekan tombol minuman yang kamu mau, lalu mesin otomatis mengeluarkan minuman itu. Tidak ada penjaga yang memeriksa uangmu, tidak ada yang perlu kamu hubungi, dan mesin tidak bisa tiba-tiba berubah pikiran. Smart contract bekerja dengan logika yang sama: syarat terpenuhi, aksi jalan.",
+        "<strong>Contoh kasus: Budi dan sewa kamar kos</strong><br>Budi menyewa kamar kos dan biasanya membayar ke pemilik kos setiap awal bulan lewat transfer, lalu pemilik kos mengonfirmasi dan menyerahkan kunci. Sekarang bayangkan proses itu diubah menjadi smart contract: Budi mengirim pembayaran ke dalam kontrak digital, dan begitu pembayaran tercatat, kontrak otomatis mencatat bahwa kamar itu resmi disewa Budi untuk bulan tersebut. Tidak ada yang perlu menagih atau mengonfirmasi manual, karena aturannya sudah tertulis sejak awal dan dijalankan oleh sistem. Tentu ini baru gambaran sederhananya, tetapi intinya sama: aturan ditulis dulu, lalu sistem menjalankannya sendiri.",
+        "<strong>Kenapa disebut smart dan kenapa disebut contract</strong><br>• Disebut contract karena isinya kesepakatan atau aturan, misalnya siapa membayar berapa, kapan, dan apa yang terjadi setelahnya.<br>• Disebut smart karena aturan itu dijalankan otomatis oleh program, bukan oleh manusia atau lembaga perantara.",
+        "<strong>Di mana smart contract dipakai</strong><br>• <strong>DeFi</strong> - layanan pinjam-meminjam dan penukaran aset kripto yang berjalan lewat smart contract, tanpa bank.<br>• <strong>NFT</strong> - bukti kepemilikan digital seperti karya seni atau koleksi, yang aturan kepemilikannya dicatat lewat smart contract.<br>• <strong>Token dan aplikasi blockchain</strong> - banyak aplikasi kripto memakai smart contract untuk mengatur cara token dibuat, dibagikan, atau ditukar.",
+        "<strong>Kenapa orang menyukainya</strong><br>• <strong>Transparan</strong> - kode smart contract di blockchain umumnya bisa dilihat siapa saja, jadi aturannya terbuka.<br>• <strong>Otomatis</strong> - tidak perlu menunggu pihak ketiga untuk menjalankan kesepakatan.<br>• <strong>Sulit diubah sepihak</strong> - begitu berjalan di blockchain, isinya tidak bisa diubah begitu saja oleh satu pihak.",
+        "<strong>Tapi ada juga risikonya</strong><br>Smart contract bukan berarti tanpa cacat. Kalau kode di dalamnya ada kesalahan, kesalahan itu bisa dimanfaatkan dan biasanya sulit diperbaiki karena kontrak sudah berjalan. Tidak ada tombol undo seperti saat salah kirim pesan di aplikasi chat. Selain itu, penipu juga bisa membuat smart contract yang kelihatannya menarik padahal isinya merugikan. Karena itu, sebelum memakai aplikasi apa pun yang berbasis smart contract, luangkan waktu untuk memahami cara kerjanya dan pastikan sumbernya terpercaya.",
+        "Untuk pemula, kamu tidak perlu bisa menulis kode untuk memahami smart contract. Cukup ingat gambaran besarnya: smart contract adalah mesin penjual otomatis versi digital, aturannya ditulis di blockchain, dan begitu syarat terpenuhi, ia bekerja sendiri. Dengan memahami ini, kamu jadi lebih paham kenapa banyak layanan kripto bisa berjalan tanpa bank atau perantara."
+      ],
+      "img": "assets/edu/edu-crypto-smart-contract.webp"
     }
   ]
 }
