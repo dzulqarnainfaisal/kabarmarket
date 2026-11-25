@@ -521,6 +521,22 @@
         "Untuk pemula, kamu tidak perlu bisa menulis kode untuk memahami smart contract. Cukup ingat gambaran besarnya: smart contract adalah mesin penjual otomatis versi digital, aturannya ditulis di blockchain, dan begitu syarat terpenuhi, ia bekerja sendiri. Dengan memahami ini, kamu jadi lebih paham kenapa banyak layanan kripto bisa berjalan tanpa bank atau perantara."
       ],
       "img": "assets/edu/edu-crypto-smart-contract.webp"
+    },
+    {
+      "cat": "Saham",
+      "title": "Mengenal Saham Syariah: Investasi Sesuai Prinsip Syariah",
+      "summary": "Saham syariah memungkinkan kamu berinvestasi di perusahaan yang usahanya sesuai prinsip syariah, dengan cara beli yang sama seperti saham biasa.",
+      "body": [
+        "Saham syariah adalah saham dari perusahaan yang kegiatan usahanya dinilai sesuai dengan prinsip syariah. Sederhananya, kalau saham biasa hanya melihat peluang untung, saham syariah juga melihat apakah cara perusahaan itu mencari untung sudah sesuai aturan syariah. Jadi investor bisa berinvestasi sambil tetap menjaga keyakinannya.",
+        "<strong>Apa bedanya dengan saham biasa?</strong><br>Cara jual-belinya sama persis: kamu tetap membeli lewat aplikasi sekuritas, memakai rekening efek dan RDN, dan harganya tetap naik-turun mengikuti pasar. Yang berbeda adalah perusahaannya: hanya perusahaan yang lolos seleksi syariah yang boleh masuk ke dalam daftar saham syariah.",
+        "<strong>Daftar Efek Syariah (DES)</strong><br>OJK menerbitkan Daftar Efek Syariah, yaitu daftar resmi saham-saham yang dinilai sesuai prinsip syariah. Daftar ini diperbarui secara berkala, dua kali dalam setahun, jadi sebuah saham bisa masuk atau keluar dari daftar kalau kondisinya berubah.<br>• Kalau kamu ragu sebuah saham itu syariah atau bukan, cek dulu apakah namanya ada di DES.<br>• Daftar ini bisa dicek lewat situs resmi OJK atau lewat aplikasi sekuritas yang menyediakan filter saham syariah.",
+        "<strong>Syarat sebuah saham disebut syariah</strong><br>Ada tiga syarat utama yang dipakai dalam seleksi:<br>• Kegiatan usahanya tidak bertentangan dengan prinsip syariah. Misalnya perusahaan yang bergerak di bidang minuman keras, perjudian, atau jasa keuangan berbasis bunga tidak bisa masuk.<br>• Utang perusahaan yang berbasis bunga tidak boleh lebih dari 45 persen dari total asetnya.<br>• Pendapatan perusahaan dari sumber yang tidak halal tidak boleh lebih dari 10 persen dari total pendapatannya.",
+        "<strong>Indeks saham syariah: ISSI dan JII</strong><br>• <strong>ISSI (Indeks Saham Syariah Indonesia)</strong> berisi seluruh saham syariah yang tercatat di DES.<br>• <strong>JII (Jakarta Islamic Index)</strong> berisi 30 saham syariah yang paling likuid atau paling aktif diperdagangkan.<br>Kedua indeks ini bisa kamu jadikan acuan untuk melihat bagaimana pergerakan saham-saham syariah secara umum, sama seperti IHSG untuk seluruh saham.",
+        "<strong>Contoh kasus: Rina mulai dari yang ia yakini</strong><br>Rina, seorang karyawan yang baru mau mulai investasi, ingin uangnya bekerja tapi tetap sesuai keyakinannya. Ia tidak langsung membeli saham yang sedang ramai dibicarakan. Ia membuka Daftar Efek Syariah, memilih perusahaan yang produknya ia kenal dan pakai sehari-hari, lalu membelinya lewat aplikasi sekuritas seperti biasa. Ia juga tahu dividen tetap bisa ia terima kalau perusahaan membagikan laba, sama seperti saham biasa.",
+        "<strong>Hal yang tetap harus diingat</strong><br>• Label syariah bukan jaminan untung. Harga saham syariah tetap bisa naik dan turun seperti saham lainnya, jadi analisis dan manajemen risiko tetap perlu.<br>• Sebuah saham bisa keluar dari DES kalau sudah tidak memenuhi syarat, jadi cek daftarnya secara berkala.<br>• Tetap gunakan uang dingin dan jangan menaruh semua dana di satu saham saja, walau saham itu sudah syariah.",
+        "Saham syariah cocok untuk kamu yang ingin berinvestasi dengan tenang karena usahanya sudah disaring sesuai prinsip syariah. Mulailah dengan mengenali Daftar Efek Syariah, pilih perusahaan yang bisnisnya kamu mengerti, dan pelajari laporan keuangannya pelan-pelan seperti saat memilih saham biasa."
+      ],
+      "img": "assets/edu/edu-saham-syariah.webp"
     }
   ]
 }
